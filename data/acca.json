@@ -1,0 +1,196 @@
+{
+  "id": "acca",
+  "title": "ACCA Qualification",
+  "region": "Global",
+  "body": "Association of Chartered Certified Accountants",
+  "officialUrl": "https://www.accaglobal.com",
+  "lastVerified": "2024-10-01",
+  "source": "ACCA Global Student Handbook & Framework",
+  "summary": "The ACCA qualification develops strategic business leadership and high-level accounting skills across 13 exams (unless exemptions apply), an online Ethics and Professional Skills module, and 36 months of practical experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Pathway",
+      "tag": "All Applicants",
+      "blurb": "Complete the 3 tiers of exams, the Ethics module, and 36 months of supervised practical experience (PER).",
+      "stages": [
+        {
+          "id": "acca-entry",
+          "title": "Stage 1: Get Started",
+          "subtitle": "Registration and entry route confirmation",
+          "nodes": [
+            {
+              "id": "ac1",
+              "name": "Check Academic Entry Route",
+              "category": "Admin",
+              "description": "Confirm your starting level: Foundation In Accountancy (FIA) for school leavers without minimum criteria, or direct entry with 2 A Levels + 3 GCSEs / Bachelor's degree."
+            },
+            {
+              "id": "ac2",
+              "name": "Register as an ACCA Student",
+              "category": "Admin",
+              "description": "Create your myACCA portal account, submit educational transcripts for exemption evaluation, and pay initial registration fees."
+            }
+          ]
+        },
+        {
+          "id": "applied-knowledge",
+          "title": "Stage 2: Applied Knowledge",
+          "subtitle": "3 on-demand computer-based exams (CBE)",
+          "nodes": [
+            {
+              "id": "a3",
+              "name": "Business and Technology (BT)",
+              "category": "Exam",
+              "description": "Organizational structure, governance, ethical dilemmas, digital finance transformation, and corporate leadership fundamentals."
+            },
+            {
+              "id": "a4",
+              "name": "Management Accounting (MA)",
+              "category": "Exam",
+              "description": "Costing methodologies, budgeting techniques, variance analysis, and operational performance measurement."
+            },
+            {
+              "id": "a5",
+              "name": "Financial Accounting (FA)",
+              "category": "Exam",
+              "description": "Double-entry accounting, trial balance reconciliation, and drafting standard IFRS financial statements."
+            }
+          ]
+        },
+        {
+          "id": "applied-skills",
+          "title": "Stage 3: Applied Skills",
+          "subtitle": "6 session-based computer exams (March, June, Sept, Dec)",
+          "nodes": [
+            {
+              "id": "a6",
+              "name": "Corporate and Business Law (LW)",
+              "category": "Exam",
+              "description": "General legal framework, contract law, corporate formations, capital financing, and insolvency regulations."
+            },
+            {
+              "id": "a7",
+              "name": "Performance Management (PM)",
+              "category": "Exam",
+              "description": "Advanced cost management, quantitative pricing strategies, risk assessment, and divisional performance evaluations."
+            },
+            {
+              "id": "a8",
+              "name": "Taxation (TX)",
+              "category": "Exam",
+              "description": "Computation of taxable liabilities for individuals and corporate entities under regional tax law variants."
+            },
+            {
+              "id": "a9",
+              "name": "Financial Reporting (FR)",
+              "category": "Exam",
+              "description": "Applying single entity and consolidated group IFRS accounting standards, lease accounting, and ratio evaluation."
+            },
+            {
+              "id": "a10",
+              "name": "Audit and Assurance (AA)",
+              "category": "Exam",
+              "description": "External audit engagements, audit planning, internal control testing, substantive procedures, and reporting."
+            },
+            {
+              "id": "a11",
+              "name": "Financial Management (FM)",
+              "category": "Exam",
+              "description": "Investment appraisal (NPV/IRR), working capital strategies, business valuation, and currency/interest risk hedging."
+            }
+          ]
+        },
+        {
+          "id": "strategic-essentials",
+          "title": "Stage 4: Strategic Professional – Essentials",
+          "subtitle": "2 mandatory synoptic papers",
+          "nodes": [
+            {
+              "id": "a12",
+              "name": "Strategic Business Leader (SBL)",
+              "category": "Exam",
+              "description": "A 3-hour 15-minute integrated case study assessing senior leadership, enterprise risk, strategic governance, and professional acumen."
+            },
+            {
+              "id": "a13",
+              "name": "Strategic Business Reporting (SBR)",
+              "category": "Exam",
+              "description": "Mastery in advanced financial reporting, ethical challenges faced by CFOs, complex group structuring, and current reporting issues."
+            }
+          ]
+        },
+        {
+          "id": "strategic-options",
+          "title": "Stage 5: Strategic Professional – Options",
+          "subtitle": "Choose 2 specialized papers",
+          "nodes": [
+            {
+              "id": "a14",
+              "name": "Advanced Financial Management (AFM)",
+              "category": "Exam",
+              "description": "Option Paper: Multinational corporate finance, cross-border M&A valuation, derivatives, and sophisticated hedging."
+            },
+            {
+              "id": "a15",
+              "name": "Advanced Performance Management (APM)",
+              "category": "Exam",
+              "description": "Option Paper: Strategic management accounting, value-based metrics, and high-level performance measurement systems."
+            },
+            {
+              "id": "a16",
+              "name": "Advanced Taxation (ATX)",
+              "category": "Exam",
+              "description": "Option Paper: High-net-worth tax planning, cross-border corporate restructuring, and advanced wealth management."
+            },
+            {
+              "id": "a17",
+              "name": "Advanced Audit and Assurance (AAA)",
+              "category": "Exam",
+              "description": "Option Paper: Group audit engagements, forensic audit procedures, quality management, and partner-level reporting."
+            }
+          ]
+        },
+        {
+          "id": "experience-ethics",
+          "title": "Stage 6: Experience & Ethics (PER & EPSM)",
+          "subtitle": "Conducted alongside or following exams",
+          "nodes": [
+            {
+              "id": "a18",
+              "name": "Ethics & Professional Skills Module (EPSM)",
+              "category": "Ethics",
+              "description": "An interactive 20-hour online module exploring commercial awareness, data analytics, sceptical inquiry, and ethical problem-solving."
+            },
+            {
+              "id": "a19",
+              "name": "36 Months Practical Experience Requirement (PER)",
+              "category": "Experience",
+              "description": "Achieve 36 months of supervised accountancy/finance work experience signed off by an approved Practical Experience Supervisor (PES)."
+            },
+            {
+              "id": "a20",
+              "name": "Achieve 9 Performance Objectives",
+              "category": "Experience",
+              "description": "Demonstrate workplace competence across 5 essentials and 4 technical performance objectives documented in the PER online recorder."
+            }
+          ]
+        },
+        {
+          "id": "membership",
+          "title": "Stage 7: Full Membership",
+          "subtitle": "Admission & Designation",
+          "nodes": [
+            {
+              "id": "a21",
+              "name": "Apply for ACCA Membership",
+              "category": "Admin",
+              "description": "Transition from ACCA Affiliate to ACCA Member, earning the right to use the globally recognised 'ACCA' designation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

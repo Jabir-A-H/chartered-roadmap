@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accountancy Roadmaps: ICAB CA &amp; ACCA</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--tx:#161616;--mut:#666;--line:#b4b4a8;--bd:#3b3b36;--ac:#161616;--main:#ffd43b;--Exam:#fff3bf;--Experience:#d0ebff;--Admin:#f1f3f5;--Ethics:#e5dbff;--Training:#ffe8cc;--done:#d3f9d8;--ok:#2b8a3e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141517;--card:#1e2023;--tx:#ececea;--mut:#a0a09a;--line:#55554f;--bd:#8a8a85;--ac:#ececea;--main:#e6b800;--Exam:#4a4120;--Experience:#1c3a52;--Admin:#2a2d31;--Ethics:#3a2f57;--Training:#4d3418;--done:#1f3d27;--ok:#69db7c}}
+:root[data-theme="dark"]{--bg:#141517;--card:#1e2023;--tx:#ececea;--mut:#a0a09a;--line:#55554f;--bd:#8a8a85;--ac:#ececea;--main:#e6b800;--Exam:#4a4120;--Experience:#1c3a52;--Admin:#2a2d31;--Ethics:#3a2f57;--Training:#4d3418;--done:#1f3d27;--ok:#69db7c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.top,#map,.note{max-width:860px;margin:0 auto;padding-left:14px;padding-right:14px}
+.top{padding-top:22px;text-align:center}
+h1{font-size:1.6rem;margin:0}
+.sub{color:var(--mut);margin:2px 0 16px;font-size:.93rem}
+.tabs{display:inline-flex;border:2px solid var(--bd);border-radius:10px;overflow:hidden}
+.tabs button{padding:8px 18px;border:0;background:var(--card);color:var(--tx);font:inherit;font-weight:600;cursor:pointer}
+.tabs button.on{background:var(--main);color:#161616}
+.routes{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 6px}
+.routes button{padding:6px 14px;border:1.5px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;font:inherit;font-size:.86rem;cursor:pointer}
+.routes button.on{background:var(--tx);color:var(--bg)}
+.blurb{margin:6px auto 8px;max-width:620px;font-size:.88rem;color:var(--mut)}
+.about{font-size:.85rem;color:var(--mut);max-width:620px;margin:0 auto 10px;text-align:left}
+.about summary{cursor:pointer;text-align:center}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;max-width:420px;margin:10px auto 4px}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+.pl{font-size:.82rem;color:var(--mut)}
+.pl button{background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font:inherit;margin-left:8px}
+.legend{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:12px 0 4px}
+.lg{padding:1px 9px;border-radius:99px;font-size:.72rem;border:1.5px solid var(--bd)}
+.k-Exam{background:var(--Exam)}.k-Experience{background:var(--Experience)}.k-Admin{background:var(--Admin)}.k-Ethics{background:var(--Ethics)}.k-Training{background:var(--Training)}
+#map{padding-top:18px;padding-bottom:90px}
+.row{display:grid;grid-template-columns:1fr 210px 1fr;column-gap:14px;position:relative}
+.row:before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px dashed var(--line)}
+.hub{grid-column:2;grid-row:1;position:relative;z-index:1}
+.main{width:100%;background:var(--main);color:#161616;border:2px solid var(--bd);border-radius:10px;padding:9px 10px;text-align:center;font:inherit;font-weight:700;line-height:1.25;cursor:pointer;box-shadow:3px 3px 0 var(--bd)}
+.main small{display:block;font-weight:500;font-size:.7rem;margin-top:2px}
+.side{grid-row:1;padding:74px 0 20px;display:flex;flex-direction:column;gap:8px}
+.l{grid-column:1;align-items:flex-end}.r{grid-column:3;align-items:flex-start}
+.k{position:relative;font:inherit;font-size:.87rem;line-height:1.3;color:var(--tx);border:2px solid var(--bd);border-radius:8px;padding:7px 12px;cursor:pointer;text-align:left;max-width:100%}
+.k:hover,.k.sel{box-shadow:3px 3px 0 var(--bd)}
+.k:after{content:"";position:absolute;top:50%;width:119px;border-top:2px dashed var(--line);z-index:-1}
+.l .k:after{left:100%}.r .k:after{right:100%}
+.k.done{background:var(--done);color:var(--mut);text-decoration:line-through;border-color:var(--ok)}
+.k.done:before{content:"✓ ";color:var(--ok);font-weight:700;display:inline-block;text-decoration:none}
+#panel{position:fixed;z-index:20;background:var(--card);color:var(--tx);border:2px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.28);padding:18px;transition:transform .2s;right:12px;top:calc(12px + env(safe-area-inset-top,0px));width:330px;max-height:calc(100% - 24px);overflow:auto;border-radius:14px;transform:translateX(130%)}
+#panel.open{transform:none}
+#panel h3{margin:8px 0 6px;font-size:1.1rem;padding-right:24px}
+#panel p{margin:0 0 12px;font-size:.92rem;color:var(--mut)}
+#panel .x{position:absolute;right:10px;top:8px;background:none;border:0;font-size:1.5rem;line-height:1;color:var(--mut);cursor:pointer}
+.tag{display:inline-block;font-size:.72rem;padding:1px 9px;border-radius:99px;border:1.5px solid var(--bd)}
+.dbtn{width:100%;padding:10px;border-radius:10px;border:2px solid var(--bd);background:var(--main);color:#161616;font:inherit;font-weight:700;cursor:pointer}
+.note{font-size:.8rem;color:var(--mut);border-top:1px solid var(--line);padding-top:14px;padding-bottom:40px}
+a{color:inherit}
+@media(max-width:700px){
+.row{display:block;padding-left:26px;margin-left:6px}.row:before{left:0}
+.hub{margin:0 0 10px}.main{width:auto;display:inline-block;text-align:left}
+.side{display:contents}
+.k{display:block;width:100%;margin:0 0 8px}
+.l .k:after,.r .k:after{left:-26px;right:auto;width:24px}
+.row{padding-bottom:12px}
+#panel{left:0;right:0;top:auto;bottom:0;width:auto;max-height:70%;border-radius:16px 16px 0 0;transform:translateY(110%);padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+}
+</style>
+</head>
+<body>
+<div class="top"><h1>Accountancy Roadmaps</h1><p class="sub">Pick a route, tap a step for details, and tick it off as you go.</p>
+<div class="tabs"><button id="t-icab">ICAB CA</button><button id="t-acca">ACCA</button></div>
+<div class="routes" id="routes"></div><p class="blurb" id="blurb"></p>
+<details class="about"><summary>About this roadmap</summary><div id="about"></div></details>
+<div class="bar"><i id="fill"></i></div><div class="pl"><span id="pct"></span><button id="reset">Reset progress</button></div>
+<div class="legend"><span class="lg k-Exam">Exam</span><span class="lg k-Experience">Experience</span><span class="lg k-Admin">Admin</span><span class="lg k-Training">Training</span><span class="lg k-Ethics">Ethics</span></div></div>
+<div id="map"></div><aside id="panel"></aside>
+<p class="note">Prototype. ICAB content follows ICAB’s official “How to become a CA” brochure published 25 September 2024, the most recent official document available when this was built. ICAB’s website posts newer circulars, so check it for changes. ACCA content is summarised from general knowledge of its framework and not yet verified. Entry criteria, exemptions, fees and exam sessions change, so confirm everything on the official sites before planning.</p>
+<script>
+var CERT=[
+{id:'c1',n:'Accounting',k:'Exam',d:'Foundations of financial accounting and preparing financial statements.'},
+{id:'c2',n:'Assurance',k:'Exam',d:'Introduction to audit and assurance concepts.'},
+{id:'c3',n:'Business, Technology and Finance',k:'Exam',d:'The business environment, technology in business, and basic finance.'},
+{id:'c4',n:'Management Information',k:'Exam',d:'Management accounting and information used for decisions.'},
+{id:'c5',n:'Principles of Taxation',k:'Exam',d:'Basics of the tax system.'},
+{id:'c6',n:'Business Laws',k:'Exam',d:'The legal framework for business.'},
+{id:'c7',n:'Information Technology',k:'Exam',d:'IT concepts relevant to accountants and business.'}];
+var PROF=[
+{id:'p1',n:'Financial Accounting and Reporting',k:'Exam',d:'Applied financial reporting at professional standard.'},
+{id:'p2',n:'Audit and Assurance',k:'Exam',d:'Audit and assurance in practice.'},
+{id:'p3',n:'Business Planning: Taxation and Compliance',k:'Exam',d:'Applied taxation, planning and compliance.'},
+{id:'p4',n:'Financial Management',k:'Exam',d:'Financial decision making and financing.'},
+{id:'p5',n:'Business Strategy and Technology',k:'Exam',d:'Strategy, business analysis and technology. Helps you progress to the Advanced Level.'},
+{id:'p6',n:'Corporate Laws and Practices',k:'Exam',d:'Company law and corporate governance practice.'},
+{id:'p7',n:'IT Governance',k:'Exam',d:'Governance, risk and control of information technology.'}];
+var ADV=[
+{id:'v1',n:'Corporate Reporting',k:'Exam',d:'Applies Professional Level knowledge with analytical and professional skills to complex reporting and compliance problems.'},
+{id:'v2',n:'Strategic Business Management and Leadership',k:'Exam',d:'Integrated strategic, financial, risk and leadership issues at senior level.'},
+{id:'v3',n:'Case Study',k:'Exam',d:'Final integrated assessment drawing on all earlier levels.'}];
+var TAIL=[
+{id:'e1',n:'Complete ethics and professional training',k:'Ethics',d:'Ethics is built into the modules, and ICAB also requires ethics and professional development training. Articleship covers real work in accounting, audit, tax, IT and finance.'},
+{id:'m1',n:'Become an Associate Member (ACA) of ICAB',k:'Admin',d:'After passing all papers and completing articleship you qualify as a Chartered Accountant and ACA of ICAB.'}];
+var PATC={id:'t1',n:'Complete the Pre-Articleship Training Course (PATC)',k:'Training',d:'A mandatory one-month course on Audit and Assurance and English communication, so you are ready from the first day at the CA firm.'};
+var FIRM={id:'f1',n:'Find an approved CA firm and register as an articled student',k:'Admin',d:'ICAB guides you to approved CA firms. Registration is completed with your firm’s support, and a monthly allowance is paid to articled students.'};
+function ex(a,ids){return a.filter(function(x){return ids.indexOf(x.id)<0})}
+var CS='Seven papers, computer-based objective exams (MCQ, scenario, calculation)';
+var D={
+icab:{intro:'The ICAB CA has three exam levels (Certificate, Professional, Advanced), mandatory articleship at an approved CA firm, and ethics training. <b>Your route depends on your academic background</b>, so pick one below. Based on ICAB’s “How to become a CA” brochure published 25 September 2024. Confirm current rules at <a href="https://www.icab.org.bd/students" target="_blank" rel="noopener">icab.org.bd/students</a>.',
+routes:{
+grad:{name:'Graduate (honours / masters)',tag:'Any discipline',blurb:'For graduates and post-graduates of any discipline. Articleship is three years, and exams run alongside it.',stages:[
+{t:'Check eligibility',s:'',n:[
+{id:'g1',n:'Meet the academic criteria',k:'Admin',d:'Graduate or post-graduate in any discipline with at least 7 points in total and at least 2 points at each level up to graduation, from a recognised board or university. First class (CGPA 3 or above out of 4) scores 3 points and second class scores 2; SSC/HSC or O/A Level results count too. Check ICAB’s official points table.'},
+{id:'g2',n:'Claim university exemptions, if your department qualifies',k:'Admin',d:'ICAB has agreements (CPL/MoU) with many universities and departments that exempt specific Certificate papers, depending on batch and subject GPA. Apply with a department recommendation letter, attested transcripts and the other documents ICAB lists.'}]},
+{t:'Join a CA firm',s:'Articleship: three years',n:[FIRM,PATC,
+{id:'g4',n:'Complete articleship: three years',k:'Experience',d:'Three years. Training can be completed before the exams are finished.'}]},
+{t:'Certificate Level',s:CS+'. Skip any exempted papers.',n:CERT},{t:'Professional Level',s:'Seven papers',n:PROF},{t:'Advanced Level',s:'Two papers and the Case Study',n:ADV},{t:'Qualify',s:'',n:TAIL}]},
+hsc:{name:'HSC / A Level',tag:'Straight after school',blurb:'For students entering after HSC, A Level or equivalent. Articleship is four years (three and a half for top A Level results).',stages:[
+{t:'Check eligibility',s:'',n:[
+{id:'h1',n:'Meet the academic criteria',k:'Admin',d:'Aggregated minimum GPA 8 across SSC and HSC, or equivalent combinations of O Level, A Level, SSC and HSC (for example minimum 36 O Level points in 5 to 7 subjects and 12 A Level points in up to 3 subjects). Confirm the current criteria with ICAB.'}]},
+{t:'Join a CA firm',s:'Articleship: four years',n:[FIRM,PATC,
+{id:'h3',n:'Complete articleship: four years',k:'Experience',d:'Four years, or three and a half years for candidates with at least A in three A Level subjects plus the required O Level results. Training can be completed before the exams are finished.'}]},
+{t:'Certificate Level',s:CS,n:CERT},{t:'Professional Level',s:'Seven papers',n:PROF},{t:'Advanced Level',s:'Two papers and the Case Study',n:ADV},{t:'Qualify',s:'',n:TAIL}]},
+pas:{name:'Pre-articleship (PAS)',tag:'Current university students',blurb:'For current graduation or post-graduation students. You can sit exams up to Professional Level before joining a CA firm, and passing a level shortens your articleship.',stages:[
+{t:'While you are still studying',s:'Pre-Articled Student (PAS) programme',n:[
+{id:'a1',n:'Confirm you are eligible',k:'Admin',d:'You must meet ICAB’s normal entry criteria and be a current graduation or post-graduation student. A graduate now doing a postgraduate degree is also eligible.'},
+{id:'a2',n:'Register as a Pre-Articled Student and join coaching classes',k:'Admin',d:'PAS is a separate registration category from articled students. Classes are required, and you need 50% of the mandatory class attendance on a paper to sit its exam.'},
+{id:'a3',n:'Get your exemptions applied',k:'Admin',d:'If your department has an ICAB agreement, your exemptions (CPL) are awarded before you join articleship, so you can move on to other papers up to Professional Level.'}]},
+{t:'Certificate Level (as PAS)',s:CS+'. Enrol in as many papers as you like. No certificate is issued for papers passed.',n:CERT},
+{t:'Professional Level (as PAS)',s:'You can sit a Professional paper only after passing the corresponding Certificate paper.',n:PROF},
+{t:'Join articleship',s:'Within the validity window of your results',n:[
+{id:'a4',n:'Join a CA firm as an articled student',k:'Admin',d:'Papers you passed as a PAS are credited when you register. Results stay valid for one year from your last academic exam, so you must join articleship within that time.'},PATC,
+{id:'a5',n:'Complete articleship',k:'Experience',d:'Same period as your entry route if you passed no level (three years for graduates). It is 2.5 years (30 months) if you passed the Certificate Level, and 2 years (24 months) if you passed the Professional Level.'}]},
+{t:'Advanced Level',s:'Any remaining papers, then the Advanced Level',n:ADV},{t:'Qualify',s:'',n:TAIL}]},
+pro:{name:'ACCA / ICMAB members',tag:'Exemption route',blurb:'For qualified ACCA (affiliates/members) and ICMAB ACMA/FCMA members. Large exemptions, and articleship is two years.',stages:[
+{t:'Check eligibility and exemptions',s:'Credit for Prior Learning (CPL)',n:[
+{id:'r1',n:'Hold ACCA or ICMAB (ACMA/FCMA) membership',k:'Admin',d:'Class or CGPA of earlier academic qualifications is not considered. The exemption does not apply to members who gained membership through a pathway scheme with another professional body.'},
+{id:'r2',n:'Apply for exemptions',k:'Admin',d:'ICMAB members: all 7 Certificate papers, plus Business Strategy and Technology, Corporate Laws and Practices and IT Governance at Professional Level. Qualified ACCA affiliates/members: all 7 Certificate papers, plus Business Strategy and Technology and IT Governance, and Audit and Assurance if you have completed ACCA’s Advanced Audit and Assurance paper. ACCA candidates need 50% class attendance on each paper to sit it.'}]},
+{t:'Join a CA firm',s:'Articleship: two years',n:[FIRM,PATC,
+{id:'r3',n:'Complete articleship: two years',k:'Experience',d:'Two years. You can do articleship on or after completing the Professional Level, and members already in or past articleship can still claim the exemptions.'}]},
+{t:'Professional Level',s:'Remaining papers. Corporate Laws and Practices is exempt for ICMAB members, and Audit and Assurance for ACCA members who completed Advanced Audit and Assurance.',n:ex(PROF,['p5','p7'])},
+{t:'Advanced Level',s:'Two papers and the Case Study',n:ADV},{t:'Qualify',s:'',n:TAIL}]}
+}},
+acca:{intro:'The Association of Chartered Certified Accountants (ACCA) qualification has three exam levels, an Ethics and Professional Skills module, and 36 months of practical experience. Official source: <a href="https://www.accaglobal.com" target="_blank" rel="noopener">accaglobal.com</a>',
+stages:[
+{t:'Stage 1: Get started',s:'Before any exam',n:[
+{id:'a1',n:'Check entry requirements',k:'Admin',d:'ACCA has defined entry routes depending on your prior education. Check the current ones on ACCA’s site.'},
+{id:'a2',n:'Register as an ACCA student',k:'Admin',d:'Create your myACCA account, register, and pay the registration fee. Your annual subscription keeps you active.'}]},
+{t:'Stage 2: Applied Knowledge',s:'Three computer-based exams',n:[
+{id:'a3',n:'Business and Technology (BT)',k:'Exam',d:'How organisations work: governance, ethics, and business functions.'},
+{id:'a4',n:'Management Accounting (MA)',k:'Exam',d:'Costing, budgeting and basic performance measurement.'},
+{id:'a5',n:'Financial Accounting (FA)',k:'Exam',d:'Double entry and preparing basic financial statements.'}]},
+{t:'Stage 3: Applied Skills',s:'Six exams, building technical competence',n:[
+{id:'a6',n:'Corporate and Business Law (LW)',k:'Exam',d:'Legal framework for business. Local variants exist for some countries.'},
+{id:'a7',n:'Performance Management (PM)',k:'Exam',d:'Advanced management accounting and decision making.'},
+{id:'a8',n:'Taxation (TX)',k:'Exam',d:'Tax rules for a specific tax year and jurisdiction. Variants exist per country.'},
+{id:'a9',n:'Financial Reporting (FR)',k:'Exam',d:'IFRS-based preparation of single and group financial statements.'},
+{id:'a10',n:'Audit and Assurance (AA)',k:'Exam',d:'Audit process, risk, evidence and reporting.'},
+{id:'a11',n:'Financial Management (FM)',k:'Exam',d:'Financial decisions, investment appraisal and risk management.'}]},
+{t:'Stage 4: Strategic Professional – Essentials',s:'Two compulsory exams',n:[
+{id:'a12',n:'Strategic Business Leader (SBL)',k:'Exam',d:'Case-based leadership, governance, strategy and ethics exam, assessed on professional skills as well as technical content.'},
+{id:'a13',n:'Strategic Business Reporting (SBR)',k:'Exam',d:'Advanced IFRS reporting and its wider business implications.'}]},
+{t:'Stage 5: Strategic Professional – Options',s:'Choose two',n:[
+{id:'a14',n:'Option 1 of 2',k:'Exam',d:'Choose from Advanced Financial Management (AFM), Advanced Performance Management (APM), Advanced Taxation (ATX) or Advanced Audit and Assurance (AAA). Pick based on the career area you intend to work in.'},
+{id:'a15',n:'Option 2 of 2',k:'Exam',d:'Choose a second option from the same list.'}]},
+{t:'Stage 6: Qualify',s:'Alongside or after the exams',n:[
+{id:'a16',n:'Ethics and Professional Skills module',k:'Ethics',d:'Online module covering ethics and professional skills. Required before you can become a member.'},
+{id:'a17',n:'Complete 36 months of practical experience (PER)',k:'Experience',d:'Record experience through the Practical Experience Requirement with an approved practical experience supervisor. Experience can be gained before, during or after the exams.'},
+{id:'a18',n:'Apply for membership (ACCA)',k:'Admin',d:'Once exams, ethics module and experience are complete, apply for membership.'}]}
+]}};
+var rt='grad',cur='icab',K='roadmap-progress-v1',S={},sel=null,idx={};
+try{S=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){S={}}
+function $(i){return document.getElementById(i)}
+function save(){try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}}
+function SL(){return cur==='icab'?D.icab.routes[rt].stages:D[cur].stages}
+function hs(){try{location.hash=cur==='icab'?'icab-'+rt:cur}catch(e){}}
+function render(){
+var d=D[cur],rs=D.icab.routes,rh='',h='',tot=0,dn=0;idx={};
+if(cur==='icab'){for(var q in rs)rh+='<button data-r="'+q+'" class="'+(q===rt?'on':'')+'" title="'+rs[q].tag+'">'+rs[q].name+'</button>'}
+$('routes').innerHTML=rh;
+$('blurb').textContent=cur==='icab'?rs[rt].blurb:'';
+$('about').innerHTML=d.intro;
+SL().forEach(function(st,si){
+var n=st.n,half=Math.ceil(n.length/2),L='',R='',sd=0;
+n.forEach(function(x,i){tot++;idx[x.id]=x;var c=S[x.id];if(c){dn++;sd++}
+var b='<button class="k k-'+x.k+(c?' done':'')+(sel===x.id?' sel':'')+'" data-id="'+x.id+'">'+x.n+'</button>';
+if(i<half)L+=b;else R+=b});
+h+='<div class="row"><div class="hub"><button class="main" data-s="'+si+'">'+st.t+'<small>'+sd+' / '+n.length+' done</small></button></div><div class="side l">'+L+'</div><div class="side r">'+R+'</div></div>'});
+$('map').innerHTML=h;
+$('fill').style.width=(tot?dn/tot*100:0)+'%';
+$('pct').textContent=dn+' of '+tot+' steps done';
+['icab','acca'].forEach(function(k){$('t-'+k).className=k===cur?'on':''});
+}
+function show(h){var p=$('panel');p.innerHTML='<button class="x" aria-label="Close">×</button>'+h;p.classList.add('open')}
+function closeP(){sel=null;$('panel').classList.remove('open');render()}
+function openNode(id){sel=id;var x=idx[id];show('<span class="tag k-'+x.k+'">'+x.k+'</span><h3>'+x.n+'</h3><p>'+x.d+'</p><button class="dbtn" data-id="'+id+'">'+(S[id]?'Mark as not done':'Mark as done')+'</button>');render()}
+function openStage(si){var st=SL()[si],c=0;st.n.forEach(function(x){if(S[x.id])c++});sel=null;show('<span class="tag">Stage</span><h3>'+st.t+'</h3><p>'+(st.s||'')+'</p><p><b>'+c+' of '+st.n.length+'</b> steps done</p>');render()}
+$('map').addEventListener('click',function(e){
+var k=e.target.closest('.k');if(k){openNode(k.dataset.id);return}
+var m=e.target.closest('.main');if(m)openStage(+m.dataset.s)});
+$('panel').addEventListener('click',function(e){
+if(e.target.closest('.x')){closeP();return}
+var b=e.target.closest('.dbtn');if(b){var id=b.dataset.id;S[id]=!S[id];save();openNode(id)}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeP()});
+['icab','acca'].forEach(function(k){$('t-'+k).onclick=function(){cur=k;hs();closeP()}});
+$('reset').onclick=function(){SL().forEach(function(s){s.n.forEach(function(x){delete S[x.id]})});save();closeP()};
+$('routes').addEventListener('click',function(e){var b=e.target.closest('button');if(b){rt=b.dataset.r;hs();closeP()}});
+var h0=(location.hash||'').replace('#','').split('-');if(D[h0[0]])cur=h0[0];if(h0[1]&&D.icab.routes[h0[1]])rt=h0[1];
+render();
+</script>
+</body>
+</html>

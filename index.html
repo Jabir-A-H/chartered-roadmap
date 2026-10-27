@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chartered Roadmap — Visual Roadmaps for Professional Qualifications</title>
+  <meta name="description" content="Interactive roadmaps, exam levels, articleship pathways, and study guides for ICAB CA, ACCA, and professional finance qualifications.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ffd43b%22/><text y=%2270%22 x=%2220%22 font-size=%2260%22 font-weight=%22bold%22 font-family=%22system-ui%22>CR</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-group" aria-label="Chartered Roadmap Homepage">
+        <div class="brand-icon">CR</div>
+        <span class="brand-title">Chartered Roadmap</span>
+      </a>
+      
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode" title="Toggle theme">
+          <span id="theme-icon">🌓</span>
+        </button>
+        <a href="https://github.com/Jabir-A-H/chartered-roadmap" id="gh-link" class="btn-link" target="_blank" rel="noopener">
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content & Hero Controls -->
+  <main>
+    <section class="controls-container">
+      <h1 class="hero-title">Professional Accountancy Roadmaps</h1>
+      <p class="hero-subtitle">Step-by-step visual guides through exam stages, articleship training, and ethics modules. Pick your path and tick off milestones as you advance.</p>
+
+      <!-- Qualification Tabs -->
+      <nav class="tabs-segmented" aria-label="Choose qualification">
+        <button id="tab-icab" class="tab-btn active" data-qual="icab">ICAB CA (Bangladesh)</button>
+        <button id="tab-acca" class="tab-btn" data-qual="acca">ACCA (Global)</button>
+      </nav>
+
+      <!-- Route Selector (for ICAB & Multi-track qualifications) -->
+      <div id="route-selector-container" class="routes-wrapper">
+        <span class="route-label">Entry Route / Stream</span>
+        <div id="route-pills" class="routes-pills"></div>
+        <p id="route-blurb" class="route-blurb"></p>
+      </div>
+
+      <!-- Progress Tracking Card -->
+      <div class="progress-card">
+        <div class="progress-header">
+          <span id="progress-text">0 of 0 milestones completed</span>
+          <button id="reset-progress-btn" class="btn-text">Reset Progress</button>
+        </div>
+        <div class="progress-bar-track">
+          <div id="progress-bar-fill" class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Category Legend -->
+      <div class="legend-wrapper" aria-label="Roadmap milestone categories">
+        <span class="legend-tag cat-Exam">Exam</span>
+        <span class="legend-tag cat-Experience">Experience / Articleship</span>
+        <span class="legend-tag cat-Admin">Admin & Eligibility</span>
+        <span class="legend-tag cat-Training">Training</span>
+        <span class="legend-tag cat-Ethics">Ethics</span>
+      </div>
+    </section>
+
+    <!-- Interactive Node Map Viewport -->
+    <section id="roadmap-tree" class="map-viewport" aria-label="Interactive qualification roadmap"></section>
+  </main>
+
+  <!-- Interactive Details Drawer / Side Panel -->
+  <aside id="details-drawer" class="details-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <button id="drawer-close-btn" class="drawer-close" aria-label="Close details panel">×</button>
+    <div class="drawer-header">
+      <span id="drawer-category" class="legend-tag">Category</span>
+      <h2 id="drawer-title" class="drawer-title">Node Title</h2>
+    </div>
+    <div id="drawer-body" class="drawer-body">Node details and syllabus description.</div>
+    <button id="drawer-toggle-btn" class="drawer-action-btn">Mark as Completed</button>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-disclaimer">
+        <strong>Official Syllabus Notice:</strong> ICAB CA requirements are aligned with the official <em>"How to become a CA"</em> framework (25 September 2024 circular). ACCA paths reflect standard ACCA Global syllabus structures. Regulations, exam sittings, exemptions, and fees are continually updated by governing bodies. Always verify official circulars on <a href="https://www.icab.org.bd" target="_blank" rel="noopener">icab.org.bd</a> or <a href="https://www.accaglobal.com" target="_blank" rel="noopener">accaglobal.com</a>.
+      </div>
+      <div class="footer-links">
+        <span>Chartered Roadmap • Visual qualification roadmaps for future Chartered Accountants.</span>
+        <div class="footer-nav">
+          <a href="https://github.com/Jabir-A-H/chartered-roadmap" id="footer-contrib-link" target="_blank" rel="noopener">Contribute on GitHub</a>
+          <a href="#tab-icab" id="back-to-top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bundled Datasets (Offline & file:/// support) -->
+  <script src="data/roadmaps.js"></script>
+  <!-- Application Controller -->
+  <script src="app.js"></script>
+</body>
+</html>
