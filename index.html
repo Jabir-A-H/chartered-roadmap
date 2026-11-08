@@ -12,7 +12,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="header-container">
-      <a href="#" class="brand-group" aria-label="Chartered Roadmap Homepage">
+      <a href="javascript:void(0)" class="brand-group" id="brand-home" aria-label="Chartered Roadmap Homepage">
         <div class="brand-icon">CR</div>
         <span class="brand-title">Chartered Roadmap</span>
       </a>
@@ -68,12 +68,18 @@
       </div>
     </section>
 
+    <!-- Contextual Sub-Roadmap Navigation Banner -->
+    <div id="subroadmap-banner" class="subroadmap-banner" style="display: none;"><button id="subroadmap-back-btn" class="subroadmap-back-btn"><span class="back-arrow">←</span> Return to ICAB CA Exam Roadmap</button><span class="subroadmap-indicator-tag">Companion Practical Skills</span></div>
+
     <!-- Interactive Node Map Viewport -->
     <section id="roadmap-tree" class="map-viewport" aria-label="Interactive qualification roadmap"></section>
   </main>
 
+  <!-- Drawer Backdrop / Scrim -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
   <!-- Interactive Details Drawer / Side Panel -->
-  <aside id="details-drawer" class="details-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+  <aside id="details-drawer" class="details-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
     <button id="drawer-close-btn" class="drawer-close" aria-label="Close details panel">×</button>
     <div class="drawer-header">
       <span id="drawer-category" class="legend-tag">Category</span>
@@ -93,7 +99,7 @@
         <span>Chartered Roadmap • Visual qualification roadmaps for future Chartered Accountants.</span>
         <div class="footer-nav">
           <a href="https://github.com/Jabir-A-H/chartered-roadmap" id="footer-contrib-link" target="_blank" rel="noopener">Contribute on GitHub</a>
-          <a href="#tab-icab" id="back-to-top">Back to top ↑</a>
+          <a href="javascript:void(0)" id="back-to-top">Back to top ↑</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,748 @@
+import json
+import os
+
+certificate_nodes = [
+    {
+        "id": "c1",
+        "name": "Accounting",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "1.5 Hours",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["IFRS Conceptual Framework", "ISSB Standards", "Sustainability Considerations", "Public Financial Management (PFM)"],
+        "specificationGrid": [
+            {"area": "Concepts, principles & standard-setting", "weight": "15%"},
+            {"area": "Maintaining financial records", "weight": "20%"},
+            {"area": "Adjustments to accounting records", "weight": "20%"},
+            {"area": "Preparing financial statements", "weight": "40%"},
+            {"area": "Accounting for governmental & non-profit entities", "weight": "5%"}
+        ],
+        "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals."
+    },
+    {
+        "id": "c2",
+        "name": "Assurance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "1.5 Hours",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Double Materiality", "ESG Assurance", "ISSA 5000", "GDPR", "Professional Scepticism"],
+        "specificationGrid": [
+            {"area": "Concept, process & need for assurance", "weight": "20%"},
+            {"area": "Internal controls & information flows", "weight": "25%"},
+            {"area": "Gathering evidence on assurance engagements", "weight": "35%"},
+            {"area": "Professional ethics & regulatory issues", "weight": "20%"}
+        ],
+        "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes."
+    },
+    {
+        "id": "c3",
+        "name": "Business, Technology and Finance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "1.5 Hours",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Digital Transformation", "Cloud Enterprise", "CSR & Sustainable Business", "Fintech"],
+        "specificationGrid": [
+            {"area": "Business objectives & functions", "weight": "10%"},
+            {"area": "Organisational & governance structures", "weight": "10%"},
+            {"area": "Role of finance & financial markets", "weight": "25%"},
+            {"area": "Key issues for the accounting profession & technology", "weight": "55%"}
+        ],
+        "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR)."
+    },
+    {
+        "id": "c4",
+        "name": "Management Information",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "1.5 Hours",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Data Analytics", "Predictive Variance", "Performance Metrics", "BI"],
+        "specificationGrid": [
+            {"area": "Costing and pricing", "weight": "20%"},
+            {"area": "Budgeting and forecasting", "weight": "20%"},
+            {"area": "Performance management", "weight": "25%"},
+            {"area": "External business environment & analytics", "weight": "35%"}
+        ],
+        "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance."
+    },
+    {
+        "id": "c5",
+        "name": "Principles of Taxation",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "1.5 Hours",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Income Tax Act 2023", "VAT Act 2012", "Withholding Tax (TDS)", "AML"],
+        "specificationGrid": [
+            {"area": "Ethics, administration & general concepts", "weight": "10–15%"},
+            {"area": "Income taxation of individuals & employees", "weight": "15–20%"},
+            {"area": "Income taxation of businesses & companies", "weight": "20–25%"},
+            {"area": "Value Added Tax (VAT), Supplementary Duty & Customs", "weight": "40–55%"}
+        ],
+        "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection."
+    },
+    {
+        "id": "c6",
+        "name": "Business Laws",
+        "category": "Exam",
+        "marks": 50,
+        "duration": "1.0 Hour",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Companies Act 1994", "Negotiable Instruments", "Commercial Contracts"],
+        "specificationGrid": [
+            {"area": "Companies Act 1994", "weight": "15 Marks (30%)"},
+            {"area": "Contract Act 1872 & Sale of Goods Act 1930", "weight": "15 Marks (30%)"},
+            {"area": "Negotiable Instruments Act 1881", "weight": "10 Marks (20%)"},
+            {"area": "Partnership Act 1932", "weight": "10 Marks (20%)"}
+        ],
+        "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights."
+    },
+    {
+        "id": "c7",
+        "name": "Information Technology",
+        "category": "Exam",
+        "marks": 50,
+        "duration": "1.0 Hour",
+        "frequency": "3 sittings / year",
+        "format": "Computer-Based Assessment (Objective / Scenario)",
+        "modernThemes": ["Information Systems Architecture", "Cloud Infrastructure", "Cybersecurity Foundations", "Disaster Recovery"],
+        "specificationGrid": [
+            {"area": "Building Information Systems", "weight": "15 Marks (30%)"},
+            {"area": "Managing Information Systems", "weight": "15 Marks (30%)"},
+            {"area": "Information Technologies & Hardware", "weight": "10 Marks (20%)"},
+            {"area": "Business Continuity & Disaster Recovery", "weight": "10 Marks (20%)"}
+        ],
+        "linkedRoadmaps": [
+            {
+                "id": "icab-it-labs",
+                "route": "cl_labs",
+                "targetStageId": "cl-practical-labs",
+                "title": "Certificate IT Practical Labs",
+                "badge": "Practical Labs Available ↗",
+                "description": "2 hands-on workshops: QuickBooks/Sage ERP setup & Applied Financial Excel Modeling."
+            }
+        ],
+        "description": "Information systems architecture, SDLC, cloud infrastructure, cybersecurity foundations, and disaster recovery (50 marks / 1.0 hr). Assessment is conducted via computer-based objective and scenario testing."
+    }
+]
+
+professional_nodes = [
+    {
+        "id": "p1",
+        "name": "Financial Accounting and Reporting",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["IFRS / IAS", "IPSAS Public Sector", "Islamic Accounting (AAOIFI)", "IFRS S1/S2"],
+        "specificationGrid": [
+            {"area": "Conceptual framework & reporting ethics", "weight": "5–10%"},
+            {"area": "Single entity financial statements (IFRS)", "weight": "40–50%"},
+            {"area": "Consolidated financial statements (Group accounts)", "weight": "25–35%"},
+            {"area": "Public sector accounting (IPSAS)", "weight": "5–10%"},
+            {"area": "Islamic Accounting principles", "weight": "5–10%"}
+        ],
+        "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products."
+    },
+    {
+        "id": "p2",
+        "name": "Audit and Assurance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["ISA Standards", "Automated IS Controls", "Forensic Diagnostics", "GDPR"],
+        "specificationGrid": [
+            {"area": "Legal, professional ethics & acceptance", "weight": "20–25%"},
+            {"area": "Planning & performing audit engagements (ISA)", "weight": "50–60%"},
+            {"area": "Concluding & reporting on engagements", "weight": "20–25%"}
+        ],
+        "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting."
+    },
+    {
+        "id": "p3",
+        "name": "Business Planning: Taxation & Compliance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Transfer Pricing", "International Tax", "Alternative Dispute Resolution (ADR)"],
+        "specificationGrid": [
+            {"area": "Advanced corporate income tax & transfer pricing", "weight": "50–60%"},
+            {"area": "Advanced VAT planning & compliance", "weight": "25–30%"},
+            {"area": "Customs Act, tariffs & cross-border fiscal policy", "weight": "15–20%"}
+        ],
+        "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution."
+    },
+    {
+        "id": "p4",
+        "name": "Financial Management",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Islamic Financial Modes (Sukuk)", "Treasury & Derivatives", "Green Financing", "WACC"],
+        "specificationGrid": [
+            {"area": "Business finance & Islamic financial instruments", "weight": "30%"},
+            {"area": "Treasury and financial risk management", "weight": "35%"},
+            {"area": "Investment appraisal, DCF & business valuation", "weight": "35%"}
+        ],
+        "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing."
+    },
+    {
+        "id": "p5",
+        "name": "Business Strategy and Technology",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["AI Disruption", "Platform Economics", "ESG Business Models"],
+        "specificationGrid": [
+            {"area": "Strategic formulation & environmental analysis", "weight": "30–40%"},
+            {"area": "Strategic choice & business model innovation", "weight": "30–40%"},
+            {"area": "Strategic implementation, monitoring & control", "weight": "20–30%"}
+        ],
+        "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking."
+    },
+    {
+        "id": "p6",
+        "name": "Corporate Laws and Practices",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Financial Reporting Act 2015", "FRC Governance", "BSEC Regulations", "Banking Acts"],
+        "specificationGrid": [
+            {"area": "Companies Act 1994 & secretarial practice", "weight": "30%"},
+            {"area": "Securities and Exchange Commission (BSEC) laws", "weight": "20%"},
+            {"area": "Financial Reporting Act (FRA) 2015 & FRC rules", "weight": "15%"},
+            {"area": "Banking Companies Act & financial institution laws", "weight": "20%"},
+            {"area": "Other corporate statutes & winding up", "weight": "15%"}
+        ],
+        "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices."
+    },
+    {
+        "id": "p7",
+        "name": "IT Governance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "4.0 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written & IS Audit Technical Paper",
+        "modernThemes": ["COBIT & ISO 27001", "ISACA CISA Standards", "Banking CAATs", "Cloud Forensics"],
+        "specificationGrid": [
+            {"area": "IT policies, legal framework & professional ethics", "weight": "15 Marks"},
+            {"area": "MIS & emerging technologies (AI, Blockchain, Big Data)", "weight": "15 Marks"},
+            {"area": "IT governance frameworks (COBIT, ISO 27001, ITIL)", "weight": "20 Marks"},
+            {"area": "Information systems security & forensics", "weight": "25 Marks"},
+            {"area": "Information systems auditing (ISACA & CAATs)", "weight": "25 Marks"}
+        ],
+        "linkedRoadmaps": [
+            {
+                "id": "icab-it-labs",
+                "route": "pl_labs",
+                "targetStageId": "pl-practical-labs",
+                "title": "Professional IT Practical Labs",
+                "badge": "Practical Labs Available ↗",
+                "description": "3 hands-on workshops: Power BI/AI, Cybersecurity Forensics & Core Banking CAATs."
+            }
+        ],
+        "description": "Extended 4.0-hour technical examination covering IT policies, ICT Act, COBIT, ISO 27001 governance frameworks, cybersecurity architecture, digital forensics, and IS auditing under ISACA standards."
+    }
+]
+
+advanced_nodes = [
+    {
+        "id": "v1",
+        "name": "Corporate Reporting",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Advanced Technical & Integrated Case Paper",
+        "modernThemes": ["ISSB (IFRS S1 & S2)", "ISSA 5000", "Forensic Analysis", "Group Consolidations"],
+        "specificationGrid": [
+            {"area": "Compliance & technical reporting (IFRS, IPSAS, ISSB)", "weight": "40–50%"},
+            {"area": "Financial statement analysis & forensic review", "weight": "10–15%"},
+            {"area": "Audit & assurance execution (Advanced ISA & ISSA 5000)", "weight": "30–40%"},
+            {"area": "Ethical leadership & public interest governance", "weight": "5–10%"}
+        ],
+        "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000."
+    },
+    {
+        "id": "v2",
+        "name": "Strategic Business Management and Leadership",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Advanced Strategic Paper",
+        "modernThemes": ["C-Suite Leadership", "Enterprise Risk Management (ERM)", "ESG Strategy"],
+        "specificationGrid": [
+            {"area": "Business & digital strategy, leadership & change", "weight": "30–40%"},
+            {"area": "Financial strategy, treasury & risk engineering", "weight": "25–35%"},
+            {"area": "Corporate reporting evaluation & investor relations", "weight": "15–25%"},
+            {"area": "Assurance, internal audit & corporate governance", "weight": "10–15%"}
+        ],
+        "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level."
+    },
+    {
+        "id": "v3",
+        "name": "Case Study",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "4.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Capstone 4.5-Hour Unseen Corporate Case Simulation",
+        "modernThemes": ["Boardroom Advisory", "Real-Time Corporate Turnaround", "Multi-Variable Modeling"],
+        "specificationGrid": [
+            {"area": "Strategic & commercial environment diagnosis", "weight": "25%"},
+            {"area": "Financial reconstruction & valuation metrics", "weight": "25%"},
+            {"area": "Enterprise risk mitigation & ethical resolution", "weight": "25%"},
+            {"area": "Executive boardroom report & strategic recommendations", "weight": "25%"}
+        ],
+        "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards."
+    }
+]
+
+qualification_nodes = [
+    {
+        "id": "e1",
+        "name": "Ethics & Professional Development",
+        "category": "Ethics",
+        "description": "Complete mandatory professional ethics modules, IESBA Code of Ethics assessments, and continuous professional development (CPD) onboarding requirements."
+    },
+    {
+        "id": "m1",
+        "name": "ICAB Associate Membership (ACA)",
+        "category": "Admin",
+        "description": "Submit articleship practical training logbook verification and official exam transcripts to be formally admitted as an Associate Chartered Accountant (ACA)."
+    }
+]
+
+grad_stages = [
+    {
+        "id": "eligibility",
+        "title": "Check Eligibility",
+        "subtitle": "Academic criteria & university credit exemptions",
+        "nodes": [
+            {
+                "id": "g1",
+                "name": "Meet Academic Criteria",
+                "category": "Admin",
+                "description": "Graduation or post-graduation in any discipline with at least 7 points in total and at least 2 points at each level up to graduation from a recognised university (CGPA 3.0+ = 3 points, CGPA 2.0-2.99 = 2 points)."
+            },
+            {
+                "id": "g2",
+                "name": "Claim University Exemptions (CPL)",
+                "category": "Admin",
+                "description": "If your university department has an ICAB MoU or Credit for Prior Learning (CPL) agreement (e.g. DU, JU, JnU, CU, RU, BUP, NSU, BRAC), submit transcripts to claim subject-wise Certificate Level exemptions."
+            }
+        ]
+    },
+    {
+        "id": "articleship-entry",
+        "title": "Join a CA Firm",
+        "subtitle": "Articleship duration: 3 Years",
+        "nodes": [
+            {
+                "id": "f1",
+                "name": "Register with an Approved CA Firm",
+                "category": "Admin",
+                "description": "Secure a position as an articled student at an ICAB-approved Chartered Accountancy firm. Disburses the mandatory monthly student allowance prescribed by ICAB."
+            },
+            {
+                "id": "t1",
+                "name": "Pre-Articleship Training Course (PATC)",
+                "category": "Training",
+                "description": "Mandatory 1-month intensive course on Audit & Assurance fundamentals and English business communication before commencing firm client duties."
+            },
+            {
+                "id": "g4",
+                "name": "Complete 3-Year Articleship",
+                "category": "Experience",
+                "description": "Undergo 3 full years (36 months) of supervised audit, tax, advisory, and accounting practical training at the firm alongside examination attempts."
+            }
+        ]
+    },
+    {
+        "id": "certificate-level",
+        "title": "Certificate Level (CL)",
+        "subtitle": "7 computer-based objective exams (600 marks total)",
+        "nodes": certificate_nodes
+    },
+    {
+        "id": "professional-level",
+        "title": "Professional Level (PL)",
+        "subtitle": "7 application-focused technical papers (700 marks total)",
+        "nodes": professional_nodes
+    },
+    {
+        "id": "advanced-level",
+        "title": "Advanced Level (AL)",
+        "subtitle": "2 integrated strategic papers & the Capstone Case Study (300 marks total)",
+        "nodes": advanced_nodes
+    },
+    {
+        "id": "qualification",
+        "title": "Qualify as a Chartered Accountant",
+        "subtitle": "Membership & Designation",
+        "nodes": qualification_nodes
+    }
+]
+
+hsc_stages = [
+    {
+        "id": "eligibility",
+        "title": "Check Eligibility",
+        "subtitle": "Secondary education GPA requirements",
+        "nodes": [
+            {
+                "id": "h1",
+                "name": "Academic Merit Requirements",
+                "category": "Admin",
+                "description": "Minimum aggregate GPA 8.0 in SSC & HSC combined (min. GPA 3.5 each), or minimum 36 O Level points (5-7 subjects) and 12 A Level points (up to 3 subjects)."
+            }
+        ]
+    },
+    {
+        "id": "articleship-entry",
+        "title": "Join a CA Firm",
+        "subtitle": "Articleship duration: 4 Years",
+        "nodes": [
+            {
+                "id": "f1",
+                "name": "Register with an Approved CA Firm",
+                "category": "Admin",
+                "description": "Join an ICAB-approved firm directly. Fast-track to 3.5 years if achieving Grade A in three A Level subjects with required O Levels."
+            },
+            {
+                "id": "t1",
+                "name": "Pre-Articleship Training Course (PATC)",
+                "category": "Training",
+                "description": "Mandatory 1-month course on Audit & Assurance fundamentals and English business communication."
+            },
+            {
+                "id": "h3",
+                "name": "Complete 4-Year Articleship",
+                "category": "Experience",
+                "description": "4 full years (48 months) of hands-on articleship training concurrently with examination attempts (3.5 years for high A-Level achievers)."
+            }
+        ]
+    },
+    {
+        "id": "certificate-level",
+        "title": "Certificate Level (CL)",
+        "subtitle": "7 computer-based objective exams (600 marks total)",
+        "nodes": certificate_nodes
+    },
+    {
+        "id": "professional-level",
+        "title": "Professional Level (PL)",
+        "subtitle": "7 application-focused technical papers (700 marks total)",
+        "nodes": professional_nodes
+    },
+    {
+        "id": "advanced-level",
+        "title": "Advanced Level (AL)",
+        "subtitle": "2 integrated strategic papers & the Capstone Case Study (300 marks total)",
+        "nodes": advanced_nodes
+    },
+    {
+        "id": "qualification",
+        "title": "Qualify as a Chartered Accountant",
+        "subtitle": "Membership & Designation",
+        "nodes": qualification_nodes
+    }
+]
+
+pas_stages = [
+    {
+        "id": "pas-enrollment",
+        "title": "While Enrolled in University",
+        "subtitle": "Pre-Articled Student (PAS) Registration",
+        "nodes": [
+            {
+                "id": "a1",
+                "name": "Verify PAS Eligibility",
+                "category": "Admin",
+                "description": "Must be currently enrolled in an undergraduate or post-graduate program at a recognised university and meet general academic point criteria."
+            },
+            {
+                "id": "a2",
+                "name": "Register as PAS & Attend Coaching",
+                "category": "Admin",
+                "description": "Register under the PAS wing. Maintain at least 50% mandatory class attendance per paper to earn examination eligibility."
+            },
+            {
+                "id": "a3",
+                "name": "Apply Academic Exemptions (CPL)",
+                "category": "Admin",
+                "description": "If your university department has an ICAB agreement, claim eligible exemptions early so you can advance to higher papers."
+            }
+        ]
+    },
+    {
+        "id": "pas-certificate",
+        "title": "Certificate Level (as PAS)",
+        "subtitle": "Sit exams without firm attachment (600 marks total)",
+        "nodes": certificate_nodes
+    },
+    {
+        "id": "pas-professional",
+        "title": "Professional Level (as PAS)",
+        "subtitle": "Sit corresponding PL papers after clearing matching CL papers",
+        "nodes": professional_nodes
+    },
+    {
+        "id": "pas-firm",
+        "title": "Transition to Articleship",
+        "subtitle": "Shortened duration based on papers cleared",
+        "nodes": [
+            {
+                "id": "a4",
+                "name": "Join CA Firm within 1 Year",
+                "category": "Admin",
+                "description": "PAS exam credits remain valid for 1 year from your final university exam date. Join an approved firm within this window."
+            },
+            {
+                "id": "t1",
+                "name": "Pre-Articleship Training Course (PATC)",
+                "category": "Training",
+                "description": "Complete the mandatory 1-month course prior to starting work."
+            },
+            {
+                "id": "a5",
+                "name": "Shortened Articleship Period",
+                "category": "Experience",
+                "description": "Articleship is reduced to 2.5 years (30 months) if Certificate Level is completed, and down to 2 years (24 months) if Professional Level is completed."
+            }
+        ]
+    },
+    {
+        "id": "advanced-level",
+        "title": "Advanced Level (AL)",
+        "subtitle": "2 integrated strategic papers & the Capstone Case Study (300 marks total)",
+        "nodes": advanced_nodes
+    },
+    {
+        "id": "qualification",
+        "title": "Qualify as a Chartered Accountant",
+        "subtitle": "Membership & Designation",
+        "nodes": qualification_nodes
+    }
+]
+
+pro_pl_nodes = [
+    {
+        "id": "p1",
+        "name": "Financial Accounting and Reporting",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["IFRS / IAS", "IPSAS Public Sector", "Islamic Accounting", "Group Accounts"],
+        "specificationGrid": [
+            {"area": "Conceptual framework & reporting ethics", "weight": "5–10%"},
+            {"area": "Single entity financial statements (IFRS)", "weight": "40–50%"},
+            {"area": "Consolidated financial statements (Group accounts)", "weight": "25–35%"},
+            {"area": "Public sector accounting (IPSAS)", "weight": "5–10%"},
+            {"area": "Islamic Accounting principles", "weight": "5–10%"}
+        ],
+        "description": "Complex IFRS/IAS standards, group accounts, consolidated statements, and practical accounting scenarios. Mandatory paper for both ACCA and ICMAB members."
+    },
+    {
+        "id": "p2",
+        "name": "Audit and Assurance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["ISA Standards", "Automated IS Controls", "Forensics"],
+        "specificationGrid": [
+            {"area": "Legal, ethics & acceptance", "weight": "20–25%"},
+            {"area": "Planning & performing (ISA)", "weight": "50–60%"},
+            {"area": "Concluding & reporting", "weight": "20–25%"}
+        ],
+        "description": "Audit execution under International Standards on Auditing (ISA). Required for all ICMAB members; required for ACCA members unless exempt via ACCA Advanced Audit and Assurance (AAA)."
+    },
+    {
+        "id": "p3",
+        "name": "Business Planning: Taxation & Compliance",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Transfer Pricing", "Income Tax Act 2023", "VAT Compliance", "Customs"],
+        "specificationGrid": [
+            {"area": "Corporate income tax & transfer pricing", "weight": "50–60%"},
+            {"area": "Advanced VAT planning", "weight": "25–30%"},
+            {"area": "Customs & cross-border fiscal policy", "weight": "15–20%"}
+        ],
+        "description": "Corporate tax planning, fiscal compliance, assessments, appeals, transfer pricing, and VAT administration in Bangladesh. Required for both ACCA and ICMAB members."
+    },
+    {
+        "id": "p4",
+        "name": "Financial Management",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Islamic Financial Instruments", "Treasury & Risk Management", "Valuation"],
+        "specificationGrid": [
+            {"area": "Business finance & Islamic instruments", "weight": "30%"},
+            {"area": "Treasury & risk management", "weight": "35%"},
+            {"area": "Investment appraisal & valuation", "weight": "35%"}
+        ],
+        "description": "Capital budgeting, cost of capital, dividend policy, financial restructuring, derivative hedging, and Islamic financial modes. Required for both ACCA and ICMAB members."
+    },
+    {
+        "id": "p6",
+        "name": "Corporate Laws and Practices",
+        "category": "Exam",
+        "marks": 100,
+        "duration": "3.5 Hours",
+        "frequency": "2 sittings / year",
+        "format": "Written Technical Paper",
+        "modernThemes": ["Companies Act 1994", "BSEC Regulations", "Financial Reporting Act 2015"],
+        "specificationGrid": [
+            {"area": "Companies Act 1994", "weight": "30%"},
+            {"area": "Securities & Exchange Commission laws", "weight": "20%"},
+            {"area": "FRA 2015 & FRC rules", "weight": "15%"},
+            {"area": "Banking Companies Act & financial institutions", "weight": "20%"},
+            {"area": "Other corporate laws & winding up", "weight": "15%"}
+        ],
+        "description": "Bangladesh Companies Act 1994, SEC guidelines, FRA 2015 / FRC oversight, and winding-up procedures. Required for ACCA candidates; exempt for ICMAB members."
+    }
+]
+
+pro_stages = [
+    {
+        "id": "exemption-verification",
+        "title": "Check Eligibility & Exemptions",
+        "subtitle": "Credit for Prior Learning (CPL) for qualified members",
+        "nodes": [
+            {
+                "id": "r1",
+                "name": "Verify Qualified Membership Status",
+                "category": "Admin",
+                "description": "Must hold full ACCA membership/affiliate status or ICMAB ACMA/FCMA designation (excluding reciprocal pathways via third bodies)."
+            },
+            {
+                "id": "r2",
+                "name": "Claim 7 Certificate + Selected PL Papers",
+                "category": "Admin",
+                "description": "100% exempt from all 7 Certificate papers. ICMAB: exempt from PL Business Strategy, Corporate Law, IT Governance. ACCA: exempt from PL Business Strategy, IT Governance, and Audit & Assurance (if AAA completed in ACCA)."
+            }
+        ]
+    },
+    {
+        "id": "pro-firm",
+        "title": "CA Firm Articleship",
+        "subtitle": "Reduced duration: 2 Years",
+        "nodes": [
+            {
+                "id": "f1",
+                "name": "Register with an Approved CA Firm",
+                "category": "Admin",
+                "description": "Register under an approved ICAB principal for the specialized 2-year articleship term."
+            },
+            {
+                "id": "t1",
+                "name": "Pre-Articleship Training Course (PATC)",
+                "category": "Training",
+                "description": "Complete mandatory 1-month training course in audit and communication."
+            },
+            {
+                "id": "r3",
+                "name": "Complete 2-Year Articleship",
+                "category": "Experience",
+                "description": "24 months of specialized articleship training (can be completed concurrently or following PL exam attempts)."
+            }
+        ]
+    },
+    {
+        "id": "pro-pl",
+        "title": "Remaining Professional Level Papers",
+        "subtitle": "Only non-exempt PL subjects",
+        "nodes": pro_pl_nodes
+    },
+    {
+        "id": "advanced-level",
+        "title": "Advanced Level (AL)",
+        "subtitle": "2 integrated strategic papers & the Capstone Case Study (300 marks total)",
+        "nodes": advanced_nodes
+    },
+    {
+        "id": "qualification",
+        "title": "Qualify as a Chartered Accountant",
+        "subtitle": "Dual membership credentials",
+        "nodes": qualification_nodes
+    }
+]
+
+icab_data = {
+    "id": "icab",
+    "title": "ICAB Chartered Accountancy (CA)",
+    "region": "Bangladesh",
+    "body": "The Institute of Chartered Accountants of Bangladesh (ICAB)",
+    "officialUrl": "https://www.icab.org.bd/page/icab-latest-syllabus",
+    "lastVerified": "2026-11-08",
+    "source": "ICAB Syllabus 2025 (Official 178-page Curriculum)",
+    "summary": "The ICAB CA qualification comprises 17 examinations (1,600 marks total) across Certificate (600 marks), Professional (700 marks), and Advanced (300 marks) levels, mandatory hands-on practical IT lab classes, articleship at an approved CA firm, and ethics training. Built on the Design Down Methodology (DDM) with embedded ESG, AI, and cybersecurity themes.",
+    "defaultRoute": "grad",
+    "routes": {
+        "grad": {
+            "id": "grad",
+            "name": "Graduate (Honours / Masters)",
+            "tag": "Any Discipline",
+            "blurb": "For graduates and post-graduates in any discipline. Articleship duration is 3 years, with exams taken in parallel.",
+            "stages": grad_stages
+        },
+        "hsc": {
+            "id": "hsc",
+            "name": "HSC / A Level",
+            "tag": "School Leavers",
+            "blurb": "Direct entry route after HSC, A Level, or equivalent. Articleship duration is 4 years (3.5 years for high A Level achievers).",
+            "stages": hsc_stages
+        },
+        "pas": {
+            "id": "pas",
+            "name": "Pre-Articleship Student (PAS)",
+            "tag": "Current University Students",
+            "blurb": "For enrolled university students. Sit exams up to Professional Level before joining a firm, unlocking shortened articleship (2.5 or 2 years).",
+            "stages": pas_stages
+        },
+        "pro": {
+            "id": "pro",
+            "name": "ACCA / ICMAB Members",
+            "tag": "Mutual Recognition & Exemption",
+            "blurb": "Direct pathways for ACCA affiliates/members and ICMAB ACMA/FCMA members. Major exemptions and 2-year articleship.",
+            "stages": pro_stages
+        }
+    }
+}
+
+target_path = os.path.join(os.path.dirname(__file__), "..", "data", "icab.json")
+with open(target_path, "w", encoding="utf-8") as f:
+    json.dump(icab_data, f, indent=2, ensure_ascii=False)
+
+print("data/icab.json successfully written and verified.")

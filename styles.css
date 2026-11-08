@@ -12,7 +12,7 @@
   --bg-subtle: #f1f1eb;
   --text-primary: #18181b;
   --text-secondary: #52525b;
-  --text-muted: #71717a;
+  --text-muted: #52525b;
   --border-color: #3f3f46;
   --border-subtle: #d4d4d8;
   --line-color: #a1a1aa;
@@ -53,7 +53,7 @@
   --bg-subtle: #22252e;
   --text-primary: #f4f4f5;
   --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-muted: #a1a1aa;
   --border-color: #71717a;
   --border-subtle: #3f3f46;
   --line-color: #52525b;
@@ -88,7 +88,7 @@
     --bg-subtle: #22252e;
     --text-primary: #f4f4f5;
     --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
+    --text-muted: #a1a1aa;
     --border-color: #71717a;
     --border-subtle: #3f3f46;
     --line-color: #52525b;
@@ -219,8 +219,8 @@ button {
   background: var(--bg-surface);
   border: 1.5px solid var(--border-subtle);
   color: var(--text-primary);
-  width: 36px;
-  height: 36px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -391,6 +391,12 @@ button {
   font-size: 0.8rem;
   text-decoration: underline;
   cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
 .btn-text:hover {
@@ -556,6 +562,51 @@ button {
   outline-offset: 2px;
 }
 
+/* Distinctive Sub-Roadmap Gateway Card */
+.node-card.has-subroadmap {
+  border-color: #4f46e5;
+  box-shadow: 2px 2px 0 #4f46e5;
+}
+
+.node-card.has-subroadmap:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3.5px 3.5px 0 #3730a3;
+  border-color: #4338ca;
+}
+
+[data-theme="dark"] .node-card.has-subroadmap {
+  border-color: #818cf8;
+  box-shadow: 2px 2px 0 #4f46e5;
+}
+
+[data-theme="dark"] .node-card.has-subroadmap:hover {
+  box-shadow: 3.5px 3.5px 0 #818cf8;
+  border-color: #a5b4fc;
+}
+
+/* Sub-Roadmap Indicator Badge on Node */
+.subroadmap-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1.5px solid #4f46e5;
+  margin-left: auto;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  line-height: 1.2;
+}
+
+[data-theme="dark"] .subroadmap-badge {
+  background: #1e1b4b;
+  color: #c7d2fe;
+  border-color: #818cf8;
+}
+
 /* Connecting dashed horizontal arms */
 .node-card::after {
   content: "";
@@ -579,7 +630,6 @@ button {
   background: var(--done-bg);
   border-color: var(--done-border);
   color: var(--done-text);
-  text-decoration: line-through;
 }
 
 .node-card.done .check-icon {
@@ -618,16 +668,22 @@ button {
 
 .drawer-close {
   position: absolute;
-  right: 14px;
-  top: 14px;
+  right: 12px;
+  top: 12px;
   background: none;
   border: none;
   font-size: 1.5rem;
   line-height: 1;
   color: var(--text-muted);
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 4px;
   border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
 .drawer-close:hover {
@@ -676,6 +732,417 @@ button {
   background: var(--done-bg);
   border-color: var(--done-border);
   color: var(--done-text);
+}
+
+/* ==========================================================================
+   Drawer Rich Content & 2025 Syllabus Enhancements
+   ========================================================================== */
+.drawer-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 14px;
+}
+
+.drawer-meta-pill {
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.drawer-meta-pill.pill-marks {
+  background: var(--pill-exam-bg);
+  color: var(--pill-exam-text);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.drawer-meta-pill.pill-duration {
+  background: var(--pill-training-bg);
+  color: var(--pill-training-text);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.drawer-meta-pill.pill-frequency {
+  background: var(--pill-exp-bg);
+  color: var(--pill-exp-text);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.drawer-meta-pill.pill-format {
+  background: var(--pill-ethics-bg);
+  color: var(--pill-ethics-text);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.drawer-section {
+  margin: 16px 0;
+}
+
+.drawer-section-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.drawer-theme-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.theme-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.drawer-desc p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.spec-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-retro-sm);
+}
+
+.spec-grid-table th,
+.spec-grid-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.spec-grid-table th {
+  background: var(--bg-subtle);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.74rem;
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.spec-grid-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-grid-table tr:hover td {
+  background: var(--bg-subtle);
+}
+
+/* Drawer Backdrop / Modal Scrim */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 45;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   Contextual Sub-Roadmap Banner & Navigation
+   ========================================================================== */
+.subroadmap-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  margin: 0 auto 28px;
+  max-width: 900px;
+  box-shadow: var(--shadow-retro-sm);
+}
+
+.subroadmap-back-btn {
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  box-shadow: 2px 2px 0 var(--border-color);
+  transition: var(--transition);
+}
+
+.subroadmap-back-btn:hover {
+  background: var(--bg-surface);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--border-color);
+}
+
+.subroadmap-back-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--border-color);
+}
+
+.subroadmap-back-btn:focus-visible {
+  outline: 3px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+.subroadmap-back-btn .back-arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.subroadmap-back-btn:hover .back-arrow {
+  transform: translateX(-2px);
+}
+
+.subroadmap-indicator-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #4f46e5;
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] .subroadmap-indicator-tag {
+  background: #1e1b4b;
+  color: #c7d2fe;
+  border-color: #818cf8;
+}
+
+/* ==========================================================================
+   Companion Practical Skills Callout in Drawer
+   ========================================================================== */
+.companion-card {
+  background: var(--bg-subtle);
+  border: 2px solid #4f46e5;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-top: 14px;
+  box-shadow: var(--shadow-retro-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+[data-theme="dark"] .companion-card {
+  border-color: #818cf8;
+  background: #151828;
+}
+
+.companion-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.companion-badge {
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #4f46e5;
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] .companion-badge {
+  background: #1e1b4b;
+  color: #c7d2fe;
+  border-color: #818cf8;
+}
+
+.companion-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 2px 0 0;
+  line-height: 1.3;
+}
+
+.companion-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.companion-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.companion-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+.companion-cta-btn {
+  background: #4f46e5;
+  color: #ffffff;
+  border: 2px solid #3730a3;
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 2px 2px 0 #1e1b4b;
+  transition: var(--transition);
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+.companion-cta-btn:hover {
+  background: #4338ca;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 #1e1b4b;
+}
+
+.companion-cta-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 #1e1b4b;
+}
+
+.companion-cta-btn:focus-visible {
+  outline: 3px solid #818cf8;
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .companion-cta-btn {
+  background: #6366f1;
+  color: #ffffff;
+  border-color: #818cf8;
+  box-shadow: 2px 2px 0 #000000;
+}
+
+[data-theme="dark"] .companion-cta-btn:hover {
+  background: #4f46e5;
+  box-shadow: 3px 3px 0 #000000;
+}
+
+/* Quarantined Legacy Embedded Labs Styles */
+.embedded-labs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.lab-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  box-shadow: var(--shadow-retro-sm);
+}
+
+.lab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.lab-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.lab-duration {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  background: var(--pill-training-bg);
+  color: var(--pill-training-text);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.lab-tools {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.lab-tool-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+
+.lab-activities {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  padding-left: 18px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.lab-activities li {
+  margin-bottom: 4px;
 }
 
 /* Site Footer */
@@ -774,3 +1241,64 @@ button {
     transform: translateY(0);
   }
 }
+
+/* ==========================================================================
+   Loading, Skeleton & System Error States
+   ========================================================================== */
+.loading-state,
+.error-state,
+.system-error-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-retro);
+  margin: 32px auto;
+  max-width: 540px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--accent-primary, #ffd43b);
+  border-radius: 50%;
+  animation: cr-spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+@keyframes cr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-primary {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 10px 22px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--accent-primary, #ffd43b);
+  color: #111;
+  box-shadow: var(--shadow-retro-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-retro);
+}
+
