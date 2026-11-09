@@ -5,26 +5,52 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Deployment](https://img.shields.io/badge/Deploy-Cloudflare%20Pages%20%7C%20GitHub%20Pages-blue.svg)](#deployment)
-[![Version](https://img.shields.io/badge/Version-1.5.0-blue.svg)](package.json)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](package.json)
 
 ---
 
 ## 🌟 Why Chartered Roadmap?
 
-Information for professional qualifications—such as Chartered Accountancy (CA) and ACCA—is notoriously scattered across lengthy PDF circulars, 180-page syllabus manuals, and institutional portals. Students face complex challenges:
-- **Multiple Entry Routes:** Graduate entry, HSC/A-Level direct entry, Pre-Articleship (PAS), and mutual professional exemptions.
-- **Concurrent Milestones:** Managing intensive articleship alongside multi-tier exams (Certificate, Professional, and Advanced levels).
+Information for professional qualifications—such as Chartered Accountancy (CA), ACCA, CFA, CMA, CISA, CPA, and beyond—is notoriously scattered across lengthy PDF circulars, 180-page syllabus manuals, and institutional portals. Students face complex challenges:
+- **Multiple Entry Routes & Disciplines:** Graduate entry, direct foundation routes, pre-articleship (PAS), elective disciplines (CPA BAR/ISC/TCP, CFA Level III pathways), and mutual professional exemptions.
+- **Concurrent Milestones:** Managing intensive articleship / practical experience alongside multi-tier exams (Certificate, Professional, and Advanced levels).
 - **Chapter-Level Study Tracking:** Moving beyond exam-level milestones to track specific chapters, syllabus areas, learning outcomes (CLOs), and study checklists.
 
 **Chartered Roadmap** gives aspirants a comprehensive, node-based progression map and interactive study tracker. Search across any topic, tap any milestone for syllabus breakdowns, and tick off topics as you master them—persisted locally in your browser.
 
 ---
 
-## 🗺️ 20 Available Roadmaps & Study Trackers
+## 🗺️ 46 Available Roadmaps & Study Trackers
 
-### 1. Full Professional Qualifications (2)
+### 1. Global & Statutory Professional Qualifications (28)
 - **[ICAB Chartered Accountancy (Curriculum 2025)](data/icab.json):** 17 examinations (1,600 marks), 5 IT practical labs, 4 entry routes (Graduate, HSC, PAS, Professional Exemption), and articleship milestones.
 - **[ACCA (Global)](data/acca.json):** 7 stages across Applied Knowledge, Applied Skills, Strategic Professional, EPSM ethics, and 36-month Practical Experience Requirement (PER).
+- **[CFA® Program](data/cfa.json):** Levels I, II & III with specialized pathways (Portfolio Management, Private Wealth, Private Markets) and practical skills modules.
+- **[CMA® (US)](data/cma.json):** Parts 1 & 2 covering financial planning, performance, analytics, and strategic financial management.
+- **[CISA®](data/cisa.json):** 5 updated job practice domains for information systems auditing, governance, and cyber risk.
+- **[CSAA Fellowship](data/csaa.json):** AAOIFI Islamic finance hallmark for Shari'ah advisory and auditing.
+- **[Uniform CPA Examination (Evolution)](data/cpa.json):** 3 Core exams (AUD, FAR, REG) + 1 Discipline elective (BAR, ISC, TCP).
+- **[CIA®](data/cia.json):** The IIA internal auditing benchmark aligned with 2025 Global Internal Audit Standards (GIAS).
+- **[FRM®](data/frm.json):** GARP financial risk management across market, credit, operational, and liquidity risks.
+- **[CGMA® / CIMA](data/cgma.json):** AICPA & CIMA management accounting via Traditional and Finance Leadership Program (FLP) routes.
+- **[ICMAB CMA](data/icmab.json):** Statutory Cost and Management Accountant in Bangladesh with fast-tracks for ICAB and ACCA.
+- **[ICSB Chartered Secretary](data/icsb.json):** Statutory corporate governance, secretarial practice, and capital markets compliance.
+- **[CISSP®](data/cissp.json):** (ISC)² cybersecurity leadership benchmark across 8 CBK domains.
+- **[CFE®](data/cfe.json):** ACFE anti-fraud examination, forensics, investigation, and financial crimes prevention.
+- **[CFP®](data/cfp.json):** CFP Board standard of excellence for financial planning and wealth management.
+- **[CAIA®](data/caia.json):** Alternative investment analysis (hedge funds, private equity, real estate, commodities).
+- **[CMT®](data/cmt.json):** Technical analysis, quantitative finance, and market behavior.
+- **[CIPA®](data/cipa.json):** AAOIFI Islamic accounting, auditing, and financial reporting fellowship.
+- **[CRMA®](data/crma.json):** The IIA risk management assurance and enterprise risk governance.
+- **[CRISC®](data/crisc.json):** ISACA IT risk identification, assessment, response, and control monitoring.
+- **[CGEIT®](data/cgeit.json):** ISACA enterprise IT governance and strategic alignment.
+- **[CDPSE®](data/cdpse.json):** ISACA data privacy solutions engineering and privacy-by-design.
+- **[PRM™](data/prm.json):** PRMIA quantitative and qualitative financial risk management.
+- **[ERP®](data/erp.json):** GARP physical and financial energy risk and commodity trading.
+- **[FPAC®](data/fpac.json):** AFP corporate financial planning, forecasting, and predictive modeling.
+- **[CTP®](data/ctp.json):** AFP corporate treasury, liquidity management, and working capital optimization.
+- **[ChFC®](data/chfc.json):** American College comprehensive financial consulting and wealth management.
+- **[ICMA CMA® & APA](data/icma.json):** Strategic cost management and accredited professional accountant pathways.
 
 ### 2. Certificate Level Individual Paper Study Trackers (7)
 Official 2025 Syllabus chapter and topic study roadmaps with specification grid weightings and learning outcome checklists:
@@ -57,9 +83,9 @@ Official 2025 Syllabus chapter and topic study roadmaps with specification grid 
 
 ## ⚡ Key Features
 
-- **🏛️ Homepage as Roadmap Catalog Hub (`roadmap.sh` Model):** The homepage (`/` or `#`) acts as the primary directory displaying all 20 qualifications and paper study trackers with real-time keyword search, category filter chips, and live progress indicators.
+- **🏛️ Homepage as Roadmap Catalog Hub (`roadmap.sh` Model):** The homepage (`/` or `#`) acts as the primary directory displaying all 46 qualifications and paper study trackers with real-time keyword search, category filter chips, and live progress indicators.
 - **🧭 Dedicated Roadmap Viewports with Breadcrumb Navigation:** Selecting any qualification or paper loads a focused interactive node tree with breadcrumbs (`← All Roadmaps / ICAB CA / Assurance (C1)`) for 0ms client-side transition and instant return navigation.
-- **🔍 Omnipresent Command Palette (`Ctrl+K` / `⌘K`):** Instantly search across all 20 roadmaps, paper codes (`C1`, `P7`, `V3`), syllabus topics, and keywords with real-time match highlighting and category filtering.
+- **🔍 Omnipresent Command Palette (`Ctrl+K` / `⌘K`):** Instantly search across all 46 roadmaps, paper codes (`C1`, `P7`, `V3`), syllabus topics, and keywords with real-time match highlighting and category filtering.
 - **📖 Granular Topic Study Trackers:** Every individual paper features official syllabus areas with percentage weightings, chapter nodes, Course Learning Outcomes (CLOs), and study checklists.
 - **🔗 Bidirectional Deep-Linking:** Jump seamlessly from parent qualification papers to individual study trackers and back with context preservation (e.g. `#icab-c1/c1-s1-n1`).
 - **💾 Safe Multi-Roadmap Storage:** Namespaced progress persistence (`roadmapId:nodeId`) in local storage with in-memory fallback.
@@ -99,21 +125,19 @@ chartered-roadmap/
 │   ├── test-acca-hash.js
 │   └── roadmap-for-professional-accounting-certifications-2026-10-27.md
 ├── data/
-│   ├── icab.json        # Core ICAB CA qualification roadmap & route definitions
-│   ├── acca.json        # Core ACCA qualification roadmap
+│   ├── icab.json, acca.json # Core ICAB and ACCA qualifications
+│   ├── cfa.json, cpa.json, cma.json, cisa.json, ... # 26 global & statutory qualifications
 │   ├── icab-it-labs.json# 5 practical IT workshops companion dataset
 │   ├── icab-c1.json .. icab-c7.json # 7 Certificate Level paper study trackers
 │   ├── icab-p1.json .. icab-p7.json # 7 Professional Level paper study trackers
 │   ├── icab-v1.json .. icab-v3.json # 3 Advanced Level paper study trackers
-│   └── roadmaps.js      # Bundled offline datasets (20 roadmaps)
+│   └── roadmaps.js      # Bundled offline datasets (46 roadmaps, ~470 KB)
 ├── docs/
 │   ├── ADR/             # Architecture Decision Records
-│   │   ├── 0001-static-json-driven-architecture.md
-│   │   ├── 0002-icab-2025-curriculum-modernization.md
-│   │   ├── 0003-autonomous-it-labs-and-subroadmap-architecture.md
-│   │   └── 0004-individual-paper-study-trackers-and-search-catalog.md
-│   ├── critiquesGPT/    # Multi-agent audit & critique reports
-│   └── Curriculum-2025-Technical-Specification.md
+│   ├── plans/           # Multi-agent hardened architectural plans
+│   ├── research/        # Authoritative qualification research dossiers
+│   ├── critiquesGPT/    # Multi-agent adversarial critique reports
+│   └── GLOBAL_PROFESSIONAL_DEGREES_EXPANSION_BLUEPRINT.md
 ├── scripts/
 │   ├── bundle-data.js   # Generates data/roadmaps.js
 │   ├── build_all_paper_roadmaps.py # Syllabus 2025 paper extractor
