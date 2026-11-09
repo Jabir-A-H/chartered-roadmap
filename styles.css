@@ -1595,124 +1595,168 @@ button {
   color: var(--text-secondary);
 }
 
-/* Explore Catalog Modal */
-.explore-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 1150;
+/* ==========================================================================
+   Breadcrumb Navigation (roadmap.sh style)
+   ========================================================================== */
+.roadmap-breadcrumb-bar {
+  max-width: 900px;
+  margin: 18px auto 0;
+  padding: 0 18px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 24px 16px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  transform: scale(0.98);
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
-.explore-modal.open {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1);
+.breadcrumb-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 5px 12px;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-retro-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: var(--transition);
 }
 
-.explore-modal-box {
+.breadcrumb-home-link:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-retro);
+  background: var(--bg-subtle);
+}
+
+.breadcrumb-separator {
+  color: var(--border-color);
+  font-weight: 600;
+}
+
+.breadcrumb-current {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.breadcrumb-parent-link {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.breadcrumb-parent-link:hover {
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Catalog Hub Homepage Layout (roadmap.sh Model)
+   ========================================================================== */
+.catalog-view {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 18px 80px;
   width: 100%;
-  max-width: 980px;
+}
+
+.catalog-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-card {
+  max-width: 760px;
+  margin: 24px auto 0;
   background: var(--bg-surface);
   border: 2px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  max-height: 90vh;
-}
-
-.explore-modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 18px 24px;
-  border-bottom: 1.5px solid var(--border-subtle);
-  background: var(--bg-surface);
-}
-
-.explore-modal-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin: 0 0 4px;
-  color: var(--text-primary);
-}
-
-.explore-modal-subtitle {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-.explore-filter-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 12px 24px;
-  background: var(--bg-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.explore-search-input {
-  flex: 1;
-  padding: 8px 14px;
-  border: 1.5px solid var(--border-color);
-  border-radius: var(--radius-md);
-  background: var(--bg-surface);
-  font-size: 0.9rem;
-  font-family: inherit;
-  color: var(--text-primary);
-}
-
-.explore-search-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.4);
-}
-
-.explore-stat-summary {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  white-space: nowrap;
-}
-
-.explore-catalog-grid {
-  overflow-y: auto;
-  padding: 20px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.explore-category-group {
+  box-shadow: var(--shadow-retro);
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+.catalog-search-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+}
+
+.catalog-search-icon {
+  font-size: 1rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.catalog-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 0;
+}
+
+.catalog-stat-summary {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.catalog-filters-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.catalog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.catalog-category-group,
+.explore-category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.catalog-category-title,
 .explore-category-title {
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 0;
 }
 
+.catalog-cards-grid,
 .explore-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 14px;
+  gap: 16px;
 }
 
 .explore-card {
@@ -1810,6 +1854,24 @@ button {
   background: var(--accent-primary, #ffd43b);
   border-radius: var(--radius-full);
   transition: width 0.3s ease;
+}
+
+.explore-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  margin-top: auto;
+  padding-top: 6px;
+  transition: var(--transition);
+}
+
+.explore-card:hover .explore-card-action {
+  color: var(--text-primary);
+  transform: translateX(2px);
 }
 
 /* Stage Header Weightage Badge in Individual Paper Roadmaps */
@@ -2236,67 +2298,79 @@ button {
     display: none; /* Hide desktop keyboard hints on mobile touch */
   }
 
-  /* 6. Explore Modal Dialog (Full Screen Mobile) */
-  .explore-modal {
-    padding: 0;
-    align-items: stretch;
+  /* 6. Catalog Hub & Breadcrumbs Mobile Optimization */
+  .catalog-view {
+    padding: 0 0 32px;
   }
 
-  .explore-modal-box {
-    width: 100%;
-    max-width: 100%;
-    height: 100dvh;
-    max-height: 100dvh;
-    border-radius: 0;
-    border: none;
+  .catalog-hero {
+    margin-bottom: 24px;
   }
 
-  .explore-modal-header {
-    padding: 14px 16px;
+  .catalog-filter-card {
+    padding: 12px;
+    gap: 10px;
   }
 
-  .explore-modal-title {
-    font-size: 1.15rem;
+  .catalog-search-row {
+    padding: 8px 12px;
   }
 
-  .explore-modal-subtitle {
-    font-size: 0.8rem;
-  }
-
-  .explore-filter-row {
-    padding: 10px 14px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
-
-  .explore-search-input {
-    font-size: 16px; /* Prevents iOS auto-zoom */
-    padding: 10px 14px;
+  .catalog-search-input {
+    font-size: 16px; /* Prevents iOS auto-zoom on focus */
     min-height: 44px;
   }
 
-  .explore-catalog-grid {
-    padding: 12px 14px max(24px, env(safe-area-inset-bottom));
-    flex: 1;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
+  .catalog-stat-summary {
+    display: none; /* Hide secondary counter on small mobile to give full width to search */
   }
 
-  .explore-cards-grid {
+  .catalog-filters-chips {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .catalog-filters-chips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .catalog-filters-chips .filter-chip {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    padding: 6px 12px;
+    min-height: 38px;
+  }
+
+  .catalog-grid {
+    gap: 24px;
+  }
+
+  .explore-cards-grid,
+  .catalog-cards-grid {
     grid-template-columns: 1fr;
     gap: 12px;
   }
 
   .explore-card {
-    padding: 14px;
+    padding: 14px 16px;
   }
 
-  .explore-card-btn {
-    min-height: 44px;
-    font-size: 0.85rem;
-    padding: 8px 12px;
+  .roadmap-breadcrumb-bar {
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    gap: 6px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .breadcrumb-home-link {
+    min-height: 36px;
   }
 
   /* 7. Footer */

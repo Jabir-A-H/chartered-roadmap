@@ -147,6 +147,9 @@ global.document = {
     setAttribute: () => {},
     getAttribute: () => 'light'
   },
+  body: {
+    classList: { add: () => {}, remove: () => {} }
+  },
   getElementById: (id) => ({
     id,
     classList: { add: () => {}, remove: () => {}, toggle: () => {} },
@@ -157,6 +160,8 @@ global.document = {
     querySelector: () => null,
     style: {}
   }),
+  querySelector: () => null,
+  querySelectorAll: () => [],
   addEventListener: () => {}
 };
 global.location = { hash: '#icab-grad' };
@@ -173,28 +178,32 @@ assert.ok(router, 'window.CHARTERED_ROUTER must be exposed');
 
 // Test router hash parsing
 const testCases = [
-  { hash: '#icab', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } },
-  { hash: '#icab-grad', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } },
-  { hash: '#icab-hsc', expected: { qualId: 'icab', routeId: 'hsc', nodeId: null } },
-  { hash: '#icab-grad/c1', expected: { qualId: 'icab', routeId: 'grad', nodeId: 'c1' } },
-  { hash: '#icab/c1', expected: { qualId: 'icab', routeId: 'grad', nodeId: 'c1' } },
-  { hash: '#acca', expected: { qualId: 'acca', routeId: 'standard', nodeId: null } },
-  { hash: '#acca/ac1', expected: { qualId: 'acca', routeId: 'standard', nodeId: 'ac1' } },
-  { hash: '#icab-it-labs', expected: { qualId: 'icab-it-labs', routeId: 'all', nodeId: null } },
-  { hash: '#icab-it-labs-cl_labs', expected: { qualId: 'icab-it-labs', routeId: 'cl_labs', nodeId: null } },
-  { hash: '#icab-it-labs/lab-cl-1', expected: { qualId: 'icab-it-labs', routeId: 'all', nodeId: 'lab-cl-1' } },
-  { hash: '#icab-c1', expected: { qualId: 'icab-c1', routeId: 'all', nodeId: null } },
-  { hash: '#icab-c1/c1-s1-n1', expected: { qualId: 'icab-c1', routeId: 'all', nodeId: 'c1-s1-n1' } },
-  { hash: '#icab-p7', expected: { qualId: 'icab-p7', routeId: 'all', nodeId: null } },
-  { hash: '#icab-p7/p7-s2-n1', expected: { qualId: 'icab-p7', routeId: 'all', nodeId: 'p7-s2-n1' } },
-  { hash: '#icab-v3', expected: { qualId: 'icab-v3', routeId: 'all', nodeId: null } },
-  { hash: '', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } },
-  { hash: '#home', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } }
+  { hash: '#icab', expected: { view: 'roadmap', qualId: 'icab', routeId: 'grad', nodeId: null } },
+  { hash: '#icab-grad', expected: { view: 'roadmap', qualId: 'icab', routeId: 'grad', nodeId: null } },
+  { hash: '#icab-hsc', expected: { view: 'roadmap', qualId: 'icab', routeId: 'hsc', nodeId: null } },
+  { hash: '#icab-grad/c1', expected: { view: 'roadmap', qualId: 'icab', routeId: 'grad', nodeId: 'c1' } },
+  { hash: '#icab/c1', expected: { view: 'roadmap', qualId: 'icab', routeId: 'grad', nodeId: 'c1' } },
+  { hash: '#acca', expected: { view: 'roadmap', qualId: 'acca', routeId: 'standard', nodeId: null } },
+  { hash: '#acca/ac1', expected: { view: 'roadmap', qualId: 'acca', routeId: 'standard', nodeId: 'ac1' } },
+  { hash: '#icab-it-labs', expected: { view: 'roadmap', qualId: 'icab-it-labs', routeId: 'all', nodeId: null } },
+  { hash: '#icab-it-labs-cl_labs', expected: { view: 'roadmap', qualId: 'icab-it-labs', routeId: 'cl_labs', nodeId: null } },
+  { hash: '#icab-it-labs/lab-cl-1', expected: { view: 'roadmap', qualId: 'icab-it-labs', routeId: 'all', nodeId: 'lab-cl-1' } },
+  { hash: '#icab-c1', expected: { view: 'roadmap', qualId: 'icab-c1', routeId: 'all', nodeId: null } },
+  { hash: '#icab-c1/c1-s1-n1', expected: { view: 'roadmap', qualId: 'icab-c1', routeId: 'all', nodeId: 'c1-s1-n1' } },
+  { hash: '#icab-p7', expected: { view: 'roadmap', qualId: 'icab-p7', routeId: 'all', nodeId: null } },
+  { hash: '#icab-p7/p7-s2-n1', expected: { view: 'roadmap', qualId: 'icab-p7', routeId: 'all', nodeId: 'p7-s2-n1' } },
+  { hash: '#icab-v3', expected: { view: 'roadmap', qualId: 'icab-v3', routeId: 'all', nodeId: null } },
+  { hash: '', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
+  { hash: '#', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
+  { hash: '#home', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
+  { hash: '#catalog', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
+  { hash: '#explore', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } }
 ];
 
 testCases.forEach(({ hash, expected }) => {
   const parsed = router.parseHash(hash);
   assert.ok(parsed, `Failed to parse hash: ${hash}`);
+  assert.strictEqual(parsed.view, expected.view, `Hash ${hash}: view mismatch`);
   assert.strictEqual(parsed.qualId, expected.qualId, `Hash ${hash}: qualId mismatch`);
   assert.strictEqual(parsed.routeId, expected.routeId, `Hash ${hash}: routeId mismatch`);
   assert.strictEqual(parsed.nodeId, expected.nodeId, `Hash ${hash}: nodeId mismatch`);
@@ -286,6 +295,39 @@ assert.ok(
 );
 
 console.log('✓ Mobile viewport meta, zero-overflow guards, bottom sheet, and iOS zoom guards verified.');
+
+// -------------------------------------------------------------
+// Test 8: Verify Catalog Hub and Breadcrumbs Architecture
+// -------------------------------------------------------------
+console.log('\nTest 8: Verifying Catalog Hub & Breadcrumbs Architecture...');
+// 1. Verify index.html contains catalog-view and roadmap-view
+assert.ok(htmlContent.includes('id="catalog-view"'), 'index.html missing #catalog-view');
+assert.ok(htmlContent.includes('id="roadmap-view"'), 'index.html missing #roadmap-view');
+assert.ok(htmlContent.includes('id="catalog-search-input"'), 'index.html missing #catalog-search-input');
+assert.ok(htmlContent.includes('id="catalog-grid"'), 'index.html missing #catalog-grid');
+assert.ok(htmlContent.includes('id="breadcrumb-home-btn"'), 'index.html missing #breadcrumb-home-btn');
+
+// 2. Verify modal retirement: old explore-modal must NOT be in index.html
+assert.ok(!htmlContent.includes('id="explore-modal"'), 'index.html must not contain retired #explore-modal');
+
+// 3. Verify ROADMAP_CATALOG metadata integrity
+const catalogEntries = Object.values(router.ROADMAP_CATALOG);
+assert.strictEqual(catalogEntries.length, 20, 'ROADMAP_CATALOG must contain exactly 20 roadmaps');
+catalogEntries.forEach((entry) => {
+  assert.ok(entry.id, `Catalog entry missing id: ${JSON.stringify(entry)}`);
+  assert.ok(entry.title, `Catalog entry ${entry.id} missing title`);
+  assert.ok(entry.code, `Catalog entry ${entry.id} missing code`);
+  assert.ok(entry.category, `Catalog entry ${entry.id} missing category`);
+  assert.ok(entry.level, `Catalog entry ${entry.id} missing level`);
+});
+
+// 4. Verify router methods
+assert.strictEqual(typeof router.showCatalogView, 'function', 'router.showCatalogView must be a function');
+assert.strictEqual(typeof router.showRoadmapView, 'function', 'router.showRoadmapView must be a function');
+assert.strictEqual(typeof router.handleRoute, 'function', 'router.handleRoute must be a function');
+assert.strictEqual(typeof router.renderCatalog, 'function', 'router.renderCatalog must be a function');
+
+console.log('✓ Catalog Hub directory, breadcrumbs navigation, and modal retirement verified.');
 
 console.log('\n====================================================');
 console.log('   ALL VERIFICATION GATES PASSED CLEANLY (100%)     ');

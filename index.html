@@ -12,7 +12,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="header-container">
-      <a href="#icab-grad" class="brand-group" id="brand-home" aria-label="Chartered Roadmap Homepage">
+      <a href="#" class="brand-group" id="brand-home" aria-label="Chartered Roadmap Homepage">
         <div class="brand-icon">CR</div>
         <span class="brand-title">Chartered Roadmap</span>
       </a>
@@ -30,10 +30,10 @@
       </div>
       
       <div class="nav-actions">
-        <button id="explore-trigger-btn" class="btn-nav-explore" title="Browse all 20 qualification and paper roadmaps" aria-label="Explore all 20 roadmaps">
+        <a href="#" id="explore-trigger-btn" class="btn-nav-explore" title="Browse all 20 qualification and paper roadmaps" aria-label="All roadmaps catalog">
           <span class="explore-icon" aria-hidden="true">🧭</span>
-          <span class="explore-btn-text">Explore All (20)</span>
-        </button>
+          <span class="explore-btn-text">All Roadmaps (20)</span>
+        </a>
         <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode" title="Toggle theme">
           <span id="theme-icon">🌓</span>
         </button>
@@ -45,52 +45,91 @@
     </div>
   </header>
 
-  <!-- Main Content & Hero Controls -->
+  <!-- Main Content Viewports -->
   <main>
-    <section class="controls-container">
-      <h1 class="hero-title">Professional Accountancy Roadmaps</h1>
-      <p class="hero-subtitle">Step-by-step visual guides through exam stages, articleship training, and ethics modules. Pick your path and tick off milestones as you advance.</p>
+    <!-- View 1: Catalog Hub Directory (Homepage # / /) -->
+    <div id="catalog-view" class="catalog-view">
+      <section class="catalog-hero">
+        <h1 class="hero-title">Professional Accountancy Roadmaps</h1>
+        <p class="hero-subtitle">Step-by-step visual pathways, syllabus trackers, and qualification frameworks for future Chartered Accountants. Choose a qualification or paper below to explore stages, exams, and articleship training.</p>
 
-      <!-- Qualification Tabs -->
-      <nav class="tabs-segmented" aria-label="Choose qualification">
-        <button id="tab-icab" class="tab-btn active" data-qual="icab">ICAB CA (Bangladesh)</button>
-        <button id="tab-acca" class="tab-btn" data-qual="acca">ACCA (Global)</button>
-        <button id="tab-explore" class="tab-btn" data-qual="explore">🧭 Explore All Roadmaps (20)</button>
+        <!-- Catalog Live Filter & Search Row -->
+        <div class="catalog-filter-card">
+          <div class="catalog-search-row">
+            <span class="catalog-search-icon" aria-hidden="true">🔍</span>
+            <input type="search" id="catalog-search-input" class="catalog-search-input" placeholder="Filter roadmaps by name, paper code (e.g. C1, P7), or keywords..." autocomplete="off" aria-label="Filter roadmaps catalog">
+            <div class="catalog-stat-summary" id="catalog-stat-summary">20 roadmaps available</div>
+          </div>
+          <!-- Category Filter Chips -->
+          <div class="catalog-filters-chips" role="tablist" aria-label="Catalog category filter">
+            <button class="filter-chip active" data-catalog-filter="all">All (20)</button>
+            <button class="filter-chip" data-catalog-filter="qual">Qualifications (2)</button>
+            <button class="filter-chip" data-catalog-filter="cl">Certificate Level (7)</button>
+            <button class="filter-chip" data-catalog-filter="pl">Professional Level (7)</button>
+            <button class="filter-chip" data-catalog-filter="al">Advanced Level (3)</button>
+            <button class="filter-chip" data-catalog-filter="labs">Practical IT Labs (1)</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Catalog Sections & Cards Grid -->
+      <section id="catalog-grid" class="catalog-grid" aria-label="Roadmaps catalog directory"></section>
+    </div>
+
+    <!-- View 2: Interactive Roadmap Viewport (When on #icab, #acca, #icab-c1, etc.) -->
+    <div id="roadmap-view" class="roadmap-view" style="display: none;">
+      <!-- Breadcrumb Bar (roadmap.sh style) -->
+      <nav class="roadmap-breadcrumb-bar" aria-label="Breadcrumb navigation">
+        <a href="#" class="breadcrumb-home-link" id="breadcrumb-home-btn" title="Back to All Roadmaps Directory">
+          <span class="back-arrow">←</span> All Roadmaps
+        </a>
+        <span class="breadcrumb-separator">/</span>
+        <span id="breadcrumb-qual-title" class="breadcrumb-current">ICAB CA</span>
+        <span id="breadcrumb-sub-sep" class="breadcrumb-separator" style="display: none;">/</span>
+        <span id="breadcrumb-sub-title" class="breadcrumb-current" style="display: none;"></span>
       </nav>
 
-      <!-- Route Selector (for ICAB & Multi-track qualifications) -->
-      <div id="route-selector-container" class="routes-wrapper">
-        <span class="route-label">Entry Route / Stream</span>
-        <div id="route-pills" class="routes-pills"></div>
-        <p id="route-blurb" class="route-blurb"></p>
-      </div>
+      <section class="controls-container">
+        <h1 id="roadmap-title" class="hero-title">ICAB Chartered Accountancy</h1>
+        <p id="roadmap-subtitle" class="hero-subtitle">Official 2025 Syllabus progression pathway through examinations and articleship training.</p>
 
-      <!-- Progress Tracking Card -->
-      <div class="progress-card">
-        <div class="progress-header">
-          <span id="progress-text">0 of 0 milestones completed</span>
-          <button id="reset-progress-btn" class="btn-text">Reset Progress</button>
+        <!-- Route Selector (for ICAB & Multi-track qualifications) -->
+        <div id="route-selector-container" class="routes-wrapper">
+          <span class="route-label">Entry Route / Stream</span>
+          <div id="route-pills" class="routes-pills"></div>
+          <p id="route-blurb" class="route-blurb"></p>
         </div>
-        <div class="progress-bar-track">
-          <div id="progress-bar-fill" class="progress-bar-fill"></div>
+
+        <!-- Progress Tracking Card -->
+        <div class="progress-card">
+          <div class="progress-header">
+            <span id="progress-text">0 of 0 milestones completed</span>
+            <button id="reset-progress-btn" class="btn-text">Reset Progress</button>
+          </div>
+          <div class="progress-bar-track">
+            <div id="progress-bar-fill" class="progress-bar-fill"></div>
+          </div>
         </div>
+
+        <!-- Category Legend -->
+        <div class="legend-wrapper" aria-label="Roadmap milestone categories">
+          <span class="legend-tag cat-Exam">Exam</span>
+          <span class="legend-tag cat-Experience">Experience / Articleship</span>
+          <span class="legend-tag cat-Admin">Admin & Eligibility</span>
+          <span class="legend-tag cat-Training">Training</span>
+          <span class="legend-tag cat-Ethics">Ethics</span>
+        </div>
+      </section>
+
+      <!-- Contextual Sub-Roadmap Navigation Banner -->
+      <div id="subroadmap-banner" class="subroadmap-banner" style="display: none;">
+        <button id="subroadmap-back-btn" class="subroadmap-back-btn"><span class="back-arrow">←</span> Return to ICAB CA Exam Roadmap</button>
+        <span class="subroadmap-indicator-tag">Companion Practical Skills</span>
       </div>
 
-      <!-- Category Legend -->
-      <div class="legend-wrapper" aria-label="Roadmap milestone categories">
-        <span class="legend-tag cat-Exam">Exam</span>
-        <span class="legend-tag cat-Experience">Experience / Articleship</span>
-        <span class="legend-tag cat-Admin">Admin & Eligibility</span>
-        <span class="legend-tag cat-Training">Training</span>
-        <span class="legend-tag cat-Ethics">Ethics</span>
-      </div>
-    </section>
-
-    <!-- Contextual Sub-Roadmap Navigation Banner -->
-    <div id="subroadmap-banner" class="subroadmap-banner" style="display: none;"><button id="subroadmap-back-btn" class="subroadmap-back-btn"><span class="back-arrow">←</span> Return to ICAB CA Exam Roadmap</button><span class="subroadmap-indicator-tag">Companion Practical Skills</span></div>
-
-    <!-- Interactive Node Map Viewport -->
-    <section id="roadmap-tree" class="map-viewport" aria-label="Interactive qualification roadmap"></section>
+      <!-- Interactive Node Map Viewport -->
+      <section id="roadmap-tree" class="map-viewport" aria-label="Interactive qualification roadmap"></section>
+    </div>
   </main>
 
   <!-- Drawer Backdrop / Scrim -->
@@ -142,27 +181,6 @@
     </div>
   </div>
 
-  <!-- Explore All Roadmaps Catalog Modal -->
-  <div id="explore-modal" class="explore-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="explore-modal-title">
-    <div class="explore-modal-box">
-      <div class="explore-modal-header">
-        <div>
-          <h2 id="explore-modal-title" class="explore-modal-title">🧭 Explore All Roadmaps & Syllabus Trackers</h2>
-          <p class="explore-modal-subtitle">Browse full qualification pathways, individual exam paper study trackers, and practical IT labs.</p>
-        </div>
-        <button id="explore-close-btn" class="modal-close-btn" aria-label="Close explore modal">✕</button>
-      </div>
-
-      <!-- Quick Search within Explore -->
-      <div class="explore-filter-row">
-        <input type="search" id="explore-search-input" class="explore-search-input" placeholder="Filter roadmaps by name, code or keyword..." autocomplete="off">
-        <div class="explore-stat-summary" id="explore-stat-summary">20 roadmaps available</div>
-      </div>
-
-      <!-- Catalog Sections Grid -->
-      <div id="explore-catalog-grid" class="explore-catalog-grid"></div>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer class="site-footer">

@@ -262,6 +262,7 @@
 
   // Application State
   const state = {
+    view: 'catalog', // 'catalog' | 'roadmap'
     qualId: 'icab',
     routeId: 'grad',
     progress: {},
@@ -269,10 +270,12 @@
     returnContext: null,
     invokingElement: null,
     currentData: null,
-    nodesById: {}
+    nodesById: {},
+    catalogFilter: 'all',
+    catalogQuery: ''
   };
 
-  // Search & Explore UI State
+  // Search UI State (Command Palette Ctrl+K)
   const searchState = {
     isOpen: false,
     filter: 'all',
@@ -285,9 +288,20 @@
   const el = {
     themeToggle: document.getElementById('theme-toggle'),
     themeIcon: document.getElementById('theme-icon'),
-    tabIcab: document.getElementById('tab-icab'),
-    tabAcca: document.getElementById('tab-acca'),
-    tabExplore: document.getElementById('tab-explore'),
+    brandHome: document.getElementById('brand-home'),
+    catalogView: document.getElementById('catalog-view'),
+    roadmapView: document.getElementById('roadmap-view'),
+    catalogSearchInput: document.getElementById('catalog-search-input'),
+    catalogStatSummary: document.getElementById('catalog-stat-summary'),
+    catalogGrid: document.getElementById('catalog-grid'),
+    catalogChipsContainer: typeof document.querySelector === 'function' ? document.querySelector('.catalog-filters-chips') : null,
+    breadcrumbBar: typeof document.querySelector === 'function' ? document.querySelector('.roadmap-breadcrumb-bar') : null,
+    breadcrumbHomeBtn: document.getElementById('breadcrumb-home-btn'),
+    breadcrumbQualTitle: document.getElementById('breadcrumb-qual-title'),
+    breadcrumbSubSep: document.getElementById('breadcrumb-sub-sep'),
+    breadcrumbSubTitle: document.getElementById('breadcrumb-sub-title'),
+    roadmapTitle: document.getElementById('roadmap-title'),
+    roadmapSubtitle: document.getElementById('roadmap-subtitle'),
     subroadmapBanner: document.getElementById('subroadmap-banner'),
     subroadmapBackBtn: document.getElementById('subroadmap-back-btn'),
     routeContainer: document.getElementById('route-selector-container'),
@@ -310,12 +324,7 @@
     searchInput: document.getElementById('search-input'),
     searchCloseBtn: document.getElementById('search-close-btn'),
     searchResultsList: document.getElementById('search-results-list'),
-    exploreTriggerBtn: document.getElementById('explore-trigger-btn'),
-    exploreModal: document.getElementById('explore-modal'),
-    exploreCloseBtn: document.getElementById('explore-close-btn'),
-    exploreSearchInput: document.getElementById('explore-search-input'),
-    exploreCatalogGrid: document.getElementById('explore-catalog-grid'),
-    exploreStatSummary: document.getElementById('explore-stat-summary')
+    exploreTriggerBtn: document.getElementById('explore-trigger-btn')
   };
 
   // -------------------------------------------------------------
@@ -440,10 +449,11 @@
   // -------------------------------------------------------------
   function parseHash(hashStr) {
     const clean = (hashStr || '').replace(/^#\/?/, '').trim();
-    if (!clean || clean === 'home') {
+    if (!clean || clean === 'home' || clean === 'catalog' || clean === 'explore') {
       return {
-        qualId: 'icab',
-        routeId: 'grad',
+        view: 'catalog',
+        qualId: null,
+        routeId: null,
         nodeId: null
       };
     }
@@ -463,7 +473,14 @@
       }
     }
 
-    if (!matchedQual) return null;
+    if (!matchedQual) {
+      return {
+        view: 'catalog',
+        qualId: null,
+        routeId: null,
+        nodeId: null
+      };
+    }
 
     let routeId = null;
     let nodeId = null;
@@ -496,6 +513,7 @@
     }
 
     return {
+      view: 'roadmap',
       qualId: matchedQual,
       routeId: routeId,
       nodeId: nodeId || null
@@ -506,16 +524,31 @@
     const parsed = parseHash(location.hash);
     if (!parsed) return;
 
-    state.qualId = parsed.qualId;
-    if (parsed.routeId) {
-      state.routeId = parsed.routeId;
-    }
-    if (parsed.nodeId) {
+    state.view = parsed.view;
+    if (parsed.view === 'roadmap') {
+      state.qualId = parsed.qualId;
+      if (parsed.routeId) {
+        state.routeId = parsed.routeId;
+      }
       state.activeNodeId = parsed.nodeId;
+    } else {
+      state.activeNodeId = null;
     }
   }
 
   function updateHash(replace = false) {
+    if (state.view === 'catalog') {
+      const cleanHash = (location.hash || '').replace(/^#\/?/, '').trim();
+      if (cleanHash && cleanHash !== 'home' && cleanHash !== 'catalog' && cleanHash !== 'explore') {
+        if (replace && window.history && typeof window.history.replaceState === 'function') {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        } else {
+          location.hash = '';
+        }
+      }
+      return;
+    }
+
     let baseHash = '';
     if (state.qualId === 'icab') {
       baseHash = `icab-${state.routeId || 'grad'}`;
@@ -597,6 +630,14 @@
       }
 
       state.currentData = data;
+      if (el.roadmapTitle) {
+        el.roadmapTitle.textContent = data.title || 'Roadmap';
+      }
+      if (el.roadmapSubtitle) {
+        el.roadmapSubtitle.textContent = data.description || '';
+      }
+      document.title = `${data.title || qualId.toUpperCase()} — Chartered Roadmap`;
+      updateBreadcrumbs(qualId);
 
       // Verify route exists for current qualification
       const requestedRoute = targetRouteId || state.routeId;
@@ -617,8 +658,13 @@
         if (card && typeof card.scrollIntoView === 'function') {
           card.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-      } else if (state.activeNodeId && !state.nodesById[state.activeNodeId]) {
-        closeDrawer(false);
+      } else {
+        if (state.activeNodeId && !state.nodesById[state.activeNodeId]) {
+          closeDrawer(false);
+        }
+        if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+          window.scrollTo(0, 0);
+        }
       }
     } catch (err) {
       if (sequenceId !== activeLoadSequence) return;
@@ -828,8 +874,7 @@
   function syncBodyScrollLock() {
     const isDrawerOpen = el.drawer && el.drawer.classList.contains('open');
     const isSearchOpen = searchState && searchState.isOpen;
-    const isExploreOpen = exploreState && exploreState.isOpen;
-    if (isDrawerOpen || isSearchOpen || isExploreOpen) {
+    if (isDrawerOpen || isSearchOpen) {
       document.body.classList.add('modal-open');
     } else {
       document.body.classList.remove('modal-open');
@@ -1078,7 +1123,7 @@
       el.searchModal.classList.remove('open');
       el.searchModal.setAttribute('aria-hidden', 'true');
     }
-    if (el.modalBackdrop && !exploreState.isOpen) {
+    if (el.modalBackdrop) {
       el.modalBackdrop.classList.remove('open');
       el.modalBackdrop.setAttribute('aria-hidden', 'true');
     }
@@ -1251,47 +1296,8 @@
   }
 
   // -------------------------------------------------------------
-  // Explore All Roadmaps Catalog Controller
+  // Catalog Hub & Breadcrumbs Controller (roadmap.sh Model)
   // -------------------------------------------------------------
-  const exploreState = {
-    isOpen: false,
-    query: ''
-  };
-
-  function openExploreModal() {
-    exploreState.isOpen = true;
-    if (el.exploreSearchInput) el.exploreSearchInput.value = '';
-    exploreState.query = '';
-
-    if (el.exploreModal) {
-      el.exploreModal.classList.add('open');
-      el.exploreModal.setAttribute('aria-hidden', 'false');
-    }
-    if (el.modalBackdrop) {
-      el.modalBackdrop.classList.add('open');
-      el.modalBackdrop.setAttribute('aria-hidden', 'false');
-    }
-    syncBodyScrollLock();
-
-    renderExploreCatalog();
-    setTimeout(() => {
-      if (el.exploreSearchInput) el.exploreSearchInput.focus();
-    }, 50);
-  }
-
-  function closeExploreModal() {
-    exploreState.isOpen = false;
-    if (el.exploreModal) {
-      el.exploreModal.classList.remove('open');
-      el.exploreModal.setAttribute('aria-hidden', 'true');
-    }
-    if (el.modalBackdrop && !searchState.isOpen) {
-      el.modalBackdrop.classList.remove('open');
-      el.modalBackdrop.setAttribute('aria-hidden', 'true');
-    }
-    syncBodyScrollLock();
-  }
-
   function getRoadmapProgressStats(roadmapId) {
     if (!window.ROADMAP_DATA || !window.ROADMAP_DATA[roadmapId]) {
       return { total: 0, done: 0, percent: 0 };
@@ -1315,11 +1321,51 @@
     return { total, done, percent };
   }
 
-  function renderExploreCatalog() {
-    if (!el.exploreCatalogGrid) return;
+  function updateBreadcrumbs(qualId) {
+    if (!el.breadcrumbQualTitle) return;
 
-    const q = (el.exploreSearchInput ? el.exploreSearchInput.value : '').trim().toLowerCase();
-    exploreState.query = q;
+    if (qualId === 'icab') {
+      el.breadcrumbQualTitle.textContent = 'ICAB CA Qualification';
+      el.breadcrumbQualTitle.className = 'breadcrumb-current';
+      if (el.breadcrumbSubSep) el.breadcrumbSubSep.style.display = 'none';
+      if (el.breadcrumbSubTitle) el.breadcrumbSubTitle.style.display = 'none';
+    } else if (qualId === 'acca') {
+      el.breadcrumbQualTitle.textContent = 'ACCA Qualification';
+      el.breadcrumbQualTitle.className = 'breadcrumb-current';
+      if (el.breadcrumbSubSep) el.breadcrumbSubSep.style.display = 'none';
+      if (el.breadcrumbSubTitle) el.breadcrumbSubTitle.style.display = 'none';
+    } else if (qualId === 'icab-it-labs') {
+      el.breadcrumbQualTitle.innerHTML = '<a href="#icab-grad" class="breadcrumb-parent-link">ICAB CA</a>';
+      el.breadcrumbQualTitle.className = '';
+      if (el.breadcrumbSubSep) el.breadcrumbSubSep.style.display = 'inline-block';
+      if (el.breadcrumbSubTitle) {
+        el.breadcrumbSubTitle.style.display = 'inline-block';
+        el.breadcrumbSubTitle.textContent = 'Practical IT Skills Labs';
+      }
+    } else if (qualId && qualId.startsWith('icab-')) {
+      const item = ROADMAP_CATALOG[qualId];
+      el.breadcrumbQualTitle.innerHTML = '<a href="#icab-grad" class="breadcrumb-parent-link">ICAB CA</a>';
+      el.breadcrumbQualTitle.className = '';
+      if (el.breadcrumbSubSep) el.breadcrumbSubSep.style.display = 'inline-block';
+      if (el.breadcrumbSubTitle) {
+        el.breadcrumbSubTitle.style.display = 'inline-block';
+        el.breadcrumbSubTitle.textContent = item ? `${item.title} (${item.code})` : qualId;
+      }
+    } else {
+      const item = ROADMAP_CATALOG[qualId];
+      el.breadcrumbQualTitle.textContent = item ? item.title : qualId;
+      el.breadcrumbQualTitle.className = 'breadcrumb-current';
+      if (el.breadcrumbSubSep) el.breadcrumbSubSep.style.display = 'none';
+      if (el.breadcrumbSubTitle) el.breadcrumbSubTitle.style.display = 'none';
+    }
+  }
+
+  function renderCatalog() {
+    if (!el.catalogGrid) return;
+
+    const q = (el.catalogSearchInput ? el.catalogSearchInput.value : '').trim().toLowerCase();
+    state.catalogQuery = q;
+    const filter = state.catalogFilter || 'all';
 
     const categories = [
       { id: 'qual', title: '🎓 Full Professional Qualifications', items: [] },
@@ -1332,6 +1378,9 @@
     let totalMatched = 0;
 
     Object.values(ROADMAP_CATALOG).forEach((item) => {
+      // Category filter check
+      if (filter !== 'all' && item.category !== filter) return;
+
       if (q) {
         const matchesTitle = item.title.toLowerCase().includes(q);
         const matchesCode = item.code && item.code.toLowerCase().includes(q);
@@ -1347,14 +1396,15 @@
       if (cat) cat.items.push(item);
     });
 
-    if (el.exploreStatSummary) {
-      el.exploreStatSummary.textContent = `${totalMatched} of ${Object.keys(ROADMAP_CATALOG).length} roadmaps`;
+    if (el.catalogStatSummary) {
+      el.catalogStatSummary.textContent = `${totalMatched} of ${Object.keys(ROADMAP_CATALOG).length} roadmaps`;
     }
 
     if (totalMatched === 0) {
-      el.exploreCatalogGrid.innerHTML = `
+      el.catalogGrid.innerHTML = `
         <div class="search-empty-state">
           <p>No roadmaps found matching "<strong>${escapeHtml(q)}</strong>".</p>
+          <p style="font-size: 0.85rem; margin-top: 8px; color: var(--text-muted);">Try searching for paper codes (e.g. C1, P7, V3) or topic keywords.</p>
         </div>
       `;
       return;
@@ -1369,9 +1419,10 @@
       cat.items.forEach((item) => {
         const stats = getRoadmapProgressStats(item.id);
         const hasStats = stats.total > 0;
+        const targetHref = item.id === 'icab' ? '#icab-grad' : `#${item.id}`;
 
         cardsHtml += `
-          <div class="explore-card" data-roadmap-id="${escapeHtml(item.id)}" tabindex="0" role="button">
+          <a href="${targetHref}" class="explore-card" data-roadmap-id="${escapeHtml(item.id)}">
             <div class="explore-card-top">
               <span class="explore-card-code">${escapeHtml(item.code)}</span>
               <span class="explore-card-badge">${escapeHtml(item.level)}</span>
@@ -1386,69 +1437,161 @@
                 <span>${stats.done}/${stats.total} (${stats.percent}%)</span>
               </div>
             ` : ''}
-          </div>
+            <div class="explore-card-action">
+              <span>Explore Roadmap</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
         `;
       });
 
       gridHtml += `
-        <div class="explore-category-group">
-          <h3 class="explore-category-title">${cat.title}</h3>
-          <div class="explore-cards-grid">${cardsHtml}</div>
+        <div class="catalog-category-group">
+          <h2 class="catalog-category-title">${cat.title}</h2>
+          <div class="catalog-cards-grid">${cardsHtml}</div>
         </div>
       `;
     });
 
-    el.exploreCatalogGrid.innerHTML = gridHtml;
+    el.catalogGrid.innerHTML = gridHtml;
+  }
+
+  function showCatalogView() {
+    state.view = 'catalog';
+    state.activeNodeId = null;
+    closeDrawer(false);
+    closeSearchModal();
+
+    if (el.catalogView) el.catalogView.style.display = 'block';
+    if (el.roadmapView) el.roadmapView.style.display = 'none';
+
+    document.title = 'Chartered Roadmap — Professional Accountancy Roadmaps';
+
+    if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+      window.scrollTo(0, 0);
+    }
+
+    renderCatalog();
+  }
+
+  function showRoadmapView(qualId, routeId = null, nodeId = null) {
+    state.view = 'roadmap';
+    state.qualId = qualId;
+    if (routeId) state.routeId = routeId;
+    state.activeNodeId = nodeId || null;
+
+    if (el.catalogView) el.catalogView.style.display = 'none';
+    if (el.roadmapView) el.roadmapView.style.display = 'block';
+
+    if (!nodeId && typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+      window.scrollTo(0, 0);
+    }
+
+    updateBreadcrumbs(qualId);
+    loadRoadmap(qualId, routeId, nodeId);
+  }
+
+  function handleRoute() {
+    const parsed = parseHash(location.hash);
+    if (!parsed || parsed.view === 'catalog') {
+      showCatalogView();
+    } else {
+      showRoadmapView(parsed.qualId, parsed.routeId, parsed.nodeId);
+    }
   }
 
   // -------------------------------------------------------------
   // Event Bindings
   // -------------------------------------------------------------
   function bindEvents() {
-    // Tab switching (ICAB / ACCA / Explore)
-    if (el.tabIcab) {
-      el.tabIcab.addEventListener('click', () => {
-        if (state.qualId === 'icab') return;
+    // Catalog Filter Chips
+    if (el.catalogChipsContainer) {
+      el.catalogChipsContainer.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+
+        el.catalogChipsContainer.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        state.catalogFilter = chip.dataset.catalogFilter || 'all';
+        renderCatalog();
+      });
+    }
+
+    // Catalog Search Input Filter
+    if (el.catalogSearchInput) {
+      el.catalogSearchInput.addEventListener('input', () => {
+        renderCatalog();
+      });
+    }
+
+    // Catalog Grid Card Click Delegation
+    if (el.catalogGrid) {
+      el.catalogGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.explore-card');
+        if (!card) return;
+
+        const rId = card.dataset.roadmapId;
+        if (rId) {
+          e.preventDefault();
+          closeDrawer(false);
+          if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+            window.scrollTo(0, 0);
+          }
+          const targetHash = rId === 'icab' ? 'icab-grad' : rId;
+          if (location.hash === `#${targetHash}`) {
+            handleRoute();
+          } else {
+            location.hash = targetHash;
+          }
+        }
+      });
+    }
+
+    // Breadcrumb Home Button -> Navigate to Catalog Hub
+    if (el.breadcrumbHomeBtn) {
+      el.breadcrumbHomeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
         closeDrawer(false);
-        location.hash = 'icab-grad';
+        state.returnContext = null;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (location.hash === '#' || location.hash === '') {
+          handleRoute();
+        } else {
+          location.hash = '';
+        }
       });
     }
 
-    if (el.tabAcca) {
-      el.tabAcca.addEventListener('click', () => {
-        if (state.qualId === 'acca') return;
-        closeDrawer(false);
-        location.hash = 'acca';
-      });
-    }
-
-    if (el.tabExplore) {
-      el.tabExplore.addEventListener('click', () => {
-        openExploreModal();
-      });
-    }
-
-    // Header Search & Explore Triggers
+    // Header Search Trigger
     if (el.searchTriggerBtn) {
       el.searchTriggerBtn.addEventListener('click', openSearchModal);
     }
+
+    // Header Explore Button -> Navigate to Catalog Hub
     if (el.exploreTriggerBtn) {
-      el.exploreTriggerBtn.addEventListener('click', openExploreModal);
+      el.exploreTriggerBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeDrawer(false);
+        closeSearchModal();
+        state.returnContext = null;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (location.hash === '#' || location.hash === '') {
+          handleRoute();
+        } else {
+          location.hash = '';
+        }
+      });
     }
 
-    // Modal Close Buttons
+    // Modal Close Button
     if (el.searchCloseBtn) {
       el.searchCloseBtn.addEventListener('click', closeSearchModal);
-    }
-    if (el.exploreCloseBtn) {
-      el.exploreCloseBtn.addEventListener('click', closeExploreModal);
     }
 
     // Modal Backdrop Click
     if (el.modalBackdrop) {
       el.modalBackdrop.addEventListener('click', () => {
         closeSearchModal();
-        closeExploreModal();
       });
     }
 
@@ -1487,36 +1630,7 @@
       });
     }
 
-    // Explore Catalog Item Click Delegation
-    if (el.exploreCatalogGrid) {
-      el.exploreCatalogGrid.addEventListener('click', (e) => {
-        const card = e.target.closest('.explore-card');
-        if (!card) return;
 
-        const rId = card.dataset.roadmapId;
-        if (rId) {
-          closeExploreModal();
-          closeDrawer(false);
-          location.hash = rId;
-        }
-      });
-
-      el.exploreCatalogGrid.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const card = e.target.closest('.explore-card');
-          if (card && card.dataset.roadmapId) {
-            closeExploreModal();
-            closeDrawer(false);
-            location.hash = card.dataset.roadmapId;
-          }
-        }
-      });
-    }
-
-    // Explore Search Input Filter
-    if (el.exploreSearchInput) {
-      el.exploreSearchInput.addEventListener('input', renderExploreCatalog);
-    }
 
     // Route pill selection
     el.routePills.addEventListener('click', (e) => {
@@ -1717,10 +1831,6 @@
           closeSearchModal();
           return;
         }
-        if (exploreState.isOpen) {
-          closeExploreModal();
-          return;
-        }
         if (el.drawer.classList.contains('open')) {
           closeDrawer(true);
           return;
@@ -1757,67 +1867,24 @@
     // Window Hashchange
     if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
       window.addEventListener('hashchange', () => {
-        const parsed = parseHash(location.hash);
-        if (!parsed) return;
-
-        const qualChanged = parsed.qualId !== state.qualId;
-        const routeChanged = Boolean(parsed.routeId && parsed.routeId !== state.routeId);
-        const nodeChanged = (parsed.nodeId || null) !== (state.activeNodeId || null);
-
-        if (qualChanged) {
-          state.qualId = parsed.qualId;
-          if (parsed.routeId) state.routeId = parsed.routeId;
-          state.activeNodeId = parsed.nodeId || null;
-          loadRoadmap(parsed.qualId, parsed.routeId, parsed.nodeId);
-          return;
-        }
-
-        if (routeChanged) {
-          state.routeId = parsed.routeId;
-          state.activeNodeId = parsed.nodeId || null;
-          renderRouteSelector();
-          renderMap();
-          if (parsed.nodeId) {
-            openNodeDrawer(parsed.nodeId, false);
-          } else {
-            closeDrawer(false);
-          }
-          return;
-        }
-
-        if (nodeChanged) {
-          if (parsed.nodeId) {
-            openNodeDrawer(parsed.nodeId, false);
-          } else {
-            closeDrawer(false);
-          }
-        }
+        handleRoute();
       });
     }
 
-    // Brand Home Click -> Navigate to Homepage
+    // Brand Home Click -> Navigate to Catalog Hub
     const brandHome = document.getElementById('brand-home') || document.querySelector('.brand-group');
     if (brandHome) {
       brandHome.addEventListener('click', (e) => {
         e.preventDefault();
         closeDrawer(false);
         closeSearchModal();
-        closeExploreModal();
         state.returnContext = null;
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        if (location.hash === '#icab-grad' || location.hash === '#icab' || !location.hash || location.hash === '#') {
-          if (state.qualId !== 'icab' || state.routeId !== 'grad' || state.activeNodeId) {
-            state.qualId = 'icab';
-            state.routeId = 'grad';
-            state.activeNodeId = null;
-            loadRoadmap('icab', 'grad', null);
-          }
-          if (location.hash !== '#icab-grad') {
-            location.hash = 'icab-grad';
-          }
+        if (location.hash === '#' || location.hash === '') {
+          handleRoute();
         } else {
-          location.hash = 'icab-grad';
+          location.hash = '';
         }
       });
     }
@@ -1837,9 +1904,8 @@
   function init() {
     initTheme();
     loadProgress();
-    syncStateFromHash();
     bindEvents();
-    loadRoadmap(state.qualId, state.routeId, state.activeNodeId);
+    handleRoute();
   }
 
   // Expose routing and safeStorage testing utilities on window
@@ -1852,7 +1918,11 @@
       getNodeStorageKey,
       isNodeCompleted,
       executeSearch,
-      state
+      state,
+      showCatalogView,
+      showRoadmapView,
+      handleRoute,
+      renderCatalog
     };
   }
 
