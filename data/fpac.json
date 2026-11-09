@@ -1,0 +1,119 @@
+{
+  "id": "fpac",
+  "title": "FPAC® Certification (Certified Corporate FP&A Professional)",
+  "region": "Global",
+  "body": "Association for Financial Professionals (AFP)",
+  "officialUrl": "https://fpacert.afponline.org",
+  "lastVerified": "2026-11-09",
+  "source": "AFP FPAC Candidate Handbook & Exam Blueprint",
+  "summary": "The premier global credential dedicated to corporate Financial Planning and Analysis (FP&A), encompassing financial acumen, technology, predictive modeling, variance analysis, and strategic business partnering across Parts I & II.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Corporate FP&A Track",
+      "tag": "FP&A Analysts & Strategic Finance Managers",
+      "blurb": "Pass Part I (Financial Acumen & Technology) and Part II (Strategic Analysis & Business Partnering) and document 2 to 3 years of qualifying FP&A experience.",
+      "stages": [
+        {
+          "id": "fpac-stage-1",
+          "title": "Stage 1: Part I – Financial Acumen, Information Management & Technology",
+          "subtitle": "Data gathering, financial statement modeling, and systems (125 MCQs | 2.5 Hours)",
+          "nodes": [
+            {
+              "id": "fpac-p1-curriculum",
+              "name": "Part I Curriculum: Financial Acumen & Modeling Tools",
+              "code": "FPAC-P1-CURR",
+              "category": "Coursework",
+              "description": "Gathering and organizing financial/operational data, understanding macroeconomic indicators, three-statement financial modeling, Excel/BI tools, and corporate governance.",
+              "topics": [
+                "Gathering, Cleansing & Organizing Enterprise Operational and Financial Data",
+                "Macroeconomic and Microeconomic Analysis for Business Forecasting",
+                "Financial Statement Dynamics: Interconnecting Income Statement, Balance Sheet & Cash Flow",
+                "ERP Data Extraction, Business Intelligence (BI) & Financial Modeling Technology"
+              ]
+            },
+            {
+              "id": "fpac-p1-exam",
+              "name": "FPAC Part I Examination Sitting",
+              "code": "FPAC-P1-EXAM",
+              "category": "Exam",
+              "duration": "2.5 Hours (150 Minutes)",
+              "format": "125 Multiple-Choice Questions",
+              "frequency": "2 Testing Windows / Year (Feb/Mar, Aug/Sep)",
+              "marks": 800,
+              "description": "Computer-based examination testing financial acumen, data governance, and technology tools. Scaled passing score: 500 out of 800."
+            }
+          ]
+        },
+        {
+          "id": "fpac-stage-2",
+          "title": "Stage 2: Part II – Financial Analysis, Projections & Strategy",
+          "subtitle": "Driver-based budgeting, variance analysis, scenario modeling, and strategy (3.5 Hours)",
+          "nodes": [
+            {
+              "id": "fpac-p2-curriculum",
+              "name": "Part II Curriculum: Projections, Strategy & Partnering",
+              "code": "FPAC-P2-CURR",
+              "category": "Coursework",
+              "description": "Driver-based budgeting, rolling forecasts, variance analysis (price/volume/mix), capital budgeting (NPV/IRR), scenario modeling, and executive storytelling/business partnering.",
+              "topics": [
+                "Building Dynamic Driver-Based Budgets & Rolling Forecast Architectures",
+                "Multi-Factor Variance Analysis: Price, Volume, Mix, and Foreign Exchange Shifts",
+                "Capital Budgeting Decisions: Discounted Cash Flows, Hurdle Rates & Payback",
+                "Strategic Business Partnering, Executive Dashboards & Board-Level Storytelling"
+              ],
+              "modernThemes": [
+                "Driver-Based Rolling Forecasts",
+                "Business Partnering Storytelling",
+                "Cloud EPM Platforms"
+              ]
+            },
+            {
+              "id": "fpac-p2-exam",
+              "name": "FPAC Part II Examination Sitting",
+              "code": "FPAC-P2-EXAM",
+              "category": "Exam",
+              "duration": "3.5 Hours (210 Minutes)",
+              "format": "Case Studies, Spreadsheet Simulations & Multiple-Choice Questions",
+              "frequency": "2 Testing Windows / Year (Feb/Mar, Aug/Sep)",
+              "marks": 800,
+              "description": "Computer-based testing evaluating complex financial case studies, spreadsheet simulation modeling, and strategic business analysis. Scaled passing score: 500 out of 800."
+            }
+          ]
+        },
+        {
+          "id": "fpac-stage-3",
+          "title": "Stage 3: Experience & Designation Award",
+          "subtitle": "2-3 Years Corporate FP&A Experience + Recertification",
+          "nodes": [
+            {
+              "id": "fpac-exp",
+              "name": "2 to 3 Years Corporate FP&A Work Experience",
+              "code": "FPAC-EXP",
+              "category": "Experience",
+              "duration": "2 to 3 Years (Education Dependent)",
+              "description": "Demonstrate qualifying full-time professional experience in corporate financial planning, variance analysis, financial modeling, or strategic budgeting.",
+              "topics": [
+                "2 to 3 Years FP&A Work Verification",
+                "Supervisory Professional Sign-Off"
+              ]
+            },
+            {
+              "id": "fpac-cert",
+              "name": "Certified FP&A Professional Conferred & Ethics",
+              "code": "FPAC-CERT",
+              "category": "Milestone",
+              "description": "Conferral of the FPAC credential. Maintenance requires 45 approved recertification credits every 3 years and commitment to the AFP Standards of Ethical Conduct.",
+              "topics": [
+                "FPAC Credential Award",
+                "45 Recertification Credits every 3 Years",
+                "AFP Standards of Ethical Conduct"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

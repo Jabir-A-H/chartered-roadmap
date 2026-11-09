@@ -1,0 +1,135 @@
+{
+  "id": "cdpse",
+  "title": "CDPSE® Certification (Certified Data Privacy Solutions Engineer)",
+  "region": "Global",
+  "body": "Information Systems Audit and Control Association (ISACA)",
+  "officialUrl": "https://www.isaca.org/credentialing/cdpse",
+  "lastVerified": "2026-11-09",
+  "source": "ISACA CDPSE Job Practice Framework",
+  "summary": "The technical data privacy engineering credential bridging legal compliance with software architecture, Privacy-Enhancing Technologies (PETs), and data lifecycle management across Privacy Governance (34%), Privacy Architecture (36%), and Data Lifecycle (30%).",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Privacy Engineering Track",
+      "tag": "Privacy Engineers & Architects",
+      "blurb": "Pass the 120-question examination (scaled score 450/800) and verify 3 years of technical privacy experience (2-year waiver available for CISA/CISSP/CISM).",
+      "stages": [
+        {
+          "id": "cdpse-stage-1",
+          "title": "Stage 1: Privacy Governance & Regulatory Frameworks",
+          "subtitle": "Domain 1: Privacy Governance (34%)",
+          "nodes": [
+            {
+              "id": "cdpse-d1",
+              "name": "Domain 1: Privacy Governance",
+              "code": "CDPSE-D1",
+              "category": "Coursework",
+              "weightage": "34%",
+              "description": "Privacy programs, privacy policies, cross-border data transfer mechanisms, Privacy Impact Assessments (PIA/DPIA), and privacy audits.",
+              "topics": [
+                "Global Privacy Laws: GDPR, CCPA/CPRA, LGPD & Cross-Border Data Transfers",
+                "Privacy Governance Frameworks: NIST Privacy Framework, ISO/IEC 27701",
+                "Data Protection by Design & by Default Principles",
+                "Privacy Impact Assessments (PIA) & Data Protection Impact Assessments (DPIA)",
+                "Privacy Incident Handling, Data Breach Notification & Regulatory Reporting"
+              ],
+              "modernThemes": [
+                "ISO 27701 PIMS",
+                "NIST Privacy Framework",
+                "DPIA Execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cdpse-stage-2",
+          "title": "Stage 2: Technical Privacy Architecture & Data Lifecycle",
+          "subtitle": "Domain 2: Privacy Architecture (36%) & Domain 3: Data Lifecycle (30%)",
+          "nodes": [
+            {
+              "id": "cdpse-d2",
+              "name": "Domain 2: Privacy Architecture",
+              "code": "CDPSE-D2",
+              "category": "Coursework",
+              "weightage": "36%",
+              "description": "Technical privacy infrastructure, API security, identity federation, Privacy-Enhancing Technologies (PETs), encryption, tokenization, anonymization, and differential privacy.",
+              "topics": [
+                "Privacy Architecture in Cloud & Distributed Microservices",
+                "Privacy-Enhancing Technologies (PETs): Differential Privacy, Homomorphic Encryption",
+                "De-identification Techniques: Anonymization, Pseudonymization, K-Anonymity",
+                "Cryptographic Protection of PII & Key Management Life Cycle",
+                "Consent Management Platforms & Privacy Telemetry"
+              ],
+              "modernThemes": [
+                "Privacy-Enhancing Technologies (PETs)",
+                "Homomorphic Encryption",
+                "Differential Privacy"
+              ]
+            },
+            {
+              "id": "cdpse-d3",
+              "name": "Domain 3: Data Lifecycle",
+              "code": "CDPSE-D3",
+              "category": "Coursework",
+              "weightage": "30%",
+              "description": "Data inventory and mapping (RoPA), purpose specification, data minimization, data quality, data retention, subject access requests (DSARs), and secure data destruction.",
+              "topics": [
+                "Data Flow Mapping & Records of Processing Activities (RoPA)",
+                "Data Minimization & Storage Limitation Implementation",
+                "Data Subject Rights Automation: Right of Access, Rectification, Erasure (Right to be Forgotten)",
+                "Data Retention Schedules & Verifiable Cryptographic Data Sanitization"
+              ],
+              "modernThemes": [
+                "Automated DSAR Fulfillment",
+                "Data Lineage & RoPA"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cdpse-stage-3",
+          "title": "Stage 3: Examination Sitting & Experience Verification",
+          "subtitle": "120-Question Exam + 3 Years Experience (2-Year Waiver with CISA/CISSP)",
+          "nodes": [
+            {
+              "id": "cdpse-exam",
+              "name": "CDPSE Computer-Based Examination",
+              "code": "CDPSE-EXAM",
+              "category": "Exam",
+              "duration": "3.5 Hours (210 Minutes)",
+              "format": "120 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 800,
+              "description": "Computer-based examination testing privacy governance, privacy architecture, and data lifecycle management. Scaled passing score: 450 out of 800."
+            },
+            {
+              "id": "cdpse-exp",
+              "name": "3 Years Privacy Experience (2-Yr Waiver Available)",
+              "code": "CDPSE-EXP",
+              "category": "Experience",
+              "duration": "3 Years (or 1 Year with Waiver)",
+              "description": "Document 3 years of work experience in technical privacy governance, architecture, or data operations. Holders of active CISA, CISM, or CISSP receive an automatic 2-year experience waiver.",
+              "topics": [
+                "3 Years Privacy Work Verification",
+                "2-Year Experience Waiver for CISA, CISM, or CISSP Holders"
+              ]
+            },
+            {
+              "id": "cdpse-cert",
+              "name": "CDPSE Credential Conferred & Annual CPE",
+              "code": "CDPSE-CERT",
+              "category": "Milestone",
+              "description": "Conferral of the Certified Data Privacy Solutions Engineer (CDPSE) designation. Requires 20 CPE hours annually (120 over 3 years) and adherence to ISACA ethics.",
+              "topics": [
+                "CDPSE Credential Award",
+                "Annual CPE Maintenance",
+                "ISACA Code of Ethics Adherence"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

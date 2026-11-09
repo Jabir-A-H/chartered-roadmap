@@ -1,0 +1,197 @@
+{
+  "id": "csaa",
+  "title": "CSAA Fellowship (Certified Shari'ah Advisor and Auditor)",
+  "region": "Global",
+  "body": "Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI)",
+  "officialUrl": "https://aaoifi.com",
+  "lastVerified": "2026-11-09",
+  "source": "AAOIFI CSAA Revamped Modular Fellowship Framework",
+  "summary": "AAOIFI's flagship Islamic finance fellowship qualification: Module 1 CPSS (60+ Shari'ah Standards across commercial contracts) and Module 2 CPAAGE (Audit, Governance, and Ethics) with 1 year verified PER and direct CIPA fast-track articulation.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Modular Fellowship Pathway",
+      "tag": "Islamic Finance & Shari'ah Assurance",
+      "blurb": "Complete the two modular curriculum certifications (CPSS & CPAAGE), sit the modular exams (70% pass), and complete 1 year of verified practical experience.",
+      "stages": [
+        {
+          "id": "csaa-stage-1",
+          "title": "Stage 1: Module 1 — Shari'ah Standards Mastery (CPSS)",
+          "subtitle": "Core AAOIFI Shari'ah Standards across commercial contracts and Islamic capital markets",
+          "nodes": [
+            {
+              "id": "csaa-cpss-1",
+              "name": "Shari'ah Fundamentals & Commercial Prohibitions",
+              "code": "CPSS-1",
+              "category": "Coursework",
+              "description": "Islamic jurisprudence (Fiqh al-Mu'amalat), prohibition of Riba (interest), Gharar (excessive ambiguity), Maysir (gambling), and rules of Qabd (possession).",
+              "topics": [
+                "Foundations of Islamic Jurisprudence & Maqasid al-Shari'ah",
+                "Riba al-Fadl vs Riba al-Nasi'ah: Prohibitions & Modern Banking Implications",
+                "Gharar in Derivative Contracts & Speculative Trading",
+                "Rules of Constructive and Physical Possession (Qabd al-Haqiqi wa al-Hukmi)"
+              ]
+            },
+            {
+              "id": "csaa-cpss-2",
+              "name": "Financing & Exchange Contracts",
+              "code": "CPSS-2",
+              "category": "Coursework",
+              "description": "Murabahah to purchase orderer (SS 8), Salam and Parallel Salam (SS 10), Istisna'a (SS 11), Tawarruq monetization (SS 30), and Sarf currency exchange (SS 1).",
+              "topics": [
+                "Murabahah to the Purchase Orderer (SS 8): Agency, Risk Bearing & Default Penalties",
+                "Salam & Parallel Salam (SS 10): Agricultural and Commodity Pre-Financing",
+                "Istisna'a & Parallel Istisna'a (SS 11): Manufacturing & Infrastructure Projects",
+                "Organized Tawarruq (SS 30) Rules and Regulatory Shari'ah Constraints"
+              ]
+            },
+            {
+              "id": "csaa-cpss-3",
+              "name": "Leasing, Services & Equity Partnerships",
+              "code": "CPSS-3",
+              "category": "Coursework",
+              "description": "Ijarah and Ijarah Muntahia Bittamleek (SS 9), Musharakah and Diminishing Musharakah (SS 12), Mudarabah fund management (SS 13), and Wakalah agencies (SS 23).",
+              "topics": [
+                "Ijarah Operating Leases vs Ijarah Muntahia Bittamleek Financial Leases (SS 9)",
+                "Mudarabah Profit-Sharing Partnerships & Capital Loss Allocations (SS 13)",
+                "Diminishing Musharakah in Home and Asset Financing (SS 12)",
+                "Wakalah bi al-Istithmar Investment Agencies (SS 23)"
+              ]
+            },
+            {
+              "id": "csaa-cpss-4",
+              "name": "Capital Markets, Sukuk & Social Finance",
+              "code": "CPSS-4",
+              "category": "Coursework",
+              "description": "Investment Sukuk issuance and securitization (SS 17), Takaful and Retakaful solidarity insurance (SS 26), Zakah computation (SS 35), and Waqf endowments (SS 33).",
+              "topics": [
+                "Investment Sukuk (SS 17): Asset-Backed vs Asset-Based Structuring & Guarantees",
+                "Takaful Models: Wakalah vs Waqf-Wakalah Insurance Structures (SS 26)",
+                "Corporate Zakah Calculation Methodologies for IFIs (SS 35)",
+                "Waqf Endowments and Modern Socio-Financial Applications (SS 33)"
+              ]
+            },
+            {
+              "id": "csaa-exam-cpss",
+              "name": "CPSS Modular Examination",
+              "code": "CSAA-EXAM-1",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "100 Multiple-Choice Questions & Case Scenarios",
+              "marks": 100,
+              "description": "Computer-based modular exam evaluating technical mastery across all 60+ AAOIFI Shari'ah Standards. Passing score: 70%.",
+              "checklists": [
+                "Master AAOIFI Shari'ah Standards Book",
+                "Achieve $\\ge$ 70% passing threshold on computer-based exam"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "csaa-stage-2",
+          "title": "Stage 2: Module 2 — Governance, Audit & Ethics (CPAAGE)",
+          "subtitle": "Internal/external Shari'ah audit, governance standards, and AAOIFI ethics",
+          "nodes": [
+            {
+              "id": "csaa-cpaage-1",
+              "name": "Shari'ah Governance & Supervisory Boards",
+              "code": "CPAAGE-1",
+              "category": "Coursework",
+              "description": "Shari'ah Supervisory Board (SSB) mandate, independence, fatwa issuance, appointment, and oversight under AAOIFI Governance Standards (GS 1, GS 2, GS 4, GS 5/7).",
+              "topics": [
+                "SSB Composition, Independence, and Fiduciary Mandate (GS 1 & GS 2)",
+                "Audit and Governance Committee Relations (GS 4)",
+                "Corporate Social Responsibility and Code of Conduct (GS 7)"
+              ]
+            },
+            {
+              "id": "csaa-cpaage-2",
+              "name": "Internal Shari'ah Review & Risk Management",
+              "code": "CPAAGE-2",
+              "category": "Coursework",
+              "description": "Internal Shari'ah Audit Department (ISAD) charter, risk-based audit programs, compliance monitoring, Shari'ah non-compliance risk (SNCR), and income purification.",
+              "topics": [
+                "Internal Shari'ah Review Execution and Charter (GS 3 & GS 11)",
+                "Shari'ah Non-Compliance Risk (SNCR) Identification & Management",
+                "Tainting of Transactions and Charity Fund Purification Procedures"
+              ]
+            },
+            {
+              "id": "csaa-cpaage-3",
+              "name": "External Auditing & Assurance for IFIs",
+              "code": "CPAAGE-3",
+              "category": "Coursework",
+              "description": "Auditing Standards for Islamic Financial Institutions (ASIFI 1, 2, 3, 5), external Shari'ah audit opinions, profit-sharing investment accounts (PSIA), and reserves (PER/IRR).",
+              "topics": [
+                "Objective and Principles of Auditing for IFIs (ASIFI 1)",
+                "The Auditor's Report and Shari'ah Compliance Statements (ASIFI 2)",
+                "Testing Profit Equalization Reserves (PER) and Investment Risk Reserves (IRR)"
+              ]
+            },
+            {
+              "id": "csaa-cpaage-4",
+              "name": "Professional Ethics for Islamic Finance",
+              "code": "CPAAGE-4",
+              "category": "Ethics",
+              "description": "AAOIFI Code of Ethics for Accountants and Auditors of IFIs: trustworthiness (Amanah), truthfulness, integrity, professional competence, and confidentiality.",
+              "topics": [
+                "AAOIFI Code of Ethics Core Principles (Amanah, Sidq, Ikhlas)",
+                "Ethical Dilemmas in Islamic Banking Practices and Board Pressures"
+              ]
+            },
+            {
+              "id": "csaa-exam-cpaage",
+              "name": "CPAAGE Modular Examination",
+              "code": "CSAA-EXAM-2",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "100 Multiple-Choice Questions & Case Scenarios",
+              "marks": 100,
+              "description": "Modular examination covering governance, internal and external Shari'ah audit, and ethics. Passing score: 70%.",
+              "checklists": [
+                "Review AAOIFI Governance and Auditing Standards",
+                "Achieve $\\ge$ 70% passing threshold on computer-based exam"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "csaa-stage-3",
+          "title": "Stage 3: Practical Experience & Fellowship Induction",
+          "subtitle": "1 Year verified experience and fellowship conferral",
+          "nodes": [
+            {
+              "id": "csaa-per",
+              "name": "1 Year Verified Practical Experience in IFI",
+              "code": "CSAA-PER",
+              "category": "Experience",
+              "duration": "12 Months",
+              "description": "Document at least 1 year of practical work experience in Shari'ah compliance, internal Shari'ah audit, Islamic banking operations, or external audit of IFIs.",
+              "topics": [
+                "Practical Experience in Islamic Finance",
+                "Workplace Competency Verification"
+              ]
+            },
+            {
+              "id": "csaa-charter",
+              "name": "CSAA Fellowship Conferred",
+              "code": "CSAA-CHARTER",
+              "category": "Milestone",
+              "description": "Formal award of the CSAA Fellowship by AAOIFI. Qualifies charterholder for fast-track articulation into the Certified Islamic Professional Accountant (CIPA) program.",
+              "topics": [
+                "Full CSAA Fellowship Award",
+                "Right to use CSAA designation",
+                "CIPA Exemption Articulation: Holders receive automatic exemptions in CIPA Governance and Ethics papers"
+              ],
+              "resources": [
+                "AAOIFI Certified Shari'ah Advisor and Auditor Fellowship Registry",
+                "AAOIFI CIPA Fast-Track Articulation Guide"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

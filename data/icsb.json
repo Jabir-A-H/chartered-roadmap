@@ -1,0 +1,422 @@
+{
+  "id": "icsb",
+  "title": "ICSB Chartered Secretary Qualification",
+  "region": "Bangladesh",
+  "body": "The Institute of Chartered Secretaries of Bangladesh",
+  "officialUrl": "https://www.icsb.edu.bd",
+  "lastVerified": "2026-11-09",
+  "source": "Chartered Secretaries Act 2010 & ICSB Curriculum Handbook",
+  "summary": "ICSB confers the statutory ACS and FCS designations under the Chartered Secretaries Act, 2010. Governs company secretarial practice, statutory corporate governance, secretarial audit, and BSEC compliance across 19 papers and 3 years practical experience.",
+  "statutoryMonopoly": {
+    "act": "Chartered Secretaries Act, 2010 (Act No. 25 of 2010)",
+    "primaryPowers": [
+      "Exclusive statutory professional authority for Chartered Secretaries in Bangladesh",
+      "Statutory Corporate Governance Compliance Certification under BSEC CGC 2018 Cond. 1(5)(xxvii)",
+      "Mandatory listed company Company Secretary qualification under BSEC Listing Regulations",
+      "Standard-setter for Bangladesh Secretarial Standards (BSS-1 through BSS-6)",
+      "Secretarial Audit and legal due diligence execution"
+    ]
+  },
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CS Track",
+      "tag": "All Applicants",
+      "blurb": "Complete all levels (Foundation to Professional-II), Case Study, and 3 years verified experience for ACS.",
+      "stages": [
+        {
+          "id": "icsb-foundation",
+          "title": "Tier 1: Foundation Level",
+          "subtitle": "4 Papers (400 Marks) | Entry core business fundamentals",
+          "nodes": [
+            {
+              "id": "icsb-p1",
+              "name": "Business Communication",
+              "code": "Paper 1",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Corporate drafting, board meeting notices, executive correspondence, and professional communications."
+            },
+            {
+              "id": "icsb-p2",
+              "name": "Business Economics & Statistics",
+              "code": "Paper 2",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Micro/macroeconomics, market structures, central tendency, regression, and sampling statistics."
+            },
+            {
+              "id": "icsb-p3",
+              "name": "Fundamentals of Accounting & Auditing",
+              "code": "Paper 3",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Basic double-entry accounting, trial balance, financial statements, and auditing fundamentals."
+            },
+            {
+              "id": "icsb-p4",
+              "name": "Business Management, Ethics & Entrepreneurship",
+              "code": "Paper 4",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Principles of management, corporate ethics, CSR governance, and entrepreneurial ventures."
+            }
+          ]
+        },
+        {
+          "id": "icsb-certificate-1",
+          "title": "Tier 2: Certificate Level - I",
+          "subtitle": "3 Papers (300 Marks) | Labor laws, commercial jurisprudence & corporate accounting",
+          "nodes": [
+            {
+              "id": "icsb-101",
+              "name": "HRM & Industrial Relations",
+              "code": "101",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration."
+            },
+            {
+              "id": "icsb-102",
+              "name": "General & Commercial Laws",
+              "code": "102",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882."
+            },
+            {
+              "id": "icsb-103",
+              "name": "Corporate Accounting & Valuation",
+              "code": "103",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Corporate share/debenture issuance, corporate financial statement drafting under IFRS, and business valuation models."
+            }
+          ]
+        },
+        {
+          "id": "icsb-certificate-2",
+          "title": "Tier 3: Certificate Level - II",
+          "subtitle": "3 Papers (300 Marks) | Secretarial drafting, taxation & corporate IT systems",
+          "nodes": [
+            {
+              "id": "icsb-201",
+              "name": "Corporate Communication & Report Writing",
+              "code": "201",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures."
+            },
+            {
+              "id": "icsb-202",
+              "name": "Direct & Indirect Tax Laws",
+              "code": "202",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Income Tax Act 2023, corporate tax compliance, TDS obligations of the Company Secretary, and VAT Act 2012."
+            },
+            {
+              "id": "icsb-203",
+              "name": "Information Technology Application in Business",
+              "code": "203",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Corporate database administration, ERP integration, e-governance filings, and cyber law security protocols."
+            }
+          ]
+        },
+        {
+          "id": "icsb-certificate-3",
+          "title": "Tier 4: Certificate Level - III",
+          "subtitle": "4 Papers (400 Marks) | Core company law, secretarial practice & financial institutions",
+          "nodes": [
+            {
+              "id": "icsb-301",
+              "name": "Company Law & Practice",
+              "code": "301",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings."
+            },
+            {
+              "id": "icsb-302",
+              "name": "Company Secretarial Practice",
+              "code": "302",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6)."
+            },
+            {
+              "id": "icsb-303",
+              "name": "Interpreting Financial & Accounting Information",
+              "code": "303",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Financial ratio analysis, cash flow evaluation, notes interpretation, and audit report governance oversight."
+            },
+            {
+              "id": "icsb-304",
+              "name": "Banking, NBFI & Insurance Laws & Practice",
+              "code": "304",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements."
+            }
+          ]
+        },
+        {
+          "id": "icsb-professional-1",
+          "title": "Tier 5: Professional Level - I",
+          "subtitle": "4 Papers (400 Marks) | Corporate restructuring, finance strategy, governance & advanced tax",
+          "nodes": [
+            {
+              "id": "icsb-401",
+              "name": "Advanced Company Law & Corporate Restructuring",
+              "code": "401",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up."
+            },
+            {
+              "id": "icsb-402",
+              "name": "Corporate Financial Management",
+              "code": "402",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Long-term corporate capital financing, capital budgeting under uncertainty, and corporate dividend strategy."
+            },
+            {
+              "id": "icsb-403",
+              "name": "Corporate Governance & Risk Management",
+              "code": "403",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks."
+            },
+            {
+              "id": "icsb-404",
+              "name": "Advanced Taxation Practice",
+              "code": "404",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Strategic corporate tax planning, transfer pricing documentation, DTAA, and Taxes Appellate Tribunal proceedings."
+            }
+          ]
+        },
+        {
+          "id": "icsb-professional-2",
+          "title": "Tier 6: Professional Level - II & Practicum",
+          "subtitle": "4 Papers (400 Marks) + 36 Months Practical Experience | Statutory secretarial audit, capital market & board advisory",
+          "nodes": [
+            {
+              "id": "icsb-501",
+              "name": "Corporate Secretaryship",
+              "code": "501",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution."
+            },
+            {
+              "id": "icsb-502",
+              "name": "Strategic & Operations Management",
+              "code": "502",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Strategic leadership, environmental scanning, TQM, ISO quality governance, and operational transformation."
+            },
+            {
+              "id": "icsb-503",
+              "name": "Securities Laws & Capital Market",
+              "code": "503",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations."
+            },
+            {
+              "id": "icsb-504",
+              "name": "Compliance Management, Secretarial Audit & Due Diligence",
+              "code": "504",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A."
+            },
+            {
+              "id": "icsb-per",
+              "name": "Practical Secretarial Experience (36 Months)",
+              "code": "CS-PER",
+              "category": "Experience",
+              "duration": "36 Months",
+              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership."
+            }
+          ]
+        }
+      ]
+    },
+    "fast-track-accountants": {
+      "id": "fast-track-accountants",
+      "name": "Professional Accountants Fast-Track Route",
+      "tag": "For ICAB / ICMAB / ACCA Members",
+      "blurb": "Receive 100% waiver from Foundation Level + exemptions in accounting & tax papers; focus entirely on statutory Company Law, Governance, Secretarial Audit, and Securities Law.",
+      "stages": [
+        {
+          "id": "icsb-ft-exemptions",
+          "title": "Stage 1: Foundation & Accounting Subject Waivers",
+          "subtitle": "Full Foundation waiver plus accounting papers exemption",
+          "nodes": [
+            {
+              "id": "icsb-cpl-prof",
+              "name": "Professional Accounting Exemption Review",
+              "code": "CPL-CS",
+              "category": "Admin",
+              "description": "Verification of membership in ICAB, ICMAB, or ACCA. Automatic 100% waiver of Foundation Level and exemptions in Papers 103, 202, and 303."
+            }
+          ]
+        },
+        {
+          "id": "icsb-ft-core-law",
+          "title": "Stage 2: Core Secretarial & Commercial Law",
+          "subtitle": "Secretarial practices and commercial jurisprudence",
+          "nodes": [
+            {
+              "id": "icsb-101",
+              "name": "HRM & Industrial Relations",
+              "code": "101",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration."
+            },
+            {
+              "id": "icsb-102",
+              "name": "General & Commercial Laws",
+              "code": "102",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882."
+            },
+            {
+              "id": "icsb-201",
+              "name": "Corporate Communication & Report Writing",
+              "code": "201",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures."
+            },
+            {
+              "id": "icsb-301",
+              "name": "Company Law & Practice",
+              "code": "301",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings."
+            },
+            {
+              "id": "icsb-302",
+              "name": "Company Secretarial Practice",
+              "code": "302",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6)."
+            },
+            {
+              "id": "icsb-304",
+              "name": "Banking, NBFI & Insurance Laws & Practice",
+              "code": "304",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements."
+            }
+          ]
+        },
+        {
+          "id": "icsb-ft-statutory-core",
+          "title": "Stage 3: Non-Exemptible Statutory Governance Core",
+          "subtitle": "Advanced corporate law, secretarial audit, and capital markets",
+          "nodes": [
+            {
+              "id": "icsb-401",
+              "name": "Advanced Company Law & Corporate Restructuring",
+              "code": "401",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up."
+            },
+            {
+              "id": "icsb-403",
+              "name": "Corporate Governance & Risk Management",
+              "code": "403",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks."
+            },
+            {
+              "id": "icsb-501",
+              "name": "Corporate Secretaryship",
+              "code": "501",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution."
+            },
+            {
+              "id": "icsb-503",
+              "name": "Securities Laws & Capital Market",
+              "code": "503",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations."
+            },
+            {
+              "id": "icsb-504",
+              "name": "Compliance Management, Secretarial Audit & Due Diligence",
+              "code": "504",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A."
+            },
+            {
+              "id": "icsb-per",
+              "name": "Practical Secretarial Experience (36 Months)",
+              "code": "CS-PER",
+              "category": "Experience",
+              "duration": "36 Months",
+              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

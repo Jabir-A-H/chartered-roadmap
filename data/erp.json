@@ -1,0 +1,148 @@
+{
+  "id": "erp",
+  "title": "ERP® Certification (Energy Risk Professional)",
+  "region": "Global",
+  "body": "Global Association of Risk Professionals (GARP)",
+  "officialUrl": "https://www.garp.org",
+  "lastVerified": "2026-11-09",
+  "source": "GARP Energy Risk Professional Curriculum & Foundations",
+  "summary": "The specialized energy risk benchmark covering physical crude oil, natural gas, LNG, power grids, refining margins, emissions, and financial energy derivatives across physical and financial trading regimes.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Energy Risk Track",
+      "tag": "Energy Traders & Commodity Risk Analysts",
+      "blurb": "Master physical commodity mechanics and financial derivatives, pass the comprehensive examination, and document 2 years of energy market experience.",
+      "stages": [
+        {
+          "id": "erp-stage-1",
+          "title": "Stage 1: Physical Energy Commodities & Infrastructure",
+          "subtitle": "Crude oil, natural gas, power generation, and refining economics",
+          "nodes": [
+            {
+              "id": "erp-cr-oil",
+              "name": "Physical Crude Oil & Refining Margins",
+              "code": "ERP-CRUDE",
+              "category": "Coursework",
+              "description": "Upstream exploration, global crude benchmarks (Brent, WTI, Dubai), pipeline and tanker transport logistics, refinery crack spreads (3:2:1 crack), and petroleum product blending.",
+              "topics": [
+                "Crude Oil Assay Properties: API Gravity, Sulfur Content & Sweet/Sour Spreads",
+                "Geopolitics, OPEC+ Quotas & Global Energy Flow Routing",
+                "Refinery Configurations: Atmospheric Distillation, Fluid Catalytic Cracking & Coking",
+                "Refining Economics: 3:2:1 Crack Spreads, Spark Spreads & Netback Valuation"
+              ]
+            },
+            {
+              "id": "erp-natgas",
+              "name": "Natural Gas & LNG Logistics",
+              "code": "ERP-GAS",
+              "category": "Coursework",
+              "description": "Natural gas geology, pipeline transmission tariffs, underground storage injection/withdrawal cycles, Henry Hub pricing, and Liquefied Natural Gas (LNG) liquefaction/regasification.",
+              "topics": [
+                "Natural Gas Gathering, Processing & Pipeline Transport Hydraulics",
+                "Underground Storage Mechanics: Working Gas vs Cushion Gas & Seasonal Cycling",
+                "Global LNG Supply Chains, Floating Storage Regasification (FSRU) & Netback Parity"
+              ]
+            },
+            {
+              "id": "erp-power",
+              "name": "Electric Power Grids & Generation Economics",
+              "code": "ERP-POWER",
+              "category": "Coursework",
+              "description": "Power grid physics, dispatch merit order, heat rates, locational marginal pricing (LMP), transmission line congestion, capacity markets, and renewable energy integration.",
+              "topics": [
+                "Electricity Deregulation, ISOs/RTOs & Wholesale Electricity Markets",
+                "Generation Merit Order, Heat Rates & Spark/Dark Spreads",
+                "Locational Marginal Pricing (LMP) & Financial Transmission Rights (FTRs)",
+                "Emissions Trading Systems (EU ETS), Carbon Offsets & Clean Energy Transition"
+              ],
+              "modernThemes": [
+                "Renewables Grid Integration",
+                "Carbon Credits & EU ETS",
+                "Battery Storage Valuation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "erp-stage-2",
+          "title": "Stage 2: Financial Energy Derivatives, Valuation & Hedging",
+          "subtitle": "Swaps, options, ETRM systems, Energy VaR, and comprehensive exam",
+          "nodes": [
+            {
+              "id": "erp-derivs",
+              "name": "Financial Energy Derivatives & Hedging",
+              "code": "ERP-DERIVS",
+              "category": "Coursework",
+              "description": "Futures contracts, commodity forwards, swing contracts, crack spread options, spark spread options, storage arbitrage, and airline/refinery fuel hedging programs.",
+              "topics": [
+                "Commodity Futures Curves: Contango, Backwardation, Convenience Yield & Roll Yield",
+                "Energy Swaps: Fixed-for-Floating, Basis Swaps & Index-Linked Swaps",
+                "Exotic Energy Options: Asian Options, Spread Options, Swing Contracts & Tolling Agreements",
+                "Corporate Energy Risk Hedging Programs for Airlines, Utilities & Producers"
+              ]
+            },
+            {
+              "id": "erp-risk",
+              "name": "Energy Risk Metrics & Trading Systems (ETRM)",
+              "code": "ERP-RISK",
+              "category": "Coursework",
+              "description": "Energy Value at Risk (CFaR, EaR), non-normal commodity price distributions, extreme tail risk, Counterparty Credit Risk, and Energy Trading and Risk Management (ETRM) systems.",
+              "topics": [
+                "Energy VaR: Historical Simulation & Jumps in Electricity Spot Prices",
+                "Cash Flow at Risk (CFaR) & Earnings at Risk (EaR) in Energy Utilities",
+                "Counterparty Credit Risk in OTC Energy Bilateral Contracts & ISDA CSAs",
+                "ETRM System Architecture, Deal Capture & Regulatory Reporting (Dodd-Frank, REMIT)"
+              ],
+              "modernThemes": [
+                "ETRM Cloud Architecture",
+                "REMIT & Dodd-Frank Energy Compliance"
+              ]
+            },
+            {
+              "id": "erp-exam",
+              "name": "ERP Comprehensive Examination",
+              "code": "ERP-EXAM",
+              "category": "Exam",
+              "duration": "8 Hours (Two 4-Hour Sessions)",
+              "format": "180 Multiple-Choice Questions",
+              "marks": 180,
+              "description": "Computer-based examination testing physical energy markets, infrastructure, financial derivatives, and commodity risk management models."
+            }
+          ]
+        },
+        {
+          "id": "erp-stage-3",
+          "title": "Stage 3: Experience & Credential Award",
+          "subtitle": "2 Years Energy Risk Experience + Code of Conduct",
+          "nodes": [
+            {
+              "id": "erp-exp",
+              "name": "2 Years Professional Energy Risk Experience",
+              "code": "ERP-EXP",
+              "category": "Experience",
+              "duration": "24 Months Full-Time",
+              "description": "Demonstrate at least 2 years of professional work experience in energy commodity trading, physical logistics, risk management, or utility treasury.",
+              "topics": [
+                "24 Months Energy Experience",
+                "Supervisory Verification"
+              ]
+            },
+            {
+              "id": "erp-cert",
+              "name": "Certified ERP Designation Conferred & Ethics",
+              "code": "ERP-CERT",
+              "category": "Milestone",
+              "description": "Award of the Energy Risk Professional (ERP®) certification and commitment to upholding the GARP Code of Conduct.",
+              "topics": [
+                "Certified ERP Credential Award",
+                "GARP Code of Conduct Adherence"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "id": "cgma",
+  "title": "CGMA® / CIMA Professional Qualification",
+  "region": "Global",
+  "body": "Chartered Institute of Management Accountants & AICPA (AICPA & CIMA)",
+  "officialUrl": "https://www.aicpa-cima.com",
+  "lastVerified": "2026-11-09",
+  "source": "CIMA Professional Qualification Syllabus & Competency Framework",
+  "summary": "The premier global management accounting qualification featuring a Dual Pathway architecture: the Traditional Exam Route (Cert BA + 9 OTs + 3 Case Studies OCS/MCS/SCS) and the digital Finance Leadership Program (FLP), culminating in ACMA and CGMA designations.",
+  "defaultRoute": "traditional",
+  "routes": {
+    "traditional": {
+      "id": "traditional",
+      "name": "Standard Examination Pathway",
+      "tag": "Objective Tests + Case Studies",
+      "blurb": "Complete the Certificate in Business Accounting, 9 Objective Tests across Operational, Management, and Strategic levels, and 3 Integrated Case Study exams.",
+      "stages": [
+        {
+          "id": "cima-stage-1",
+          "title": "Stage 1: Certificate in Business Accounting (Cert BA) - Foundational Entry",
+          "subtitle": "4 Objective Tests (90 Mins Each | 100/150 Pass Mark)",
+          "nodes": [
+            {
+              "id": "cima-ba1",
+              "name": "BA1: Fundamentals of Business Economics",
+              "code": "BA1",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Micro/macroeconomic business environment, market structures, international trade, financial markets, and banking systems."
+            },
+            {
+              "id": "cima-ba2",
+              "name": "BA2: Fundamentals of Management Accounting",
+              "code": "BA2",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Cost identification, cost accounting systems, marginal costing, variance analysis, planning and budgetary control."
+            },
+            {
+              "id": "cima-ba3",
+              "name": "BA3: Fundamentals of Financial Accounting",
+              "code": "BA3",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Accounting principles, double-entry bookkeeping, adjusting entries, and financial statements preparation under IFRS."
+            },
+            {
+              "id": "cima-ba4",
+              "name": "BA4: Fundamentals of Ethics, Governance and Law",
+              "code": "BA4",
+              "category": "Ethics",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Ethics and professional behavior, corporate governance frameworks, corporate law, administration, and employment law."
+            }
+          ]
+        },
+        {
+          "id": "cima-stage-2",
+          "title": "Stage 2: Operational Level (Award: CIMA Dip MA)",
+          "subtitle": "3 Objective Tests (E1, P1, F1) + Operational Case Study (OCS)",
+          "nodes": [
+            {
+              "id": "cima-e1",
+              "name": "E1: Managing Finance in a Digital World",
+              "code": "E1",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Finance function organization, technology in finance (cloud, big data, blockchain, AI), and data analytics."
+            },
+            {
+              "id": "cima-p1",
+              "name": "P1: Management Accounting",
+              "code": "P1",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Cost accounting systems, budgeting, short-term decision making, and managing risk and uncertainty."
+            },
+            {
+              "id": "cima-f1",
+              "name": "F1: Financial Reporting",
+              "code": "F1",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Regulatory environment, IFRS financial statements, taxation (corporate income tax and VAT), and working capital management."
+            },
+            {
+              "id": "cgma-ocs",
+              "name": "Operational Case Study (OCS)",
+              "code": "OCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Integrated Scenario Case Simulation",
+              "marks": 150,
+              "description": "3-hour computer-based case simulation evaluating integration of E1, P1, and F1 knowledge in a real-world company context. Passing mark: 80/150.",
+              "checklists": [
+                "Review pre-seen case study materials thoroughly",
+                "Demonstrate role competence as a Finance Officer / Cost Accountant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cima-stage-3",
+          "title": "Stage 3: Management Level (Award: CIMA Adv Dip MA)",
+          "subtitle": "3 Objective Tests (E2, P2, F2) + Management Case Study (MCS)",
+          "nodes": [
+            {
+              "id": "cima-e2",
+              "name": "E2: Managing Performance",
+              "code": "E2",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Business models, value chains, strategic management, project management, and relationship management."
+            },
+            {
+              "id": "cima-p2",
+              "name": "P2: Advanced Management Accounting",
+              "code": "P2",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Cost management for competitive advantage, control and performance of responsibility centers, and pricing decisions."
+            },
+            {
+              "id": "cima-f2",
+              "name": "F2: Advanced Financial Reporting",
+              "code": "F2",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Group financial statements (IFRS 10/IFRS 3), financial instruments (IFRS 9), revenue recognition, and financial analysis."
+            },
+            {
+              "id": "cgma-mcs",
+              "name": "Management Case Study (MCS)",
+              "code": "MCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Integrated Scenario Case Simulation",
+              "marks": 150,
+              "description": "3-hour computer-based case simulation evaluating E2, P2, and F2 integration. Acts as the Gateway Exam for qualified accountants. Passing mark: 80/150."
+            }
+          ]
+        },
+        {
+          "id": "cima-stage-4",
+          "title": "Stage 4: Strategic Level (Award: ACMA, CGMA)",
+          "subtitle": "3 Objective Tests (E3, P3, F3) + Strategic Case Study (SCS)",
+          "nodes": [
+            {
+              "id": "cima-e3",
+              "name": "E3: Strategic Management",
+              "code": "E3",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Interlocking context of strategy, formulation of strategic options, digital strategy, and implementing business transformation."
+            },
+            {
+              "id": "cima-p3",
+              "name": "P3: Risk Management",
+              "code": "P3",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Enterprise risk management, strategic risk, cyber risk, internal controls, and ethical governance."
+            },
+            {
+              "id": "cima-f3",
+              "name": "F3: Financial Strategy",
+              "code": "F3",
+              "category": "Exam",
+              "duration": "90 Minutes",
+              "format": "60 Objective Test Questions",
+              "marks": 150,
+              "description": "Financial strategy formulation, debt and equity financing, business valuation, and mergers and acquisitions."
+            },
+            {
+              "id": "cgma-scs",
+              "name": "Strategic Case Study (SCS)",
+              "code": "SCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Executive Boardroom Simulation",
+              "marks": 150,
+              "description": "Cap-stone 3-hour executive case study simulating board-level strategic decision-making and risk governance. Passing mark: 80/150."
+            }
+          ]
+        },
+        {
+          "id": "cima-stage-5",
+          "title": "Stage 5: Practical Experience Requirement (PER) & Membership",
+          "subtitle": "36 Months Supervised Practical Experience Mapped to CGMA Competencies",
+          "nodes": [
+            {
+              "id": "cima-per-1",
+              "name": "36 Months Supervised Practical Experience",
+              "code": "CIMA-PER",
+              "category": "Experience",
+              "duration": "36 Months (3 Years)",
+              "description": "Document 36 months of verified professional experience across technical accounting, business acumen, people skills, and leadership mapped to the CGMA Competency Framework.",
+              "topics": [
+                "Technical Skills & Business Acumen",
+                "People and Leadership Competencies",
+                "Professional Ethics in Workplace"
+              ]
+            },
+            {
+              "id": "cima-member-1",
+              "name": "Admission as ACMA & CGMA",
+              "code": "CIMA-MEMBER",
+              "category": "Milestone",
+              "description": "Formal admission as an Associate Chartered Management Accountant (ACMA) and award of the global Chartered Global Management Accountant (CGMA) designation.",
+              "topics": [
+                "ACMA Designation Conferred",
+                "CGMA Global Designation Conferred",
+                "Joint AICPA & CIMA Membership"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "flp": {
+      "id": "flp",
+      "name": "Finance Leadership Program (FLP - Digital Accelerated Track)",
+      "tag": "Digital Learning + 3 Case Studies",
+      "blurb": "Complete competencies via self-paced digital continuous learning assessments, taking only the 3 Integrated Case Study exams (OCS, MCS, SCS).",
+      "stages": [
+        {
+          "id": "flp-stage-1",
+          "title": "Stage 1: FLP Operational Tier",
+          "subtitle": "Digital Continuous Learning Modules + Operational Case Study (OCS)",
+          "nodes": [
+            {
+              "id": "flp-op-learn",
+              "name": "FLP Operational Digital Continuous Learning",
+              "code": "FLP-OP",
+              "category": "Coursework",
+              "description": "Self-paced digital learning platform validating competencies corresponding to E1, P1, and F1 through interactive business scenario assessments.",
+              "topics": [
+                "Digital Finance & Operations",
+                "Cost Management Competencies",
+                "Financial Reporting Frameworks"
+              ]
+            },
+            {
+              "id": "cgma-ocs",
+              "name": "Operational Case Study (OCS)",
+              "code": "OCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Integrated Scenario Case Simulation",
+              "marks": 150,
+              "description": "Unified Operational Case Study examination milestone shared with the Traditional Pathway."
+            }
+          ]
+        },
+        {
+          "id": "flp-stage-2",
+          "title": "Stage 2: FLP Management Tier",
+          "subtitle": "Digital Continuous Learning Modules + Management Case Study (MCS)",
+          "nodes": [
+            {
+              "id": "flp-mgmt-learn",
+              "name": "FLP Management Digital Continuous Learning",
+              "code": "FLP-MGMT",
+              "category": "Coursework",
+              "description": "Digital continuous learning validating competencies corresponding to E2, P2, and F2 through interactive case evaluations.",
+              "topics": [
+                "Managing Performance Strategy",
+                "Advanced Cost Optimization",
+                "Group Financial Reporting"
+              ]
+            },
+            {
+              "id": "cgma-mcs",
+              "name": "Management Case Study (MCS)",
+              "code": "MCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Integrated Scenario Case Simulation",
+              "marks": 150,
+              "description": "Unified Management Case Study examination milestone shared with the Traditional Pathway."
+            }
+          ]
+        },
+        {
+          "id": "flp-stage-3",
+          "title": "Stage 3: FLP Strategic Tier",
+          "subtitle": "Digital Continuous Learning Modules + Strategic Case Study (SCS)",
+          "nodes": [
+            {
+              "id": "flp-strat-learn",
+              "name": "FLP Strategic Digital Continuous Learning",
+              "code": "FLP-STRAT",
+              "category": "Coursework",
+              "description": "Digital continuous learning validating competencies corresponding to E3, P3, and F3 through strategic board simulations.",
+              "topics": [
+                "Strategic Corporate Governance",
+                "Enterprise Risk Oversight",
+                "Corporate Financing & M&A Strategy"
+              ]
+            },
+            {
+              "id": "cgma-scs",
+              "name": "Strategic Case Study (SCS)",
+              "code": "SCS",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "Executive Boardroom Simulation",
+              "marks": 150,
+              "description": "Unified Strategic Case Study examination milestone shared with the Traditional Pathway."
+            }
+          ]
+        },
+        {
+          "id": "cima-stage-5",
+          "title": "Stage 5: Practical Experience Requirement (PER) & Membership",
+          "subtitle": "36 Months Supervised Practical Experience Mapped to CGMA Competencies",
+          "nodes": [
+            {
+              "id": "cima-per-1",
+              "name": "36 Months Supervised Practical Experience",
+              "code": "CIMA-PER",
+              "category": "Experience",
+              "duration": "36 Months (3 Years)",
+              "description": "Document 36 months of verified professional experience across technical accounting, business acumen, people skills, and leadership mapped to the CGMA Competency Framework.",
+              "topics": [
+                "Technical Skills & Business Acumen",
+                "People and Leadership Competencies",
+                "Professional Ethics in Workplace"
+              ]
+            },
+            {
+              "id": "cima-member-1",
+              "name": "Admission as ACMA & CGMA",
+              "code": "CIMA-MEMBER",
+              "category": "Milestone",
+              "description": "Formal admission as an Associate Chartered Management Accountant (ACMA) and award of the global Chartered Global Management Accountant (CGMA) designation.",
+              "topics": [
+                "ACMA Designation Conferred",
+                "CGMA Global Designation Conferred",
+                "Joint AICPA & CIMA Membership"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

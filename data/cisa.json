@@ -1,0 +1,180 @@
+{
+  "id": "cisa",
+  "title": "CISA® Certification (Certified Information Systems Auditor)",
+  "region": "Global",
+  "body": "Information Systems Audit and Control Association (ISACA)",
+  "officialUrl": "https://www.isaca.org/credentialing/cisa",
+  "lastVerified": "2026-11-09",
+  "source": "ISACA CISA 2024-2025 Updated Job Practice Framework",
+  "summary": "The premier global benchmark for professionals who audit, control, monitor, and assess an organization's information technology and business systems, updated to the August 2024 Job Practice framework across 5 re-weighted domains.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CISA Track",
+      "tag": "All IS Audit & Security Professionals",
+      "blurb": "Pass the 150-question examination (scaled score 450/800) and verify 5 years of qualifying professional experience.",
+      "stages": [
+        {
+          "id": "cisa-stage-1",
+          "title": "Stage 1: Eligibility & Audit Process Foundations",
+          "subtitle": "Audit standards, risk-based planning, and IT governance",
+          "nodes": [
+            {
+              "id": "cisa-d1",
+              "name": "Domain 1: Information Systems Auditing Process",
+              "code": "CISA-D1",
+              "category": "Coursework",
+              "weightage": "18%",
+              "description": "ITAF standards, risk-based audit planning, internal controls, CAATs, sampling techniques, audit evidence, reporting, and QAIP.",
+              "topics": [
+                "ISACA ITAF Assurance Standards and Code of Professional Ethics",
+                "Risk-Based IS Audit Planning & Audit Universe Definition",
+                "Types of Controls: ITGCs, Application Controls, Compensating Controls",
+                "Audit Execution: CAATs, Data Analytics, Statistical Sampling & Evidence Gathering",
+                "Communicating Audit Results & Exit Conferences"
+              ],
+              "modernThemes": [
+                "Continuous Auditing",
+                "Automated CAATs",
+                "ITAF Compliance"
+              ]
+            },
+            {
+              "id": "cisa-d2",
+              "name": "Domain 2: Governance & Management of IT",
+              "code": "CISA-D2",
+              "category": "Coursework",
+              "weightage": "18%",
+              "description": "IT governance frameworks (COBIT), IT organizational structure, strategic alignment, policies, risk management, and Third-Party Risk Management (TPRM).",
+              "topics": [
+                "IT Strategy Committees & Board Oversight",
+                "COBIT 2019 Principles & Governance Components",
+                "IT Policies, Standards, Procedures & Segregation of Duties (SoD)",
+                "Third-Party Risk Management (TPRM) & SOC 1/SOC 2 Evaluation",
+                "IT Risk Management & Legal/Regulatory Privacy Compliance (GDPR, HIPAA)"
+              ],
+              "modernThemes": [
+                "COBIT 2019",
+                "SOC 2 Reports",
+                "Cross-Border Privacy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cisa-stage-2",
+          "title": "Stage 2: Systems Lifecycle & Operational Resilience",
+          "subtitle": "Systems acquisition, development, operations, and business resilience",
+          "nodes": [
+            {
+              "id": "cisa-d3",
+              "name": "Domain 3: Information Systems Acquisition, Development & Implementation",
+              "code": "CISA-D3",
+              "category": "Coursework",
+              "weightage": "12%",
+              "description": "Project governance, business case development, SDLC methodologies (Agile, DevOps, CI/CD), testing strategies, and post-implementation reviews.",
+              "topics": [
+                "Project Management Methodologies & PMBOK/Agile Frameworks",
+                "SDLC Security: Secure Coding, Code Reviews & DevSecOps",
+                "System Migration, Cutover Strategies & Parallel Runs",
+                "Post-Implementation Reviews (PIR) & Benefits Realization"
+              ],
+              "modernThemes": [
+                "DevSecOps",
+                "Agile Auditing",
+                "CI/CD Pipelines"
+              ]
+            },
+            {
+              "id": "cisa-d4",
+              "name": "Domain 4: Information Systems Operations & Business Resilience",
+              "code": "CISA-D4",
+              "category": "Coursework",
+              "weightage": "26%",
+              "description": "IT service management (ITIL), database management, cloud architectures (IaaS, PaaS, SaaS), backup management, Business Continuity Planning (BCP), and Disaster Recovery (DRP).",
+              "topics": [
+                "IT Service Management & Incident/Problem/Change Management (ITIL)",
+                "Database Management Systems & Cloud Virtualization Controls",
+                "Business Impact Analysis (BIA), RTO, RPO & MTD Metrics",
+                "Disaster Recovery Testing (Tabletop, Parallel, Full Interruption)",
+                "Resilient Cloud Architectures & Hybrid Multi-Cloud Controls"
+              ],
+              "modernThemes": [
+                "Cloud Security (IaaS/PaaS/SaaS)",
+                "Zero-Downtime Resilience",
+                "RTO/RPO Metrics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cisa-stage-3",
+          "title": "Stage 3: Information Asset Protection & Licensure",
+          "subtitle": "Security architecture, 150-question exam, and 5 years experience",
+          "nodes": [
+            {
+              "id": "cisa-d5",
+              "name": "Domain 5: Protection of Information Assets",
+              "code": "CISA-D5",
+              "category": "Coursework",
+              "weightage": "26%",
+              "description": "Information security frameworks (NIST, ISO 27001), Zero Trust, Identity and Access Management (IAM), network security, PKI, and incident response.",
+              "topics": [
+                "Information Security Governance & ISO/IEC 27001 / NIST CSF",
+                "Zero Trust Architecture & Least Privilege Enforcement",
+                "Identity and Access Management (IAM), MFA, SSO & Privileged Access (PAM)",
+                "Network Security: Firewalls, IDS/IPS, TLS 1.3, Micro-segmentation & Zero Day",
+                "Security Incident Response, Digital Forensics & Ransomware Containment"
+              ],
+              "modernThemes": [
+                "Zero Trust Architecture",
+                "Ransomware Forensics",
+                "MFA & PAM"
+              ]
+            },
+            {
+              "id": "cisa-exam",
+              "name": "CISA Computer-Based Examination",
+              "code": "CISA-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "150 Multiple-Choice Questions (4-choice)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 800,
+              "description": "150-question examination administered at Prometric test centers or via remote proctoring. Requires scaled score of 450 out of 800 to pass.",
+              "checklists": [
+                "Complete comprehensive domain question banks",
+                "Achieve scaled score of at least 450 out of 800"
+              ]
+            },
+            {
+              "id": "cisa-exp",
+              "name": "5 Years Verified IS Audit/Control/Security Work Experience",
+              "code": "CISA-EXP",
+              "category": "Experience",
+              "duration": "5 Years (Waivers up to 3 years available)",
+              "description": "Submit proof of 5 years of qualifying IS audit, control, or security work experience (substitutions available for university degrees and related credentials).",
+              "topics": [
+                "5-Year Work Verification",
+                "Experience Waiver Options (Bachelor's/Master's/CPA)"
+              ]
+            },
+            {
+              "id": "cisa-cpe",
+              "name": "Annual CPE Compliance & Code of Ethics",
+              "code": "CISA-CPE",
+              "category": "Compliance",
+              "description": "Maintain certification through payment of annual maintenance fees, earning at least 20 CPE hours annually (120 hours over 3-year cycle), and adhering to ISACA Code of Ethics.",
+              "topics": [
+                "Annual 20 CPE Minimum",
+                "120 CPE over 3 Years",
+                "ISACA Code of Ethics Adherence"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

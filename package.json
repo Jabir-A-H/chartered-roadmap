@@ -1,7 +1,7 @@
 {
   "name": "roadmap-for-professional-degrees",
-  "version": "1.5.0",
-  "description": "Interactive learning roadmaps, syllabus trackers, and qualification pathways for professional accounting certifications (ICAB CA 2025 Syllabus & ACCA).",
+  "version": "2.0.0",
+  "description": "Interactive learning roadmaps, syllabus trackers, and qualification pathways for 28+ global and statutory professional degrees (ICAB, ACCA, CFA, CMA, CISA, CPA, CGMA, ICMAB, ICSB, CISSP, and more).",
   "private": true,
   "scripts": {
     "start": "node tools/server.js",
@@ -13,9 +13,18 @@
     "ca",
     "chartered-accountant",
     "acca",
+    "cfa",
+    "cma",
+    "cisa",
+    "cpa",
+    "cgma",
+    "icmab",
+    "icsb",
+    "cissp",
+    "frm",
     "roadmap",
     "study-tracker",
-    "syllabus-2025"
+    "curriculum-2025"
   ],
   "author": "Antigravity Contributors",
   "license": "MIT"

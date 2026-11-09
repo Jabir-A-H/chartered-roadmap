@@ -1,0 +1,132 @@
+{
+  "id": "cgeit",
+  "title": "CGEIT® Certification (Certified in the Governance of Enterprise IT)",
+  "region": "Global",
+  "body": "Information Systems Audit and Control Association (ISACA)",
+  "officialUrl": "https://www.isaca.org/credentialing/cgeit",
+  "lastVerified": "2026-11-09",
+  "source": "ISACA CGEIT Job Practice Framework",
+  "summary": "The premier executive boardroom credential for IT governance leaders, CIOs, and enterprise architects covering Governance of Enterprise IT (40%), IT Resources (15%), Benefits Realization (26%), and Risk Optimization (19%).",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Executive IT Governance Pathway",
+      "tag": "CIOs, CTOs & Board Advisors",
+      "blurb": "Pass the 150-question examination (scaled score 450/800) and document 5 years of qualifying enterprise IT governance experience.",
+      "stages": [
+        {
+          "id": "cgeit-stage-1",
+          "title": "Stage 1: Governance Framework & Strategy",
+          "subtitle": "Domain 1: Governance of Enterprise IT (40%)",
+          "nodes": [
+            {
+              "id": "cgeit-d1",
+              "name": "Domain 1: Governance of Enterprise IT",
+              "code": "CGEIT-D1",
+              "category": "Coursework",
+              "weightage": "40%",
+              "description": "IT governance frameworks (COBIT), board alignment, strategic planning, policies and architecture, organizational structures, and legal/regulatory compliance.",
+              "topics": [
+                "Board Leadership & Governance of Enterprise IT Frameworks",
+                "Strategic Alignment of IT with Corporate Objectives",
+                "COBIT 2019 Principles, Governance Systems & Design Factors",
+                "IT Organizational Design, Roles, Responsibilities & Decision Rights",
+                "Legal, Regulatory, and Contractual Compliance Oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cgeit-stage-2",
+          "title": "Stage 2: Resources, Benefits & Risk Optimization",
+          "subtitle": "Domains 2, 3, and 4: Resources (15%), Benefits (26%), and Risk (19%)",
+          "nodes": [
+            {
+              "id": "cgeit-d2",
+              "name": "Domain 2: IT Resources",
+              "code": "CGEIT-D2",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "IT resource planning, sourcing strategies (insource/outsource/cloud), vendor management, human capital management, and IT asset lifecycles.",
+              "topics": [
+                "IT Sourcing Strategy & Vendor Relationship Management",
+                "Human Capital Management & IT Competency Development",
+                "IT Asset Management (ITAM) & Infrastructure Optimization"
+              ]
+            },
+            {
+              "id": "cgeit-d3",
+              "name": "Domain 3: Benefits Realization",
+              "code": "CGEIT-D3",
+              "category": "Coursework",
+              "weightage": "26%",
+              "description": "IT-enabled investment business cases, capital allocation, portfolio management, benefits tracking metrics, and post-implementation reviews.",
+              "topics": [
+                "Business Case Development for Strategic IT Investments",
+                "IT Portfolio Management & Capital Budgeting Prioritization",
+                "Benefits Realization Metrics, KPIs & ROI Tracking",
+                "Post-Implementation Reviews (PIR) & Value Delivery Assessment"
+              ]
+            },
+            {
+              "id": "cgeit-d4",
+              "name": "Domain 4: Risk Optimization",
+              "code": "CGEIT-D4",
+              "category": "Coursework",
+              "weightage": "19%",
+              "description": "Enterprise IT risk frameworks, risk identification and reporting, risk appetite articulation, and business continuity resilience.",
+              "topics": [
+                "Enterprise IT Risk Frameworks & Risk Appetite Alignment",
+                "IT Risk Identification, Mitigation & Control Optimization",
+                "Business Continuity & Operational Resilience Governance"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cgeit-stage-3",
+          "title": "Stage 3: Examination & Executive Experience Verification",
+          "subtitle": "150-Question Exam + 5 Years Enterprise IT Governance Experience",
+          "nodes": [
+            {
+              "id": "cgeit-exam",
+              "name": "CGEIT Computer-Based Examination",
+              "code": "CGEIT-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "150 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 800,
+              "description": "Computer-based examination testing enterprise IT governance, resources, benefits realization, and risk optimization. Scaled passing score: 450 out of 800."
+            },
+            {
+              "id": "cgeit-exp",
+              "name": "5 Years Enterprise IT Governance Experience",
+              "code": "CGEIT-EXP",
+              "category": "Experience",
+              "duration": "5 Years Professional",
+              "description": "Document at least 5 years of professional work experience in enterprise IT governance management, with at least 1 year in Domain 1 (Governance of Enterprise IT).",
+              "topics": [
+                "5-Year IT Governance Verification",
+                "At least 1 year dedicated to Domain 1"
+              ]
+            },
+            {
+              "id": "cgeit-cert",
+              "name": "CGEIT Designation Conferred & Annual CPE",
+              "code": "CGEIT-CERT",
+              "category": "Milestone",
+              "description": "Award of the Certified in the Governance of Enterprise IT (CGEIT) designation. Requires 20 CPE hours annually (120 over 3 years) and adherence to ISACA ethics.",
+              "topics": [
+                "CGEIT Credential Award",
+                "Annual CPE Maintenance",
+                "ISACA Code of Ethics Adherence"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "cfp",
+  "title": "CFP® Certification (Certified Financial Planner)",
+  "region": "USA & Global (FPSB)",
+  "body": "Certified Financial Planner Board of Standards (CFP Board)",
+  "officialUrl": "https://www.cfp.net",
+  "lastVerified": "2026-11-09",
+  "source": "CFP Board Principal Knowledge Domains & Standards of Conduct",
+  "summary": "The gold standard in holistic fiduciary personal financial planning, covering 7 core principal knowledge domains, a financial plan development Capstone, a 170-question computer-based exam, and 6,000 hours of qualifying experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Fiduciary Planning Pathway",
+      "tag": "Wealth Managers & Financial Planners",
+      "blurb": "Complete registered education, pass the Capstone course, pass the 6-hour 170-MCQ Prometric exam, complete 6,000 hours experience, and commit to fiduciary ethics.",
+      "stages": [
+        {
+          "id": "cfp-stage-1",
+          "title": "Stage 1: Registered Education & Degree Prerequisite",
+          "subtitle": "Coursework across 7 core domains and Bachelor's degree verification",
+          "nodes": [
+            {
+              "id": "cfp-edu",
+              "name": "CFP Board Registered Education Program",
+              "code": "CFP-EDU",
+              "category": "Coursework",
+              "description": "Complete accredited educational coursework covering the Principal Knowledge Domains: General Principles, Risk Management & Insurance, Investment Planning, Tax Planning, Retirement Planning, Estate Planning, and Psychology of Financial Planning.",
+              "topics": [
+                "Professional Conduct & Regulation (8%)",
+                "General Principles of Financial Planning (15%)",
+                "Risk Management and Insurance Planning (11%)",
+                "Investment Planning (17%)",
+                "Tax Planning (14%)",
+                "Retirement Savings and Income Planning (18%)",
+                "Estate Planning (10%)",
+                "Psychology of Financial Planning (7%)"
+              ]
+            },
+            {
+              "id": "cfp-degree",
+              "name": "Bachelor's Degree Requirement",
+              "code": "CFP-DEGREE",
+              "category": "Admin",
+              "description": "Hold a Bachelor's degree (or higher) in any discipline from an accredited university (or verify degree within 5 years of passing the exam).",
+              "topics": [
+                "Accredited Bachelor's Degree",
+                "Transcript Verification Portal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfp-stage-2",
+          "title": "Stage 2: Financial Plan Development Capstone",
+          "subtitle": "Synthesis of client data into a deliverable financial plan",
+          "nodes": [
+            {
+              "id": "cfp-capstone",
+              "name": "Financial Plan Development Capstone Course",
+              "code": "CFP-CAPSTONE",
+              "category": "Coursework",
+              "description": "Synthesize real-world client qualitative and quantitative data to develop, document, and present a comprehensive written financial plan demonstrating fiduciary mastery.",
+              "topics": [
+                "Client Goal Identification & Profile Synthesis",
+                "Constructing Cash Flow, Balance Sheet & Net Worth Projections",
+                "Integrated Advisory Recommendations & Risk Management Integration",
+                "Written Financial Plan Presentation & Fiduciary Disclosure"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfp-stage-3",
+          "title": "Stage 3: Comprehensive CFP Examination",
+          "subtitle": "170 MCQs across two 3-hour sessions (Prometric CBT)",
+          "nodes": [
+            {
+              "id": "cfp-exam",
+              "name": "CFP® Computer-Based Examination",
+              "code": "CFP-EXAM",
+              "category": "Exam",
+              "duration": "6 Hours Testing Time (Two 3-Hour Sessions)",
+              "format": "170 Multiple-Choice Questions (Standalone, Short Vignette, Complex Case Studies)",
+              "frequency": "3 Testing Windows: March, July, November",
+              "marks": 170,
+              "description": "Comprehensive computer-based examination evaluating application and integration of the 7 Principal Knowledge Domains in complex client scenarios.",
+              "checklists": [
+                "Complete official CFP Board mock practice exams",
+                "Master calculator keystrokes for TVM, amortization, and cash flows"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfp-stage-4",
+          "title": "Stage 4: Experience, Fiduciary Ethics & Credential Award",
+          "subtitle": "6,000 Hours Experience + Fiduciary Standards of Conduct",
+          "nodes": [
+            {
+              "id": "cfp-exp",
+              "name": "6,000 Hours Qualifying Financial Planning Experience",
+              "code": "CFP-EXP",
+              "category": "Experience",
+              "duration": "6,000 Hours Standard (or 4,000 Hours Apprenticeship)",
+              "description": "Complete 6,000 hours of qualifying professional experience in the financial planning process (or 4,000 hours through an approved direct Apprenticeship model).",
+              "topics": [
+                "6,000 Hours Standard Pathway",
+                "4,000 Hours Apprenticeship Model",
+                "Supervisory Attestation"
+              ]
+            },
+            {
+              "id": "cfp-ethics",
+              "name": "CFP Board Fiduciary Code of Ethics & Standards",
+              "code": "CFP-ETHICS",
+              "category": "Ethics",
+              "description": "Commit to act as a fiduciary at all times when providing financial advice to clients, placing the client's best interests above personal or firm gain.",
+              "topics": [
+                "Fiduciary Duty of Care, Loyalty, and Following Client Instructions",
+                "Managing and Disclosing Conflicts of Interest",
+                "Practice Standards for the Financial Planning Process"
+              ]
+            },
+            {
+              "id": "cfp-cert",
+              "name": "CFP® Credential Conferred & Annual Renewal",
+              "code": "CFP-CERT",
+              "category": "Milestone",
+              "description": "Formal authorization to use the marks CFP® and CERTIFIED FINANCIAL PLANNER™. Requires 30 hours of CE every 2 years (including 2 hours of CFP Board approved ethics).",
+              "topics": [
+                "CFP Marks Authorization",
+                "30 Hours Biennial CE",
+                "2 Hours Board-Approved Ethics CE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -215,6 +215,266 @@
       categoryLabel: 'Advanced Level',
       summary: 'Capstone professional simulation: Advance business information analysis, unseen material synthesis, financial appraisal, risk management, ethical dilemma resolution, and executive board reporting.',
       tags: ['V3', 'Case Study', 'Capstone', 'Simulation', 'Board Report', 'Executive Advisory']
+    },
+    'cfa': {
+      id: 'cfa',
+      title: 'CFA® Program (Chartered Financial Analyst)',
+      code: 'CFA',
+      level: 'Levels I, II & III · Charterholder',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Gold standard in investment analysis, asset allocation, portfolio management, private wealth, and ethical market conduct.',
+      tags: ['CFA', 'Finance', 'Investment', 'Portfolio Management', 'CFA Institute', 'Equity', 'Fixed Income', 'Ethics']
+    },
+    'cma': {
+      id: 'cma',
+      title: 'CMA® Certification (Certified Management Accountant)',
+      code: 'CMA',
+      level: 'Parts 1 & 2 · IMA US',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Premier global certification in management accounting, financial planning, performance, analytics, and strategic financial management.',
+      tags: ['CMA', 'Management Accounting', 'IMA', 'Cost Accounting', 'Financial Planning', 'Analytics']
+    },
+    'cisa': {
+      id: 'cisa',
+      title: 'CISA® Certification (Certified Information Systems Auditor)',
+      code: 'CISA',
+      level: '5 Job Practice Domains · ISACA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Globally recognized benchmark for IT auditing, governance, cyber risk assessment, systems acquisition, and asset protection.',
+      tags: ['CISA', 'ISACA', 'IT Audit', 'Cybersecurity', 'Governance', 'Risk Assessment', 'COBIT']
+    },
+    'csaa': {
+      id: 'csaa',
+      title: 'CSAA Fellowship (Certified Shari\'ah Advisor and Auditor)',
+      code: 'CSAA',
+      level: 'Fellowship · AAOIFI',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Global hallmark qualification for Shari\'ah advisory, compliance audits, and governance in Islamic financial institutions.',
+      tags: ['CSAA', 'AAOIFI', 'Islamic Finance', 'Shari\'ah Audit', 'Sukuk', 'Takaful', 'Murabaha']
+    },
+    'cpa': {
+      id: 'cpa',
+      title: 'Uniform CPA Examination (CPA Evolution)',
+      code: 'CPA',
+      level: '3 Core + 1 Discipline · AICPA/NASBA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The statutory CPA licensure roadmap under CPA Evolution: Core (AUD, FAR, REG) plus Discipline choice (BAR, ISC, TCP).',
+      tags: ['CPA', 'AICPA', 'NASBA', 'US CPA', 'Public Accounting', 'Tax', 'Audit', 'BAR', 'ISC', 'TCP']
+    },
+    'cia': {
+      id: 'cia',
+      title: 'CIA® Certification (Certified Internal Auditor)',
+      code: 'CIA',
+      level: 'Parts 1, 2 & 3 · The IIA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The only globally accepted internal audit certification, aligned with the 2025 Global Internal Audit Standards (GIAS).',
+      tags: ['CIA', 'IIA', 'Internal Audit', 'GIAS', 'Risk Management', 'Governance', 'Assurance']
+    },
+    'frm': {
+      id: 'frm',
+      title: 'FRM® Certification (Financial Risk Manager)',
+      code: 'FRM',
+      level: 'Parts I & II · GARP',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The leading global qualification for risk professionals covering market, credit, operational, liquidity, and investment risk.',
+      tags: ['FRM', 'GARP', 'Risk Management', 'Market Risk', 'Credit Risk', 'Operational Risk', 'Derivatives']
+    },
+    'cgma': {
+      id: 'cgma',
+      title: 'CGMA® / CIMA Professional Qualification',
+      code: 'CGMA',
+      level: 'Certificate to Strategic Level · AICPA & CIMA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Premier management accounting designation powered by CIMA & AICPA with dual routes: Traditional Exam Path and Finance Leadership Program (FLP).',
+      tags: ['CGMA', 'CIMA', 'AICPA', 'Management Accounting', 'FLP', 'Strategic Case Study', 'CIMA UK']
+    },
+    'icmab': {
+      id: 'icmab',
+      title: 'ICMAB CMA Qualification',
+      code: 'ICMAB',
+      level: '5 Levels · 20 Papers · ICMAB Bangladesh',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Statutory premier Cost & Management Accountant qualification in Bangladesh under CMA Act 2018 with reciprocal exemptions for ICAB and ACCA.',
+      tags: ['ICMAB', 'CMA', 'Bangladesh', 'Cost Accountant', 'Statutory Audit', 'Cost Audit', 'CMA Act 2018']
+    },
+    'icsb': {
+      id: 'icsb',
+      title: 'ICSB Chartered Secretary Qualification',
+      code: 'ICSB',
+      level: '5 Tiers · 19 Papers · ICSB Bangladesh',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The apex statutory chartered qualification for corporate governance, secretarial practice, board compliance, and capital markets advisory.',
+      tags: ['ICSB', 'CS', 'Chartered Secretary', 'Bangladesh', 'Corporate Governance', 'Compliance', 'BSEC']
+    },
+    'cissp': {
+      id: 'cissp',
+      title: 'CISSP® Certification (Information Systems Security)',
+      code: 'CISSP',
+      level: '8 CBK Domains · (ISC)²',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The gold standard cybersecurity leadership certification covering security architecture, engineering, risk management, and software security.',
+      tags: ['CISSP', 'ISC2', 'Cybersecurity', 'InfoSec', 'Security Architecture', 'Risk Management', 'Cryptography']
+    },
+    'cfe': {
+      id: 'cfe',
+      title: 'CFE® Credential (Certified Fraud Examiner)',
+      code: 'CFE',
+      level: '4 Sections · ACFE',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Globally recognized anti-fraud credential covering financial transactions & fraud schemes, law, investigation techniques, and fraud prevention.',
+      tags: ['CFE', 'ACFE', 'Fraud Examination', 'Forensics', 'Investigation', 'Financial Crime', 'White Collar']
+    },
+    'cfp': {
+      id: 'cfp',
+      title: 'CFP® Certification (Certified Financial Planner)',
+      code: 'CFP',
+      level: '7 Domains · CFP Board',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The standard of excellence for financial planners covering retirement planning, tax planning, estate planning, and fiduciary obligations.',
+      tags: ['CFP', 'CFP Board', 'Financial Planning', 'Wealth Management', 'Retirement', 'Estate Planning', 'Fiduciary']
+    },
+    'caia': {
+      id: 'caia',
+      title: 'CAIA® Charter (Chartered Alternative Investment Analyst)',
+      code: 'CAIA',
+      level: 'Levels I & II · CAIA Association',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The global benchmark for alternative investment education: hedge funds, private equity, real assets, commodities, and structured products.',
+      tags: ['CAIA', 'Alternative Investments', 'Private Equity', 'Hedge Funds', 'Real Estate', 'Commodities']
+    },
+    'cmt': {
+      id: 'cmt',
+      title: 'CMT® Charter (Chartered Market Technician)',
+      code: 'CMT',
+      level: 'Levels I, II & III · CMT Association',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Preeminent technical analysis and quantitative market behavior credential recognized by FINRA and global trading desks.',
+      tags: ['CMT', 'Technical Analysis', 'Trading', 'Market Behavior', 'Charting', 'Quantitative Finance']
+    },
+    'cipa': {
+      id: 'cipa',
+      title: 'CIPA® Fellowship (Certified Islamic Professional Accountant)',
+      code: 'CIPA',
+      level: '4 Core Papers · AAOIFI',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Premier technical fellowship for financial reporting, auditing, and accounting under AAOIFI Islamic accounting standards.',
+      tags: ['CIPA', 'AAOIFI', 'Islamic Accounting', 'Islamic Banking', 'Shari\'ah', 'Financial Reporting']
+    },
+    'crma': {
+      id: 'crma',
+      title: 'CRMA® Certification (Risk Management Assurance)',
+      code: 'CRMA',
+      level: 'Risk Assurance · The IIA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Demonstrates the ability to provide assurance on core business processes in risk management and corporate governance.',
+      tags: ['CRMA', 'IIA', 'Risk Assurance', 'Internal Audit', 'Enterprise Risk', 'ERM']
+    },
+    'crisc': {
+      id: 'crisc',
+      title: 'CRISC® Certification (Risk and Information Systems Control)',
+      code: 'CRISC',
+      level: '4 Domains · ISACA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Validates expertise in identifying and managing enterprise IT risk and implementing and maintaining information system controls.',
+      tags: ['CRISC', 'ISACA', 'IT Risk', 'Information Systems', 'Risk Assessment', 'Control Monitoring']
+    },
+    'cgeit': {
+      id: 'cgeit',
+      title: 'CGEIT® Certification (Governance of Enterprise IT)',
+      code: 'CGEIT',
+      level: '4 Domains · ISACA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Apex executive certification for establishing, managing, and governing enterprise IT strategies aligned with corporate objectives.',
+      tags: ['CGEIT', 'ISACA', 'IT Governance', 'COBIT', 'Enterprise Architecture', 'Strategic Alignment']
+    },
+    'cdpse': {
+      id: 'cdpse',
+      title: 'CDPSE® Certification (Data Privacy Solutions Engineer)',
+      code: 'CDPSE',
+      level: '3 Domains · ISACA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Technical credential validating privacy-by-design implementations, privacy architecture, and data lifecycle governance.',
+      tags: ['CDPSE', 'ISACA', 'Data Privacy', 'Privacy by Design', 'GDPR', 'Data Protection', 'Security']
+    },
+    'prm': {
+      id: 'prm',
+      title: 'PRM™ Designation (Professional Risk Manager)',
+      code: 'PRM',
+      level: 'Exams 1 & 2 · PRMIA',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Rigorous quantitative and qualitative financial risk management qualification adhering to global sound practice standards.',
+      tags: ['PRM', 'PRMIA', 'Risk Management', 'Quantitative Finance', 'Market Risk', 'Credit Risk']
+    },
+    'erp': {
+      id: 'erp',
+      title: 'ERP® Certification (Energy Risk Professional)',
+      code: 'ERP',
+      level: 'Comprehensive · GARP',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Specialized risk credential covering physical and financial energy commodity trading, markets, and risk management systems.',
+      tags: ['ERP', 'GARP', 'Energy Risk', 'Commodities', 'Oil and Gas', 'Power Markets', 'ETRM']
+    },
+    'fpac': {
+      id: 'fpac',
+      title: 'FPAC® Certification (Corporate FP&A Professional)',
+      code: 'FPAC',
+      level: 'Parts I & II · AFP',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Preeminent corporate financial planning & analysis credential focusing on predictive modeling, budgeting, and strategic foresight.',
+      tags: ['FPAC', 'AFP', 'FP&A', 'Financial Modeling', 'Corporate Finance', 'Budgeting', 'Forecasting']
+    },
+    'ctp': {
+      id: 'ctp',
+      title: 'CTP® Certification (Certified Treasury Professional)',
+      code: 'CTP',
+      level: '5 Domains · AFP',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'The benchmark qualification in corporate treasury management, liquidity optimization, working capital, and capital structure.',
+      tags: ['CTP', 'AFP', 'Treasury', 'Cash Management', 'Liquidity', 'Working Capital', 'Payment Systems']
+    },
+    'chfc': {
+      id: 'chfc',
+      title: 'ChFC® Designation (Chartered Financial Consultant)',
+      code: 'CHFC',
+      level: '9 Modular Courses · The American College',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Comprehensive wealth management and consulting credential covering comprehensive financial planning, taxation, and advisory.',
+      tags: ['ChFC', 'American College', 'Financial Consulting', 'Wealth Advisory', 'Tax Planning', 'Retirement']
+    },
+    'icma': {
+      id: 'icma',
+      title: 'ICMA CMA® & APA (Institute of Certified Management Accountants)',
+      code: 'ICMA',
+      level: 'Graduate & Professional · ICMA Australia / UK',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Global management accounting and accredited professional accountant (APA) pathway focusing on strategic cost and financial analysis.',
+      tags: ['ICMA', 'CMA', 'APA', 'Management Accounting', 'Strategic Cost Management', 'Financial Analysis']
     }
   };
 
@@ -224,7 +484,33 @@
   const KNOWN_ROUTES = {
     'icab': ['grad', 'hsc', 'pas', 'pro'],
     'icab-it-labs': ['all', 'cl_labs', 'pl_labs'],
-    'acca': ['standard']
+    'acca': ['standard'],
+    'cfa': ['portfolio-mgmt', 'private-wealth', 'private-markets'],
+    'cpa': ['core-isc', 'core-bar', 'core-tcp'],
+    'cgma': ['traditional', 'flp'],
+    'icmab': ['standard', 'fast-track-icab', 'fast-track-acca'],
+    'icsb': ['standard', 'fast-track-accountants'],
+    'cma': ['standard'],
+    'cisa': ['standard'],
+    'csaa': ['standard'],
+    'cia': ['standard'],
+    'frm': ['standard'],
+    'cissp': ['standard'],
+    'cfe': ['standard'],
+    'cfp': ['standard'],
+    'caia': ['standard'],
+    'cmt': ['standard'],
+    'cipa': ['standard'],
+    'crma': ['standard'],
+    'crisc': ['standard'],
+    'cgeit': ['standard'],
+    'cdpse': ['standard'],
+    'prm': ['standard'],
+    'erp': ['standard'],
+    'fpac': ['standard'],
+    'ctp': ['standard'],
+    'chfc': ['standard'],
+    'icma': ['standard']
   };
 
   // Safe Storage helper with in-memory dictionary fallback
@@ -495,7 +781,7 @@
           } else {
             // Single parameter is a nodeId
             nodeId = parts[0];
-            routeId = matchedQual === 'icab' ? 'grad' : (matchedQual === 'acca' ? 'standard' : 'all');
+            routeId = matchedQual === 'icab' ? 'grad' : (matchedQual.startsWith('icab-') ? 'all' : ((KNOWN_ROUTES[matchedQual] && KNOWN_ROUTES[matchedQual][0]) || 'standard'));
           }
         } else {
           routeId = parts[0];
@@ -509,7 +795,10 @@
       else if (matchedQual === 'icab-it-labs') routeId = 'all';
       else if (matchedQual.startsWith('icab-')) routeId = 'all';
       else if (matchedQual === 'acca') routeId = 'standard';
-      else routeId = 'all';
+      else {
+        const knownForQual = KNOWN_ROUTES[matchedQual];
+        routeId = (knownForQual && knownForQual[0]) || 'standard';
+      }
     }
 
     return {

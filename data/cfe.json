@@ -1,0 +1,158 @@
+{
+  "id": "cfe",
+  "title": "CFE® Credential (Certified Fraud Examiner)",
+  "region": "Global",
+  "body": "Association of Certified Fraud Examiners (ACFE)",
+  "officialUrl": "https://www.acfe.com",
+  "lastVerified": "2026-11-09",
+  "source": "ACFE Fraud Examiners Manual & CFE Candidate Handbook",
+  "summary": "The global gold standard in fraud examination, forensic accounting, white-collar criminology, and anti-fraud deterrence, evaluated across 4 comprehensive examination sections and a 50-point qualification system.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CFE Track",
+      "tag": "Forensic & Anti-Fraud Professionals",
+      "blurb": "Achieve 50 qualification points, pass all 4 computer-based examination sections (75% passing score each), and document 2 years of fraud-related experience.",
+      "stages": [
+        {
+          "id": "cfe-stage-1",
+          "title": "Stage 1: Eligibility & 50-Point Qualification System",
+          "subtitle": "ACFE membership and points-based academic/experience evaluation",
+          "nodes": [
+            {
+              "id": "cfe-membership",
+              "name": "Join ACFE & Establish Candidate Profile",
+              "code": "CFE-MEM",
+              "category": "Admin",
+              "description": "Maintain active Associate membership in the ACFE and open an official CFE candidate profile."
+            },
+            {
+              "id": "cfe-points",
+              "name": "Earn 50 Qualification Points",
+              "code": "CFE-POINTS",
+              "category": "Admin",
+              "description": "Accumulate 50 qualification points based on education (Bachelor's degree = 40 points) and professional experience (1 year = 5 points). Minimum 40 points required to sit for the exam.",
+              "topics": [
+                "40 Points for Bachelor's Degree",
+                "5 Points per Year of Fraud Experience",
+                "Point System Thresholds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfe-stage-2",
+          "title": "Stage 2: Sections 1 & 2 Examinations",
+          "subtitle": "Financial Transactions & Fraud Schemes, and Law",
+          "nodes": [
+            {
+              "id": "cfe-sec1",
+              "name": "Section 1: Financial Transactions & Fraud Schemes",
+              "code": "CFE-S1",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "marks": 100,
+              "description": "Basic accounting theory, internal control vulnerabilities, asset misappropriation (skimming, larceny, billing, payroll, check tampering), corruption, and financial statement fraud schemes.",
+              "topics": [
+                "Basic Accounting Theory & Internal Controls",
+                "Asset Misappropriation: Cash Receipts & Fraudulent Disbursements",
+                "Corruption: Bribery, Kickbacks, Bid-Rigging & Conflicts of Interest",
+                "Financial Statement Fraud: Fictitious Revenues, Timing Differences, Concealed Liabilities",
+                "Specialized Schemes: Healthcare, Insurance, Securities & Consumer Fraud"
+              ]
+            },
+            {
+              "id": "cfe-sec2",
+              "name": "Section 2: Law",
+              "code": "CFE-S2",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "marks": 100,
+              "description": "Criminal and civil justice systems, rules of evidence, courtroom testimony, legal rights of suspects during interviews, search and seizure, and privacy laws.",
+              "topics": [
+                "Civil vs Criminal Legal Systems & Burdens of Proof",
+                "Rules of Evidence, Chain of Custody & Document Authenticity",
+                "Suspect Rights, Search and Seizure, and Self-Incrimination Protections",
+                "Expert Witness Testimony & Federal Rules of Evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfe-stage-3",
+          "title": "Stage 3: Sections 3 & 4 Examinations",
+          "subtitle": "Investigation, and Fraud Prevention & Deterrence",
+          "nodes": [
+            {
+              "id": "cfe-sec3",
+              "name": "Section 3: Investigation",
+              "code": "CFE-S3",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "marks": 100,
+              "description": "Forensic interviewing techniques, deception detection, digital evidence collection, public records searches, tracing illicit assets, and formal fraud investigation reporting.",
+              "topics": [
+                "Forensic Interviewing Techniques & Admission-Seeking Interviews",
+                "Digital Forensics, E-Discovery & Metadata Preservation",
+                "Tracing Illicit Assets & Net Worth Analysis Methodologies",
+                "Writing Comprehensive Fraud Investigation Reports"
+              ]
+            },
+            {
+              "id": "cfe-sec4",
+              "name": "Section 4: Fraud Prevention & Deterrence",
+              "code": "CFE-S4",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "marks": 100,
+              "description": "White-collar criminological theories (Fraud Triangle, Cressey, Hollinger-Clark), fraud risk assessment, COSO internal controls, anti-fraud governance, and whistleblower hotlines.",
+              "topics": [
+                "Criminological Theories of White-Collar Crime & Fraud Triangle",
+                "Developing Organizational Anti-Fraud Policies & Ethics Programs",
+                "Fraud Risk Assessment Methodologies & COSO Controls Integration",
+                "Whistleblower Protection, Hotline Management & Fraud Prevention Culture"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfe-stage-4",
+          "title": "Stage 4: Professional Experience & Credential Award",
+          "subtitle": "2 Years Verified Fraud Experience + Annual CPE",
+          "nodes": [
+            {
+              "id": "cfe-exp",
+              "name": "2 Years Qualifying Fraud-Related Experience",
+              "code": "CFE-EXP",
+              "category": "Experience",
+              "duration": "24 Months Full-Time",
+              "description": "Demonstrate at least 2 years of professional experience in fraud examination, forensic accounting, financial auditing, criminology, loss prevention, or legal investigation.",
+              "topics": [
+                "24 Months Qualifying Experience",
+                "Supervisory Professional Verification"
+              ]
+            },
+            {
+              "id": "cfe-cert",
+              "name": "Certified Fraud Examiner Designation Conferred",
+              "code": "CFE-CERT",
+              "category": "Milestone",
+              "description": "Formal conferral of the CFE credential upon passing all 4 exam sections and achieving 50 total qualification points. Requires 20 hours annual CPE (2 hours in ethics).",
+              "topics": [
+                "CFE Credential Award",
+                "20 Hours Annual CPE",
+                "2 Hours Ethics CPE",
+                "Active ACFE Membership"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

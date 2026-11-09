@@ -1,0 +1,301 @@
+{
+  "id": "cma",
+  "title": "CMA® Certification (Certified Management Accountant)",
+  "region": "Global",
+  "body": "Institute of Management Accountants (IMA) / ICMA",
+  "officialUrl": "https://www.imanet.org",
+  "lastVerified": "2026-11-09",
+  "source": "IMA Content Specification Outlines (CSO 2024-2026)",
+  "summary": "The CMA is the global benchmark for management accountants and financial managers, featuring Part 1 Financial Planning, Performance, and Analytics and Part 2 Strategic Financial Management with 12 core competencies, 50% MCQ gate, and Prometric case essays.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Professional Track",
+      "tag": "All Candidates",
+      "blurb": "Complete both 4-hour examination parts (100 MCQs + 2 Case Essays each), verify degree prerequisites, and document 2 continuous years of qualifying experience.",
+      "stages": [
+        {
+          "id": "cma-stage-1",
+          "title": "Stage 1: Eligibility & Registration",
+          "subtitle": "Active IMA membership and educational prerequisites",
+          "nodes": [
+            {
+              "id": "cma-reg-1",
+              "name": "Join IMA & Enroll in CMA Program",
+              "code": "CMA-REG",
+              "category": "Admin",
+              "description": "Maintain active professional membership in the Institute of Management Accountants (IMA) and pay the CMA entrance fee to open your 3-year testing candidacy window.",
+              "topics": [
+                "IMA Membership",
+                "CMA Entrance Fee",
+                "3-Year Candidate Window"
+              ]
+            },
+            {
+              "id": "cma-reg-2",
+              "name": "Verify Bachelor's Degree Prerequisite",
+              "code": "CMA-EDU",
+              "category": "Admin",
+              "description": "Submit official collegiate transcripts verifying a Bachelor's degree from an accredited institution or qualifying international professional accounting qualification.",
+              "topics": [
+                "Accredited Bachelor's Degree",
+                "Transcript Verification",
+                "Alternative Professional Credentials"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cma-stage-2",
+          "title": "Stage 2: Part 1 – Financial Planning, Performance, and Analytics",
+          "subtitle": "6 Curricular Sections (100%) culminating in a 4-Hour Exam (100 MCQs + 2 Essays)",
+          "nodes": [
+            {
+              "id": "cma-p1-s1",
+              "name": "Section A: External Financial Reporting Decisions",
+              "code": "CMA.P1.A",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Balance sheet, income statement, cash flows, asset/liability recognition, IFRS vs US GAAP differences, and integrated reporting.",
+              "topics": [
+                "Financial Statements",
+                "Recognition and Measurement",
+                "US GAAP vs IFRS",
+                "Integrated Reporting & ESG"
+              ]
+            },
+            {
+              "id": "cma-p1-s2",
+              "name": "Section B: Planning, Budgeting, and Forecasting",
+              "code": "CMA.P1.B",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Strategic planning models, budgeting methodologies (ZBB, ABB, rolling forecasts), regression forecasting, and master profit planning.",
+              "topics": [
+                "Strategic Planning Frameworks",
+                "Budgeting Methodologies (ZBB, ABB)",
+                "Forecasting Techniques & Learning Curves",
+                "Annual Profit Plan & Cash Budgets"
+              ]
+            },
+            {
+              "id": "cma-p1-s3",
+              "name": "Section C: Performance Management",
+              "code": "CMA.P1.C",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Variance analysis across material, labor, overhead, and sales; responsibility centers; ROI, Residual Income, EVA; and Balanced Scorecards.",
+              "topics": [
+                "Standard Costing & Variances",
+                "Responsibility Accounting & Segment Reporting",
+                "ROI, Residual Income & EVA",
+                "Balanced Scorecard Architecture"
+              ]
+            },
+            {
+              "id": "cma-p1-s4",
+              "name": "Section D: Cost Management",
+              "code": "CMA.P1.D",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Cost flows, absorption vs variable costing, job-order and process costing, Activity-Based Costing (ABC), and operational efficiency tools.",
+              "topics": [
+                "Cost Behavior & Allocation",
+                "Absorption vs Variable Costing",
+                "Activity-Based Costing (ABC)",
+                "Supply Chain & Theory of Constraints"
+              ]
+            },
+            {
+              "id": "cma-p1-s5",
+              "name": "Section E: Internal Controls",
+              "code": "CMA.P1.E",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Governance, risk, and compliance; COSO Internal Control—Integrated Framework; internal audit roles; and business continuity.",
+              "topics": [
+                "COSO Framework & 17 Principles",
+                "System Controls & Information Security",
+                "Internal Audit Mandate",
+                "Business Continuity & Disaster Recovery"
+              ]
+            },
+            {
+              "id": "cma-p1-s6",
+              "name": "Section F: Technology and Analytics",
+              "code": "CMA.P1.F",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Information systems, accounting software, ERP databases, data governance, business intelligence, data mining, and visualization.",
+              "topics": [
+                "ERP Systems & Data Warehouses",
+                "Data Governance & IT Controls",
+                "Data Analytics Lifecycle & Mining",
+                "Data Visualization & BI Dashboards"
+              ],
+              "modernThemes": [
+                "Big Data Analytics",
+                "RPA in Finance",
+                "Data Visualization"
+              ]
+            },
+            {
+              "id": "cma-p1-exam",
+              "name": "Part 1 Examination Sitting",
+              "code": "CMA-P1-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "100 MCQs (75%) + 2 Case-Based Essay Scenarios (25%)",
+              "frequency": "3 Testing Windows: Jan/Feb, May/Jun, Sep/Oct",
+              "marks": 500,
+              "description": "Part 1 examination sitting administered at Prometric test centers. Candidates must score at least 50% on the 100 MCQs to unlock the 2 Case-Based essay scenarios. Passing threshold: 360/500 scaled.",
+              "checklists": [
+                "Score $\\ge$ 50% on MCQs to unlock the essay section",
+                "Demonstrate Level C synthesis and analytical problem-solving in essays"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cma-stage-3",
+          "title": "Stage 3: Part 2 – Strategic Financial Management",
+          "subtitle": "6 Curricular Sections (100%) culminating in a 4-Hour Exam (100 MCQs + 2 Essays)",
+          "nodes": [
+            {
+              "id": "cma-p2-s1",
+              "name": "Section A: Financial Statement Analysis",
+              "code": "CMA.P2.A",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Liquidity, leverage, activity, profitability, and market ratios; DuPont decomposition; earnings quality analysis; and foreign exchange effects.",
+              "topics": [
+                "Financial Ratio Analysis",
+                "DuPont Decompositions",
+                "Earnings Quality & Manipulation Detection",
+                "Foreign Exchange Exposure in FSA"
+              ]
+            },
+            {
+              "id": "cma-p2-s2",
+              "name": "Section B: Corporate Finance",
+              "code": "CMA.P2.B",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Risk and return, portfolio risk, CAPM, long-term capital financing, WACC, capital structure theories, working capital optimization, and M&A.",
+              "topics": [
+                "Risk and Return & CAPM",
+                "Cost of Capital & WACC",
+                "Capital Structure Optimization",
+                "Working Capital Management",
+                "M&A Valuation & Restructuring"
+              ]
+            },
+            {
+              "id": "cma-p2-s3",
+              "name": "Section C: Business Decision Analysis",
+              "code": "CMA.P2.C",
+              "category": "Coursework",
+              "weightage": "25%",
+              "description": "Cost-Volume-Profit (CVP) analysis, break-even analysis, marginal analysis for special orders/make-or-buy, pricing strategies, and target costing.",
+              "topics": [
+                "CVP & Break-Even Analysis",
+                "Marginal & Relevant Cost Analysis",
+                "Pricing Strategies & Elasticity",
+                "Target Costing & Life-Cycle Pricing"
+              ]
+            },
+            {
+              "id": "cma-p2-s4",
+              "name": "Section D: Enterprise Risk Management",
+              "code": "CMA.P2.D",
+              "category": "Coursework",
+              "weightage": "10%",
+              "description": "Enterprise risk identification, risk assessment, risk mitigation strategies, COSO Enterprise Risk Management (ERM) framework, and risk appetite.",
+              "topics": [
+                "Risk Types: Operational, Financial, Strategic",
+                "COSO ERM 2017 Framework",
+                "Risk Assessment & Treatment Strategies"
+              ]
+            },
+            {
+              "id": "cma-p2-s5",
+              "name": "Section E: Capital Investment Decisions",
+              "code": "CMA.P2.E",
+              "category": "Coursework",
+              "weightage": "10%",
+              "description": "Capital budgeting process, cash flow estimation, Discounted Cash Flow (DCF) methods (NPV, IRR), payback period, and risk adjustments.",
+              "topics": [
+                "Capital Budgeting Cash Flows",
+                "NPV vs IRR vs MIRR Analysis",
+                "Payback & Discounted Payback",
+                "Real Options & Risk Adjustment"
+              ]
+            },
+            {
+              "id": "cma-p2-s6",
+              "name": "Section F: Professional Ethics",
+              "code": "CMA.P2.F",
+              "category": "Ethics",
+              "weightage": "15%",
+              "description": "IMA Statement of Ethical Professional Practice (Competence, Confidentiality, Integrity, Credibility), resolving ethical dilemmas, and corporate anti-fraud policies.",
+              "topics": [
+                "IMA Statement of Ethical Professional Practice",
+                "Four Ethical Standards & Three Resolving Steps",
+                "Corporate Ethics & Anti-Fraud Controls"
+              ]
+            },
+            {
+              "id": "cma-p2-exam",
+              "name": "Part 2 Examination Sitting",
+              "code": "CMA-P2-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "100 MCQs (75%) + 2 Case-Based Essay Scenarios (25%)",
+              "frequency": "3 Testing Windows: Jan/Feb, May/Jun, Sep/Oct",
+              "marks": 500,
+              "description": "Part 2 examination sitting covering strategic corporate finance, decision models, ethics, and valuation. Scaled passing score: 360/500.",
+              "checklists": [
+                "Score $\\ge$ 50% on MCQs to unlock the essay section",
+                "Demonstrate clear structured problem-solving on corporate valuation and ethics essays"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cma-stage-4",
+          "title": "Stage 4: Practical Experience & Credential Award",
+          "subtitle": "2 Years Qualifying Work Experience + 30h Annual CPE",
+          "nodes": [
+            {
+              "id": "cma-exp-1",
+              "name": "2 Continuous Years Management Accounting Experience",
+              "code": "CMA-EXP",
+              "category": "Experience",
+              "duration": "24 Months Continuous",
+              "description": "Demonstrate two continuous years of full-time professional experience in management accounting, financial planning, analysis, auditing, or executive corporate finance.",
+              "topics": [
+                "Management Accounting Experience",
+                "Financial Planning & Analysis",
+                "Internal Control & Corporate Reporting"
+              ]
+            },
+            {
+              "id": "cma-cert-1",
+              "name": "CMA Designation Conferred & Annual CPE",
+              "code": "CMA-CERT",
+              "category": "Milestone",
+              "description": "Attainment of the CMA designation upon passing both exam parts and verifying credentials. Requires 30 hours of CPE annually (including 2 hours of ethics).",
+              "topics": [
+                "CMA Credential Award",
+                "30 Hours Annual CPE",
+                "2 Hours Ethics CPE",
+                "Active IMA Membership"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

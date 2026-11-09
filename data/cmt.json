@@ -1,0 +1,152 @@
+{
+  "id": "cmt",
+  "title": "CMT® Charter (Chartered Market Technician)",
+  "region": "Global",
+  "body": "CMT Association",
+  "officialUrl": "https://cmtassociation.org",
+  "lastVerified": "2026-11-09",
+  "source": "CMT Association Curriculum & Body of Knowledge",
+  "summary": "The definitive credential for technical analysis, quantitative trading models, behavioral economics, and market microstructure across 3 progressive exam levels and 3 years experience. Grants US FINRA Series 86 waiver.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Market Technician Track",
+      "tag": "Technical Analysts & Quantitative Traders",
+      "blurb": "Pass CMT Levels I, II, and III, document 3 years of market analysis experience, and adhere to the Code of Ethics.",
+      "stages": [
+        {
+          "id": "cmt-stage-1",
+          "title": "Stage 1: CMT Level I – Terminology & Fundamental Concepts",
+          "subtitle": "Basic charting techniques, price action, and trend definitions (132 MCQs | 2 Hours)",
+          "nodes": [
+            {
+              "id": "cmt-l1-curriculum",
+              "name": "Level I Curriculum: Technical Analysis Terminology",
+              "code": "CMT-L1-CURR",
+              "category": "Coursework",
+              "description": "Basic terminology, chart construction (candlestick, bar, point-and-figure), support/resistance, trend analysis, classical chart patterns, moving averages, volume, and basic indicators.",
+              "topics": [
+                "Theory and History of Technical Analysis & Dow Theory",
+                "Chart Construction: Candlesticks, Line, Bar, Point and Figure",
+                "Trend Analysis, Support/Resistance & Classical Reversal/Continuation Patterns",
+                "Moving Averages, Price Oscillators & Volume Indicators",
+                "CMT Association Code of Ethics & Standards of Professional Conduct"
+              ]
+            },
+            {
+              "id": "cmt-l1-exam",
+              "name": "CMT Level I Examination Sitting",
+              "code": "CMT-L1-EXAM",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "132 Multiple-Choice Questions",
+              "frequency": "2 sittings / year (June, December)",
+              "marks": 132,
+              "description": "Computer-based testing evaluating definitions, terminology, and foundational chart analysis rules."
+            }
+          ]
+        },
+        {
+          "id": "cmt-stage-2",
+          "title": "Stage 2: CMT Level II – Theory & Analysis",
+          "subtitle": "Advanced indicators, volatility models, and behavioral macro (170 MCQs | 4 Hours)",
+          "nodes": [
+            {
+              "id": "cmt-l2-curriculum",
+              "name": "Level II Curriculum: Quantitative & Volatility Models",
+              "code": "CMT-L2-CURR",
+              "category": "Coursework",
+              "description": "Statistical concepts in technical analysis, trend-following indicators, volatility indicators (Bollinger Bands, ATR), intermarket analysis, market breadth, and behavioral finance.",
+              "topics": [
+                "Statistical Measures, Regression & Correlation in Market Analysis",
+                "Advanced Oscillators (RSI, Stochastics, MACD) & Divergence Analysis",
+                "Volatility Indicators, Bands & Options Volatility Surface Intuition",
+                "Intermarket Analysis: Equities, Bonds, Currencies, and Commodities Relationships",
+                "Behavioral Economics: Cognitive Biases & Market Sentiment Metrics"
+              ]
+            },
+            {
+              "id": "cmt-l2-exam",
+              "name": "CMT Level II Examination Sitting",
+              "code": "CMT-L2-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "170 Multiple-Choice Questions",
+              "frequency": "2 sittings / year (June, December)",
+              "marks": 170,
+              "description": "Computer-based examination testing applied technical theory, quantitative indicators, and intermarket analysis."
+            }
+          ]
+        },
+        {
+          "id": "cmt-stage-3",
+          "title": "Stage 3: CMT Level III – Behavioral Finance & Portfolio Application",
+          "subtitle": "Synthesis, system design, and constructed response essays (4 Hours)",
+          "nodes": [
+            {
+              "id": "cmt-l3-curriculum",
+              "name": "Level III Curriculum: Trading System Design & Risk",
+              "code": "CMT-L3-CURR",
+              "category": "Coursework",
+              "description": "Designing algorithmic and systematic trading systems, backtesting protocols, money management rules, position sizing, behavioral finance overlays, and portfolio risk management.",
+              "topics": [
+                "Trading System Architecture & Backtesting Parameter Optimization",
+                "Money Management, Position Sizing (Kelly Criterion, Fixed Fraction) & Risk Control",
+                "Behavioral Macro Analysis & Market Timing Strategies",
+                "Professional Ethics and Fiduciary Responsibilities in Market Research"
+              ],
+              "modernThemes": [
+                "Algorithmic Trading Systems",
+                "Backtesting Overfitting Prevention",
+                "Quantitative Factor Models"
+              ]
+            },
+            {
+              "id": "cmt-l3-exam",
+              "name": "CMT Level III Examination Sitting",
+              "code": "CMT-L3-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "Constructed Response (Essays) and Multiple-Choice Questions",
+              "frequency": "2 sittings / year (June, December)",
+              "marks": 100,
+              "description": "Comprehensive examination combining constructed response essay scenarios and item sets requiring integration of trading systems, risk management, and market research."
+            }
+          ]
+        },
+        {
+          "id": "cmt-stage-4",
+          "title": "Stage 4: Experience & Member Induction",
+          "subtitle": "3 Years Market Analysis Experience + Series 86 Waiver",
+          "nodes": [
+            {
+              "id": "cmt-exp",
+              "name": "3 Years Professional Market Analysis Experience",
+              "code": "CMT-EXP",
+              "category": "Experience",
+              "duration": "36 Months Full-Time",
+              "description": "Demonstrate at least 3 years of acceptable professional work experience in market analysis, trading, portfolio management, or investment research.",
+              "topics": [
+                "36 Months Professional Experience",
+                "Member Sponsorship Attestation"
+              ]
+            },
+            {
+              "id": "cmt-charter",
+              "name": "CMT Charter Conferred & FINRA Series 86 Waiver",
+              "code": "CMT-CHARTER",
+              "category": "Milestone",
+              "description": "Formal award of the Chartered Market Technician (CMT®) credential. Charterholders qualify for an exemption from the FINRA Series 86 examination in the United States.",
+              "topics": [
+                "CMT Designation Conferred",
+                "US FINRA Series 86 Research Analyst Exam Exemption",
+                "Code of Ethics Commitment"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

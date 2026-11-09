@@ -1,0 +1,118 @@
+{
+  "id": "crma",
+  "title": "CRMA® Certification (Certification in Risk Management Assurance)",
+  "region": "Global",
+  "body": "The Institute of Internal Auditors (The IIA)",
+  "officialUrl": "https://www.theiia.org/en/certifications/crma/",
+  "lastVerified": "2026-11-09",
+  "source": "The IIA CRMA Exam Syllabus & Candidate Handbook",
+  "summary": "The premier credential for internal audit risk leadership, evaluating enterprise risk management (ERM), risk culture, governance assurance, and strategic advisory across 3 core domains and 2 years risk assurance experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Risk Assurance Track",
+      "tag": "Internal Audit Leaders & Risk Officers",
+      "blurb": "Hold active CIA credential (or meet education/experience prerequisite), pass the 120-question exam (600/750 scaled score), and document 2 years of risk assurance experience.",
+      "stages": [
+        {
+          "id": "crma-stage-1",
+          "title": "Stage 1: Internal Audit & Governance Leadership",
+          "subtitle": "Domains 1 and 2: Roles and Responsibilities, and Risk Governance",
+          "nodes": [
+            {
+              "id": "crma-d1",
+              "name": "Domain 1: Internal Audit Roles and Responsibilities",
+              "code": "CRMA-D1",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Internal audit roles in risk management: assurance vs consulting roles, maintaining objectivity, risk-based audit planning, and aligning internal audit strategy with enterprise ERM.",
+              "topics": [
+                "Assurance and Consulting Mandates in Enterprise Risk Management",
+                "Safeguarding Internal Audit Independence and Objectivity in Risk Roles",
+                "Risk-Based Audit Planning & Audit Universe Alignment with Enterprise Risks"
+              ]
+            },
+            {
+              "id": "crma-d2",
+              "name": "Domain 2: Risk Management Governance",
+              "code": "CRMA-D2",
+              "category": "Coursework",
+              "weightage": "25%",
+              "description": "Governance structures, board oversight, risk culture evaluation, Three Lines Model, risk appetite statements, and enterprise risk management framework integration (COSO ERM, ISO 31000).",
+              "topics": [
+                "Board Risk Governance Structures & Risk Committee Charters",
+                "The IIA Three Lines Model: Operational Management, Risk/Compliance, and Internal Audit",
+                "Evaluating Enterprise Risk Culture, Ethics & Tone at the Top",
+                "Articulating Risk Appetite, Risk Capacity & Tolerance Thresholds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crma-stage-2",
+          "title": "Stage 2: Risk Assurance Operations & Examination",
+          "subtitle": "Domain 3: Risk Management Assurance (55%) & 120-Question Exam",
+          "nodes": [
+            {
+              "id": "crma-d3",
+              "name": "Domain 3: Risk Management Assurance",
+              "code": "CRMA-D3",
+              "category": "Coursework",
+              "weightage": "55%",
+              "description": "Evaluating risk identification, assessment, response, and monitoring processes; assessing emerging risks, cyber resilience, third-party risk, and reporting risk assurance to the board.",
+              "topics": [
+                "Assessing Risk Identification, Measurement & Prioritization Methodologies",
+                "Evaluating Risk Mitigation Strategies & Key Control Effectiveness",
+                "Assuring Emerging Strategic Risks, Cybersecurity & Third-Party Vendor Risks",
+                "Formulating Comprehensive Risk Assurance Opinions for Executive Management & Board"
+              ]
+            },
+            {
+              "id": "crma-exam",
+              "name": "CRMA Computer-Based Examination",
+              "code": "CRMA-EXAM",
+              "category": "Exam",
+              "duration": "2.5 Hours (150 Minutes)",
+              "format": "120 Multiple-Choice Questions and Advanced Case Scenarios",
+              "frequency": "Continuous CBT testing globally via Pearson VUE",
+              "marks": 750,
+              "description": "Computer-based examination testing deep risk assurance, governance, and ERM evaluation. Scaled passing score: 600 out of 750."
+            }
+          ]
+        },
+        {
+          "id": "crma-stage-3",
+          "title": "Stage 3: Experience & Credential Award",
+          "subtitle": "2 Years Risk Management Assurance Experience + Annual CPE",
+          "nodes": [
+            {
+              "id": "crma-exp",
+              "name": "2 Years Risk Assurance / Internal Audit Experience",
+              "code": "CRMA-EXP",
+              "category": "Experience",
+              "duration": "24 Months Full-Time",
+              "description": "Demonstrate at least 2 years of professional experience in risk management assurance, internal audit, ERM, or internal control assessment.",
+              "topics": [
+                "24 Months Risk Assurance Experience",
+                "Supervisory Verification in IIA CCMS Portal"
+              ]
+            },
+            {
+              "id": "crma-cert",
+              "name": "CRMA Designation Conferred & Annual CPE",
+              "code": "CRMA-CERT",
+              "category": "Milestone",
+              "description": "Official award of the Certification in Risk Management Assurance (CRMA®). Requires 20 hours annual CPE (including 2 hours of ethics).",
+              "topics": [
+                "CRMA Credential Award",
+                "20 Hours Annual CPE",
+                "2 Hours Ethics CPE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

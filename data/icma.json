@@ -1,0 +1,131 @@
+{
+  "id": "icma",
+  "title": "ICMA CMA® & APA (Institute of Certified Management Accountants)",
+  "region": "Australia, UK & Global",
+  "body": "Institute of Certified Management Accountants (ICMA)",
+  "officialUrl": "https://cmawebline.org",
+  "lastVerified": "2026-11-09",
+  "source": "ICMA Post-Graduate CMA Program Syllabus & Regulations",
+  "summary": "The premier Commonwealth and international post-graduate management accounting credential bridging Strategic Cost Management (SCM) and Strategic Financial Analysis (SFA), conferring the CMA and APA designations.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Post-Graduate Track",
+      "tag": "Strategic Cost Leaders & Corporate Controllers",
+      "blurb": "Complete the foundational tiers (APA) or post-graduate entry, master SCM and SFA, pass comprehensive examinations, and verify 3 to 5 years senior experience.",
+      "stages": [
+        {
+          "id": "icma-stage-1",
+          "title": "Stage 1: Foundation & Accredited Professional Accountant (APA) Tier",
+          "subtitle": "Financial accounting, management systems, and intermediate accounting",
+          "nodes": [
+            {
+              "id": "icma-fin-acct",
+              "name": "Financial Accounting and Reporting",
+              "code": "ICMA-FAR",
+              "category": "Coursework",
+              "description": "Comprehensive financial accounting principles, accruals, ledger mechanics, corporate financial statements under IFRS, and cash flow analysis.",
+              "topics": [
+                "Double-Entry Accounting & Trial Balance",
+                "IFRS Financial Statement Preparation",
+                "Cash Flow Analysis & Working Capital"
+              ]
+            },
+            {
+              "id": "icma-mgmt-acct",
+              "name": "Management Accounting Systems",
+              "code": "ICMA-MAS",
+              "category": "Coursework",
+              "description": "Cost behavior, cost-volume-profit (CVP) analysis, absorption and variable costing, budgeting processes, and standard costing variances.",
+              "topics": [
+                "Cost Classification & CVP Analysis",
+                "Standard Costing & Variance Analysis",
+                "Master Budget Preparation"
+              ]
+            },
+            {
+              "id": "icma-apa-award",
+              "name": "Accredited Professional Accountant (APA) Award",
+              "code": "APA-AWARD",
+              "category": "Milestone",
+              "description": "Intermediate membership tier: conferral of the Accredited Professional Accountant (APA) designation upon completing foundational subjects."
+            }
+          ]
+        },
+        {
+          "id": "icma-stage-2",
+          "title": "Stage 2: Post-Graduate CMA Core Program",
+          "subtitle": "Strategic Cost Management (SCM) & Strategic Financial Analysis (SFA)",
+          "nodes": [
+            {
+              "id": "icma-scm",
+              "name": "Strategic Cost Management (SCM)",
+              "code": "SCM-501",
+              "category": "Exam",
+              "duration": "3.5 Hours",
+              "format": "Comprehensive Strategic Case Examination & Analysis",
+              "marks": 100,
+              "description": "Value chain analysis, activity-based management, target costing, life-cycle costing, Kaizen, environmental management accounting, and Theory of Constraints (TOC).",
+              "topics": [
+                "Value Chain Management & Strategic Cost Driver Analysis",
+                "Activity-Based Costing & Activity-Based Management (ABM)",
+                "Target Costing, Kaizen Costing & Life-Cycle Costing",
+                "Theory of Constraints (TOC) & Throughput Accounting",
+                "Strategic Pricing Decisions & Customer Profitability Analysis"
+              ]
+            },
+            {
+              "id": "icma-sfa",
+              "name": "Strategic Financial Analysis (SFA)",
+              "code": "SFA-502",
+              "category": "Exam",
+              "duration": "3.5 Hours",
+              "format": "Comprehensive Strategic Financial Case Study & Modeling",
+              "marks": 100,
+              "description": "Financial statement analysis, distress prediction models (Altman Z-Score), corporate valuation models (DCF, Economic Value Added), M&A due diligence, and capital restructuring.",
+              "topics": [
+                "Advanced Financial Statement Analysis & Quality of Earnings Evaluation",
+                "Financial Distress Prediction Models (Altman Z-Score, Beneish M-Score)",
+                "Business Valuation: Discounted Cash Flows (DCF) & Economic Value Added (EVA)",
+                "Mergers, Acquisitions, Leveraged Buyouts (LBOs) & Restructuring",
+                "Risk Management & Strategic Capital Financing Decisions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "icma-stage-3",
+          "title": "Stage 3: Professional Experience & CMA Fellow Admission",
+          "subtitle": "3 to 5 Years Senior Management Accounting Experience",
+          "nodes": [
+            {
+              "id": "icma-exp",
+              "name": "3 to 5 Years Senior Management Accounting Experience",
+              "code": "ICMA-EXP",
+              "category": "Experience",
+              "duration": "3 to 5 Years Professional",
+              "description": "Demonstrate 3 to 5 years of senior professional experience in management accounting, corporate finance, financial planning, or general business management.",
+              "topics": [
+                "Senior Management Accounting Verification",
+                "Executive Role Attestation"
+              ]
+            },
+            {
+              "id": "icma-cert",
+              "name": "Certified Management Accountant (CMA) Conferred",
+              "code": "ICMA-CMA",
+              "category": "Milestone",
+              "description": "Formal admission to full Certified Management Accountant (CMA Australia/UK) membership and entitlement to use the post-nominal initials CMA.",
+              "topics": [
+                "Full CMA Membership Award",
+                "Annual CPD Maintenance",
+                "Adherence to ICMA Code of Ethics"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

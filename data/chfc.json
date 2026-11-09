@@ -1,0 +1,163 @@
+{
+  "id": "chfc",
+  "title": "ChFC® Designation (Chartered Financial Consultant)",
+  "region": "USA",
+  "body": "The American College of Financial Services",
+  "officialUrl": "https://www.theamericancollege.edu",
+  "lastVerified": "2026-11-09",
+  "source": "The American College of Financial Services Curriculum Catalog",
+  "summary": "The premier modular financial consulting credential with comprehensive depth in small business planning, executive compensation, estate planning, and taxation across 9 modular courses (7 Core + 2 Electives).",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Modular Consulting Track",
+      "tag": "Financial Consultants & Wealth Strategists",
+      "blurb": "Complete 9 comprehensive modular courses (7 core + 2 electives), pass all 9 two-hour proctored exams, and verify 3 years of financial advisory experience.",
+      "stages": [
+        {
+          "id": "chfc-stage-1",
+          "title": "Stage 1: Foundational Financial Consulting Core",
+          "subtitle": "HS 300, HS 311, and HS 313: Fundamentals, Business Owners, and Insurance",
+          "nodes": [
+            {
+              "id": "chfc-hs300",
+              "name": "HS 300: Financial Planning: Process and Environment",
+              "code": "HS 300",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Financial planning process, code of ethics, financial statements, time value of money, education funding, and consumer credit."
+            },
+            {
+              "id": "chfc-hs311",
+              "name": "HS 311: Planning for Business Owners and Professionals",
+              "code": "HS 311",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Choosing business entities, buy-sell agreements, corporate tax planning, business valuation, and executive compensation plans."
+            },
+            {
+              "id": "chfc-hs313",
+              "name": "HS 313: Individual Life Insurance",
+              "code": "HS 313",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Term, whole, universal, and variable life insurance policies; policy taxation, riders, surrender values, and insurance trust integration."
+            }
+          ]
+        },
+        {
+          "id": "chfc-stage-2",
+          "title": "Stage 2: Advanced Investment, Tax & Retirement Core",
+          "subtitle": "HS 321, HS 326, and HS 328: Investments, Retirement, and Taxation",
+          "nodes": [
+            {
+              "id": "chfc-hs321",
+              "name": "HS 321: Investments",
+              "code": "HS 321",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Equity and debt valuation, mutual funds, asset allocation, modern portfolio theory, performance measurement, and market efficiency."
+            },
+            {
+              "id": "chfc-hs326",
+              "name": "HS 326: Planning for Retirement Needs",
+              "code": "HS 326",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Qualified retirement plans (401k, defined benefit), IRAs, Social Security optimization, distribution rules, and required minimum distributions."
+            },
+            {
+              "id": "chfc-hs328",
+              "name": "HS 328: Investments & Taxation",
+              "code": "HS 328",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Federal income taxation of individuals, property transactions, capital gains and losses, tax-advantaged investments, and AMT."
+            }
+          ]
+        },
+        {
+          "id": "chfc-stage-3",
+          "title": "Stage 3: Estate Planning & Specialized Electives",
+          "subtitle": "HS 330, HS 347, and Elective: Estate, Contemporary Applications & Elective",
+          "nodes": [
+            {
+              "id": "chfc-hs330",
+              "name": "HS 330: Fundamentals of Estate Planning",
+              "code": "HS 330",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Wills, probate, revocable and irrevocable trusts, gift and estate taxes, generation-skipping transfer tax, and charitable giving vehicles."
+            },
+            {
+              "id": "chfc-hs347",
+              "name": "HS 347: Contemporary Applications in Financial Planning",
+              "code": "HS 347",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Capstone case study course integrating all areas of personal financial planning into customized client solution blueprints."
+            },
+            {
+              "id": "chfc-elect",
+              "name": "Modular Elective (HS 325 or HS 334)",
+              "code": "CHFC-ELECT",
+              "category": "Exam",
+              "duration": "2 Hours",
+              "format": "100 Multiple-Choice Questions (70% Pass)",
+              "marks": 100,
+              "description": "Candidate selects one elective: HS 325 (Nonqualified Deferred Compensation and Executive Benefits) or HS 334 (Estate Planning Applications)."
+            }
+          ]
+        },
+        {
+          "id": "chfc-stage-4",
+          "title": "Stage 4: Experience & Designation Award",
+          "subtitle": "3 Years Qualifying Experience + American College Code of Ethics",
+          "nodes": [
+            {
+              "id": "chfc-exp",
+              "name": "3 Years Full-Time Financial Advisory Experience",
+              "code": "CHFC-EXP",
+              "category": "Experience",
+              "duration": "36 Months Full-Time",
+              "description": "Demonstrate at least 3 years of full-time professional experience in financial planning, insurance, investments, banking, or accounting.",
+              "topics": [
+                "36 Months Advisory Work Verification",
+                "Supervisory Attestation"
+              ]
+            },
+            {
+              "id": "chfc-cert",
+              "name": "ChFC® Designation Conferred & Ethics Pledge",
+              "code": "CHFC-CERT",
+              "category": "Milestone",
+              "description": "Award of the Chartered Financial Consultant (ChFC®) designation and commitment to The American College Code of Ethics and Professional Pledge.",
+              "topics": [
+                "ChFC Designation Conferred",
+                "American College Professional Pledge",
+                "30 Hours Biennial PACE Recertification"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "id": "cissp",
+  "title": "CISSP® Certification (Certified Information Systems Security Professional)",
+  "region": "Global",
+  "body": "International Information System Security Certification Consortium (ISC)²",
+  "officialUrl": "https://www.isc2.org/certifications/cissp",
+  "lastVerified": "2026-11-09",
+  "source": "ISC2 CISSP Common Body of Knowledge (CBK 2024-2026)",
+  "summary": "The premier global cybersecurity engineering and security architecture credential covering 8 Common Body of Knowledge (CBK) domains, an adaptive CAT examination (100-150 items), and 5 years verified experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CISSP Pathway",
+      "tag": "Security Engineers & Leaders",
+      "blurb": "Master the 8 CBK domains, pass the 3-hour Computerized Adaptive Testing (CAT) exam (700/1000 passing score), and obtain professional endorsement.",
+      "stages": [
+        {
+          "id": "cissp-stage-1",
+          "title": "Stage 1: Security Governance, Asset Protection & Architecture",
+          "subtitle": "Domains 1 through 4: Risk, Assets, Architecture, and Networks",
+          "nodes": [
+            {
+              "id": "cissp-d1",
+              "name": "Domain 1: Security and Risk Management",
+              "code": "CISSP-D1",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "ISC2 Code of Ethics, confidentiality/integrity/availability, security governance, compliance/legal regulations (GDPR/HIPAA), business continuity (BCP), and risk management quantitative formulas (ALE, SLE, ARO).",
+              "topics": [
+                "ISC2 Code of Professional Ethics (4 Mandatory Canons)",
+                "CIA Triad, Non-Repudiation, and Defense-in-Depth Principles",
+                "Legal & Regulatory Compliance (GDPR, HIPAA, Sarbanes-Oxley)",
+                "Business Continuity Planning (BCP) & Business Impact Analysis (BIA)",
+                "Quantitative & Qualitative Risk Assessment (SLE = AV × EF; ALE = SLE × ARO)"
+              ],
+              "modernThemes": [
+                "Quantitative Risk (FAIR)",
+                "GDPR Cross-Border Transfers"
+              ]
+            },
+            {
+              "id": "cissp-d2",
+              "name": "Domain 2: Asset Security",
+              "code": "CISSP-D2",
+              "category": "Coursework",
+              "weightage": "10%",
+              "description": "Information and asset classification, privacy management, data lifecycles, data ownership roles (Owners, Custodians), retention policies, and cryptographic data states (in transit, at rest, in use).",
+              "topics": [
+                "Commercial vs Government Data Classification Schemes",
+                "Data Ownership, Custodianship & Data Protection Officers (DPO)",
+                "Protecting Data States: At Rest (AES-256), In Transit (TLS 1.3), In Use (Enclaves)",
+                "Data Sanitization: Clearing, Purging, Degaussing, and Destruction"
+              ]
+            },
+            {
+              "id": "cissp-d3",
+              "name": "Domain 3: Security Architecture and Engineering",
+              "code": "CISSP-D3",
+              "category": "Coursework",
+              "weightage": "13%",
+              "description": "Security engineering models (Bell-LaPadula, Biba), security capabilities of systems (memory protection, TPM), modern cryptography (symmetric, asymmetric, hashing, post-quantum), and physical security.",
+              "topics": [
+                "Formal Security Models: Bell-LaPadula (Confidentiality) & Biba (Integrity)",
+                "Cryptographic Algorithms: AES, RSA, ECC, SHA-256, and Digital Signatures",
+                "Public Key Infrastructure (PKI) & Certificate Authorities (CA)",
+                "Physical Facility Security: CPTED, Access Controls, HVAC, and Fire Suppression"
+              ],
+              "modernThemes": [
+                "Post-Quantum Cryptography",
+                "Hardware TPM Security Enclaves"
+              ]
+            },
+            {
+              "id": "cissp-d4",
+              "name": "Domain 4: Communication and Network Security",
+              "code": "CISSP-D4",
+              "category": "Coursework",
+              "weightage": "13%",
+              "description": "OSI and TCP/IP models, secure network architecture, software-defined networking (SDN), micro-segmentation, wireless security (WPA3), cellular protocols, and remote access VPNs.",
+              "topics": [
+                "OSI 7-Layer Architecture & TCP/IP Protocol Security Vulnerabilities",
+                "Network Security Appliances: Next-Gen Firewalls (NGFW), IDS/IPS, Proxies",
+                "Software-Defined Networking (SDN) & Micro-Segmentation",
+                "Wireless Security (WPA3 Enterprise) & Secure Remote Access (IPsec/WireGuard)"
+              ],
+              "modernThemes": [
+                "Software-Defined Networking (SDN)",
+                "WPA3 Enterprise",
+                "Zero Trust Networks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cissp-stage-2",
+          "title": "Stage 2: Identity, Testing, Operations & Software Security",
+          "subtitle": "Domains 5 through 8: IAM, Assessment, Security Ops, and DevSecOps",
+          "nodes": [
+            {
+              "id": "cissp-d5",
+              "name": "Domain 5: Identity and Access Management (IAM)",
+              "code": "CISSP-D5",
+              "category": "Coursework",
+              "weightage": "13%",
+              "description": "Identification, authentication, authorization, accountability; federated identity (SAML, OAuth 2.0, OIDC), multi-factor authentication (MFA), biometric factors, and role-based access control (RBAC).",
+              "topics": [
+                "Identification, Authentication, Authorization & Accounting (AAA)",
+                "Multi-Factor Authentication (MFA) & Biometric Error Rates (CER/EER)",
+                "Federated Identity Management: SAML, OpenID Connect (OIDC), OAuth 2.0",
+                "Access Control Schemes: Discretionary (DAC), Mandatory (MAC), Role-Based (RBAC), Attribute-Based (ABAC)"
+              ],
+              "modernThemes": [
+                "FIDO2 / Passkeys",
+                "Zero Trust IAM",
+                "OAuth 2.0 & OIDC"
+              ]
+            },
+            {
+              "id": "cissp-d6",
+              "name": "Domain 6: Security Assessment and Testing",
+              "code": "CISSP-D6",
+              "category": "Coursework",
+              "weightage": "12%",
+              "description": "Vulnerability assessment, penetration testing methodologies, security audits, code reviews (SAST/DAST), synthetic transaction testing, and third-party assurance evaluations (SOC reports).",
+              "topics": [
+                "Vulnerability Scanning vs Penetration Testing (Black, White, Gray Box)",
+                "Security Testing Methodologies: SAST, DAST, IAST, and Fuzzing",
+                "Third-Party Vendor Assessments & SOC 2 Type II Evaluation",
+                "Disaster Recovery Testing (Walkthrough, Simulation, Parallel, Full Interruption)"
+              ]
+            },
+            {
+              "id": "cissp-d7",
+              "name": "Domain 7: Security Operations",
+              "code": "CISSP-D7",
+              "category": "Coursework",
+              "weightage": "13%",
+              "description": "Investigations and digital forensics (chain of custody), logging/SIEM/SOAR monitoring, incident management lifecycle, disaster recovery operations, and physical facility security.",
+              "topics": [
+                "Digital Forensics Evidence Acquisition, Admissibility & Chain of Custody",
+                "Security Information and Event Management (SIEM) & SOAR Automation",
+                "Incident Handling Phases: Detection, Containment, Eradication, Recovery, Lessons Learned",
+                "Patch Management, Vulnerability Management & Endpoint Detection (EDR/XDR)"
+              ],
+              "modernThemes": [
+                "SOAR Automation",
+                "EDR/XDR Telemetry",
+                "Cloud Forensics"
+              ]
+            },
+            {
+              "id": "cissp-d8",
+              "name": "Domain 8: Software Development Security",
+              "code": "CISSP-D8",
+              "category": "Coursework",
+              "weightage": "11%",
+              "description": "Secure software development lifecycle (SSDLC), OWASP Top 10 web vulnerabilities (SQLi, XSS, SSRF), threat modeling (STRIDE), APIs, software supply chain security, and DevSecOps pipelines.",
+              "topics": [
+                "Secure Software Development Lifecycle (SSDLC) & DevSecOps Pipelines",
+                "OWASP Top 10 Vulnerabilities: Injection, Broken Auth, XSS, SSRF, Deserialization",
+                "Threat Modeling Frameworks: STRIDE, PASTA, and Attack Trees",
+                "Software Supply Chain Security, SBOM (Software Bill of Materials) & Open-Source Governance"
+              ],
+              "modernThemes": [
+                "Software Bill of Materials (SBOM)",
+                "DevSecOps",
+                "API Security"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cissp-stage-3",
+          "title": "Stage 3: Examination, Endorsement & Charter Conferred",
+          "subtitle": "Computerized Adaptive Testing (CAT), 5 years experience endorsement, and credential award",
+          "nodes": [
+            {
+              "id": "cissp-exam",
+              "name": "CISSP Computerized Adaptive Examination (CAT)",
+              "code": "CISSP-EXAM",
+              "category": "Exam",
+              "duration": "3 Hours (180 Minutes)",
+              "format": "100 to 150 Adaptive Items (including 50 pretest items)",
+              "frequency": "Continuous CBT testing globally via Pearson VUE",
+              "marks": 1000,
+              "description": "Variable-length adaptive computer test evaluating the 8 CBK domains. Minimum passing competence: scaled score of 700 out of 1000 points.",
+              "checklists": [
+                "Achieve scaled score of at least 700 out of 1000",
+                "Answer minimum 100 questions within the 3-hour limit"
+              ]
+            },
+            {
+              "id": "cissp-exp",
+              "name": "5 Years Verified Professional Security Experience",
+              "code": "CISSP-EXP",
+              "category": "Experience",
+              "duration": "5 Years (Waiver up to 1 year available)",
+              "description": "Demonstrate at least 5 years of cumulative, paid full-time work experience in two or more of the 8 CISSP CBK domains (1-year waiver available for Bachelor's degree or approved credentials).",
+              "topics": [
+                "5-Year Work Verification in 2+ Domains",
+                "1-Year Academic/Credential Waiver"
+              ]
+            },
+            {
+              "id": "cissp-endorse",
+              "name": "Professional Endorsement & Code of Ethics",
+              "code": "CISSP-ENDORSE",
+              "category": "Milestone",
+              "description": "Obtain formal endorsement by an active (ISC)² certified professional in good standing, attest to the ISC2 Code of Ethics, and receive the CISSP charter.",
+              "topics": [
+                "Active ISC2 Member Endorsement Sign-Off",
+                "ISC2 Code of Ethics Preamble & Canons Commitment",
+                "Annual 40 CPE Maintenance Requirement"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -15,6 +15,28 @@ console.log('====================================================\n');
 const dataDir = path.join(__dirname, '..', 'data');
 const EXPECTED_ROADMAP_KEYS = [
   'acca',
+  'caia',
+  'cdpse',
+  'cfa',
+  'cfe',
+  'cfp',
+  'cgeit',
+  'cgma',
+  'chfc',
+  'cia',
+  'cipa',
+  'cisa',
+  'cissp',
+  'cma',
+  'cmt',
+  'cpa',
+  'crisc',
+  'crma',
+  'csaa',
+  'ctp',
+  'erp',
+  'fpac',
+  'frm',
   'icab',
   'icab-c1',
   'icab-c2',
@@ -33,15 +55,32 @@ const EXPECTED_ROADMAP_KEYS = [
   'icab-p7',
   'icab-v1',
   'icab-v2',
-  'icab-v3'
+  'icab-v3',
+  'icma',
+  'icmab',
+  'icsb',
+  'prm'
 ].sort();
+
+const VALID_CATEGORIES = new Set([
+  'Admin',
+  'Exam',
+  'Experience',
+  'Ethics',
+  'Training',
+  'Skill',
+  'Milestone',
+  'Coursework',
+  'Compliance',
+  'Pathway'
+]);
 
 // -------------------------------------------------------------
 // Test 1: Validate all JSON files in data/
 // -------------------------------------------------------------
 console.log('Test 1: Validating JSON syntax and schemas in data/...');
 const jsonFiles = fs.readdirSync(dataDir).filter(f => f.endsWith('.json')).sort();
-assert.strictEqual(jsonFiles.length, 20, `Expected exactly 20 JSON datasets, found ${jsonFiles.length}`);
+assert.strictEqual(jsonFiles.length, 46, `Expected exactly 46 JSON datasets, found ${jsonFiles.length}`);
 
 jsonFiles.forEach(file => {
   const filePath = path.join(dataDir, file);
@@ -55,8 +94,12 @@ jsonFiles.forEach(file => {
 
   assert.ok(data.id, `${file} missing required top-level property: id`);
   assert.ok(data.title, `${file} missing required top-level property: title`);
+  assert.ok(data.defaultRoute, `${file} missing required top-level property: defaultRoute`);
   assert.ok(data.routes, `${file} missing required top-level property: routes`);
+  assert.ok(data.routes[data.defaultRoute], `${file} defaultRoute "${data.defaultRoute}" not found in routes`);
   assert.ok(Object.keys(data.routes).length > 0, `${file} must contain at least one route`);
+
+  const isSubroadmap = Boolean(data.parentRoadmap);
 
   Object.entries(data.routes).forEach(([rKey, route]) => {
     assert.ok(route.stages, `${file} route ${rKey} missing stages`);
@@ -73,11 +116,14 @@ jsonFiles.forEach(file => {
         assert.ok(node.id, `${file} stage ${stage.id} node missing id`);
         assert.ok(node.name, `${file} node ${node.id} missing name`);
         assert.ok(node.category, `${file} node ${node.id} missing category`);
+        if (!isSubroadmap) {
+          assert.ok(VALID_CATEGORIES.has(node.category), `${file} node "${node.id}" has invalid category "${node.category}"`);
+        }
       });
     });
   });
 });
-console.log(`✓ All 20 JSON files passed structural schema verification.`);
+console.log(`✓ All 46 JSON files passed structural schema verification.`);
 
 // -------------------------------------------------------------
 // Test 2: Verify data/icab.json links to all 17 individual papers
@@ -193,6 +239,11 @@ const testCases = [
   { hash: '#icab-p7', expected: { view: 'roadmap', qualId: 'icab-p7', routeId: 'all', nodeId: null } },
   { hash: '#icab-p7/p7-s2-n1', expected: { view: 'roadmap', qualId: 'icab-p7', routeId: 'all', nodeId: 'p7-s2-n1' } },
   { hash: '#icab-v3', expected: { view: 'roadmap', qualId: 'icab-v3', routeId: 'all', nodeId: null } },
+  { hash: '#cfa', expected: { view: 'roadmap', qualId: 'cfa', routeId: 'portfolio-mgmt', nodeId: null } },
+  { hash: '#cpa', expected: { view: 'roadmap', qualId: 'cpa', routeId: 'core-isc', nodeId: null } },
+  { hash: '#cisa', expected: { view: 'roadmap', qualId: 'cisa', routeId: 'standard', nodeId: null } },
+  { hash: '#icmab', expected: { view: 'roadmap', qualId: 'icmab', routeId: 'standard', nodeId: null } },
+  { hash: '#icsb', expected: { view: 'roadmap', qualId: 'icsb', routeId: 'standard', nodeId: null } },
   { hash: '', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
   { hash: '#', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
   { hash: '#home', expected: { view: 'catalog', qualId: null, routeId: null, nodeId: null } },
@@ -221,7 +272,12 @@ const searchTests = [
   { query: 'wacc', expectedRoadmap: 'icab-p4' },
   { query: 'cisa', expectedRoadmap: 'icab-p7' },
   { query: 'quickbooks', expectedRoadmap: 'icab-it-labs' },
-  { query: 'acca', expectedRoadmap: 'acca' }
+  { query: 'acca', expectedRoadmap: 'acca' },
+  { query: 'portfolio', expectedRoadmap: 'cfa' },
+  { query: 'nasba', expectedRoadmap: 'cpa' },
+  { query: 'shari', expectedRoadmap: 'csaa' },
+  { query: 'icmab', expectedRoadmap: 'icmab' },
+  { query: 'icsb', expectedRoadmap: 'icsb' }
 ];
 
 searchTests.forEach(({ query, expectedRoadmap }) => {
@@ -312,7 +368,7 @@ assert.ok(!htmlContent.includes('id="explore-modal"'), 'index.html must not cont
 
 // 3. Verify ROADMAP_CATALOG metadata integrity
 const catalogEntries = Object.values(router.ROADMAP_CATALOG);
-assert.strictEqual(catalogEntries.length, 20, 'ROADMAP_CATALOG must contain exactly 20 roadmaps');
+assert.strictEqual(catalogEntries.length, 46, 'ROADMAP_CATALOG must contain exactly 46 roadmaps');
 catalogEntries.forEach((entry) => {
   assert.ok(entry.id, `Catalog entry missing id: ${JSON.stringify(entry)}`);
   assert.ok(entry.title, `Catalog entry ${entry.id} missing title`);

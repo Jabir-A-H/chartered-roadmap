@@ -1,0 +1,783 @@
+{
+  "id": "cfa",
+  "title": "CFA® Program (Chartered Financial Analyst)",
+  "region": "Global",
+  "body": "CFA Institute",
+  "officialUrl": "https://www.cfainstitute.org/programs/cfa",
+  "lastVerified": "2026-11-09",
+  "source": "CFA Institute Candidate Body of Knowledge (CBOK) 2025-2026",
+  "summary": "The gold standard in global investment management and financial analysis: 3 sequential examination levels, mandatory Practical Skills Modules (PSMs) in Python/AI and financial modeling, and 2025+ Level III specialized pathways.",
+  "defaultRoute": "portfolio-mgmt",
+  "routes": {
+    "portfolio-mgmt": {
+      "id": "portfolio-mgmt",
+      "name": "Portfolio Management Pathway (Traditional Track)",
+      "tag": "Institutional Asset Management",
+      "blurb": "Focuses on institutional fund management, asset allocation, active equity/fixed income strategies, trade execution, and performance attribution.",
+      "stages": [
+        {
+          "id": "cfa-stage1",
+          "title": "Stage 1: CFA Level I – Investment Tools",
+          "subtitle": "180 CBT MCQs across two 135-min sessions + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l1-exam",
+              "name": "CFA Level I Examination",
+              "code": "CFA-L1",
+              "category": "Exam",
+              "duration": "4.5 Hours (Two 135-min sessions)",
+              "format": "180 Multiple-Choice Questions (3-choice)",
+              "frequency": "4 sittings / year (Feb, May, Aug, Nov)",
+              "marks": 180,
+              "description": "Comprehensive computer-based examination evaluating foundational investment tools, ethical standards, financial reporting, asset classes, and quantitative methods.",
+              "topics": [
+                "Ethical and Professional Standards & Code of Conduct (15-20%)",
+                "Financial Statement Analysis & IFRS/US GAAP Reporting Quality (11-14%)",
+                "Equity Investments & Market Organization (11-14%)",
+                "Fixed Income Securities & Yield Measures (11-14%)",
+                "Quantitative Methods, TVM & Probability (6-9%)",
+                "Economics: Micro, Macro & Foreign Exchange (6-9%)",
+                "Corporate Issuers: Governance, Capital Structure & ESG (6-9%)",
+                "Portfolio Management & Wealth Planning Basics (8-11%)",
+                "Alternative Investments & Real Assets (7-10%)",
+                "Derivatives Principles & Forward Commitments (5-8%)"
+              ],
+              "learningOutcomes": [
+                "Calculate time value of money, statistical risk/return, and hypothesis tests",
+                "Analyze balance sheets, income statements, cash flows, and inventory accounting",
+                "Evaluate fixed income duration, convexity, credit risk, and bond valuation",
+                "Apply the CFA Institute Code of Ethics and Standards of Professional Conduct"
+              ],
+              "checklists": [
+                "Verify eligibility (final 23 months of Bachelor's or 4,000h work/education)",
+                "Complete 300+ hours of focused study across all 10 CBOK topic areas",
+                "Score 70%+ on CFA Institute official mock exams under timed Prometric conditions"
+              ],
+              "resources": [
+                "CFA Institute Learning Ecosystem (LES) official curriculum",
+                "CFA Institute Standards of Practice Handbook (11th Edition)"
+              ],
+              "modernThemes": [
+                "ESG Integration",
+                "Fintech & Algorithmic Trading",
+                "Big Data in FSA"
+              ]
+            },
+            {
+              "id": "cfa-l1-psm",
+              "name": "Mandatory PSM I: Python or Financial Modeling",
+              "code": "PSM-L1",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced online interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level I exam results release. Candidate selects Python Programming Fundamentals or 3-Statement Financial Modeling.",
+              "topics": [
+                "Option A: Python Programming Fundamentals (data structures, loops, functions, pandas, NumPy)",
+                "Option B: Financial Modeling in Excel (3-statement dynamic projection models, debt schedules, DCF mechanics)"
+              ],
+              "learningOutcomes": [
+                "Develop algorithmic scripts or dynamic financial models reflecting corporate reality",
+                "Manipulate real-world financial time-series data using modern computational tools"
+              ],
+              "checklists": [
+                "Complete all interactive coding or modeling exercises prior to exam result release window"
+              ],
+              "resources": [
+                "CFA Institute Practical Skills Module Portal"
+              ],
+              "modernThemes": [
+                "Python 3",
+                "Financial Automation",
+                "Dynamic Modeling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage2",
+          "title": "Stage 2: CFA Level II – Asset Valuation",
+          "subtitle": "88 CBT MCQs across 22 Item-Set Vignettes + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l2-exam",
+              "name": "CFA Level II Examination",
+              "code": "CFA-L2",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "88 Questions (22 Vignettes / Item Sets with 4 MCQs each)",
+              "frequency": "3 sittings / year (May, Aug, Nov)",
+              "marks": 88,
+              "description": "Rigorous vignette-based examination testing deep asset valuation, financial statement forensics, multinational operations, multifactor risk models, and corporate restructuring.",
+              "topics": [
+                "Ethical and Professional Standards Vignette Applications (10-15%)",
+                "Financial Statement Analysis: Intercorporate Investments, Pensions & Multinational (10-15%)",
+                "Equity Valuation: Multi-stage DDM, DCF (FCFF/FCFE), Residual Income & Multiples (10-15%)",
+                "Fixed Income: Term Structure, Binomial Trees, Embedded Options & CDS (10-15%)",
+                "Portfolio Management: Multifactor Models, Active Risk & Algorithmic Execution (10-15%)",
+                "Derivatives: Arbitrage-Free Forward Commitments & Black-Scholes Greeks (5-10%)",
+                "Alternative Investments: Private Equity Waterfalls, Real Estate & Commodities (5-10%)",
+                "Corporate Issuers: M&A, Capital Structure Dynamics & Corporate Restructuring (5-10%)",
+                "Economics: Currency Exchange Rates Equilibrium & Growth Theories (5-10%)",
+                "Quantitative Methods: Multiple Regression, Time-Series & Machine Learning (5-10%)"
+              ],
+              "learningOutcomes": [
+                "Execute multi-stage discounted cash flow valuations and equity multiplier comparisons",
+                "Price complex fixed income securities with embedded options using arbitrage-free trees",
+                "Translate multinational foreign subsidiary financial statements under temporal and current rate methods"
+              ],
+              "checklists": [
+                "Pass CFA Level I examination and complete Level I PSM",
+                "Study 325+ hours focusing on complex multi-page financial vignette dissection",
+                "Practice time management (12 minutes per 4-question vignette)"
+              ],
+              "resources": [
+                "CFA Institute Level II Official Candidate Curriculum & Item Sets"
+              ],
+              "modernThemes": [
+                "Machine Learning",
+                "Big Data in Finance",
+                "IFRS 16 & ASC 842"
+              ]
+            },
+            {
+              "id": "cfa-l2-psm",
+              "name": "Mandatory PSM II: Python/AI or Analyst Skills",
+              "code": "PSM-L2",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level II results release. Candidate selects Python, Data Science & AI or Buy-Side/Sell-Side Financial Analyst Skills.",
+              "topics": [
+                "Option A: Python, Data Science & AI (supervised learning, NLP sentiment analysis on 10-K filings, feature engineering)",
+                "Option B: Financial Analyst Skills (sell-side research note drafting, CapIQ/Bloomberg modeling, earnings call analysis)"
+              ],
+              "learningOutcomes": [
+                "Build predictive financial machine learning pipelines or publish a professional equity research initiation memo"
+              ],
+              "checklists": [
+                "Complete all laboratory assignments prior to Level II score dissemination"
+              ],
+              "resources": [
+                "CFA Institute PSM II Platform"
+              ],
+              "modernThemes": [
+                "Natural Language Processing",
+                "AI Sentiment",
+                "Sell-Side Equity Research"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-l3-pm-stage",
+          "title": "Stage 3: Level III – Portfolio Management Pathway (2025+)",
+          "subtitle": "Common Core (65–70%) + Institutional PM Specialization (30–35%)",
+          "nodes": [
+            {
+              "id": "cfa-l3-pm-curriculum",
+              "name": "Level III Curriculum: Common Core + Institutional PM",
+              "code": "CFA-L3-PM",
+              "category": "Pathway",
+              "duration": "350+ Hours Study",
+              "description": "In-depth mastery of the Level III Common Core coupled with Institutional Portfolio Management (Active Equity, Active Fixed Income, Trade Execution).",
+              "topics": [
+                "Common Core: Ethical and Professional Standards & GIPS Compliance (10-15%)",
+                "Common Core: Capital Market Expectations & Macroeconomic Forecasting (5-10%)",
+                "Common Core: Asset Allocation & Liability-Driven Investing (LDI) (10-15%)",
+                "Common Core: Performance Measurement, Attribution & Appraisal (5-10%)",
+                "Common Core: Derivatives in Risk Management & Currency Overlay (5-10%)",
+                "PM Pathway: Active Equity Portfolio Construction & Quantitative Strategies (10-15%)",
+                "PM Pathway: Active Fixed Income & Yield Curve Strategies (10-15%)",
+                "PM Pathway: Trade Execution, Market Microstructure & Algorithmic Costs (5-10%)",
+                "PM Pathway: Institutional Investors (Pension Funds, Sovereign Wealth, Endowments)"
+              ],
+              "learningOutcomes": [
+                "Construct multi-asset institutional portfolios matching defined benefit liabilities",
+                "Decompose investment performance into asset allocation and security selection alpha using Brinson attribution",
+                "Formulate comprehensive Investment Policy Statements (IPS) for institutional mandates"
+              ],
+              "modernThemes": [
+                "Liability-Driven Investing (LDI)",
+                "Algorithmic Execution",
+                "Currency Overlays"
+              ]
+            },
+            {
+              "id": "cfa-l3-exam",
+              "name": "CFA Level III Examination Sitting",
+              "code": "CFA-L3-EXAM",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "11 Item Sets: Constructed Response (Essay) & MCQ Vignettes",
+              "frequency": "2 sittings / year (Feb, Aug)",
+              "marks": 100,
+              "description": "Unified Level III computer-based examination sitting combining constructed response essay scenarios and item sets testing synthesis and portfolio decision-making."
+            },
+            {
+              "id": "cfa-l3-pm-psm",
+              "name": "Mandatory PSM III: Portfolio Construction",
+              "code": "PSM-L3-PM",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Interactive quantitative portfolio laboratory",
+              "description": "Mandatory Practical Skills Module in Portfolio Development & Construction: building multi-asset portfolios, stress-testing constraints, tracking error optimization, and dynamic rebalancing.",
+              "modernThemes": [
+                "Risk Budgeting",
+                "Tracking Error Optimization",
+                "Factor Tilts"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage4",
+          "title": "Stage 4: Charterholder Credential & Experience",
+          "subtitle": "4,000 Hours Verified Investment Experience + Professional Conduct Statement",
+          "nodes": [
+            {
+              "id": "cfa-exp",
+              "name": "4,000 Hours Investment Decision-Making Experience",
+              "code": "CFA-EXP",
+              "category": "Experience",
+              "duration": "Minimum 36 Months",
+              "description": "Accrue at least 4,000 hours of qualifying professional work experience in investment decision-making, portfolio management, financial analysis, or economic research.",
+              "topics": [
+                "Direct involvement in investment decision-making process",
+                "Producing analytical work product informing portfolio asset allocations",
+                "Supervision of investment analysis and fiduciary asset management"
+              ],
+              "checklists": [
+                "Document 4,000 hours over at least 36 calendar months in CFA Institute portal",
+                "Obtain 2 to 3 professional sponsor reference sign-offs (preferably CFA charterholders)"
+              ],
+              "resources": [
+                "CFA Institute Work Experience Guidelines and Verification Portal"
+              ]
+            },
+            {
+              "id": "cfa-admit",
+              "name": "CFA Charter Conferred & Ethics Statement",
+              "code": "CFA-CHARTER",
+              "category": "Milestone",
+              "description": "Formal award of the Chartered Financial Analyst® designation, admission to regular membership in CFA Institute and local society, and annual execution of the Professional Conduct Statement.",
+              "topics": [
+                "Regular Membership in CFA Institute and local society",
+                "Annual Professional Conduct Statement adherence",
+                "Right to use the prestigious CFA® credential"
+              ],
+              "checklists": [
+                "Submit formal charterholder application upon passing Level III and verifying experience",
+                "Execute annual Professional Conduct Statement and pay society dues"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "private-wealth": {
+      "id": "private-wealth",
+      "name": "Private Wealth Pathway",
+      "tag": "Family Office & Private Client",
+      "blurb": "Tailored for wealth advisors, family office principals, and private bankers managing ultra-high-net-worth client portfolios and cross-border estates.",
+      "stages": [
+        {
+          "id": "cfa-stage1",
+          "title": "Stage 1: CFA Level I – Investment Tools",
+          "subtitle": "180 CBT MCQs across two 135-min sessions + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l1-exam",
+              "name": "CFA Level I Examination",
+              "code": "CFA-L1",
+              "category": "Exam",
+              "duration": "4.5 Hours (Two 135-min sessions)",
+              "format": "180 Multiple-Choice Questions (3-choice)",
+              "frequency": "4 sittings / year (Feb, May, Aug, Nov)",
+              "marks": 180,
+              "description": "Comprehensive computer-based examination evaluating foundational investment tools, ethical standards, financial reporting, asset classes, and quantitative methods.",
+              "topics": [
+                "Ethical and Professional Standards & Code of Conduct (15-20%)",
+                "Financial Statement Analysis & IFRS/US GAAP Reporting Quality (11-14%)",
+                "Equity Investments & Market Organization (11-14%)",
+                "Fixed Income Securities & Yield Measures (11-14%)",
+                "Quantitative Methods, TVM & Probability (6-9%)",
+                "Economics: Micro, Macro & Foreign Exchange (6-9%)",
+                "Corporate Issuers: Governance, Capital Structure & ESG (6-9%)",
+                "Portfolio Management & Wealth Planning Basics (8-11%)",
+                "Alternative Investments & Real Assets (7-10%)",
+                "Derivatives Principles & Forward Commitments (5-8%)"
+              ],
+              "learningOutcomes": [
+                "Calculate time value of money, statistical risk/return, and hypothesis tests",
+                "Analyze balance sheets, income statements, cash flows, and inventory accounting",
+                "Evaluate fixed income duration, convexity, credit risk, and bond valuation",
+                "Apply the CFA Institute Code of Ethics and Standards of Professional Conduct"
+              ],
+              "checklists": [
+                "Verify eligibility (final 23 months of Bachelor's or 4,000h work/education)",
+                "Complete 300+ hours of focused study across all 10 CBOK topic areas",
+                "Score 70%+ on CFA Institute official mock exams under timed Prometric conditions"
+              ],
+              "resources": [
+                "CFA Institute Learning Ecosystem (LES) official curriculum",
+                "CFA Institute Standards of Practice Handbook (11th Edition)"
+              ],
+              "modernThemes": [
+                "ESG Integration",
+                "Fintech & Algorithmic Trading",
+                "Big Data in FSA"
+              ]
+            },
+            {
+              "id": "cfa-l1-psm",
+              "name": "Mandatory PSM I: Python or Financial Modeling",
+              "code": "PSM-L1",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced online interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level I exam results release. Candidate selects Python Programming Fundamentals or 3-Statement Financial Modeling.",
+              "topics": [
+                "Option A: Python Programming Fundamentals (data structures, loops, functions, pandas, NumPy)",
+                "Option B: Financial Modeling in Excel (3-statement dynamic projection models, debt schedules, DCF mechanics)"
+              ],
+              "learningOutcomes": [
+                "Develop algorithmic scripts or dynamic financial models reflecting corporate reality",
+                "Manipulate real-world financial time-series data using modern computational tools"
+              ],
+              "checklists": [
+                "Complete all interactive coding or modeling exercises prior to exam result release window"
+              ],
+              "resources": [
+                "CFA Institute Practical Skills Module Portal"
+              ],
+              "modernThemes": [
+                "Python 3",
+                "Financial Automation",
+                "Dynamic Modeling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage2",
+          "title": "Stage 2: CFA Level II – Asset Valuation",
+          "subtitle": "88 CBT MCQs across 22 Item-Set Vignettes + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l2-exam",
+              "name": "CFA Level II Examination",
+              "code": "CFA-L2",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "88 Questions (22 Vignettes / Item Sets with 4 MCQs each)",
+              "frequency": "3 sittings / year (May, Aug, Nov)",
+              "marks": 88,
+              "description": "Rigorous vignette-based examination testing deep asset valuation, financial statement forensics, multinational operations, multifactor risk models, and corporate restructuring.",
+              "topics": [
+                "Ethical and Professional Standards Vignette Applications (10-15%)",
+                "Financial Statement Analysis: Intercorporate Investments, Pensions & Multinational (10-15%)",
+                "Equity Valuation: Multi-stage DDM, DCF (FCFF/FCFE), Residual Income & Multiples (10-15%)",
+                "Fixed Income: Term Structure, Binomial Trees, Embedded Options & CDS (10-15%)",
+                "Portfolio Management: Multifactor Models, Active Risk & Algorithmic Execution (10-15%)",
+                "Derivatives: Arbitrage-Free Forward Commitments & Black-Scholes Greeks (5-10%)",
+                "Alternative Investments: Private Equity Waterfalls, Real Estate & Commodities (5-10%)",
+                "Corporate Issuers: M&A, Capital Structure Dynamics & Corporate Restructuring (5-10%)",
+                "Economics: Currency Exchange Rates Equilibrium & Growth Theories (5-10%)",
+                "Quantitative Methods: Multiple Regression, Time-Series & Machine Learning (5-10%)"
+              ],
+              "learningOutcomes": [
+                "Execute multi-stage discounted cash flow valuations and equity multiplier comparisons",
+                "Price complex fixed income securities with embedded options using arbitrage-free trees",
+                "Translate multinational foreign subsidiary financial statements under temporal and current rate methods"
+              ],
+              "checklists": [
+                "Pass CFA Level I examination and complete Level I PSM",
+                "Study 325+ hours focusing on complex multi-page financial vignette dissection",
+                "Practice time management (12 minutes per 4-question vignette)"
+              ],
+              "resources": [
+                "CFA Institute Level II Official Candidate Curriculum & Item Sets"
+              ],
+              "modernThemes": [
+                "Machine Learning",
+                "Big Data in Finance",
+                "IFRS 16 & ASC 842"
+              ]
+            },
+            {
+              "id": "cfa-l2-psm",
+              "name": "Mandatory PSM II: Python/AI or Analyst Skills",
+              "code": "PSM-L2",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level II results release. Candidate selects Python, Data Science & AI or Buy-Side/Sell-Side Financial Analyst Skills.",
+              "topics": [
+                "Option A: Python, Data Science & AI (supervised learning, NLP sentiment analysis on 10-K filings, feature engineering)",
+                "Option B: Financial Analyst Skills (sell-side research note drafting, CapIQ/Bloomberg modeling, earnings call analysis)"
+              ],
+              "learningOutcomes": [
+                "Build predictive financial machine learning pipelines or publish a professional equity research initiation memo"
+              ],
+              "checklists": [
+                "Complete all laboratory assignments prior to Level II score dissemination"
+              ],
+              "resources": [
+                "CFA Institute PSM II Platform"
+              ],
+              "modernThemes": [
+                "Natural Language Processing",
+                "AI Sentiment",
+                "Sell-Side Equity Research"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-l3-pw-stage",
+          "title": "Stage 3: Level III – Private Wealth Pathway (2025+)",
+          "subtitle": "Common Core (65–70%) + Private Wealth Specialization (30–35%)",
+          "nodes": [
+            {
+              "id": "cfa-l3-pw-curriculum",
+              "name": "Level III Curriculum: Common Core + Private Wealth",
+              "code": "CFA-L3-PW",
+              "category": "Pathway",
+              "duration": "350+ Hours Study",
+              "description": "Mastery of the Level III Common Core combined with advanced Private Wealth topics: concentrated single-asset positions, cross-border estate taxation, family governance, and philanthropic trusts.",
+              "topics": [
+                "Common Core: Ethical Standards, Asset Allocation & Capital Market Expectations",
+                "PW Pathway: Wealth Planning and Private Client Advisory Ecosystem",
+                "PW Pathway: Concentrated Single-Asset Positions (Equities, Real Estate, Privately Owned Businesses)",
+                "PW Pathway: Estate and Wealth-Transfer Planning & Trust Structures",
+                "PW Pathway: Cross-Border Taxation and Multi-Jurisdictional Structuring",
+                "PW Pathway: Family Office Governance, Succession & Philanthropic Vehicles"
+              ],
+              "modernThemes": [
+                "Cross-Border Tax Structuring",
+                "Family Office Governance",
+                "Concentrated Equity Hedging"
+              ]
+            },
+            {
+              "id": "cfa-l3-exam",
+              "name": "CFA Level III Examination Sitting",
+              "code": "CFA-L3-EXAM",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "11 Item Sets: Constructed Response (Essay) & MCQ Vignettes",
+              "frequency": "2 sittings / year (Feb, Aug)",
+              "marks": 100,
+              "description": "Unified Level III examination sitting evaluated under the Private Wealth specialization blueprint."
+            },
+            {
+              "id": "cfa-l3-pw-psm",
+              "name": "Mandatory PSM III: Managing Private Wealth Clients",
+              "code": "PSM-L3-PW",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Interactive advisory simulation lab",
+              "description": "Mandatory Practical Skills Module covering client profiling, behavioral interview simulations, tax-sheltered asset location, and intergenerational transfer planning."
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage4",
+          "title": "Stage 4: Charterholder Credential & Experience",
+          "subtitle": "4,000 Hours Verified Investment Experience + Professional Conduct Statement",
+          "nodes": [
+            {
+              "id": "cfa-exp",
+              "name": "4,000 Hours Investment Decision-Making Experience",
+              "code": "CFA-EXP",
+              "category": "Experience",
+              "duration": "Minimum 36 Months",
+              "description": "Accrue at least 4,000 hours of qualifying professional work experience in investment decision-making, portfolio management, financial analysis, or economic research.",
+              "topics": [
+                "Direct involvement in investment decision-making process",
+                "Producing analytical work product informing portfolio asset allocations",
+                "Supervision of investment analysis and fiduciary asset management"
+              ],
+              "checklists": [
+                "Document 4,000 hours over at least 36 calendar months in CFA Institute portal",
+                "Obtain 2 to 3 professional sponsor reference sign-offs (preferably CFA charterholders)"
+              ],
+              "resources": [
+                "CFA Institute Work Experience Guidelines and Verification Portal"
+              ]
+            },
+            {
+              "id": "cfa-admit",
+              "name": "CFA Charter Conferred & Ethics Statement",
+              "code": "CFA-CHARTER",
+              "category": "Milestone",
+              "description": "Formal award of the Chartered Financial Analyst® designation, admission to regular membership in CFA Institute and local society, and annual execution of the Professional Conduct Statement.",
+              "topics": [
+                "Regular Membership in CFA Institute and local society",
+                "Annual Professional Conduct Statement adherence",
+                "Right to use the prestigious CFA® credential"
+              ],
+              "checklists": [
+                "Submit formal charterholder application upon passing Level III and verifying experience",
+                "Execute annual Professional Conduct Statement and pay society dues"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "private-markets": {
+      "id": "private-markets",
+      "name": "Private Markets Pathway",
+      "tag": "Private Equity & Real Assets",
+      "blurb": "Designed for private equity investors, VC underwriters, private credit specialists, and infrastructure principals navigating unlisted markets.",
+      "stages": [
+        {
+          "id": "cfa-stage1",
+          "title": "Stage 1: CFA Level I – Investment Tools",
+          "subtitle": "180 CBT MCQs across two 135-min sessions + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l1-exam",
+              "name": "CFA Level I Examination",
+              "code": "CFA-L1",
+              "category": "Exam",
+              "duration": "4.5 Hours (Two 135-min sessions)",
+              "format": "180 Multiple-Choice Questions (3-choice)",
+              "frequency": "4 sittings / year (Feb, May, Aug, Nov)",
+              "marks": 180,
+              "description": "Comprehensive computer-based examination evaluating foundational investment tools, ethical standards, financial reporting, asset classes, and quantitative methods.",
+              "topics": [
+                "Ethical and Professional Standards & Code of Conduct (15-20%)",
+                "Financial Statement Analysis & IFRS/US GAAP Reporting Quality (11-14%)",
+                "Equity Investments & Market Organization (11-14%)",
+                "Fixed Income Securities & Yield Measures (11-14%)",
+                "Quantitative Methods, TVM & Probability (6-9%)",
+                "Economics: Micro, Macro & Foreign Exchange (6-9%)",
+                "Corporate Issuers: Governance, Capital Structure & ESG (6-9%)",
+                "Portfolio Management & Wealth Planning Basics (8-11%)",
+                "Alternative Investments & Real Assets (7-10%)",
+                "Derivatives Principles & Forward Commitments (5-8%)"
+              ],
+              "learningOutcomes": [
+                "Calculate time value of money, statistical risk/return, and hypothesis tests",
+                "Analyze balance sheets, income statements, cash flows, and inventory accounting",
+                "Evaluate fixed income duration, convexity, credit risk, and bond valuation",
+                "Apply the CFA Institute Code of Ethics and Standards of Professional Conduct"
+              ],
+              "checklists": [
+                "Verify eligibility (final 23 months of Bachelor's or 4,000h work/education)",
+                "Complete 300+ hours of focused study across all 10 CBOK topic areas",
+                "Score 70%+ on CFA Institute official mock exams under timed Prometric conditions"
+              ],
+              "resources": [
+                "CFA Institute Learning Ecosystem (LES) official curriculum",
+                "CFA Institute Standards of Practice Handbook (11th Edition)"
+              ],
+              "modernThemes": [
+                "ESG Integration",
+                "Fintech & Algorithmic Trading",
+                "Big Data in FSA"
+              ]
+            },
+            {
+              "id": "cfa-l1-psm",
+              "name": "Mandatory PSM I: Python or Financial Modeling",
+              "code": "PSM-L1",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced online interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level I exam results release. Candidate selects Python Programming Fundamentals or 3-Statement Financial Modeling.",
+              "topics": [
+                "Option A: Python Programming Fundamentals (data structures, loops, functions, pandas, NumPy)",
+                "Option B: Financial Modeling in Excel (3-statement dynamic projection models, debt schedules, DCF mechanics)"
+              ],
+              "learningOutcomes": [
+                "Develop algorithmic scripts or dynamic financial models reflecting corporate reality",
+                "Manipulate real-world financial time-series data using modern computational tools"
+              ],
+              "checklists": [
+                "Complete all interactive coding or modeling exercises prior to exam result release window"
+              ],
+              "resources": [
+                "CFA Institute Practical Skills Module Portal"
+              ],
+              "modernThemes": [
+                "Python 3",
+                "Financial Automation",
+                "Dynamic Modeling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage2",
+          "title": "Stage 2: CFA Level II – Asset Valuation",
+          "subtitle": "88 CBT MCQs across 22 Item-Set Vignettes + Mandatory Practical Skills Module",
+          "nodes": [
+            {
+              "id": "cfa-l2-exam",
+              "name": "CFA Level II Examination",
+              "code": "CFA-L2",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "88 Questions (22 Vignettes / Item Sets with 4 MCQs each)",
+              "frequency": "3 sittings / year (May, Aug, Nov)",
+              "marks": 88,
+              "description": "Rigorous vignette-based examination testing deep asset valuation, financial statement forensics, multinational operations, multifactor risk models, and corporate restructuring.",
+              "topics": [
+                "Ethical and Professional Standards Vignette Applications (10-15%)",
+                "Financial Statement Analysis: Intercorporate Investments, Pensions & Multinational (10-15%)",
+                "Equity Valuation: Multi-stage DDM, DCF (FCFF/FCFE), Residual Income & Multiples (10-15%)",
+                "Fixed Income: Term Structure, Binomial Trees, Embedded Options & CDS (10-15%)",
+                "Portfolio Management: Multifactor Models, Active Risk & Algorithmic Execution (10-15%)",
+                "Derivatives: Arbitrage-Free Forward Commitments & Black-Scholes Greeks (5-10%)",
+                "Alternative Investments: Private Equity Waterfalls, Real Estate & Commodities (5-10%)",
+                "Corporate Issuers: M&A, Capital Structure Dynamics & Corporate Restructuring (5-10%)",
+                "Economics: Currency Exchange Rates Equilibrium & Growth Theories (5-10%)",
+                "Quantitative Methods: Multiple Regression, Time-Series & Machine Learning (5-10%)"
+              ],
+              "learningOutcomes": [
+                "Execute multi-stage discounted cash flow valuations and equity multiplier comparisons",
+                "Price complex fixed income securities with embedded options using arbitrage-free trees",
+                "Translate multinational foreign subsidiary financial statements under temporal and current rate methods"
+              ],
+              "checklists": [
+                "Pass CFA Level I examination and complete Level I PSM",
+                "Study 325+ hours focusing on complex multi-page financial vignette dissection",
+                "Practice time management (12 minutes per 4-question vignette)"
+              ],
+              "resources": [
+                "CFA Institute Level II Official Candidate Curriculum & Item Sets"
+              ],
+              "modernThemes": [
+                "Machine Learning",
+                "Big Data in Finance",
+                "IFRS 16 & ASC 842"
+              ]
+            },
+            {
+              "id": "cfa-l2-psm",
+              "name": "Mandatory PSM II: Python/AI or Analyst Skills",
+              "code": "PSM-L2",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Self-paced interactive lab simulations",
+              "description": "Mandatory Practical Skills Module required for Level II results release. Candidate selects Python, Data Science & AI or Buy-Side/Sell-Side Financial Analyst Skills.",
+              "topics": [
+                "Option A: Python, Data Science & AI (supervised learning, NLP sentiment analysis on 10-K filings, feature engineering)",
+                "Option B: Financial Analyst Skills (sell-side research note drafting, CapIQ/Bloomberg modeling, earnings call analysis)"
+              ],
+              "learningOutcomes": [
+                "Build predictive financial machine learning pipelines or publish a professional equity research initiation memo"
+              ],
+              "checklists": [
+                "Complete all laboratory assignments prior to Level II score dissemination"
+              ],
+              "resources": [
+                "CFA Institute PSM II Platform"
+              ],
+              "modernThemes": [
+                "Natural Language Processing",
+                "AI Sentiment",
+                "Sell-Side Equity Research"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cfa-l3-pmkt-stage",
+          "title": "Stage 3: Level III – Private Markets Pathway (2025+)",
+          "subtitle": "Common Core (65–70%) + Private Markets Specialization (30–35%)",
+          "nodes": [
+            {
+              "id": "cfa-l3-pmkt-curriculum",
+              "name": "Level III Curriculum: Common Core + Private Markets",
+              "code": "CFA-L3-PMKT",
+              "category": "Pathway",
+              "duration": "350+ Hours Study",
+              "description": "Mastery of the Level III Common Core coupled with Private Markets: LBO buyout financial engineering, venture capital cap tables, private credit underwriting, real asset project finance, and LP/GP fund operations.",
+              "topics": [
+                "Common Core: Ethical Standards, Asset Allocation & Risk Management",
+                "PMkt Pathway: Sourcing and Due Diligence in Non-Public Markets",
+                "PMkt Pathway: Private Equity Buyout Structuring and LBO Economics",
+                "PMkt Pathway: Venture Capital Valuation, Term Sheets & Cap Tables",
+                "PMkt Pathway: Private Debt, Direct Lending & Mezzanine Underwriting",
+                "PMkt Pathway: Real Assets, Infrastructure Project Finance & Energy Transition",
+                "PMkt Pathway: Secondary Transactions, GP-Led Restructuring & LP Waterfall Distributions"
+              ],
+              "modernThemes": [
+                "Private Credit",
+                "GP-Led Secondaries",
+                "Carried Interest Waterfalls"
+              ]
+            },
+            {
+              "id": "cfa-l3-exam",
+              "name": "CFA Level III Examination Sitting",
+              "code": "CFA-L3-EXAM",
+              "category": "Exam",
+              "duration": "4.4 Hours (Two 132-min sessions)",
+              "format": "11 Item Sets: Constructed Response (Essay) & MCQ Vignettes",
+              "frequency": "2 sittings / year (Feb, Aug)",
+              "marks": 100,
+              "description": "Unified Level III examination sitting evaluated under the Private Markets specialization blueprint."
+            },
+            {
+              "id": "cfa-l3-pmkt-psm",
+              "name": "Mandatory PSM III: Private Markets Due Diligence",
+              "code": "PSM-L3-PMKT",
+              "category": "Skill",
+              "duration": "10–20 Hours",
+              "format": "Interactive deal room simulation lab",
+              "description": "Mandatory Practical Skills Module covering data room audit, waterfall return splits, calculating net IRR, and drafting investment committee memos."
+            }
+          ]
+        },
+        {
+          "id": "cfa-stage4",
+          "title": "Stage 4: Charterholder Credential & Experience",
+          "subtitle": "4,000 Hours Verified Investment Experience + Professional Conduct Statement",
+          "nodes": [
+            {
+              "id": "cfa-exp",
+              "name": "4,000 Hours Investment Decision-Making Experience",
+              "code": "CFA-EXP",
+              "category": "Experience",
+              "duration": "Minimum 36 Months",
+              "description": "Accrue at least 4,000 hours of qualifying professional work experience in investment decision-making, portfolio management, financial analysis, or economic research.",
+              "topics": [
+                "Direct involvement in investment decision-making process",
+                "Producing analytical work product informing portfolio asset allocations",
+                "Supervision of investment analysis and fiduciary asset management"
+              ],
+              "checklists": [
+                "Document 4,000 hours over at least 36 calendar months in CFA Institute portal",
+                "Obtain 2 to 3 professional sponsor reference sign-offs (preferably CFA charterholders)"
+              ],
+              "resources": [
+                "CFA Institute Work Experience Guidelines and Verification Portal"
+              ]
+            },
+            {
+              "id": "cfa-admit",
+              "name": "CFA Charter Conferred & Ethics Statement",
+              "code": "CFA-CHARTER",
+              "category": "Milestone",
+              "description": "Formal award of the Chartered Financial Analyst® designation, admission to regular membership in CFA Institute and local society, and annual execution of the Professional Conduct Statement.",
+              "topics": [
+                "Regular Membership in CFA Institute and local society",
+                "Annual Professional Conduct Statement adherence",
+                "Right to use the prestigious CFA® credential"
+              ],
+              "checklists": [
+                "Submit formal charterholder application upon passing Level III and verifying experience",
+                "Execute annual Professional Conduct Statement and pay society dues"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

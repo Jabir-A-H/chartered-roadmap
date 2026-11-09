@@ -10,15 +10,16 @@ files.forEach(file => {
   const filePath = path.join(dataDir, file);
   const content = fs.readFileSync(filePath, 'utf8');
 
-  // Validate JSON syntax at build time
+  let parsed;
   try {
-    JSON.parse(content);
+    parsed = JSON.parse(content);
   } catch (err) {
     console.error(`FATAL: Invalid JSON in ${file}:`, err.message);
     process.exit(1);
   }
 
-  bundleEntries += `window.ROADMAP_DATA['${key}'] = ${content};\n`;
+  // Minify JSON to eliminate whitespace overhead
+  bundleEntries += `window.ROADMAP_DATA['${key}'] = ${JSON.stringify(parsed)};\n`;
 });
 
 const code = `/**

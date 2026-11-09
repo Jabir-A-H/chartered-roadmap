@@ -1,0 +1,297 @@
+{
+  "id": "cia",
+  "title": "CIA® Certification (Certified Internal Auditor)",
+  "region": "Global",
+  "body": "The Institute of Internal Auditors (The IIA)",
+  "officialUrl": "https://www.theiia.org",
+  "lastVerified": "2026-11-09",
+  "source": "The IIA 2025 Global Internal Audit Standards (GIAS) Framework",
+  "summary": "The premier global internal audit designation realigned to the 2025 Global Internal Audit Standards (GIAS) across Part 1 Fundamentals, Part 2 Engagement, and Part 3 Business Knowledge (Acumen, InfoSec, IT, Financial Management).",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard 3-Part GIAS Pathway",
+      "tag": "All Internal Audit Professionals",
+      "blurb": "Pass all three examination parts under the 2025 GIAS standards and document 1 to 2 years of verified internal audit experience.",
+      "stages": [
+        {
+          "id": "cia-stage-1",
+          "title": "Stage 1: Eligibility & Registration",
+          "subtitle": "CCMS portal registration, degree verification, and character reference",
+          "nodes": [
+            {
+              "id": "cia-reg-1",
+              "name": "Candidate Application & Degree Verification",
+              "code": "CIA-REG",
+              "category": "Admin",
+              "description": "Create an account on the IIA CCMS portal, submit university transcripts verifying an accredited degree, and pay the program application fee.",
+              "topics": [
+                "IIA CCMS Portal Registration",
+                "Educational Transcript Verification",
+                "Candidate Eligibility Window"
+              ]
+            },
+            {
+              "id": "cia-reg-2",
+              "name": "Character Reference Verification",
+              "code": "CIA-REF",
+              "category": "Admin",
+              "description": "Submit an official character reference signed by an active CIA, supervisory manager, or recognized professional certifying moral and ethical integrity.",
+              "topics": [
+                "Character Reference Form",
+                "Supervisory Verification",
+                "IIA Code of Ethics Commitment"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cia-stage-2",
+          "title": "Stage 2: Part 1 – Internal Audit Fundamentals",
+          "subtitle": "4 Syllabus Sections culminating in a 2.5-Hour Exam (125 MCQs)",
+          "nodes": [
+            {
+              "id": "cia-p1-s1",
+              "name": "Foundations of Internal Auditing",
+              "code": "CIA.P1.S1",
+              "category": "Coursework",
+              "weightage": "35%",
+              "description": "GIAS Domain I Purpose & Mandate, organizational independence, board reporting, objectivity, and internal audit charter requirements.",
+              "topics": [
+                "GIAS Domain I: Purpose of Internal Auditing",
+                "Internal Audit Charter & Board Mandate",
+                "Organizational Independence & Impairments"
+              ]
+            },
+            {
+              "id": "cia-p1-s2",
+              "name": "Ethics and Professionalism",
+              "code": "CIA.P1.S2",
+              "category": "Ethics",
+              "weightage": "20%",
+              "description": "GIAS Domain II Principles, integrity, confidentiality, professional skepticism, due professional care, and continuing professional development.",
+              "topics": [
+                "GIAS Domain II: Ethics and Professionalism",
+                "Principles of Integrity, Objectivity & Confidentiality",
+                "Professional Skepticism & Due Care"
+              ]
+            },
+            {
+              "id": "cia-p1-s3",
+              "name": "Governance, Risk Management, and Control",
+              "code": "CIA.P1.S3",
+              "category": "Coursework",
+              "weightage": "30%",
+              "description": "Corporate governance concepts, Three Lines Model, COSO ERM, internal control frameworks, and risk appetite alignment.",
+              "topics": [
+                "Corporate Governance Mechanisms & Board Relations",
+                "The IIA Three Lines Model",
+                "COSO Internal Control and ERM Frameworks"
+              ]
+            },
+            {
+              "id": "cia-p1-s4",
+              "name": "Fraud Risks",
+              "code": "CIA.P1.S4",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Fraud risk indicators, fraud triangle/diamond, forensic detection responsibilities, whistleblower policies, and fraud risk assessment.",
+              "topics": [
+                "Fraud Triangle & Behavioral Red Flags",
+                "Internal Audit Responsibilities in Fraud Prevention",
+                "Fraud Risk Assessment & Whistleblowing"
+              ]
+            },
+            {
+              "id": "cia-p1-exam",
+              "name": "Part 1 Examination Sitting",
+              "code": "CIA-P1-EXAM",
+              "category": "Exam",
+              "duration": "2.5 Hours (150 Minutes)",
+              "format": "125 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 750,
+              "description": "Part 1 examination sitting testing GIAS fundamentals, ethics, governance, and fraud. Scaled passing score: 600 out of 750."
+            }
+          ]
+        },
+        {
+          "id": "cia-stage-3",
+          "title": "Stage 3: Part 2 – Internal Audit Engagement",
+          "subtitle": "3 Syllabus Sections culminating in a 2-Hour Exam (100 MCQs)",
+          "nodes": [
+            {
+              "id": "cia-p2-s1",
+              "name": "Engagement Planning",
+              "code": "CIA.P2.S1",
+              "category": "Coursework",
+              "weightage": "50%",
+              "description": "Determining engagement objectives, scope, criteria, evaluating risks, developing work programs, resource allocation, and supervision.",
+              "topics": [
+                "Engagement Scoping and Objectives",
+                "Risk Assessment at Engagement Level",
+                "Audit Work Programs & Staffing"
+              ]
+            },
+            {
+              "id": "cia-p2-s2",
+              "name": "Information Gathering, Analysis & Evaluation",
+              "code": "CIA.P2.S2",
+              "category": "Coursework",
+              "weightage": "40%",
+              "description": "Audit evidence, sampling, CAATs, analytical procedures, interviewing techniques, workpaper documentation, and findings formulation.",
+              "topics": [
+                "Audit Evidence Types & Sufficiency",
+                "Data Analytics & Statistical Sampling in Audits",
+                "Developing Audit Findings (Condition, Criteria, Cause, Effect, Recommendation)"
+              ]
+            },
+            {
+              "id": "cia-p2-s3",
+              "name": "Supervision and Preliminary Communication",
+              "code": "CIA.P2.S3",
+              "category": "Coursework",
+              "weightage": "10%",
+              "description": "Workpaper review, supervision, preliminary exit meetings with client management, and resolving contested findings.",
+              "topics": [
+                "Workpaper Review & Supervisory Sign-Off",
+                "Preliminary Communications & Exit Conferences"
+              ]
+            },
+            {
+              "id": "cia-p2-exam",
+              "name": "Part 2 Examination Sitting",
+              "code": "CIA-P2-EXAM",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 750,
+              "description": "Part 2 examination sitting testing engagement planning, fieldwork execution, and preliminary communications. Scaled pass: 600/750."
+            }
+          ]
+        },
+        {
+          "id": "cia-stage-4",
+          "title": "Stage 4: Part 3 – Business Knowledge for Internal Auditing",
+          "subtitle": "Official 2025 GIAS Framework: Acumen (35%), InfoSec (25%), IT (20%), Financial Management (20%)",
+          "nodes": [
+            {
+              "id": "cia-p3-s1",
+              "name": "Business Acumen",
+              "code": "CIA.P3.S1",
+              "category": "Coursework",
+              "weightage": "35%",
+              "description": "Strategic planning, organizational structure, business processes (supply chain, procurement), project management, and business analytics.",
+              "topics": [
+                "Strategic Planning, Environmental Scanning & Porter's Forces",
+                "Organizational Structure & Business Process Optimization",
+                "Project Management Methodologies & Change Management",
+                "Business Analytics & Data-Driven Decision Making"
+              ],
+              "modernThemes": [
+                "Data-Driven Strategy",
+                "Supply Chain Resilience"
+              ]
+            },
+            {
+              "id": "cia-p3-s2",
+              "name": "Information Security",
+              "code": "CIA.P3.S2",
+              "category": "Coursework",
+              "weightage": "25%",
+              "description": "Cybersecurity principles, physical and logical access controls, network security, incident response, privacy regulations, and threat landscapes.",
+              "topics": [
+                "Cybersecurity Frameworks (NIST CSF & ISO 27001)",
+                "Logical Access Controls: MFA, IAM & Role-Based Access",
+                "Incident Response Protocols, Ransomware & Cyber Resilience",
+                "Data Privacy Laws: GDPR, CCPA & Cross-Border Sovereignty"
+              ],
+              "modernThemes": [
+                "Cyber Resilience",
+                "Ransomware Response",
+                "GDPR/CCPA"
+              ]
+            },
+            {
+              "id": "cia-p3-s3",
+              "name": "Information Technology",
+              "code": "CIA.P3.S3",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "IT infrastructure, cloud computing, database management, IT operations, software development lifecycle (SDLC), and IT disaster recovery.",
+              "topics": [
+                "IT Infrastructure: Hardware, Virtualization & Networks",
+                "Cloud Computing Service Models: SaaS, PaaS, IaaS",
+                "Database Architectures, SQL & Relational Integrity",
+                "Software Development Lifecycle (SDLC) & IT Disaster Recovery (DRP)"
+              ],
+              "modernThemes": [
+                "Cloud Infrastructure",
+                "Agile SDLC",
+                "Disaster Recovery"
+              ]
+            },
+            {
+              "id": "cia-p3-s4",
+              "name": "Financial Management",
+              "code": "CIA.P3.S4",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Financial accounting fundamentals, balance sheets, income statements, working capital, cost accounting, and capital budgeting (NPV/IRR).",
+              "topics": [
+                "Financial Statement Mechanics & Ratio Analysis",
+                "Working Capital Management & Cash Flow Forecasting",
+                "Cost Classifications: Fixed, Variable, Direct, Indirect",
+                "Capital Budgeting Techniques: Net Present Value & Internal Rate of Return"
+              ]
+            },
+            {
+              "id": "cia-p3-exam",
+              "name": "Part 3 Examination Sitting",
+              "code": "CIA-P3-EXAM",
+              "category": "Exam",
+              "duration": "2 Hours (120 Minutes)",
+              "format": "100 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 750,
+              "description": "Part 3 examination sitting testing business acumen, information security, IT, and financial management under the official 2025 GIAS framework. Scaled pass: 600/750."
+            }
+          ]
+        },
+        {
+          "id": "cia-stage-5",
+          "title": "Stage 5: Practical Experience & Credential Award",
+          "subtitle": "12-24 Months Verified Experience + 40h Annual CPE",
+          "nodes": [
+            {
+              "id": "cia-exp-1",
+              "name": "Internal Audit Experience Sign-Off",
+              "code": "CIA-EXP",
+              "category": "Experience",
+              "duration": "12-24 Months",
+              "description": "Document qualifying experience in internal auditing, compliance, risk assessment, or quality assurance (12 months with Master's, 24 months with Bachelor's).",
+              "topics": [
+                "Internal Audit Fieldwork Experience",
+                "Supervisory Verification in CCMS"
+              ]
+            },
+            {
+              "id": "cia-cert-1",
+              "name": "CIA Designation Conferred & Annual CPE",
+              "code": "CIA-CERT",
+              "category": "Milestone",
+              "description": "Official award of the Certified Internal Auditor (CIA) designation upon passing all 3 parts and fulfilling the experience requirement. Requires 40 hours annual CPE.",
+              "topics": [
+                "Certified Internal Auditor Award",
+                "40 Hours Annual CPE",
+                "2 Hours Ethics CPE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

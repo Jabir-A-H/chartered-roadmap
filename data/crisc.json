@@ -1,0 +1,133 @@
+{
+  "id": "crisc",
+  "title": "CRISC® Certification (Certified in Risk and Information Systems Control)",
+  "region": "Global",
+  "body": "Information Systems Audit and Control Association (ISACA)",
+  "officialUrl": "https://www.isaca.org/credentialing/crisc",
+  "lastVerified": "2026-11-09",
+  "source": "ISACA CRISC Job Practice Framework",
+  "summary": "The premier enterprise IT risk management credential covering 4 job practice domains: Governance, IT Risk Assessment, Risk Response and Reporting, and Information Technology and Security with 150 MCQs and 3 years experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CRISC Track",
+      "tag": "IT Risk & Control Officers",
+      "blurb": "Pass the 150-question examination (scaled score 450/800) and verify 3 years of professional IT risk and control experience.",
+      "stages": [
+        {
+          "id": "crisc-stage-1",
+          "title": "Stage 1: IT Risk Governance & Risk Assessment",
+          "subtitle": "Domain 1: Governance (26%) & Domain 2: IT Risk Assessment (20%)",
+          "nodes": [
+            {
+              "id": "crisc-d1",
+              "name": "Domain 1: Governance",
+              "code": "CRISC-D1",
+              "category": "Coursework",
+              "weightage": "26%",
+              "description": "Organizational strategy, risk appetite and tolerance, enterprise risk culture, policies and standards, business continuity, and three lines of defense.",
+              "topics": [
+                "Organizational Governance Structures & Board Risk Oversight",
+                "Risk Appetite, Tolerance Limits & Key Risk Indicators (KRIs)",
+                "Enterprise Risk Culture, Ethics & Communication",
+                "Three Lines of Defense & Enterprise Risk Management Alignment"
+              ]
+            },
+            {
+              "id": "crisc-d2",
+              "name": "Domain 2: IT Risk Assessment",
+              "code": "CRISC-D2",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Risk identification, threat modeling, vulnerability analysis, business impact analysis (BIA), risk scenarios, and quantitative/qualitative risk analysis.",
+              "topics": [
+                "IT Risk Identification & Emerging Technology Threats",
+                "Threat & Vulnerability Assessment Methodologies",
+                "Quantitative Risk Analysis (FAIR) vs Qualitative Risk Matrix",
+                "Risk Scenario Development & Enterprise Impact Modeling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crisc-stage-2",
+          "title": "Stage 2: Risk Response, Reporting & IT Security Controls",
+          "subtitle": "Domain 3: Risk Response & Reporting (32%) & Domain 4: IT & Security (22%)",
+          "nodes": [
+            {
+              "id": "crisc-d3",
+              "name": "Domain 3: Risk Response and Reporting",
+              "code": "CRISC-D3",
+              "category": "Coursework",
+              "weightage": "32%",
+              "description": "Risk response options (avoidance, mitigation, sharing, acceptance), control design and implementation, control monitoring, and executive risk reporting.",
+              "topics": [
+                "Risk Response Evaluation: Mitigation, Transfer, Acceptance, Avoidance",
+                "Control Design, Selection & Compensating Controls",
+                "Control Monitoring, Testing & Key Control Indicators (KCIs)",
+                "Executive Risk Dashboards, Heatmaps & Stakeholder Reporting"
+              ]
+            },
+            {
+              "id": "crisc-d4",
+              "name": "Domain 4: Information Technology and Security",
+              "code": "CRISC-D4",
+              "category": "Coursework",
+              "weightage": "22%",
+              "description": "Information technology principles, network architectures, data management, identity access management, cloud security, and cyber resilience.",
+              "topics": [
+                "Enterprise IT Architecture, Network Topologies & Micro-Segmentation",
+                "Data Security, Cryptographic Controls & Data Loss Prevention (DLP)",
+                "Cloud Computing Governance (IaaS, PaaS, SaaS) & Third-Party Controls",
+                "Resilience, Backup Architecture & Incident Handling Protocols"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crisc-stage-3",
+          "title": "Stage 3: Examination Sitting & Experience Verification",
+          "subtitle": "150-Question Examination (450/800 Pass) + 3 Years Experience",
+          "nodes": [
+            {
+              "id": "crisc-exam",
+              "name": "CRISC Computer-Based Examination",
+              "code": "CRISC-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "150 Multiple-Choice Questions",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 800,
+              "description": "150-question computer-based examination testing the 4 CRISC job practice domains. Passing standard: scaled score of 450 out of 800."
+            },
+            {
+              "id": "crisc-exp",
+              "name": "3 Years Verified IT Risk & Control Experience",
+              "code": "CRISC-EXP",
+              "category": "Experience",
+              "duration": "3 Years Cumulative",
+              "description": "Document at least 3 years of cumulative professional work experience across at least two CRISC domains (with at least one year in Domain 1 or Domain 2).",
+              "topics": [
+                "3-Year IT Risk Experience Verification",
+                "Supervisory Validation"
+              ]
+            },
+            {
+              "id": "crisc-cpe",
+              "name": "CRISC Credential Conferred & Annual CPE",
+              "code": "CRISC-CERT",
+              "category": "Milestone",
+              "description": "Conferral of the CRISC designation. Maintenance requires at least 20 CPE hours annually (120 hours over a 3-year cycle) and payment of annual dues.",
+              "topics": [
+                "CRISC Credential Award",
+                "Annual 20 CPE Requirement",
+                "Adherence to ISACA Code of Ethics"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "frm",
+  "title": "FRM® Certification (Financial Risk Manager)",
+  "region": "Global",
+  "body": "Global Association of Risk Professionals (GARP)",
+  "officialUrl": "https://www.garp.org",
+  "lastVerified": "2026-11-09",
+  "source": "GARP FRM Learning Objectives & Candidate Guide (2024-2026)",
+  "summary": "The global gold standard in financial risk management, covering Part I risk tools, quantitative analysis, financial markets, and VaR models, and Part II market, credit, operational, liquidity, and investment risk with strict 4-year examination and 5-year experience windows.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Professional Risk Pathway",
+      "tag": "Risk Officers & Quantitative Analysts",
+      "blurb": "Pass FRM Part I (100 MCQs, 4 Hours), pass FRM Part II within 4 years (80 MCQs, 4 Hours), and verify 2 years of professional risk experience within 5 years.",
+      "stages": [
+        {
+          "id": "frm-stage-1",
+          "title": "Stage 1: FRM Part I – Risk Tools & Foundations",
+          "subtitle": "4 Modular Curricula (100%) culminating in a 4-Hour Exam (100 MCQs)",
+          "nodes": [
+            {
+              "id": "frm-p1-admin",
+              "name": "Registration & Open Enrollment",
+              "code": "FRM-P1-REG",
+              "category": "Admin",
+              "description": "Open registration with GARP and enrollment in the FRM program. No collegiate degree or work prerequisites required to sit for the exams.",
+              "topics": [
+                "GARP Enrollment",
+                "CBT Scheduling with Pearson VUE",
+                "Exam Policy Review"
+              ]
+            },
+            {
+              "id": "frm-p1-foundations",
+              "name": "Foundations of Risk Management",
+              "code": "FRM.P1.1",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Enterprise risk management (ERM), corporate governance, CAPM, APT, Basel regulatory capital framework, historical financial disasters, and GARP Code of Conduct.",
+              "topics": [
+                "Enterprise Risk Management (ERM) Frameworks & Governance",
+                "CAPM, Multifactor Asset Pricing & Arbitrage Pricing Theory",
+                "Basel Regulatory Accord History: Basel I, II, 2.5, and III",
+                "Case Studies: Barings, LTCM, Enron, Lehman Brothers, Metallgesellschaft",
+                "The GARP Code of Conduct & Fiduciary Ethics"
+              ]
+            },
+            {
+              "id": "frm-p1-quant",
+              "name": "Quantitative Analysis",
+              "code": "FRM.P1.2",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Probability distributions, statistical hypothesis testing, linear regression, time-series forecasting (AR, MA, GARCH), simulation methods, and copulas.",
+              "topics": [
+                "Probability Distributions: Normal, Lognormal, Student's t, Chi-Square",
+                "Hypothesis Testing, Confidence Intervals & OLS Regression Assumptions",
+                "Time-Series Analysis: Stationarity, Volatility Clustering, ARCH/GARCH",
+                "Monte Carlo Simulation, Bootstrapping & Copula Modeling"
+              ],
+              "modernThemes": [
+                "GARCH Volatility Modeling",
+                "Copulas in Financial Modeling"
+              ]
+            },
+            {
+              "id": "frm-p1-markets",
+              "name": "Financial Markets and Products",
+              "code": "FRM.P1.3",
+              "category": "Coursework",
+              "weightage": "30%",
+              "description": "OTC and exchange-traded derivatives, futures, forwards, commodity markets, currency swaps, options strategies, BSM mechanics, and fixed-income debt/MBS.",
+              "topics": [
+                "Mechanics of Futures & Forwards: Arbitrage, Basis Risk, Optimal Hedge Ratio",
+                "Foreign Exchange Markets & Cross-Currency Swaps",
+                "Options Strategies: Spreads, Straddles, Strangles & Payoffs",
+                "Interest Rate Swaps, FRAs & Overnight Index Swaps (OIS)",
+                "Fixed Income Securities, Corporate Bonds, MBS & CDOs"
+              ]
+            },
+            {
+              "id": "frm-p1-valuation",
+              "name": "Valuation and Risk Models",
+              "code": "FRM.P1.4",
+              "category": "Coursework",
+              "weightage": "30%",
+              "description": "Value at Risk (VaR), Expected Shortfall, stress testing, option Greeks (Delta, Gamma, Vega), binomial pricing, duration/convexity, and sovereign risk.",
+              "topics": [
+                "Value at Risk (VaR): Parametric, Historical Simulation & Monte Carlo",
+                "Expected Shortfall (ES / CVaR) & Coherent Risk Measures",
+                "The Option Greeks: Delta, Gamma, Theta, Vega, Rho & Dynamic Hedging",
+                "Fixed Income Valuation: Modified Duration, Dollar Duration, Convexity",
+                "Credit Rating Migrations, Transition Matrices & Sovereign Risk"
+              ],
+              "modernThemes": [
+                "Expected Shortfall",
+                "Dynamic Delta-Gamma Hedging"
+              ]
+            },
+            {
+              "id": "frm-p1-exam",
+              "name": "FRM Part I Examination Sitting",
+              "code": "FRM-P1-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "100 Multiple-Choice Questions (4-choice)",
+              "frequency": "3 Testing Windows: May, August, November",
+              "marks": 100,
+              "description": "Computer-based examination testing quantitative risk tools, financial markets, and valuation models. Passing score set by GARP standard setting."
+            }
+          ]
+        },
+        {
+          "id": "frm-stage-2",
+          "title": "Stage 2: FRM Part II – Advanced Risk Measurement & Application",
+          "subtitle": "6 Modular Curricula (100%) culminating in a 4-Hour Exam (80 MCQs)",
+          "nodes": [
+            {
+              "id": "frm-p2-market",
+              "name": "Market Risk Measurement & Management",
+              "code": "FRM.P2.1",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Extreme Value Theory (EVT), volatility smiles, term structure models (Vasicek, Cox-Ingersoll-Ross), correlation risk, and non-parametric VaR enhancements.",
+              "topics": [
+                "Extreme Value Theory (EVT) & Peaks-over-Threshold (POT)",
+                "Volatility Smiles, Skews, Implied Volatility & Local Volatility",
+                "Term Structure Models: Vasicek, CIR, Ho-Lee, Hull-White",
+                "Correlation Risk & Copula Dependency in Stressed Markets"
+              ],
+              "modernThemes": [
+                "Extreme Value Theory",
+                "Implied Volatility Dynamics"
+              ]
+            },
+            {
+              "id": "frm-p2-credit",
+              "name": "Credit Risk Measurement & Management",
+              "code": "FRM.P2.2",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Probability of default (Merton model), credit derivatives (CDS), Counterparty Credit Risk (CCR), CVA, DVA, FVA, PFE, netting, and central clearing (CCPs).",
+              "topics": [
+                "Credit Risk Metrics: PD, LGD, EAD, and Expected Loss (EL)",
+                "Structural Default Models (Merton) & Reduced-Form Models",
+                "Counterparty Credit Risk: CVA, DVA, FVA & Potential Future Exposure (PFE)",
+                "ISDA Master Agreements, CSAs, Initial/Variation Margin & CCPs",
+                "Credit Default Swaps (CDS) & Securitization"
+              ],
+              "modernThemes": [
+                "CVA/DVA/FVA Modeling",
+                "Central Counterparty Resilience"
+              ]
+            },
+            {
+              "id": "frm-p2-operational",
+              "name": "Operational Risk and Resilience",
+              "code": "FRM.P2.3",
+              "category": "Coursework",
+              "weightage": "20%",
+              "description": "Basel Standardized Measurement Approach (SMA), enterprise risk governance, model risk management, cyber risk resilience, and operational due diligence.",
+              "topics": [
+                "Basel Committee Principles for Sound Operational Risk Management (PSMOR)",
+                "Basel Regulatory Capital: Standardized Measurement Approach (SMA)",
+                "Model Risk Governance, Model Validation & Backtesting",
+                "Cyber Risk, Cloud Infrastructure, Ransomware & TPRM",
+                "Business Continuity Planning (BCP) & Operational Resilience"
+              ],
+              "modernThemes": [
+                "Basel SMA",
+                "Model Risk Governance",
+                "Cloud Cyber Risk"
+              ]
+            },
+            {
+              "id": "frm-p2-liquidity",
+              "name": "Liquidity and Treasury Risk",
+              "code": "FRM.P2.4",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Market vs funding liquidity risk, Basel III ratios (LCR, NSFR), asset-liability management (ALM), liquidity stress testing, and funds transfer pricing (FTP).",
+              "topics": [
+                "Liquidity Dimensions: Market Liquidity vs Funding Liquidity",
+                "Basel III Liquidity Regulation: Liquidity Coverage Ratio (LCR) & NSFR",
+                "Asset-Liability Management (ALM) & Liquidity Stress Testing",
+                "Funds Transfer Pricing (FTP) & Collateral Management"
+              ],
+              "modernThemes": [
+                "Basel III LCR & NSFR",
+                "Funds Transfer Pricing (FTP)"
+              ]
+            },
+            {
+              "id": "frm-p2-investment",
+              "name": "Risk Management & Investment Management",
+              "code": "FRM.P2.5",
+              "category": "Coursework",
+              "weightage": "15%",
+              "description": "Factor investing, portfolio risk budgeting, performance attribution (Brinson-Fachler), hedge fund risk, private equity illiquidity, and pension LDI.",
+              "topics": [
+                "Factor Investing, Smart Beta & Risk-Factor Decomposition",
+                "Portfolio VaR Budgeting & Marginal Contribution to Risk (MCR)",
+                "Performance Attribution & Appraisal Ratios (Information, Sortino, Treynor)",
+                "Hedge Fund Due Diligence & Pension Fund LDI Strategies"
+              ]
+            },
+            {
+              "id": "frm-p2-current",
+              "name": "Current Issues in Financial Markets",
+              "code": "FRM.P2.6",
+              "category": "Coursework",
+              "weightage": "10%",
+              "description": "Annually updated research papers: AI/ML in risk modeling, climate risk (NGFS scenarios), digital assets/CBDCs, and banking crises case studies.",
+              "topics": [
+                "Artificial Intelligence & Machine Learning in Risk & Trading",
+                "Climate Risk: Physical/Transition Risks & NGFS Scenarios",
+                "Digital Assets, Stablecoins & Central Bank Digital Currencies (CBDCs)",
+                "Recent Banking Crises (SVB, Signature Bank, Credit Suisse)"
+              ],
+              "modernThemes": [
+                "AI in Risk Modeling",
+                "Climate Risk & NGFS Scenarios",
+                "CBDCs & Digital Assets"
+              ]
+            },
+            {
+              "id": "frm-p2-exam",
+              "name": "FRM Part II Examination Sitting",
+              "code": "FRM-P2-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "80 Multiple-Choice Questions (4-choice)",
+              "frequency": "3 Testing Windows: May, August, November",
+              "marks": 80,
+              "description": "Computer-based examination testing advanced market, credit, operational, and liquidity risk. Must be passed within 4 years of passing Part I.",
+              "checklists": [
+                "Must be passed within 4 years of passing Part I",
+                "Demonstrate comprehensive scenario analysis across credit, market, and liquidity regimes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "frm-stage-3",
+          "title": "Stage 3: Professional Experience & Credential Award",
+          "subtitle": "24 Months Full-Time Risk Experience + Code of Conduct",
+          "nodes": [
+            {
+              "id": "frm-exp",
+              "name": "24 Months Full-Time Risk Work Experience",
+              "code": "FRM-EXP",
+              "category": "Experience",
+              "duration": "24 Months Full-Time",
+              "description": "Demonstrate at least two years (24 months) of full-time professional work experience in financial risk management or a closely related role. Must be submitted within 5 years of passing Part II.",
+              "topics": [
+                "24 Months Professional Risk Experience",
+                "Experience Submission Deadline: 5 Years Post-Part II",
+                "Qualifying Disciplines: Credit, Market, Operational, Treasury, Audit"
+              ]
+            },
+            {
+              "id": "frm-cert",
+              "name": "Certified FRM Designation Conferred & Ethics",
+              "code": "FRM-CERT",
+              "category": "Milestone",
+              "description": "Formal award of the Certified Financial Risk Manager (FRM®) credential and commitment to upholding the GARP Code of Conduct.",
+              "topics": [
+                "Certified FRM Credential Award",
+                "GARP Code of Conduct Commitment",
+                "Annual CPD Recommended Standard"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

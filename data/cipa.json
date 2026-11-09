@@ -1,0 +1,154 @@
+{
+  "id": "cipa",
+  "title": "CIPA® Fellowship (Certified Islamic Professional Accountant)",
+  "region": "Global",
+  "body": "Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI)",
+  "officialUrl": "https://aaoifi.com",
+  "lastVerified": "2026-11-09",
+  "source": "AAOIFI CIPA Modular Fellowship Syllabus",
+  "summary": "The premier technical professional accountancy, financial reporting (FAS), and auditing qualification for Islamic financial institutions globally, spanning 4 modular examination syllabi and 1 year practical experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard CIPA Fellowship Track",
+      "tag": "Islamic Financial Accountants & Auditors",
+      "blurb": "Complete all 4 modular examinations (FAR, AUD, BLG, SSOR) with at least 70% pass score, and complete 1 year of verified practical experience.",
+      "stages": [
+        {
+          "id": "cipa-stage-1",
+          "title": "Stage 1: Module 1 — Financial Accounting and Reporting (FAR)",
+          "subtitle": "AAOIFI Financial Accounting Standards (FAS) mechanics and disclosures",
+          "nodes": [
+            {
+              "id": "cipa-far",
+              "name": "Financial Accounting and Reporting for IFIs",
+              "code": "CIPA-FAR",
+              "category": "Coursework",
+              "description": "AAOIFI conceptual framework, recognition and measurement of Murabahah (FAS 28), Mudarabah (FAS 13), Musharakah (FAS 4), Ijarah (FAS 32), Sukuk (FAS 33/34), Zakah (FAS 35), and consolidated accounts.",
+              "topics": [
+                "AAOIFI FAS Conceptual Framework & Objective of Financial Reporting for IFIs",
+                "Accounting for Financing Contracts: Murabahah, Salam, Istisna'a, and Tawarruq",
+                "Accounting for Equity & Leasing: Mudarabah, Musharakah, and Ijarah Muntahia Bittamleek",
+                "Accounting for Investments: Investment in Sukuk, Shares, Real Estate & Funds",
+                "Financial Statement Disclosures, PSIA Reserves (PER/IRR) & Zakah Accounting"
+              ]
+            },
+            {
+              "id": "cipa-exam-far",
+              "name": "FAR Modular Examination",
+              "code": "CIPA-EXAM-FAR",
+              "category": "Exam",
+              "duration": "3.5 Hours",
+              "format": "100 MCQs and Practical Accounting Problem Scenarios",
+              "marks": 100,
+              "description": "Computer-based modular exam testing journal entries, accounting adjustments, and balance sheet preparation under AAOIFI FAS standards. Passing score: 70%."
+            }
+          ]
+        },
+        {
+          "id": "cipa-stage-2",
+          "title": "Stage 2: Module 2 — Audit and Governance (AUD)",
+          "subtitle": "Auditing Standards for Islamic Financial Institutions (ASIFI) and SSB governance",
+          "nodes": [
+            {
+              "id": "cipa-aud",
+              "name": "Audit and Governance for IFIs",
+              "code": "CIPA-AUD",
+              "category": "Coursework",
+              "description": "AAOIFI Auditing Standards (ASIFI), external audit engagements, internal Shari'ah audit, Shari'ah governance frameworks (GS 1-11), and risk-based audit planning.",
+              "topics": [
+                "ASIFI Auditing Principles, Engagement Planning & Risk Assessment for IFIs",
+                "Internal Shari'ah Review (GS 3) & Internal Shari'ah Audit Charter",
+                "Shari'ah Supervisory Board (SSB) Relations, Fatwa Governance & Independence",
+                "Auditing Profit Allocation between Shareholders and Unrestricted Investment Account Holders"
+              ]
+            },
+            {
+              "id": "cipa-exam-aud",
+              "name": "AUD Modular Examination",
+              "code": "CIPA-EXAM-AUD",
+              "category": "Exam",
+              "duration": "3 Hours",
+              "format": "100 MCQs and Audit Case Scenarios",
+              "marks": 100,
+              "description": "Computer-based exam testing external and internal audit procedures and Shari'ah governance. Passing score: 70%."
+            }
+          ]
+        },
+        {
+          "id": "cipa-stage-3",
+          "title": "Stage 3: Modules 3 & 4 — Law, Ethics & Shari'ah Standards",
+          "subtitle": "Business Law & Ethics (BLG) and Shari'ah Standards Operational Requirements (SSOR)",
+          "nodes": [
+            {
+              "id": "cipa-blg",
+              "name": "Business Law and Ethics (BLG)",
+              "code": "CIPA-BLG",
+              "category": "Coursework",
+              "description": "Commercial jurisprudence, contract law, regulatory frameworks for IFIs, corporate governance, and AAOIFI Code of Ethics for Accountants.",
+              "topics": [
+                "Principles of Commercial Jurisprudence (Fiqh al-Mu'amalat)",
+                "Contract Formation, Defects of Will, and Dispute Settlement in Islamic Law",
+                "Corporate Governance, Transparency & AAOIFI Code of Professional Ethics"
+              ]
+            },
+            {
+              "id": "cipa-ssor",
+              "name": "Shari'ah Standards & Operational Requirements (SSOR)",
+              "code": "CIPA-SSOR",
+              "category": "Coursework",
+              "description": "Operational compliance with core AAOIFI Shari'ah Standards in banking, treasury, trade finance, Sukuk, and takaful operations.",
+              "topics": [
+                "Operational Application of AAOIFI Shari'ah Standards",
+                "Treasury Operations, Liquidity Management & FX Hedging in Islamic Banking",
+                "Sukuk Structuring, Securitization Vehicles & SPV Governance"
+              ]
+            },
+            {
+              "id": "cipa-exam-ssor",
+              "name": "BLG & SSOR Modular Examinations",
+              "code": "CIPA-EXAM-SSOR",
+              "category": "Exam",
+              "duration": "3.5 Hours",
+              "format": "100 MCQs and Practical Case Scenarios",
+              "marks": 100,
+              "description": "Modular assessments testing legal contracts, ethics, and operational compliance with AAOIFI Shari'ah standards. Passing score: 70%."
+            }
+          ]
+        },
+        {
+          "id": "cipa-stage-4",
+          "title": "Stage 4: Practical Experience & Fellowship Induction",
+          "subtitle": "1 Year Verified Experience in IFI Accounting / Audit",
+          "nodes": [
+            {
+              "id": "cipa-per",
+              "name": "1 Year Practical Experience in Islamic Finance",
+              "code": "CIPA-PER",
+              "category": "Experience",
+              "duration": "12 Months Full-Time",
+              "description": "Document at least 12 months of qualifying practical accounting or auditing experience in an Islamic bank, takaful company, regulatory authority, or audit firm.",
+              "topics": [
+                "12 Months Verified Work Experience",
+                "Supervisory Verification in Islamic Accounting"
+              ]
+            },
+            {
+              "id": "cipa-fellow",
+              "name": "CIPA Fellowship Conferred",
+              "code": "CIPA-FELLOW",
+              "category": "Milestone",
+              "description": "Formal award of the Certified Islamic Professional Accountant (CIPA) fellowship credential by AAOIFI.",
+              "topics": [
+                "CIPA Fellowship Award",
+                "Listing in Global AAOIFI Registry",
+                "Annual CPD Commitment"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

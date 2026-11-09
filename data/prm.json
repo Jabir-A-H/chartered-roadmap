@@ -1,0 +1,114 @@
+{
+  "id": "prm",
+  "title": "PRM™ Designation (Professional Risk Manager)",
+  "region": "Global",
+  "body": "Professional Risk Managers' International Association (PRMIA)",
+  "officialUrl": "https://www.prmia.org",
+  "lastVerified": "2026-11-09",
+  "source": "PRMIA Professional Risk Manager Candidate Guide & Syllabus",
+  "summary": "The rigorous quantitative financial risk management credential covering Finance Theory, Financial Instruments, Mathematical Foundations, Risk Measurement (Market, Credit, Operational), and PRMIA Standards across Exam I & Exam II.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard PRM Track",
+      "tag": "Quantitative Risk Analysts & Modelers",
+      "blurb": "Pass PRM Exam I and Exam II (60% scaled pass score), document 2 to 4 years of quantitative risk experience, and uphold the PRMIA Standards of Best Practice.",
+      "stages": [
+        {
+          "id": "prm-stage-1",
+          "title": "Stage 1: PRM Exam I – Finance Theory & Financial Instruments",
+          "subtitle": "Theory, Markets, Instruments, and Derivatives (60 MCQs | 4 Hours)",
+          "nodes": [
+            {
+              "id": "prm-e1-curriculum",
+              "name": "Exam I Curriculum: Theory, Instruments & Markets",
+              "code": "PRM-E1-CURR",
+              "category": "Coursework",
+              "description": "Modern portfolio theory, CAPM, APT, equity markets, debt securities, futures and forwards, interest rate swaps, options pricing models (Black-Scholes, Binomial), and energy/commodity markets.",
+              "topics": [
+                "Modern Portfolio Theory, Efficient Frontier & Capital Asset Pricing Model (CAPM)",
+                "Arbitrage Pricing Theory (APT) & Multifactor Return Models",
+                "Fixed Income Securities, Yield Curve Mathematics & Duration/Convexity",
+                "Futures, Swaps, Currency Markets & Credit Default Swaps (CDS)",
+                "Option Valuation Models: Black-Scholes-Merton & Numerical Binomial Trees"
+              ]
+            },
+            {
+              "id": "prm-e1-exam",
+              "name": "PRM Exam I Sitting",
+              "code": "PRM-E1-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "60 Multiple-Choice Questions",
+              "marks": 100,
+              "description": "Computer-based testing evaluating theoretical finance foundations, financial markets, and valuation mathematics. Passing score: 60%."
+            }
+          ]
+        },
+        {
+          "id": "prm-stage-2",
+          "title": "Stage 2: PRM Exam II – Mathematical Foundations & Risk Operations",
+          "subtitle": "Calculus, linear algebra, VaR models, and case study dissections (84 Questions | 4 Hours)",
+          "nodes": [
+            {
+              "id": "prm-e2-curriculum",
+              "name": "Exam II Curriculum: Math, Risk Modeling & Case Studies",
+              "code": "PRM-E2-CURR",
+              "category": "Coursework",
+              "description": "Mathematical foundations (calculus, linear algebra, probability), Market Risk (VaR, Expected Shortfall), Credit Risk (CreditMetrics, Merton), Operational Risk (Basel SMA), and historical case studies (Barings, LTCM, Enron).",
+              "topics": [
+                "Mathematical Foundations: Multivariate Calculus, Matrix Algebra & Probability Distributions",
+                "Market Risk Measurement: Parametric VaR, Historical Simulation, Monte Carlo & Stress Testing",
+                "Credit Risk Measurement: Probability of Default, Loss Given Default, Credit VaR & CVA",
+                "Operational Risk: Basel Capital Accords, Loss Distributions & Key Risk Indicators",
+                "PRMIA Governance, Standards of Best Practice & Real-World Case Study Dissections"
+              ]
+            },
+            {
+              "id": "prm-e2-exam",
+              "name": "PRM Exam II Sitting",
+              "code": "PRM-E2-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "84 Questions (including 4 Case Vignettes)",
+              "marks": 100,
+              "description": "Computer-based examination testing mathematical risk modeling, credit/market/operational methodologies, and case study analysis. Passing score: 60%."
+            }
+          ]
+        },
+        {
+          "id": "prm-stage-3",
+          "title": "Stage 3: Experience & Designation Award",
+          "subtitle": "2-4 Years Risk Experience + Continuous Risk Leader Commitment",
+          "nodes": [
+            {
+              "id": "prm-exp",
+              "name": "Qualifying Professional Risk Experience",
+              "code": "PRM-EXP",
+              "category": "Experience",
+              "duration": "2 to 4 Years (Education Dependent)",
+              "description": "Document qualifying experience in financial risk management (2 years with Master's degree, 4 years with Bachelor's degree).",
+              "topics": [
+                "Risk Experience Verification",
+                "Supervisory Reference Sign-Off"
+              ]
+            },
+            {
+              "id": "prm-designation",
+              "name": "PRM™ Designation Conferred & CRL Commitment",
+              "code": "PRM-AWARD",
+              "category": "Milestone",
+              "description": "Award of the Professional Risk Manager (PRM™) designation and annual participation in the Continuing Risk Leader (CRL) professional development program.",
+              "topics": [
+                "PRM Designation Award",
+                "Annual Continuing Risk Leader (CRL) Credits",
+                "PRMIA Standards of Best Practice"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

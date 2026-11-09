@@ -1,0 +1,463 @@
+{
+  "id": "icmab",
+  "title": "ICMAB CMA Qualification",
+  "region": "Bangladesh",
+  "body": "The Institute of Cost and Management Accountants of Bangladesh",
+  "officialUrl": "https://www.icmab.gov.bd",
+  "lastVerified": "2026-11-09",
+  "source": "Cost and Management Accountants Act 2018 & 2021 Revised Syllabus",
+  "summary": "ICMAB confers the ACMA and FCMA statutory chartered qualifications under the Cost and Management Accountants Act, 2018. Governs cost audit, enterprise management accounting, and strategic cost management across 2,000 marks across 5 progressive levels and 12 months practical articleship.",
+  "statutoryMonopoly": {
+    "act": "Cost and Management Accountants Act, 2018 (Act No. LXX of 2018)",
+    "primaryPowers": [
+      "Exclusive statutory authority for Cost Audit under Companies Act 1994 Sec 220",
+      "Cost Audit (Report) Rules, 1997 mandatory certification",
+      "Bangladesh Cost Accounting Standards (BCAS 1 to 31) standard-setting",
+      "Mandatory cost audit in pharmaceuticals, fertilizers, sugar, cement, textiles, power"
+    ]
+  },
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Professional Track",
+      "tag": "All Entrants",
+      "blurb": "Complete all 5 levels (2,000 marks), 12 months articleship, and practical viva to earn ACMA.",
+      "stages": [
+        {
+          "id": "icmab-foundation",
+          "title": "Level 1: Foundation Level",
+          "subtitle": "4 Papers (400 Marks) | Entry-level core business disciplines",
+          "nodes": [
+            {
+              "id": "fr111",
+              "name": "Fundamentals of Financial Accounting",
+              "code": "FR 111",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Double-entry bookkeeping, adjusting entries, bank reconciliation, trial balance, and financial statement preparation under IFRS/IAS."
+            },
+            {
+              "id": "ta112",
+              "name": "Business Quantitative Analysis",
+              "code": "TA 112",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Time value of money, matrices, business calculus, probability distributions, hypothesis testing, and regression analysis."
+            },
+            {
+              "id": "ef113",
+              "name": "Business Economics & International Business",
+              "code": "EF 113",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Microeconomic theory, macroeconomic indicators, fiscal/monetary policy, Bangladesh banking system, foreign trade, and BoP."
+            },
+            {
+              "id": "ms114",
+              "name": "Fundamentals of Management & Business Communication",
+              "code": "MS 114",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Organizational management principles, executive reporting, business communication, and professional ethical frameworks."
+            }
+          ]
+        },
+        {
+          "id": "icmab-intermediate-1",
+          "title": "Level 2: Intermediate Level I",
+          "subtitle": "5 Papers (400 Marks) | Core operational costing, law, and corporate reporting",
+          "nodes": [
+            {
+              "id": "cm121",
+              "name": "Cost Accounting",
+              "code": "CM 121",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing."
+            },
+            {
+              "id": "fr222",
+              "name": "Intermediate Financial Accounting",
+              "code": "FR 222",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "IFRS 15 revenue, IFRS 16 leases, IAS 16 PPE, IAS 36 impairment, and comprehensive corporate financial statements."
+            },
+            {
+              "id": "ta223",
+              "name": "Information & Communication Technologies",
+              "code": "TA 223",
+              "category": "Exam",
+              "marks": 50,
+              "duration": "2 Hours",
+              "description": "DBMS architecture, SQL queries, ERP systems (SAP/Oracle), data analytics, cybersecurity, and internal IT controls."
+            },
+            {
+              "id": "ms224",
+              "name": "Marketing & Supply Chain Management",
+              "code": "MS 224",
+              "category": "Exam",
+              "marks": 50,
+              "duration": "2 Hours",
+              "description": "Marketing mix, STP framework, procurement lifecycle, logistics optimization, and supply chain risk mitigation."
+            },
+            {
+              "id": "lt125",
+              "name": "Corporate & Business Laws",
+              "code": "LT 125",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006."
+            }
+          ]
+        },
+        {
+          "id": "icmab-intermediate-2",
+          "title": "Level 3: Intermediate Level II",
+          "subtitle": "4 Papers (400 Marks) | Tactical management accounting, corporate finance & audit",
+          "nodes": [
+            {
+              "id": "cm231",
+              "name": "Management Accounting",
+              "code": "CM 231",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis."
+            },
+            {
+              "id": "ef232",
+              "name": "Financial Management",
+              "code": "EF 232",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Financial ratio analysis, working capital optimization, DCF capital budgeting (NPV/IRR), and WACC capital structure theory."
+            },
+            {
+              "id": "aa133",
+              "name": "Auditing",
+              "code": "AA 133",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Bangladesh Standards on Auditing (BSA/ISA), audit planning, internal control testing, substantive procedures, and audit opinions."
+            },
+            {
+              "id": "lt234",
+              "name": "Fundamentals of Tax, VAT & Public Financial Management",
+              "code": "LT 234",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM."
+            }
+          ]
+        },
+        {
+          "id": "icmab-advanced-1",
+          "title": "Level 4: Advanced Level I",
+          "subtitle": "4 Papers (400 Marks) | Strategic cost leadership, consolidated financial reporting & governance",
+          "nodes": [
+            {
+              "id": "cm341",
+              "name": "Strategic Cost and Management Accounting",
+              "code": "CM 341",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+            },
+            {
+              "id": "fr342",
+              "name": "Advanced Financial Reporting",
+              "code": "FR 342",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Group consolidated accounts (IFRS 10/IFRS 3), financial instruments (IFRS 9), employee benefits (IAS 19), and ISSB sustainability standards."
+            },
+            {
+              "id": "ef343",
+              "name": "Corporate Finance Strategy & Financial Market",
+              "code": "EF 343",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "M&A valuation, financial restructuring, IPO issuance, money and capital markets, and derivative risk hedging."
+            },
+            {
+              "id": "lt344",
+              "name": "Corporate Governance & Secretarial Practices",
+              "code": "LT 344",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "OECD governance principles, BSEC Corporate Governance Code (CGC 2018), board secretarial procedures, and RJSC compliance."
+            }
+          ]
+        },
+        {
+          "id": "icmab-advanced-2",
+          "title": "Level 5: Advanced Level II & Practicum",
+          "subtitle": "4 Papers (400 Marks) + 12-Month Articleship | Statutory cost audit, enterprise strategy & case study",
+          "nodes": [
+            {
+              "id": "ms351",
+              "name": "Business Strategy",
+              "code": "MS 351",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Strategic environmental scanning (PESTEL, Porter's Five Forces), competitive positioning, strategic execution, and turnaround."
+            },
+            {
+              "id": "aa252",
+              "name": "Cost & Management Audit",
+              "code": "AA 252",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+            },
+            {
+              "id": "lt453",
+              "name": "Advanced Income Tax & VAT",
+              "code": "LT 453",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR."
+            },
+            {
+              "id": "cs154",
+              "name": "Integrated Case Study",
+              "code": "CS 154",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+            },
+            {
+              "id": "icmab-articleship",
+              "name": "CMA Practical Articleship (12 Months)",
+              "code": "PER 100",
+              "category": "Experience",
+              "duration": "12 Months",
+              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA."
+            }
+          ]
+        }
+      ]
+    },
+    "fast-track-icab": {
+      "id": "fast-track-icab",
+      "name": "ICAB Qualified Fast-Track Pathway",
+      "tag": "For ACA / FCA Holders",
+      "blurb": "Receive broad exemptions from Foundation and Business levels; focus on specialized Cost Accounting and statutory Cost Audit papers.",
+      "stages": [
+        {
+          "id": "icmab-ft-exemptions",
+          "title": "Stage 1: Credit for Prior Learning (CPL) Exemptions",
+          "subtitle": "Waiver from Foundation Level and standard financial reporting papers",
+          "nodes": [
+            {
+              "id": "icmab-cpl-icab",
+              "name": "Credit for Prior Learning Sign-Off",
+              "code": "CPL-ICAB",
+              "category": "Admin",
+              "description": "Verification of active ACA/FCA membership with ICAB. Grants paper waivers across Foundation and select financial accounting papers."
+            }
+          ]
+        },
+        {
+          "id": "icmab-ft-cost-core",
+          "title": "Stage 2: Cost Accounting & Statutory Audit Core",
+          "subtitle": "Specialized cost management and statutory cost audit subjects",
+          "nodes": [
+            {
+              "id": "cm121",
+              "name": "Cost Accounting",
+              "code": "CM 121",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing."
+            },
+            {
+              "id": "cm231",
+              "name": "Management Accounting",
+              "code": "CM 231",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis."
+            },
+            {
+              "id": "cm341",
+              "name": "Strategic Cost and Management Accounting",
+              "code": "CM 341",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+            },
+            {
+              "id": "aa252",
+              "name": "Cost & Management Audit",
+              "code": "AA 252",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+            },
+            {
+              "id": "cs154",
+              "name": "Integrated Case Study",
+              "code": "CS 154",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+            }
+          ]
+        },
+        {
+          "id": "icmab-ft-induction",
+          "title": "Stage 3: Professional Experience & ACMA Induction",
+          "subtitle": "Articleship reduction and CMA admission",
+          "nodes": [
+            {
+              "id": "icmab-ft-exp",
+              "name": "CA Articleship Equivalency Verification",
+              "code": "EXP-EQ",
+              "category": "Experience",
+              "duration": "Verified CA Articleship",
+              "description": "CA articleship completed at an approved ICAB CA firm satisfies the practical experience requirement for ACMA admission."
+            },
+            {
+              "id": "icmab-ft-acma",
+              "name": "Admission as ACMA",
+              "code": "ACMA-ADMIT",
+              "category": "Milestone",
+              "description": "Conferral of the Associate Cost and Management Accountant (ACMA) designation and issuance of membership certificate."
+            }
+          ]
+        }
+      ]
+    },
+    "fast-track-acca": {
+      "id": "fast-track-acca",
+      "name": "ACCA Qualified Fast-Track Pathway",
+      "tag": "For ACCA Affiliates / Members",
+      "blurb": "Receive 4 Business Level subject exemptions + Foundation waivers; complete local law, tax, and Cost & Management Audit.",
+      "stages": [
+        {
+          "id": "icmab-acca-exemptions",
+          "title": "Stage 1: ACCA Exemption Recognition",
+          "subtitle": "Foundation level waiver and paper-to-paper exemptions",
+          "nodes": [
+            {
+              "id": "icmab-cpl-acca",
+              "name": "ACCA Membership Exemption Verification",
+              "code": "CPL-ACCA",
+              "category": "Admin",
+              "description": "Submission of ACCA member transcript or affiliate certificate. Exemptions granted across Foundation and standard reporting papers."
+            }
+          ]
+        },
+        {
+          "id": "icmab-acca-local-core",
+          "title": "Stage 2: Local Law, Tax & Statutory Cost Audit",
+          "subtitle": "Local legislative requirements and specialized cost audit",
+          "nodes": [
+            {
+              "id": "lt125",
+              "name": "Corporate & Business Laws",
+              "code": "LT 125",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006."
+            },
+            {
+              "id": "lt234",
+              "name": "Fundamentals of Tax, VAT & Public Financial Management",
+              "code": "LT 234",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM."
+            },
+            {
+              "id": "cm341",
+              "name": "Strategic Cost and Management Accounting",
+              "code": "CM 341",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+            },
+            {
+              "id": "aa252",
+              "name": "Cost & Management Audit",
+              "code": "AA 252",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+            },
+            {
+              "id": "lt453",
+              "name": "Advanced Income Tax & VAT",
+              "code": "LT 453",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR."
+            },
+            {
+              "id": "cs154",
+              "name": "Integrated Case Study",
+              "code": "CS 154",
+              "category": "Exam",
+              "marks": 100,
+              "duration": "3 Hours",
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+            }
+          ]
+        },
+        {
+          "id": "icmab-acca-membership",
+          "title": "Stage 3: Practical Experience & ACMA Award",
+          "subtitle": "PER sign-off and charter admission",
+          "nodes": [
+            {
+              "id": "icmab-articleship",
+              "name": "CMA Practical Articleship (12 Months)",
+              "code": "PER 100",
+              "category": "Experience",
+              "duration": "12 Months",
+              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA."
+            },
+            {
+              "id": "icmab-acca-acma",
+              "name": "Admission as ACMA",
+              "code": "ACMA-ADMIT",
+              "category": "Milestone",
+              "description": "Conferral of the Associate Cost and Management Accountant (ACMA) designation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

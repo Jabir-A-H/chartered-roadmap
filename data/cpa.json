@@ -1,0 +1,650 @@
+{
+  "id": "cpa",
+  "title": "Uniform CPA Examination (CPA Evolution)",
+  "region": "USA (55 Jurisdictions)",
+  "body": "AICPA & NASBA",
+  "officialUrl": "https://www.aicpa-cima.com/resources/landing/the-cpa-exam",
+  "lastVerified": "2026-11-09",
+  "source": "AICPA/NASBA Uniform CPA Examination Blueprints (CPA Evolution 2024+)",
+  "summary": "The US CPA Evolution licensure model features 3 mandatory Core exams (AUD, FAR, REG) plus 1 candidate-selected Discipline (BAR, ISC, or TCP), governed by the 30-month rolling credit window and the 4 Es of licensure.",
+  "defaultRoute": "core-isc",
+  "routes": {
+    "core-isc": {
+      "id": "core-isc",
+      "name": "Information Systems & Controls (ISC) Discipline Track",
+      "tag": "IT Audit & SOC Attestation Focus",
+      "blurb": "Focuses on enterprise IT governance, internal controls, cybersecurity assurance, data management, and SOC attestation reporting.",
+      "stages": [
+        {
+          "id": "cpa-stage-1",
+          "title": "Stage 1: Eligibility & Notice to Schedule (NTS)",
+          "subtitle": "120 credit hour board application, credential evaluation, and Prometric NTS",
+          "nodes": [
+            {
+              "id": "cpa-eligibility",
+              "name": "120 Semester Hours & State Board Approval",
+              "code": "CPA-ELIG",
+              "category": "Admin",
+              "description": "Meet jurisdictional prerequisite of at least 120 semester hours (including required accounting and business credits) and receive authorization from your State Board of Accountancy.",
+              "topics": [
+                "120 Credit Hours Prerequisite",
+                "Accounting & Business Subject Minimums",
+                "State Board Eligibility Review"
+              ]
+            },
+            {
+              "id": "cpa-nts",
+              "name": "NASBA Notice to Schedule (NTS) Issuance",
+              "code": "CPA-NTS",
+              "category": "Admin",
+              "description": "Receive your NASBA Notice to Schedule (NTS) valid for 6 months, and book computer-based exam appointments at Prometric testing centers.",
+              "topics": [
+                "NASBA Portal Registration",
+                "NTS Validity Window",
+                "Prometric Scheduling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-2",
+          "title": "Stage 2: The Mandatory CPA Core (12 Hours CBT · 30-Month Window)",
+          "subtitle": "Mandatory 3 Core Exams required of all CPA candidates across 55 jurisdictions",
+          "nodes": [
+            {
+              "id": "cpa-aud",
+              "name": "Auditing and Attestation (AUD)",
+              "code": "AUD",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "78 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, assessing risk and developing a planned response, performing procedures, obtaining evidence, and forming conclusions/reporting under AICPA, PCAOB, and IAASB standards.",
+              "topics": [
+                "Ethics, Professional Responsibilities & General Principles (15-25%)",
+                "Assessing Risk and Developing a Planned Response (25-35%)",
+                "Performing Further Procedures and Obtaining Evidence (30-40%)",
+                "Forming Conclusions and Reporting: Opinions, Reviews, Compilations & SOC (10-20%)"
+              ],
+              "learningOutcomes": [
+                "Evaluate audit risks and design substantive and internal control audit procedures",
+                "Draft and evaluate unmodified, qualified, adverse, and disclaimer audit opinions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit expiration window upon passing"
+              ],
+              "modernThemes": [
+                "Automated Audit Evidence",
+                "SOC 1 & SOC 2 Engagements",
+                "PCAOB Critical Audit Matters (CAMs)"
+              ]
+            },
+            {
+              "id": "cpa-far",
+              "name": "Financial Accounting and Reporting (FAR)",
+              "code": "FAR",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "50 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Financial reporting framework, standard-setting, financial statement presentation, balance sheet accounts, transactions (revenue recognition, leases, taxes), and state/local government accounting.",
+              "topics": [
+                "Financial Reporting Framework: FASB Standard Setting & Financial Statements (25-35%)",
+                "Select Balance Sheet Accounts: Inventory, Leases, PPE, Debt & Equity (35-45%)",
+                "Select Transactions: Revenue Recognition (ASC 606), Income Taxes & Contingencies (20-30%)",
+                "State and Local Government Accounting: Modified Accrual & Fund Accounting (5-15%)"
+              ],
+              "learningOutcomes": [
+                "Prepare complex corporate balance sheets, multi-step income statements, and cash flows",
+                "Execute fund accounting and government-wide financial reconciliations under GASB"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "ASC 842 Lease Accounting",
+                "ASC 606 5-Step Model",
+                "GASB Fund Accounting"
+              ]
+            },
+            {
+              "id": "cpa-reg",
+              "name": "Taxation and Regulation (REG)",
+              "code": "REG",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "72 MCQs + 8 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, federal tax procedures, business law, federal taxation of property transactions, individuals, and corporate entities under the Internal Revenue Code (IRC).",
+              "topics": [
+                "Ethics, Professional Responsibilities & Federal Tax Procedures (10-20%)",
+                "Business Law: Agency, Contracts, UCC, Debtor-Creditor & Business Structure (10-20%)",
+                "Federal Taxation of Property Transactions: Basis, Gain/Loss & Like-Kind (12-22%)",
+                "Federal Taxation of Individuals: Gross Income, Deductions & Credits (22-32%)",
+                "Federal Taxation of Entities: C Corps, S Corps, Partnerships & Trusts (28-38%)"
+              ],
+              "learningOutcomes": [
+                "Calculate basis adjustments and tax liabilities for corporations, S corporations, and partnerships",
+                "Analyze Circular 230 ethical standards and preparer penalty provisions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "IRC Entity Flow-Throughs",
+                "Circular 230 Standards",
+                "State Apportionment Basics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-3-isc",
+          "title": "Stage 3: Discipline Specialization (ISC)",
+          "subtitle": "4 Hours CBT: 82 MCQs + 6 Task-Based Simulations (60% / 40% split)",
+          "nodes": [
+            {
+              "id": "cpa-isc",
+              "name": "Information Systems and Controls (ISC)",
+              "code": "ISC",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "82 MCQs + 6 Task-Based Simulations (60% / 40% split)",
+              "frequency": "Quarterly CBT testing windows",
+              "marks": 99,
+              "description": "Information systems and controls discipline examining IT governance, internal controls, system availability, confidential data management, and SOC 1/2/3 attestation engagements.",
+              "topics": [
+                "Information Systems and Data Management: Architecture & Cloud Virtualization (35-45%)",
+                "Security, Confidentiality, and Privacy: IAM, Zero Trust, Incident Response & HIPAA/GDPR (35-45%)",
+                "Considerations for System and Organization Controls (SOC) Engagements (15-25%)"
+              ],
+              "learningOutcomes": [
+                "Plan and execute SOC 1 Type 2 and SOC 2 Type 2 attestation engagements",
+                "Audit enterprise identity architectures, multi-factor authentication, and data privacy controls"
+              ],
+              "modernThemes": [
+                "Zero Trust Architecture",
+                "SOC 2 Trust Services Criteria",
+                "Cloud Security & Privacy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-4",
+          "title": "Stage 4: Licensure & The 4 Es",
+          "subtitle": "150 credit hours, 1-2 years experience, ethics exam, and State Board license",
+          "nodes": [
+            {
+              "id": "cpa-edu",
+              "name": "150 Semester Hour Education Requirement",
+              "code": "CPA-150",
+              "category": "Admin",
+              "description": "Satisfy the mandatory 150-semester-hour education requirement (equivalent to a Master's degree or post-graduate certificate) with specified accounting and business coursework.",
+              "topics": [
+                "150 Semester Hours Total",
+                "Upper-Level Accounting Credits",
+                "Business & Ethics Credits"
+              ]
+            },
+            {
+              "id": "cpa-exp",
+              "name": "1 to 2 Years Verified Professional Accounting Experience",
+              "code": "CPA-EXP",
+              "category": "Experience",
+              "duration": "1 to 2 Years (Jurisdiction Dependent)",
+              "description": "Complete 1 to 2 years of qualifying professional experience in public accounting, private corporate accounting, internal audit, or government, verified by an active CPA licensee.",
+              "topics": [
+                "Public Accounting or Industry Experience",
+                "Active CPA Verifier Sign-Off"
+              ]
+            },
+            {
+              "id": "cpa-ethics",
+              "name": "State Board Ethics Examination",
+              "code": "CPA-ETHICS",
+              "category": "Ethics",
+              "description": "Pass the AICPA Comprehensive Professional Ethics Examination (or specific state-mandated ethics examination) with a minimum score of 90%.",
+              "topics": [
+                "AICPA Code of Professional Conduct",
+                "Independence Rules (Rule 101)",
+                "Confidentiality & Fiduciary Duties"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "core-bar": {
+      "id": "core-bar",
+      "name": "Business Analysis & Reporting (BAR) Discipline Track",
+      "tag": "FP&A & Technical GAAP Focus",
+      "blurb": "Deepens technical financial accounting, state and local government accounting, derivative hedge accounting, and advanced managerial finance.",
+      "stages": [
+        {
+          "id": "cpa-stage-1",
+          "title": "Stage 1: Eligibility & Notice to Schedule (NTS)",
+          "subtitle": "120 credit hour board application, credential evaluation, and Prometric NTS",
+          "nodes": [
+            {
+              "id": "cpa-eligibility",
+              "name": "120 Semester Hours & State Board Approval",
+              "code": "CPA-ELIG",
+              "category": "Admin",
+              "description": "Meet jurisdictional prerequisite of at least 120 semester hours (including required accounting and business credits) and receive authorization from your State Board of Accountancy.",
+              "topics": [
+                "120 Credit Hours Prerequisite",
+                "Accounting & Business Subject Minimums",
+                "State Board Eligibility Review"
+              ]
+            },
+            {
+              "id": "cpa-nts",
+              "name": "NASBA Notice to Schedule (NTS) Issuance",
+              "code": "CPA-NTS",
+              "category": "Admin",
+              "description": "Receive your NASBA Notice to Schedule (NTS) valid for 6 months, and book computer-based exam appointments at Prometric testing centers.",
+              "topics": [
+                "NASBA Portal Registration",
+                "NTS Validity Window",
+                "Prometric Scheduling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-2",
+          "title": "Stage 2: The Mandatory CPA Core (12 Hours CBT · 30-Month Window)",
+          "subtitle": "Mandatory 3 Core Exams required of all CPA candidates across 55 jurisdictions",
+          "nodes": [
+            {
+              "id": "cpa-aud",
+              "name": "Auditing and Attestation (AUD)",
+              "code": "AUD",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "78 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, assessing risk and developing a planned response, performing procedures, obtaining evidence, and forming conclusions/reporting under AICPA, PCAOB, and IAASB standards.",
+              "topics": [
+                "Ethics, Professional Responsibilities & General Principles (15-25%)",
+                "Assessing Risk and Developing a Planned Response (25-35%)",
+                "Performing Further Procedures and Obtaining Evidence (30-40%)",
+                "Forming Conclusions and Reporting: Opinions, Reviews, Compilations & SOC (10-20%)"
+              ],
+              "learningOutcomes": [
+                "Evaluate audit risks and design substantive and internal control audit procedures",
+                "Draft and evaluate unmodified, qualified, adverse, and disclaimer audit opinions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit expiration window upon passing"
+              ],
+              "modernThemes": [
+                "Automated Audit Evidence",
+                "SOC 1 & SOC 2 Engagements",
+                "PCAOB Critical Audit Matters (CAMs)"
+              ]
+            },
+            {
+              "id": "cpa-far",
+              "name": "Financial Accounting and Reporting (FAR)",
+              "code": "FAR",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "50 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Financial reporting framework, standard-setting, financial statement presentation, balance sheet accounts, transactions (revenue recognition, leases, taxes), and state/local government accounting.",
+              "topics": [
+                "Financial Reporting Framework: FASB Standard Setting & Financial Statements (25-35%)",
+                "Select Balance Sheet Accounts: Inventory, Leases, PPE, Debt & Equity (35-45%)",
+                "Select Transactions: Revenue Recognition (ASC 606), Income Taxes & Contingencies (20-30%)",
+                "State and Local Government Accounting: Modified Accrual & Fund Accounting (5-15%)"
+              ],
+              "learningOutcomes": [
+                "Prepare complex corporate balance sheets, multi-step income statements, and cash flows",
+                "Execute fund accounting and government-wide financial reconciliations under GASB"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "ASC 842 Lease Accounting",
+                "ASC 606 5-Step Model",
+                "GASB Fund Accounting"
+              ]
+            },
+            {
+              "id": "cpa-reg",
+              "name": "Taxation and Regulation (REG)",
+              "code": "REG",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "72 MCQs + 8 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, federal tax procedures, business law, federal taxation of property transactions, individuals, and corporate entities under the Internal Revenue Code (IRC).",
+              "topics": [
+                "Ethics, Professional Responsibilities & Federal Tax Procedures (10-20%)",
+                "Business Law: Agency, Contracts, UCC, Debtor-Creditor & Business Structure (10-20%)",
+                "Federal Taxation of Property Transactions: Basis, Gain/Loss & Like-Kind (12-22%)",
+                "Federal Taxation of Individuals: Gross Income, Deductions & Credits (22-32%)",
+                "Federal Taxation of Entities: C Corps, S Corps, Partnerships & Trusts (28-38%)"
+              ],
+              "learningOutcomes": [
+                "Calculate basis adjustments and tax liabilities for corporations, S corporations, and partnerships",
+                "Analyze Circular 230 ethical standards and preparer penalty provisions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "IRC Entity Flow-Throughs",
+                "Circular 230 Standards",
+                "State Apportionment Basics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-3-bar",
+          "title": "Stage 3: Discipline Specialization (BAR)",
+          "subtitle": "4 Hours CBT: 50 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+          "nodes": [
+            {
+              "id": "cpa-bar",
+              "name": "Business Analysis and Reporting (BAR)",
+              "code": "BAR",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "50 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Quarterly CBT testing windows",
+              "marks": 99,
+              "description": "Technical corporate accounting discipline evaluating business combinations, revenue recognition intricacies, derivative hedging, and governmental financial reporting.",
+              "topics": [
+                "Business Analysis: Financial Statements, Ratio Analysis & Capital Structure (40-50%)",
+                "Technical Accounting & Reporting: Revenue Recognition, Leases, Stock Compensation & Derivatives (35-45%)",
+                "State and Local Governments: Complex Funds, Capital Projects & Reconciliation (10-20%)"
+              ],
+              "learningOutcomes": [
+                "Account for complex business combinations, contingent consideration, and hedge accounting",
+                "Analyze financial ratios and capital investments to support corporate decision-making"
+              ],
+              "modernThemes": [
+                "ASC 805 Business Combinations",
+                "Derivative Hedge Accounting",
+                "Governmental CAFR Reporting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-4",
+          "title": "Stage 4: Licensure & The 4 Es",
+          "subtitle": "150 credit hours, 1-2 years experience, ethics exam, and State Board license",
+          "nodes": [
+            {
+              "id": "cpa-edu",
+              "name": "150 Semester Hour Education Requirement",
+              "code": "CPA-150",
+              "category": "Admin",
+              "description": "Satisfy the mandatory 150-semester-hour education requirement (equivalent to a Master's degree or post-graduate certificate) with specified accounting and business coursework.",
+              "topics": [
+                "150 Semester Hours Total",
+                "Upper-Level Accounting Credits",
+                "Business & Ethics Credits"
+              ]
+            },
+            {
+              "id": "cpa-exp",
+              "name": "1 to 2 Years Verified Professional Accounting Experience",
+              "code": "CPA-EXP",
+              "category": "Experience",
+              "duration": "1 to 2 Years (Jurisdiction Dependent)",
+              "description": "Complete 1 to 2 years of qualifying professional experience in public accounting, private corporate accounting, internal audit, or government, verified by an active CPA licensee.",
+              "topics": [
+                "Public Accounting or Industry Experience",
+                "Active CPA Verifier Sign-Off"
+              ]
+            },
+            {
+              "id": "cpa-ethics",
+              "name": "State Board Ethics Examination",
+              "code": "CPA-ETHICS",
+              "category": "Ethics",
+              "description": "Pass the AICPA Comprehensive Professional Ethics Examination (or specific state-mandated ethics examination) with a minimum score of 90%.",
+              "topics": [
+                "AICPA Code of Professional Conduct",
+                "Independence Rules (Rule 101)",
+                "Confidentiality & Fiduciary Duties"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "core-tcp": {
+      "id": "core-tcp",
+      "name": "Tax Compliance & Planning (TCP) Discipline Track",
+      "tag": "Advanced Taxation Focus",
+      "blurb": "Focuses on advanced corporate and partnership tax planning, wealth structuring, executive compensation, and state/local tax (SALT).",
+      "stages": [
+        {
+          "id": "cpa-stage-1",
+          "title": "Stage 1: Eligibility & Notice to Schedule (NTS)",
+          "subtitle": "120 credit hour board application, credential evaluation, and Prometric NTS",
+          "nodes": [
+            {
+              "id": "cpa-eligibility",
+              "name": "120 Semester Hours & State Board Approval",
+              "code": "CPA-ELIG",
+              "category": "Admin",
+              "description": "Meet jurisdictional prerequisite of at least 120 semester hours (including required accounting and business credits) and receive authorization from your State Board of Accountancy.",
+              "topics": [
+                "120 Credit Hours Prerequisite",
+                "Accounting & Business Subject Minimums",
+                "State Board Eligibility Review"
+              ]
+            },
+            {
+              "id": "cpa-nts",
+              "name": "NASBA Notice to Schedule (NTS) Issuance",
+              "code": "CPA-NTS",
+              "category": "Admin",
+              "description": "Receive your NASBA Notice to Schedule (NTS) valid for 6 months, and book computer-based exam appointments at Prometric testing centers.",
+              "topics": [
+                "NASBA Portal Registration",
+                "NTS Validity Window",
+                "Prometric Scheduling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-2",
+          "title": "Stage 2: The Mandatory CPA Core (12 Hours CBT · 30-Month Window)",
+          "subtitle": "Mandatory 3 Core Exams required of all CPA candidates across 55 jurisdictions",
+          "nodes": [
+            {
+              "id": "cpa-aud",
+              "name": "Auditing and Attestation (AUD)",
+              "code": "AUD",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "78 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, assessing risk and developing a planned response, performing procedures, obtaining evidence, and forming conclusions/reporting under AICPA, PCAOB, and IAASB standards.",
+              "topics": [
+                "Ethics, Professional Responsibilities & General Principles (15-25%)",
+                "Assessing Risk and Developing a Planned Response (25-35%)",
+                "Performing Further Procedures and Obtaining Evidence (30-40%)",
+                "Forming Conclusions and Reporting: Opinions, Reviews, Compilations & SOC (10-20%)"
+              ],
+              "learningOutcomes": [
+                "Evaluate audit risks and design substantive and internal control audit procedures",
+                "Draft and evaluate unmodified, qualified, adverse, and disclaimer audit opinions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit expiration window upon passing"
+              ],
+              "modernThemes": [
+                "Automated Audit Evidence",
+                "SOC 1 & SOC 2 Engagements",
+                "PCAOB Critical Audit Matters (CAMs)"
+              ]
+            },
+            {
+              "id": "cpa-far",
+              "name": "Financial Accounting and Reporting (FAR)",
+              "code": "FAR",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "50 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Financial reporting framework, standard-setting, financial statement presentation, balance sheet accounts, transactions (revenue recognition, leases, taxes), and state/local government accounting.",
+              "topics": [
+                "Financial Reporting Framework: FASB Standard Setting & Financial Statements (25-35%)",
+                "Select Balance Sheet Accounts: Inventory, Leases, PPE, Debt & Equity (35-45%)",
+                "Select Transactions: Revenue Recognition (ASC 606), Income Taxes & Contingencies (20-30%)",
+                "State and Local Government Accounting: Modified Accrual & Fund Accounting (5-15%)"
+              ],
+              "learningOutcomes": [
+                "Prepare complex corporate balance sheets, multi-step income statements, and cash flows",
+                "Execute fund accounting and government-wide financial reconciliations under GASB"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "ASC 842 Lease Accounting",
+                "ASC 606 5-Step Model",
+                "GASB Fund Accounting"
+              ]
+            },
+            {
+              "id": "cpa-reg",
+              "name": "Taxation and Regulation (REG)",
+              "code": "REG",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "72 MCQs + 8 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Continuous CBT testing year-round",
+              "marks": 99,
+              "description": "Ethics, professional responsibilities, federal tax procedures, business law, federal taxation of property transactions, individuals, and corporate entities under the Internal Revenue Code (IRC).",
+              "topics": [
+                "Ethics, Professional Responsibilities & Federal Tax Procedures (10-20%)",
+                "Business Law: Agency, Contracts, UCC, Debtor-Creditor & Business Structure (10-20%)",
+                "Federal Taxation of Property Transactions: Basis, Gain/Loss & Like-Kind (12-22%)",
+                "Federal Taxation of Individuals: Gross Income, Deductions & Credits (22-32%)",
+                "Federal Taxation of Entities: C Corps, S Corps, Partnerships & Trusts (28-38%)"
+              ],
+              "learningOutcomes": [
+                "Calculate basis adjustments and tax liabilities for corporations, S corporations, and partnerships",
+                "Analyze Circular 230 ethical standards and preparer penalty provisions"
+              ],
+              "checklists": [
+                "Score 75 or higher on scaled 0-99 grading scale",
+                "Subject to the 30-month rolling credit window"
+              ],
+              "modernThemes": [
+                "IRC Entity Flow-Throughs",
+                "Circular 230 Standards",
+                "State Apportionment Basics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-3-tcp",
+          "title": "Stage 3: Discipline Specialization (TCP)",
+          "subtitle": "4 Hours CBT: 68 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+          "nodes": [
+            {
+              "id": "cpa-tcp",
+              "name": "Tax Compliance and Planning (TCP)",
+              "code": "TCP",
+              "category": "Exam",
+              "duration": "4 Hours",
+              "format": "68 MCQs + 7 Task-Based Simulations (50% / 50% split)",
+              "frequency": "Quarterly CBT testing windows",
+              "marks": 99,
+              "description": "Advanced tax specialization examining corporate reorganizations, partnership allocations, loss limitations, estate planning, and multi-jurisdictional state/local taxation.",
+              "topics": [
+                "Tax Compliance and Planning for Individuals: Wealth Planning & Incentive Stock Options (30-40%)",
+                "Entity Tax Compliance: Corporate Tax Reorganizations & Partnership Liquidations (30-40%)",
+                "Entity Tax Planning: Multi-Jurisdictional Tax Planning & SALT Apportionment (10-20%)",
+                "Property Transactions: Like-Kind Exchanges, Related-Party Sales & Installment Sales (10-20%)"
+              ],
+              "learningOutcomes": [
+                "Structure tax-free corporate reorganizations under Section 368",
+                "Plan intergenerational wealth transfers and estate tax minimization strategies"
+              ],
+              "modernThemes": [
+                "Section 368 Reorganizations",
+                "SALT Multi-State Nexus",
+                "Wealth Transfer Planning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cpa-stage-4",
+          "title": "Stage 4: Licensure & The 4 Es",
+          "subtitle": "150 credit hours, 1-2 years experience, ethics exam, and State Board license",
+          "nodes": [
+            {
+              "id": "cpa-edu",
+              "name": "150 Semester Hour Education Requirement",
+              "code": "CPA-150",
+              "category": "Admin",
+              "description": "Satisfy the mandatory 150-semester-hour education requirement (equivalent to a Master's degree or post-graduate certificate) with specified accounting and business coursework.",
+              "topics": [
+                "150 Semester Hours Total",
+                "Upper-Level Accounting Credits",
+                "Business & Ethics Credits"
+              ]
+            },
+            {
+              "id": "cpa-exp",
+              "name": "1 to 2 Years Verified Professional Accounting Experience",
+              "code": "CPA-EXP",
+              "category": "Experience",
+              "duration": "1 to 2 Years (Jurisdiction Dependent)",
+              "description": "Complete 1 to 2 years of qualifying professional experience in public accounting, private corporate accounting, internal audit, or government, verified by an active CPA licensee.",
+              "topics": [
+                "Public Accounting or Industry Experience",
+                "Active CPA Verifier Sign-Off"
+              ]
+            },
+            {
+              "id": "cpa-ethics",
+              "name": "State Board Ethics Examination",
+              "code": "CPA-ETHICS",
+              "category": "Ethics",
+              "description": "Pass the AICPA Comprehensive Professional Ethics Examination (or specific state-mandated ethics examination) with a minimum score of 90%.",
+              "topics": [
+                "AICPA Code of Professional Conduct",
+                "Independence Rules (Rule 101)",
+                "Confidentiality & Fiduciary Duties"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

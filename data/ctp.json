@@ -1,0 +1,150 @@
+{
+  "id": "ctp",
+  "title": "CTP® Certification (Certified Treasury Professional)",
+  "region": "Global",
+  "body": "Association for Financial Professionals (AFP)",
+  "officialUrl": "https://ctpcert.afponline.org",
+  "lastVerified": "2026-11-09",
+  "source": "AFP Treasury Learning System & CTP Test Specifications",
+  "summary": "The benchmark global credential for corporate treasury management, cash positioning, working capital optimization, payment systems, and financial risk mitigation across 5 core domains and 2 years experience.",
+  "defaultRoute": "standard",
+  "routes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard Corporate Treasury Track",
+      "tag": "Treasurers & Cash Managers",
+      "blurb": "Pass the 170-question examination (scaled score 500/800) and verify 2 years of professional corporate treasury or cash management experience.",
+      "stages": [
+        {
+          "id": "ctp-stage-1",
+          "title": "Stage 1: Treasury Operations, Cash Management & Payment Systems",
+          "subtitle": "Domains 1, 2, and 3: Operations, Cash/Liquidity, and Payments",
+          "nodes": [
+            {
+              "id": "ctp-d1",
+              "name": "Domain 1: Treasury Operations & Controls",
+              "code": "CTP-D1",
+              "category": "Coursework",
+              "weightage": "20-30%",
+              "description": "Treasury management systems (TMS), bank relationship management, bank compensation/account analysis, internal controls, and disaster recovery.",
+              "topics": [
+                "Treasury Management System (TMS) Architecture & SWIFT Connectivity",
+                "Bank Relationship Management, RFPs & Account Analysis Statements (EDI 822)",
+                "Treasury Internal Controls, Fraud Prevention & Segregation of Duties"
+              ]
+            },
+            {
+              "id": "ctp-d2",
+              "name": "Domain 2: Cash and Liquidity Management",
+              "code": "CTP-D2",
+              "category": "Coursework",
+              "weightage": "25-35%",
+              "description": "Daily cash positioning, cash forecasting models (receipts and disbursements), cash concentration, notional pooling, physical sweeping, and short-term investing/borrowing.",
+              "topics": [
+                "Daily Cash Positioning & Short-Term Liquidity Forecasting Models",
+                "Cash Concentration Structures: Zero-Balance Accounts (ZBAs), Notional Pooling, Sweeping",
+                "Short-Term Investment Portfolios (Commercial Paper, Repos, MMFs) & Credit Lines"
+              ],
+              "modernThemes": [
+                "Global Notional Pooling",
+                "Real-Time Cash Positioning"
+              ]
+            },
+            {
+              "id": "ctp-d3",
+              "name": "Domain 3: Payment Systems and Technology",
+              "code": "CTP-D3",
+              "category": "Coursework",
+              "weightage": "15-25%",
+              "description": "Electronic payment networks (Fedwire, CHIPS, ACH, SEPA), real-time payments (RTP, FedNow), ISO 20022 messaging, card networks, and payment fraud prevention.",
+              "topics": [
+                "Wholesale Wire Transfer Systems (Fedwire, CHIPS) vs ACH Batch Processing",
+                "Cross-Border Payments, SEPA & ISO 20022 Financial Messaging Standards",
+                "Instant Payment Systems (FedNow, RTP) & Corporate Blockchain Settlements"
+              ],
+              "modernThemes": [
+                "ISO 20022 Messaging Standard",
+                "FedNow & RTP Real-Time Rails"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ctp-stage-2",
+          "title": "Stage 2: Working Capital, Capital Markets & Comprehensive Exam",
+          "subtitle": "Domains 4 & 5 + 170-Question Pearson VUE CBT Exam",
+          "nodes": [
+            {
+              "id": "ctp-d4",
+              "name": "Domain 4: Working Capital Management",
+              "code": "CTP-D4",
+              "category": "Coursework",
+              "weightage": "15-20%",
+              "description": "Cash Conversion Cycle (CCC), trade credit terms, accounts receivable optimization, lockbox systems, supply chain finance, and accounts payable automation.",
+              "topics": [
+                "Cash Conversion Cycle (DSO, DPO, DIO) Calculation and Optimization",
+                "Collections Systems: Wholesale/Retail Lockboxes & Electronic Billing",
+                "Supply Chain Finance, Dynamic Discounting & Reverse Factoring"
+              ]
+            },
+            {
+              "id": "ctp-d5",
+              "name": "Domain 5: Financial Risk Management & Capital Markets",
+              "code": "CTP-D5",
+              "category": "Coursework",
+              "weightage": "10-15%",
+              "description": "Foreign exchange risk management (transaction, translation, economic), interest rate swaps, commodity hedging, capital structure, debt covenants, and credit ratings.",
+              "topics": [
+                "Foreign Exchange Exposure Identification & Hedging with Forwards/Options",
+                "Interest Rate Risk Management: Swaps, Caps, Floors & Collars",
+                "Long-Term Debt Financing: Bonds, Syndicated Loans & Credit Ratings Agencies"
+              ]
+            },
+            {
+              "id": "ctp-exam",
+              "name": "CTP Computer-Based Examination",
+              "code": "CTP-EXAM",
+              "category": "Exam",
+              "duration": "4 Hours (240 Minutes)",
+              "format": "170 Multiple-Choice Questions",
+              "frequency": "2 Testing Windows / Year (Jun/Jul, Dec/Jan)",
+              "marks": 800,
+              "description": "170-question examination administered globally via Pearson VUE. Passing standard: scaled score of 500 out of 800 points."
+            }
+          ]
+        },
+        {
+          "id": "ctp-stage-3",
+          "title": "Stage 3: Experience & Credential Award",
+          "subtitle": "2 Years Treasury Experience + Recertification",
+          "nodes": [
+            {
+              "id": "ctp-exp",
+              "name": "2 Years Corporate Treasury Experience",
+              "code": "CTP-EXP",
+              "category": "Experience",
+              "duration": "24 Months Full-Time",
+              "description": "Demonstrate at least 2 years of full-time professional work experience in cash management, corporate treasury, banking, or corporate finance.",
+              "topics": [
+                "24 Months Corporate Treasury Verification",
+                "Supervisory Attestation"
+              ]
+            },
+            {
+              "id": "ctp-cert",
+              "name": "Certified Treasury Professional Conferred & Ethics",
+              "code": "CTP-CERT",
+              "category": "Milestone",
+              "description": "Official award of the Certified Treasury Professional (CTP®) credential. Requires 36 approved recertification credits every 3 years and adherence to AFP ethics.",
+              "topics": [
+                "CTP Credential Award",
+                "36 Recertification Credits every 3 Years",
+                "AFP Standards of Ethical Conduct"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
