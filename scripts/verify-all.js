@@ -187,7 +187,9 @@ const testCases = [
   { hash: '#icab-c1/c1-s1-n1', expected: { qualId: 'icab-c1', routeId: 'all', nodeId: 'c1-s1-n1' } },
   { hash: '#icab-p7', expected: { qualId: 'icab-p7', routeId: 'all', nodeId: null } },
   { hash: '#icab-p7/p7-s2-n1', expected: { qualId: 'icab-p7', routeId: 'all', nodeId: 'p7-s2-n1' } },
-  { hash: '#icab-v3', expected: { qualId: 'icab-v3', routeId: 'all', nodeId: null } }
+  { hash: '#icab-v3', expected: { qualId: 'icab-v3', routeId: 'all', nodeId: null } },
+  { hash: '', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } },
+  { hash: '#home', expected: { qualId: 'icab', routeId: 'grad', nodeId: null } }
 ];
 
 testCases.forEach(({ hash, expected }) => {
@@ -233,6 +235,57 @@ assert.strictEqual(key1, 'icab:c1');
 assert.strictEqual(key2, 'icab-c1:c1-s1-n1');
 assert.strictEqual(key3, 'icab-it-labs:lab-cl-1');
 console.log('✓ Namespacing successfully isolates progress across qualifications and sub-roadmaps.');
+
+// -------------------------------------------------------------
+// Test 7: Verify Mobile Optimization & Responsive Integrity
+// -------------------------------------------------------------
+console.log('\nTest 7: Verifying Mobile Optimization & Responsive Architecture...');
+const htmlPath = path.join(__dirname, '..', 'index.html');
+const cssPath = path.join(__dirname, '..', 'styles.css');
+const appPath = path.join(__dirname, '..', 'app.js');
+
+const htmlContent = fs.readFileSync(htmlPath, 'utf8');
+const cssContent = fs.readFileSync(cssPath, 'utf8');
+const appContent = fs.readFileSync(appPath, 'utf8');
+
+// 1. Viewport Meta tag
+assert.ok(
+  htmlContent.includes('<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'),
+  'index.html missing responsive viewport meta tag with viewport-fit=cover'
+);
+
+// 2. Drag handle for mobile bottom sheet
+assert.ok(
+  htmlContent.includes('class="drawer-drag-handle"'),
+  'index.html missing drawer-drag-handle for mobile bottom sheet'
+);
+
+// 3. Zero-overflow body and html guards
+assert.ok(
+  cssContent.includes('max-width: 100vw') && cssContent.includes('overflow-x: hidden'),
+  'styles.css missing max-width: 100vw / overflow-x: hidden guards'
+);
+
+// 4. Modal open scroll locking
+assert.ok(
+  cssContent.includes('body.modal-open') && appContent.includes('syncBodyScrollLock'),
+  'Missing body.modal-open scroll locking between CSS and JS'
+);
+
+// 5. iOS 16px zoom guard on mobile inputs
+assert.ok(
+  cssContent.includes('font-size: 16px; /* Prevents iOS Safari auto-zoom */') ||
+  cssContent.includes('font-size: 16px; /* Prevents iOS auto-zoom */'),
+  'styles.css missing 16px font-size protection on mobile inputs'
+);
+
+// 6. Safe area insets
+assert.ok(
+  cssContent.includes('env(safe-area-inset-bottom)'),
+  'styles.css missing env(safe-area-inset-bottom) for notched mobile devices'
+);
+
+console.log('✓ Mobile viewport meta, zero-overflow guards, bottom sheet, and iOS zoom guards verified.');
 
 console.log('\n====================================================');
 console.log('   ALL VERIFICATION GATES PASSED CLEANLY (100%)     ');

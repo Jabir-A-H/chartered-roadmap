@@ -122,11 +122,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -136,8 +139,15 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+}
+
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
 }
 
 a {
@@ -148,6 +158,8 @@ a {
 
 button {
   font-family: inherit;
+  touch-action: manipulation;
+}
 }
 
 /* App Header */
@@ -607,6 +619,13 @@ button {
   border-color: #818cf8;
 }
 
+.node-tags-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
 /* Connecting dashed horizontal arms */
 .node-card::after {
   content: "";
@@ -646,7 +665,7 @@ button {
 /* Details Drawer / Modal Panel */
 .details-drawer {
   position: fixed;
-  z-index: 50;
+  z-index: 1200;
   background: var(--bg-surface);
   color: var(--text-primary);
   border: 2px solid var(--border-color);
@@ -657,9 +676,14 @@ button {
   right: 20px;
   width: 360px;
   max-height: calc(100vh - 110px);
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   transform: translateX(120%);
   transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.drawer-drag-handle {
+  display: none;
 }
 
 .details-drawer.open {
@@ -692,7 +716,8 @@ button {
 }
 
 .drawer-header {
-  margin-bottom: 14px;
+  flex-shrink: 0;
+  margin-bottom: 12px;
 }
 
 .drawer-title {
@@ -703,13 +728,19 @@ button {
 }
 
 .drawer-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.55;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  padding-right: 4px;
 }
 
 .drawer-action-btn {
+  flex-shrink: 0;
   width: 100%;
   padding: 12px;
   border-radius: var(--radius-md);
@@ -813,6 +844,13 @@ button {
 .drawer-desc p {
   margin-bottom: 12px;
   line-height: 1.6;
+}
+
+.spec-grid-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 6px;
 }
 
 .spec-grid-table {
@@ -1182,65 +1220,6 @@ button {
   gap: 14px;
 }
 
-/* ==========================================================================
-   Mobile Responsive Adjustments (< 768px)
-   ========================================================================== */
-@media (max-width: 768px) {
-  .stage-row {
-    display: block;
-    padding-left: 28px;
-    margin-left: 10px;
-  }
-
-  .stage-row::before {
-    left: 0;
-    transform: none;
-  }
-
-  .stage-hub-col {
-    margin-bottom: 14px;
-    align-items: flex-start;
-  }
-
-  .hub-btn {
-    width: auto;
-    text-align: left;
-    display: inline-block;
-  }
-
-  .stage-side {
-    display: contents;
-  }
-
-  .node-card {
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .stage-side.left .node-card::after,
-  .stage-side.right .node-card::after {
-    left: -28px;
-    right: auto;
-    width: 26px;
-  }
-
-  .details-drawer {
-    left: 0;
-    right: 0;
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-height: 75vh;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    transform: translateY(110%);
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
-  }
-
-  .details-drawer.open {
-    transform: translateY(0);
-  }
-}
 
 /* ==========================================================================
    Loading, Skeleton & System Error States
@@ -1846,57 +1825,510 @@ button {
   display: inline-block;
 }
 
-/* Media Query for Mobile (< 768px) */
+/* ==========================================================================
+   Mobile Responsive & Device Optimization System (< 768px & < 380px)
+   ========================================================================== */
 @media (max-width: 768px) {
+  /* 1. Header & Navigation */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-container {
+    max-width: 100vw;
+    padding: 8px 12px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .brand-group {
+    gap: 8px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 130px;
+  }
+
   .header-search-wrapper {
-    max-width: 180px;
-    margin: 0 6px;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  .header-search-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 6px 10px;
+    min-height: 40px;
+    border-radius: var(--radius-full);
+    gap: 6px;
   }
 
   .search-kbd {
     display: none;
   }
 
-  .btn-nav-explore span:not(.explore-icon) {
+  .search-text-full {
     display: none;
+  }
+
+  .search-text-short {
+    display: inline;
+  }
+
+  .nav-actions {
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .btn-nav-explore {
     padding: 6px 10px;
+    min-height: 40px;
+    min-width: 40px;
+    justify-content: center;
   }
 
+  .explore-btn-text {
+    display: none;
+  }
+
+  .btn-icon {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 6px;
+  }
+
+  .btn-link {
+    padding: 6px 10px;
+    min-height: 40px;
+    min-width: 40px;
+    justify-content: center;
+  }
+
+  .btn-link .gh-text {
+    display: none;
+  }
+
+  .btn-link .gh-icon {
+    display: inline-block;
+  }
+
+  /* 2. Controls & Hero Section */
+  .controls-container {
+    padding: 18px 14px 10px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+
+  /* Segmented Qualification Tabs */
+  .tabs-segmented {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+    margin-bottom: 14px;
+    box-shadow: var(--shadow-retro-sm);
+  }
+
+  .tabs-segmented::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex: 1 0 auto;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    text-align: center;
+    min-height: 40px;
+  }
+
+  /* Route Pills */
+  .routes-pills {
+    gap: 6px;
+  }
+
+  .pill-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    min-height: 38px;
+  }
+
+  .route-blurb {
+    font-size: 0.82rem;
+    margin-top: 8px;
+  }
+
+  /* Progress Card */
+  .progress-card {
+    padding: 10px 14px;
+    margin: 14px auto 6px;
+  }
+
+  .progress-header {
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.78rem;
+  }
+
+  /* Category Legend */
+  .legend-wrapper {
+    gap: 6px;
+    margin: 12px 0 8px;
+  }
+
+  .legend-tag {
+    font-size: 0.68rem;
+    padding: 2px 8px;
+  }
+
+  /* Subroadmap Banner */
+  .subroadmap-banner {
+    margin: 0 12px 18px;
+    padding: 10px 14px;
+    gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .subroadmap-back-btn {
+    min-height: 42px;
+    justify-content: center;
+    font-size: 0.85rem;
+  }
+
+  .subroadmap-indicator-tag {
+    align-self: center;
+  }
+
+  /* 3. Interactive Roadmap Tree */
+  .map-viewport {
+    padding: 14px 12px 60px;
+  }
+
+  .stage-row {
+    display: block;
+    padding-left: 24px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+
+  .stage-row::before {
+    left: 0;
+    transform: none;
+    border-left: 2px dashed var(--line-color);
+  }
+
+  .stage-hub-col {
+    margin-bottom: 12px;
+    position: relative;
+    align-items: stretch;
+  }
+
+  .stage-hub-col::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: var(--hub-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .hub-btn {
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding: 10px 12px;
+    font-size: 0.92rem;
+  }
+
+  .stage-side {
+    display: contents;
+  }
+
+  .node-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 10px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    min-height: 44px;
+    margin-bottom: 10px;
+  }
+
+  .node-card .check-icon {
+    flex-shrink: 0;
+  }
+
+  .node-card .node-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 0.86rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  .node-card .node-tags-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .node-card .subroadmap-badge {
+    margin-left: 0;
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  .stage-side.left .node-card::after,
+  .stage-side.right .node-card::after {
+    left: -24px;
+    right: auto;
+    width: 22px;
+  }
+
+  /* 4. Details Drawer / Mobile Bottom Sheet */
+  .details-drawer {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+    padding: 12px 16px max(18px, env(safe-area-inset-bottom));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 2px solid var(--border-color);
+    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(110%);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .details-drawer.open {
+    transform: translateY(0);
+  }
+
+  .drawer-drag-handle {
+    display: block;
+    width: 44px;
+    height: 4px;
+    background: var(--border-color);
+    border-radius: var(--radius-full);
+    margin: 0 auto 12px;
+    opacity: 0.55;
+    cursor: grab;
+  }
+
+  .drawer-close {
+    top: 10px;
+    right: 12px;
+  }
+
+  .drawer-title {
+    font-size: 1.15rem;
+    padding-right: 36px;
+  }
+
+  .drawer-body {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .drawer-action-btn {
+    min-height: 48px;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  /* 5. Search Modal Dialog (Full Screen Mobile) */
   .search-modal {
-    padding: 20px 8px;
+    padding: 0;
+    align-items: stretch;
   }
 
   .search-modal-box {
-    max-height: 92vh;
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
   }
 
+  .search-header-row {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevents iOS Safari auto-zoom */
+  }
+
+  .search-filters-bar {
+    padding: 8px 12px;
+    gap: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-chip {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-height: 34px;
+  }
+
+  .search-results-list {
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 8px 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .search-result-item {
+    padding: 12px 12px;
+    min-height: 52px;
+  }
+
+  .search-footer-legend {
+    display: none; /* Hide desktop keyboard hints on mobile touch */
+  }
+
+  /* 6. Explore Modal Dialog (Full Screen Mobile) */
   .explore-modal {
-    padding: 10px 8px;
+    padding: 0;
+    align-items: stretch;
   }
 
   .explore-modal-box {
-    max-height: 94vh;
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
   }
 
   .explore-modal-header {
     padding: 14px 16px;
   }
 
+  .explore-modal-title {
+    font-size: 1.15rem;
+  }
+
+  .explore-modal-subtitle {
+    font-size: 0.8rem;
+  }
+
   .explore-filter-row {
-    padding: 10px 16px;
+    padding: 10px 14px;
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
   }
 
+  .explore-search-input {
+    font-size: 16px; /* Prevents iOS auto-zoom */
+    padding: 10px 14px;
+    min-height: 44px;
+  }
+
   .explore-catalog-grid {
-    padding: 14px 16px;
+    padding: 12px 14px max(24px, env(safe-area-inset-bottom));
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .explore-cards-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .explore-card {
+    padding: 14px;
+  }
+
+  .explore-card-btn {
+    min-height: 44px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  /* 7. Footer */
+  .site-footer {
+    padding: 24px 14px max(24px, env(safe-area-inset-bottom));
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Extra Compact Phones (< 380px, e.g. iPhone SE / Galaxy Fold outer) */
+@media (max-width: 380px) {
+  .brand-title {
+    display: none;
+  }
+
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+  }
+
+  .pill-btn {
+    padding: 5px 10px;
+    font-size: 0.76rem;
   }
 }

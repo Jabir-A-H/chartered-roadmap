@@ -440,7 +440,13 @@
   // -------------------------------------------------------------
   function parseHash(hashStr) {
     const clean = (hashStr || '').replace(/^#\/?/, '').trim();
-    if (!clean) return null;
+    if (!clean || clean === 'home') {
+      return {
+        qualId: 'icab',
+        routeId: 'grad',
+        nodeId: null
+      };
+    }
 
     let matchedQual = null;
     let remainder = '';
@@ -819,6 +825,17 @@
       .replace(/'/g, '&#39;');
   }
 
+  function syncBodyScrollLock() {
+    const isDrawerOpen = el.drawer && el.drawer.classList.contains('open');
+    const isSearchOpen = searchState && searchState.isOpen;
+    const isExploreOpen = exploreState && exploreState.isOpen;
+    if (isDrawerOpen || isSearchOpen || isExploreOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }
+
   function openNodeDrawer(nodeId, updateUrl = true) {
     const node = state.nodesById[nodeId];
     if (!node) return;
@@ -937,22 +954,24 @@
       html += `
         <div class="drawer-section">
           <div class="drawer-section-label">Syllabus Specification Grid</div>
-          <table class="spec-grid-table">
-            <thead>
-              <tr>
-                <th>Syllabus Area / Competency</th>
-                <th style="width: 120px; text-align: right;">Weight / Marks</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${node.specificationGrid.map(row => `
+          <div class="spec-grid-table-wrapper">
+            <table class="spec-grid-table">
+              <thead>
                 <tr>
-                  <td>${escapeHtml(row.area)}</td>
-                  <td style="text-align: right; font-weight: 600;">${escapeHtml(row.weight)}</td>
+                  <th>Syllabus Area / Competency</th>
+                  <th style="width: 120px; text-align: right;">Weight / Marks</th>
                 </tr>
-              `).join('')}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                ${node.specificationGrid.map(row => `
+                  <tr>
+                    <td>${escapeHtml(row.area)}</td>
+                    <td style="text-align: right; font-weight: 600;">${escapeHtml(row.weight)}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
         </div>
       `;
     }
@@ -991,6 +1010,7 @@
       el.drawerBackdrop.classList.add('active');
       el.drawerBackdrop.setAttribute('aria-hidden', 'false');
     }
+    syncBodyScrollLock();
 
     // Surgical card state update without tearing down the entire roadmap DOM
     el.roadmapTree.querySelectorAll('.node-card.selected').forEach((c) => c.classList.remove('selected'));
@@ -1010,6 +1030,7 @@
       el.drawerBackdrop.classList.remove('active');
       el.drawerBackdrop.setAttribute('aria-hidden', 'true');
     }
+    syncBodyScrollLock();
 
     el.roadmapTree.querySelectorAll('.node-card.selected').forEach((c) => c.classList.remove('selected'));
     state.activeNodeId = null;
@@ -1043,6 +1064,7 @@
       el.modalBackdrop.classList.add('open');
       el.modalBackdrop.setAttribute('aria-hidden', 'false');
     }
+    syncBodyScrollLock();
 
     renderSearchResults();
     setTimeout(() => {
@@ -1060,6 +1082,7 @@
       el.modalBackdrop.classList.remove('open');
       el.modalBackdrop.setAttribute('aria-hidden', 'true');
     }
+    syncBodyScrollLock();
   }
 
   function highlightMatches(text, query) {
@@ -1248,6 +1271,7 @@
       el.modalBackdrop.classList.add('open');
       el.modalBackdrop.setAttribute('aria-hidden', 'false');
     }
+    syncBodyScrollLock();
 
     renderExploreCatalog();
     setTimeout(() => {
@@ -1265,6 +1289,7 @@
       el.modalBackdrop.classList.remove('open');
       el.modalBackdrop.setAttribute('aria-hidden', 'true');
     }
+    syncBodyScrollLock();
   }
 
   function getRoadmapProgressStats(roadmapId) {
@@ -1573,6 +1598,39 @@
       el.drawerBackdrop.addEventListener('click', () => closeDrawer(true));
     }
 
+    // Mobile Drawer Swipe-Down Gesture to Dismiss
+    let touchStartY = 0;
+    let touchDiffY = 0;
+    if (el.drawer) {
+      el.drawer.addEventListener('touchstart', (e) => {
+        if (el.drawerBody && el.drawerBody.scrollTop > 5) {
+          touchStartY = 0;
+          return;
+        }
+        touchStartY = e.touches[0].clientY;
+        touchDiffY = 0;
+      }, { passive: true });
+
+      el.drawer.addEventListener('touchmove', (e) => {
+        if (!touchStartY) return;
+        const currentY = e.touches[0].clientY;
+        touchDiffY = currentY - touchStartY;
+        if (touchDiffY > 0 && window.innerWidth <= 768) {
+          el.drawer.style.transform = `translateY(${touchDiffY}px)`;
+        }
+      }, { passive: true });
+
+      el.drawer.addEventListener('touchend', () => {
+        if (!touchStartY) return;
+        el.drawer.style.transform = '';
+        if (touchDiffY > 70) {
+          closeDrawer(true);
+        }
+        touchStartY = 0;
+        touchDiffY = 0;
+      }, { passive: true });
+    }
+
     // Subroadmap Back Button Click
     if (el.subroadmapBackBtn) {
       el.subroadmapBackBtn.addEventListener('click', () => {
@@ -1737,12 +1795,30 @@
       });
     }
 
-    // Brand and back-to-top smooth scrolling
+    // Brand Home Click -> Navigate to Homepage
     const brandHome = document.getElementById('brand-home') || document.querySelector('.brand-group');
     if (brandHome) {
       brandHome.addEventListener('click', (e) => {
         e.preventDefault();
+        closeDrawer(false);
+        closeSearchModal();
+        closeExploreModal();
+        state.returnContext = null;
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        if (location.hash === '#icab-grad' || location.hash === '#icab' || !location.hash || location.hash === '#') {
+          if (state.qualId !== 'icab' || state.routeId !== 'grad' || state.activeNodeId) {
+            state.qualId = 'icab';
+            state.routeId = 'grad';
+            state.activeNodeId = null;
+            loadRoadmap('icab', 'grad', null);
+          }
+          if (location.hash !== '#icab-grad') {
+            location.hash = 'icab-grad';
+          }
+        } else {
+          location.hash = 'icab-grad';
+        }
       });
     }
 

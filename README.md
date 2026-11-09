@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Deployment](https://img.shields.io/badge/Deploy-Cloudflare%20Pages%20%7C%20GitHub%20Pages-blue.svg)](#deployment)
-[![Version](https://img.shields.io/badge/Version-1.3.0-blue.svg)](package.json)
+[![Version](https://img.shields.io/badge/Version-1.4.0-blue.svg)](package.json)
 
 ---
 
@@ -62,6 +62,7 @@ Official 2025 Syllabus chapter and topic study roadmaps with specification grid 
 - **📖 Granular Topic Study Trackers:** Every individual paper features official syllabus areas with percentage weightings, chapter nodes, Course Learning Outcomes (CLOs), and study checklists.
 - **🔗 Bidirectional Deep-Linking & Breadcrumbs:** Jump seamlessly from parent qualification papers to individual study trackers and back with context preservation (e.g. `#icab-c1/c1-s1-n1`).
 - **💾 Safe Multi-Roadmap Storage:** Namespaced progress persistence (`roadmapId:nodeId`) in local storage with in-memory fallback.
+- **📱 Mobile-First Ergonomics & Bottom Sheet:** Fully optimized for mobile screens (320px–414px+), featuring zero horizontal overflow, swipeable tabs, touch-friendly 44px+ hit areas, swipe-to-dismiss bottom sheet with safe-area insets (`env(safe-area-inset-bottom)`), scroll locking, and iOS Safari zoom prevention.
 - **🌐 100% Zero-Dependency Offline Runtime:** Pre-compiled `data/roadmaps.js` bundle enables instant loading even when opening via local `file:///`.
 - **🌓 Dark & Light Theme:** Accessible high-contrast typography adhering to WCAG 2.1 AA standards.
 

@@ -1,6 +1,6 @@
 {
   "name": "roadmap-for-professional-degrees",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Interactive learning roadmaps, syllabus trackers, and qualification pathways for professional accounting certifications (ICAB CA 2025 Syllabus & ACCA).",
   "private": true,
   "scripts": {
