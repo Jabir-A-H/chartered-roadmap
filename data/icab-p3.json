@@ -1,0 +1,189 @@
+{
+  "id": "icab-p3",
+  "title": "ICAB P3 - Business Planning: Taxation & Compliance",
+  "paperCode": "P3",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Scenario-Based Technical Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "Tax Planning",
+    "Transfer Pricing",
+    "VAT Litigation"
+  ],
+  "summary": "Advanced corporate taxation, group relief, business restructuring, international taxation, transfer pricing, dispute resolution, tax litigation, and strategic VAT compliance under Bangladesh tax legislation.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p3"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Business Planning: Taxation & Compliance. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p3-s1",
+          "title": "Area 1: Income Tax Administration, Disputes & Transfer Pricing",
+          "name": "Area 1: Income Tax Administration, Disputes & Transfer Pricing",
+          "weightage": "40%",
+          "description": "Tax assessments, audit, appeals to Appellate Tribunal and High Court, ADR, and Transfer Pricing Chapter.",
+          "nodes": [
+            {
+              "id": "p3-s1-n1",
+              "name": "Tax Litigation, Appeals & Alternative Dispute Resolution (ADR)",
+              "code": "P3.1.1",
+              "category": "Tax Litigation",
+              "weightage": "20%",
+              "description": "Selection of cases for tax audit; assessment under Section 180 vs best judgment under Section 182; appeals to Commissioner (Appeals); Taxes Appellate Tribunal; High Court references; Alternative Dispute Resolution (ADR) mechanism.",
+              "topics": [
+                "Audit selection criteria and powers of Deputy Commissioner of Taxes (DCT)",
+                "Reopening of assessment: Section 212 powers and statutory time bars",
+                "First appeal to Commissioner of Taxes (Appeals): Grounds, deposit requirements, timelines",
+                "Second appeal to Taxes Appellate Tribunal: Composition, procedures, legal questions",
+                "Reference applications to High Court Division of the Supreme Court of Bangladesh",
+                "Alternative Dispute Resolution (ADR): Eligibility, facilitator role, binding agreement"
+              ],
+              "learningOutcomes": [
+                "Formulate grounds of appeal for disputed tax assessments.",
+                "Advise clients on ADR benefits and dispute resolution strategy.",
+                "Draft legal submissions for Taxes Appellate Tribunal."
+              ],
+              "checklists": [
+                "Review appellate timeline and mandatory tax deposit rules",
+                "Study ADR procedural guidelines under ITA 2023"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "p3-s1-n2",
+              "name": "Transfer Pricing, International Tax & Double Taxation",
+              "code": "P3.1.2",
+              "category": "International Tax",
+              "weightage": "20%",
+              "description": "Arm's length principle; Transfer Pricing methods under ITA 2023 (CUP, Resale Price, Cost Plus, TNMM, Profit Split); TP documentation and accountant certification; Double Taxation Avoidance Agreements (DTAA); permanent establishment (PE).",
+              "topics": [
+                "Transfer pricing regulations under Bangladesh Income Tax Act 2023",
+                "Definition of associated enterprise and international transactions",
+                "Arm's length price determination methods: CUP, Resale Price, Cost Plus, Profit Split, TNMM",
+                "Transfer pricing documentation requirements and mandatory Chartered Accountant certificate",
+                "Double Tax Avoidance Agreements (DTAA): Credit method vs Exemption method",
+                "Permanent Establishment (PE) concepts and taxation of cross-border digital services"
+              ],
+              "learningOutcomes": [
+                "Select and defend the most appropriate transfer pricing method.",
+                "Compute tax credits under DTAA provisions.",
+                "Identify Permanent Establishment exposure for multinational entities."
+              ],
+              "checklists": [
+                "Read Transfer Pricing, International Tax & Double Taxation in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p3-s2",
+          "title": "Area 2: Corporate Tax Planning & Restructuring",
+          "name": "Area 2: Corporate Tax Planning & Restructuring",
+          "weightage": "30%",
+          "description": "Tax planning for corporate reorganizations, mergers, amalgamations, demergers, and incentives.",
+          "nodes": [
+            {
+              "id": "p3-s2-n1",
+              "name": "Tax-Efficient Mergers, Acquisitions & Incentives",
+              "code": "P3.2.1",
+              "category": "Corporate Tax Strategy",
+              "weightage": "30%",
+              "description": "Tax implications of business combinations, amalgamations, and demergers; carry-forward and set-off of accumulated losses; tax holidays and economic zone incentives (BEZA, BIDA, Hi-Tech parks); tax-efficient financing structures (debt vs equity, thin capitalization).",
+              "topics": [
+                "Tax treatment of amalgamations and company mergers under ITA 2023",
+                "Conditions for transfer of accumulated tax losses and unabsorbed depreciation in mergers",
+                "Demergers, slump sales, and asset acquisitions tax implications",
+                "Tax holiday regimes for industrial undertakings, physical infrastructure, and green initiatives",
+                "Incentives in Special Economic Zones (BEZA) and Hi-Tech Parks",
+                "Tax planning for employee remuneration: ESOPs, provident funds, gratuity approvals",
+                "Thin capitalization and interest deductibility restrictions"
+              ],
+              "learningOutcomes": [
+                "Structure tax-neutral corporate amalgamations.",
+                "Advise corporations on claiming tax holiday benefits in Economic Zones.",
+                "Optimize debt-equity ratios considering tax deductibility."
+              ],
+              "checklists": [
+                "Read Tax-Efficient Mergers, Acquisitions & Incentives in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p3-s3",
+          "title": "Area 3: Strategic VAT Compliance & Customs",
+          "name": "Area 3: Strategic VAT Compliance & Customs",
+          "weightage": "30%",
+          "description": "VAT planning, audits, investigations, appeals, customs valuation, and import-export procedures.",
+          "nodes": [
+            {
+              "id": "p3-s3-n1",
+              "name": "VAT Audits, Investigations, Appeals & Customs",
+              "code": "P3.3.1",
+              "category": "Indirect Tax Strategy",
+              "weightage": "30%",
+              "description": "VAT audits and investigations by Customs, Excise and VAT Commissionerate; demand notices and show-cause proceedings; appeals to Commissioner (Appeals) and Customs, Excise and VAT Appellate Tribunal; customs valuation under Customs Act 2023; bonded warehouse facilities.",
+              "topics": [
+                "Powers of VAT officers during audits, inspections, and seizure of records",
+                "Adjudication process: Show Cause Notice (SCN) response and personal hearings",
+                "VAT appellate procedure: Appeal to Commissioner (Appeals), Tribunal, and High Court",
+                "Input tax rebate disputes, credit cancellation, and recovery of unpaid VAT",
+                "Customs Act 2023: Assessment of customs duty, regulatory duty, and advance tax on imports",
+                "Customs valuation methods: Transaction value of imported goods and adjustments",
+                "Bonded warehouse facilities, duty drawback, and export facilitation"
+              ],
+              "learningOutcomes": [
+                "Draft replies to VAT show-cause notices.",
+                "Navigate the VAT and Customs appellate ladder.",
+                "Optimize customs duty through bonded warehouse and drawback facilities."
+              ],
+              "checklists": [
+                "Read VAT Audits, Investigations, Appeals & Customs in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

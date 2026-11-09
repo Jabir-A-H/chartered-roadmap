@@ -1,0 +1,157 @@
+{
+  "id": "icab-v2",
+  "title": "ICAB V2 - Strategic Business Management & Leadership",
+  "paperCode": "V2",
+  "level": "Advanced Level",
+  "marks": 100,
+  "duration": "3.5 Hours",
+  "format": "Written & Executive Leadership Case Examination",
+  "region": "Bangladesh",
+  "category": "Advanced Level Papers",
+  "tags": [
+    "Advanced Level",
+    "Core Exam",
+    "Study Tracker",
+    "Executive Strategy",
+    "Digital Leadership",
+    "M&A Restructuring"
+  ],
+  "summary": "Integrates strategic management, digital leadership, corporate restructuring, advanced financial strategy, enterprise risk management (ERM), and ethical leadership in complex real-world scenarios.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "v2"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Strategic Business Management and Leadership. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "v2-s1",
+          "title": "Area 1: Business & Digital Strategy and Leadership",
+          "name": "Area 1: Business & Digital Strategy and Leadership",
+          "weightage": "35%",
+          "description": "Strategic leadership, executive vision, digital transformation, enterprise agility, and ERM.",
+          "nodes": [
+            {
+              "id": "v2-s1-n1",
+              "name": "Executive Leadership, Digital Transformation & ERM",
+              "code": "V2.1.1",
+              "category": "Executive Strategy",
+              "weightage": "35%",
+              "description": "Strategic leadership styles; organizational agility; digital business strategy and platform ecosystems; Enterprise Risk Management (COSO ERM framework); business model disruption and turnaround strategies for distressed companies.",
+              "topics": [
+                "Leadership models: Transformational, transactional, servant, and situational leadership",
+                "Strategic vision formulation and leading organizational change under severe market disruption",
+                "Digital transformation strategy: Cloud platforms, AI integration, IoT, and API ecosystems",
+                "COSO Enterprise Risk Management (ERM) framework: Governance, Strategy, Performance, Review",
+                "Corporate turnaround strategies: Retrenchment, restructuring, refinancing, and repositioning",
+                "Executive talent management, board succession planning, and corporate culture alignment"
+              ],
+              "learningOutcomes": [
+                "Formulate digital transformation strategies for traditional businesses.",
+                "Design and implement COSO ERM frameworks across operating divisions.",
+                "Develop turnaround plans for distressed business enterprises."
+              ],
+              "checklists": [
+                "Read Executive Leadership, Digital Transformation & ERM in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v2-s2",
+          "title": "Area 2: Financial Strategy & Restructuring",
+          "name": "Area 2: Financial Strategy & Restructuring",
+          "weightage": "35%",
+          "description": "Corporate restructuring, MBOs, spin-offs, demergers, international treasury, and valuation.",
+          "nodes": [
+            {
+              "id": "v2-s2-n1",
+              "name": "M&A, Management Buyouts (MBOs) & International Treasury",
+              "code": "V2.2.1",
+              "category": "Financial Engineering",
+              "weightage": "35%",
+              "description": "Corporate reorganization: Spin-offs, demergers, equity carve-outs, Management Buyouts (MBO/MBI); leveraged buyouts (LBOs) and mezzanine financing; international treasury: Cross-border cash pooling, multilateral netting, and global capital raising; enterprise valuation in complex transactions.",
+              "topics": [
+                "Restructuring strategies: Demergers, spin-offs, carve-outs, liquidation of non-core assets",
+                "Management Buyouts (MBOs) and Buy-ins (MBIs): Deal structuring, venture capital backing, warranties",
+                "Leveraged Buyout (LBO) financial engineering: Senior debt, mezzanine finance, equity sweetners",
+                "International treasury management: Cash pooling (notional vs physical), multilateral netting centers",
+                "Global capital raising: ADRs, GDRs, foreign currency sovereign and corporate bonds",
+                "Financial defense tactics against hostile takeovers: Poison pills, white knights, crown jewel defense"
+              ],
+              "learningOutcomes": [
+                "Structure MBO and LBO financial packages with optimal debt-equity layers.",
+                "Design international cash management and pooling arrangements.",
+                "Formulate anti-takeover defenses for public listed entities."
+              ],
+              "checklists": [
+                "Read M&A, Management Buyouts (MBOs) & International Treasury in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v2-s3",
+          "title": "Area 3: Integrated Governance, Ethics, Assurance & ESG",
+          "name": "Area 3: Integrated Governance, Ethics, Assurance & ESG",
+          "weightage": "30%",
+          "description": "Integrated Reporting (<IR> Framework), ethical leadership, board effectiveness, and ESG stewardship.",
+          "nodes": [
+            {
+              "id": "v2-s3-n1",
+              "name": "Integrated Reporting (<IR>), Board Stewardship & ESG Governance",
+              "code": "V2.3.1",
+              "category": "Integrated Governance",
+              "weightage": "30%",
+              "description": "International <IR> Framework (Six Capitals: Financial, Manufactured, Intellectual, Human, Social & Relationship, Natural); corporate governance failures and board oversight; ethical decision-making frameworks; ESG governance, biodiversity, and climate stewardship.",
+              "topics": [
+                "International Integrated Reporting (<IR>) Framework: Six Capitals and value creation over time",
+                "Connectivity of information: Linking strategic objectives, risks, performance, and remuneration",
+                "Board effectiveness evaluation, audit committee oversight of non-financial metrics",
+                "Ethical leadership dilemmas: Whistleblower protection, executive pay disparities, supply chain labor",
+                "Corporate climate stewardship aligned with Bangladesh's Delta Plan 2100 and SDG targets",
+                "Assurance over integrated reports and non-financial performance indicators"
+              ],
+              "learningOutcomes": [
+                "Draft an Integrated Report applying the Six Capitals framework.",
+                "Advise corporate boards on executive compensation and governance alignment.",
+                "Establish ESG stewardship systems resilient to global supply chain audits."
+              ],
+              "checklists": [
+                "Read Integrated Reporting (<IR>), Board Stewardship & ESG Governance in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

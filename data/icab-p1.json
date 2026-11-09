@@ -1,0 +1,290 @@
+{
+  "id": "icab-p1",
+  "title": "ICAB P1 - Financial Accounting and Reporting",
+  "paperCode": "P1",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Scenario-Based Technical Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "IFRS",
+    "Consolidation",
+    "Reporting"
+  ],
+  "summary": "Advanced preparation, presentation, analysis, and interpretation of single entity and consolidated financial statements under IFRS/BFRS, including Islamic finance and public sector transition.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p1"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Financial Accounting and Reporting. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p1-s1",
+          "title": "Area 1: Accounting & Reporting Concepts and Ethics",
+          "name": "Area 1: Accounting & Reporting Concepts and Ethics",
+          "weightage": "10%",
+          "description": "Standard setting, Conceptual Framework, IAS 8 changes in policy/estimates, and professional ethics.",
+          "nodes": [
+            {
+              "id": "p1-s1-n1",
+              "name": "IFRS Conceptual Framework & IAS 8",
+              "code": "P1.1.1",
+              "category": "Standards & Theory",
+              "weightage": "10%",
+              "description": "Standard-setting process by IASB, FRC Bangladesh endorsement; qualitative characteristics; IAS 8 accounting policies, changes in estimates and prior period errors; ethical dilemmas in financial reporting.",
+              "topics": [
+                "IASB and FRC standard-setting governance and adoption",
+                "IFRS Conceptual Framework: Recognition, measurement bases (historical cost, fair value, value in use)",
+                "IAS 8: Retrospective application of policy changes vs prospective estimates",
+                "Correction of material prior period errors",
+                "Professional ethics under IESBA Code when facing management pressure to misstate"
+              ],
+              "learningOutcomes": [
+                "Evaluate accounting policies under IAS 8.",
+                "Apply IFRS measurement bases.",
+                "Resolve ethical conflicts in financial reporting."
+              ],
+              "checklists": [
+                "Review IAS 8 retrospective restatement steps",
+                "Practice disclosure notes for accounting policy changes"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p1-s2",
+          "title": "Area 2: Single Entity Financial Statements (IFRS/BFRS)",
+          "name": "Area 2: Single Entity Financial Statements (IFRS/BFRS)",
+          "weightage": "30%",
+          "description": "Preparation of single entity statements applying IAS 16, IAS 36, IAS 38, IAS 37, IFRS 15, IFRS 16, IAS 12.",
+          "nodes": [
+            {
+              "id": "p1-s2-n1",
+              "name": "Non-Current Assets: IAS 16, IAS 38, IAS 36 & IAS 40",
+              "code": "P1.2.1",
+              "category": "Standards & Practice",
+              "weightage": "15%",
+              "description": "PPE revaluation and component depreciation (IAS 16); Intangible assets and R&D capitalization (IAS 38); Impairment testing and CGUs (IAS 36); Investment property fair value vs cost models (IAS 40); Borrowing costs (IAS 23).",
+              "topics": [
+                "IAS 16 Revaluation model and revaluation surplus accounting",
+                "IAS 38 Criteria for capitalizing development expenditure vs research expense",
+                "IAS 36 Impairment indicators, Cash Generating Units (CGUs), impairment allocation",
+                "IAS 40 Investment Property: Dual-use property, transfers, and fair value model",
+                "IAS 23 Capitalization of borrowing costs on qualifying assets"
+              ],
+              "learningOutcomes": [
+                "Compute revaluations and impairment losses.",
+                "Account for intangible assets and investment properties.",
+                "Prepare non-current asset note disclosures."
+              ],
+              "checklists": [
+                "Practice 3 CGU impairment allocation problems",
+                "Review IAS 38 development capitalization criteria"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "p1-s2-n2",
+              "name": "Revenue, Leases, Provisions & Tax: IFRS 15, IFRS 16, IAS 37, IAS 12",
+              "code": "P1.2.2",
+              "category": "Standards & Practice",
+              "weightage": "15%",
+              "description": "IFRS 15 5-step revenue recognition; IFRS 16 Right-of-Use assets and lease liabilities; IAS 37 Provisions and contingent liabilities; IAS 12 Deferred tax temporary differences.",
+              "topics": [
+                "IFRS 15 5-step model: Contract, performance obligations, transaction price, allocation, satisfaction",
+                "IFRS 16 Lessee accounting: ROU asset, lease liability, short-term lease exemptions",
+                "IAS 37 Present legal/constructive obligation, probable outflow, reliable estimate",
+                "IAS 37 Restructuring provisions, onerous contracts, contingent assets/liabilities",
+                "IAS 12 Deferred tax: Tax base vs carrying amount, taxable vs deductible temporary differences"
+              ],
+              "learningOutcomes": [
+                "Apply 5-step model to multi-element revenue contracts.",
+                "Account for leases under IFRS 16.",
+                "Compute deferred tax provisions and prepare reconciliation."
+              ],
+              "checklists": [
+                "Complete 3 full IFRS 15 multi-element revenue calculations",
+                "Calculate deferred tax on revalued assets under IAS 12"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p1-s3",
+          "title": "Area 3: Consolidated Financial Statements",
+          "name": "Area 3: Consolidated Financial Statements",
+          "weightage": "30%",
+          "description": "Group accounting under IFRS 10, IFRS 3, and IAS 28; subsidiaries, associates, and intra-group adjustments.",
+          "nodes": [
+            {
+              "id": "p1-s3-n1",
+              "name": "Consolidated Statement of Financial Position (IFRS 10 & IFRS 3)",
+              "code": "P1.3.1",
+              "category": "Group Accounting",
+              "weightage": "15%",
+              "description": "Concept of control under IFRS 10; goodwill computation under IFRS 3 (proportionate vs fair value method); non-controlling interests (NCI); intra-group balances, cash-in-transit, and unrealized profit on inventory and PPE.",
+              "topics": [
+                "IFRS 10 Control model: Power, exposure to variable returns, link between power and returns",
+                "Goodwill calculation: Purchase consideration, fair value of net assets, NCI valuation",
+                "Fair value adjustments to net assets at acquisition date and subsequent depreciation",
+                "Intra-group balances, cash and goods in transit reconciliation",
+                "Unrealized profit (PURP) in closing inventory and transfer of PPE between group entities",
+                "Consolidated retained earnings and non-controlling interest calculation"
+              ],
+              "learningOutcomes": [
+                "Calculate goodwill and NCI under IFRS 3.",
+                "Eliminate intra-group balances and unrealized profits.",
+                "Prepare consolidated statement of financial position."
+              ],
+              "checklists": [
+                "Draft 3 full consolidated balance sheets with fair value adjustments",
+                "Master PURP inventory adjustment for parent vs subsidiary sales"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "p1-s3-n2",
+              "name": "Consolidated Profit or Loss & Associates (IAS 28)",
+              "code": "P1.3.2",
+              "category": "Group Accounting",
+              "weightage": "15%",
+              "description": "Consolidated Statement of Profit or Loss; mid-year acquisitions; intra-group sales and dividends; NCI share of profit; Equity accounting for associates under IAS 28.",
+              "topics": [
+                "Consolidated P&L preparation: Revenue, cost of sales, operating expenses line-by-line",
+                "Mid-year acquisition: Apportionment of subsidiary revenue and expenses",
+                "Elimination of intra-group sales, management fees, interest, and dividends",
+                "Allocation of profit for the year between owners of parent and NCI",
+                "IAS 28 Accounting for associates: Significant influence test (20-50%), equity method",
+                "Equity accounting adjustments: Group share of associate profit, PURP in associate sales"
+              ],
+              "learningOutcomes": [
+                "Prepare consolidated statement of profit or loss for mid-year acquisition.",
+                "Allocate comprehensive income to NCI.",
+                "Apply equity method for investments in associates."
+              ],
+              "checklists": [
+                "Complete 2 mid-year acquisition group P&L questions",
+                "Review equity method balance sheet and income statement presentations"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p1-s4",
+          "title": "Area 4: Financial Statement Analysis & Interpretation",
+          "name": "Area 4: Financial Statement Analysis & Interpretation",
+          "weightage": "15%",
+          "description": "Financial ratio analysis, statement of cash flows (IAS 7), and performance appraisal.",
+          "nodes": [
+            {
+              "id": "p1-s4-n1",
+              "name": "Cash Flows (IAS 7) & Comprehensive Ratio Analysis",
+              "code": "P1.4.1",
+              "category": "Financial Analysis",
+              "weightage": "15%",
+              "description": "Preparation of Statement of Cash Flows under IAS 7 (indirect method); profitability, liquidity, efficiency, and solvency ratios; limitations of ratio analysis.",
+              "topics": [
+                "IAS 7 Cash Flows: Operating activities (indirect method), investing, and financing activities",
+                "Non-cash transactions, interest, dividend, and tax cash flows",
+                "Profitability ratios: ROCE, Gross margin, Net margin, Asset turnover",
+                "Liquidity & working capital ratios: Current ratio, Quick ratio, Inventory turnover days, Debtor days",
+                "Solvency and gearing: Debt-to-equity, Interest cover",
+                "Investor ratios: Earnings per share (IAS 33 basics), P/E ratio, Dividend yield",
+                "Limitations of financial statement analysis and qualitative factors"
+              ],
+              "learningOutcomes": [
+                "Construct IAS 7 statement of cash flows using indirect method.",
+                "Compute and interpret financial ratios across multiple periods.",
+                "Write an executive report evaluating corporate financial health."
+              ],
+              "checklists": [
+                "Prepare 2 full IAS 7 cash flow statements with working capital adjustments",
+                "Write a 500-word performance critique on profitability vs liquidity"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p1-s5",
+          "title": "Area 5: Islamic Finance & Public Sector Accounting",
+          "name": "Area 5: Islamic Finance & Public Sector Accounting",
+          "weightage": "15%",
+          "description": "AAOIFI accounting standards for Islamic financial institutions, and cash-to-accrual public sector transition.",
+          "nodes": [
+            {
+              "id": "p1-s5-n1",
+              "name": "AAOIFI Islamic Accounting & IPSAS Accrual Transition",
+              "code": "P1.5.1",
+              "category": "Specialized Accounting",
+              "weightage": "15%",
+              "description": "Accounting for Islamic financial transactions under AAOIFI standards (Murabaha, Ijara, Mudaraba, Musharaka, Sukuk); transition from cash to accrual accounting in Bangladesh public sector; IPSAS standards.",
+              "topics": [
+                "Principles of Islamic banking and finance: Riba prohibition, risk sharing, asset-backing",
+                "Accounting for Murabaha (cost-plus sale) and Ijara (leasing) contracts under AAOIFI",
+                "Mudaraba and Musharaka profit-and-loss sharing mechanisms and balance sheet recognition",
+                "Sukuk (Islamic bonds) structure, issuance, and financial reporting",
+                "Government financial management in Bangladesh: Move from cash basis to accrual basis",
+                "Key IPSAS standards: Fixed assets, financial liabilities, revenue from exchange transactions"
+              ],
+              "learningOutcomes": [
+                "Record Islamic financing transactions under AAOIFI standards.",
+                "Differentiate Murabaha and Ijara accounting treatments.",
+                "Explain challenges in transitioning public sector accounting to accruals."
+              ],
+              "checklists": [
+                "Compare AAOIFI Murabaha accounting with IFRS 9 amortized cost",
+                "Summarize 4 key implementation steps of IPSAS in Bangladesh"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "id": "icab-c5",
+  "title": "ICAB C5 - Principles of Taxation",
+  "paperCode": "C5",
+  "level": "Certificate Level",
+  "marks": 100,
+  "duration": "1.5 Hours",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Taxation",
+    "Income Tax Act 2023",
+    "VAT Act 2012"
+  ],
+  "summary": "Comprehensive coverage of Bangladesh Income Tax Act 2023, individual tax computation, company tax, TDS, tax accounting, and Value Added Tax and Supplementary Duty Act 2012.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c5"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Principles of Taxation. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c5-s1",
+          "title": "Area 1: Income Tax Principles & Administration",
+          "name": "Area 1: Income Tax Principles & Administration",
+          "weightage": "15%",
+          "description": "Income Tax Act 2023 framework, residential status, scope of income, NBR organization.",
+          "nodes": [
+            {
+              "id": "c5-s1-n1",
+              "name": "Income Tax Act 2023 Framework & Residential Status",
+              "code": "C5.1.1",
+              "category": "Tax Law",
+              "weightage": "15%",
+              "description": "Objective of taxation, tax incidence, shifting; National Board of Revenue (NBR) structure; assessment year vs income year; definition of resident and non-resident individuals; scope of total income based on residence.",
+              "topics": [
+                "Constitutional basis and objectives of taxation in Bangladesh",
+                "Income Tax Act 2023 structure, definitions, and key concepts",
+                "National Board of Revenue (NBR), Taxes Appellate Tribunal, and tax authorities",
+                "Income Year vs Assessment Year distinctions",
+                "Residential status test for individuals (182-day rule and 90+365 day rule)",
+                "Residential status of companies, firms, and associations of persons (AOP)",
+                "Scope of income: Worldwide income vs Bangladesh-source income"
+              ],
+              "learningOutcomes": [
+                "Determine the residential status of individual and corporate taxpayers.",
+                "Identify total taxable income scope based on residential status.",
+                "Explain the administrative structure and powers of the NBR."
+              ],
+              "checklists": [
+                "Practice 10 residential status determination problems",
+                "Memorize assessment year vs income year timelines under ITA 2023"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5-s2",
+          "title": "Area 2: Computation of Income Tax (Individuals & Companies)",
+          "name": "Area 2: Computation of Income Tax (Individuals & Companies)",
+          "weightage": "40%",
+          "description": "Heads of income: Salary, Rent, Business, Capital Gains, Financial Assets, and tax calculation.",
+          "nodes": [
+            {
+              "id": "c5-s2-n1",
+              "name": "Heads of Income & Individual Tax Computation",
+              "code": "C5.2.1",
+              "category": "Tax Computation",
+              "weightage": "20%",
+              "description": "Income from employment (Section 32/33); Income from rent; Income from business; Capital gains; Income from financial assets; allowable deductions; personal income tax slabs, rebates, and surcharge.",
+              "topics": [
+                "Income from employment: Basic salary, allowances, perquisites, exemptions (1/3rd or Tk 450,000)",
+                "Income from house property: Annual value calculation, allowable repairs and maintenance deductions",
+                "Income from agricultural property and other sources",
+                "Capital gains computation: Realization, exemptions, and tax rates",
+                "Investment tax rebate under Section 78: Eligible investments and rebate rate calculation",
+                "Individual tax rate slabs, minimum tax based on city corporation location, and wealth surcharge"
+              ],
+              "learningOutcomes": [
+                "Calculate net taxable income under each statutory head of income.",
+                "Determine gross tax liability, investment tax rebates, and net tax payable for individuals.",
+                "Compute wealth surcharge based on net wealth thresholds."
+              ],
+              "checklists": [
+                "Solve 4 comprehensive individual income tax calculation questions",
+                "Review allowable perquisites and salary exemptions under ITA 2023"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c5-s2-n2",
+              "name": "Company Tax Computation & Allowable Deductions",
+              "code": "C5.2.2",
+              "category": "Corporate Tax",
+              "weightage": "20%",
+              "description": "Computation of business income for companies; allowable business expenses (Section 49-55); disallowances (Section 55); tax depreciation vs accounting depreciation; corporate tax rates.",
+              "topics": [
+                "Business profit computation starting from accounting net profit",
+                "Allowable business deductions: Rent, repairs, insurance, employee benefits",
+                "Inadmissible deductions (Section 55): Unapproved gratuity, cash payments over limits, CSR without proof",
+                "Tax depreciation rules: Normal depreciation, initial depreciation, amortisation",
+                "Loss set-off and carry-forward rules (up to 6 consecutive years)",
+                "Corporate tax rates: Listed vs non-listed companies, banks, tobacco, mobile operators",
+                "Minimum tax on gross receipts under Section 163"
+              ],
+              "learningOutcomes": [
+                "Reconcile accounting profit to taxable business income for companies.",
+                "Compute tax depreciation schedules under Third Schedule.",
+                "Calculate corporate tax liability including minimum tax rules."
+              ],
+              "checklists": [
+                "Practice 3 full corporate tax reconciliation adjustments",
+                "Memorize corporate tax rate matrix for listed vs non-listed entities"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5-s3",
+          "title": "Area 3: TDS, Assessment, Filing & Tax Accounting",
+          "name": "Area 3: TDS, Assessment, Filing & Tax Accounting",
+          "weightage": "15%",
+          "description": "Tax Deducted at Source (TDS), advance tax, return submission, assessment, and deferred tax basics.",
+          "nodes": [
+            {
+              "id": "c5-s3-n1",
+              "name": "TDS, Advance Tax, Assessment & Tax Return",
+              "code": "C5.3.1",
+              "category": "Tax Compliance",
+              "weightage": "15%",
+              "description": "Key TDS sections (supply of goods, services, commission, dividends, interest); advance tax payment installments; Tax Day and mandatory return filing requirements; universal self-assessment; tax accounting (IAS 12 basics).",
+              "topics": [
+                "TDS mechanism: Deducting authority obligations, deposit timelines, monthly returns",
+                "Key TDS rates: Contractors (Sec 89), Rent (Sec 109), Professional fees (Sec 102), Dividends",
+                "Advance tax calculation: 4 equal quarterly installments and interest for short payment",
+                "Mandatory requirement to submit return of income (PSR - Proof of Submission of Return)",
+                "Tax Day rules, universal self-assessment (Sec 180), and audit selection criteria",
+                "Tax accounting overview: Current tax liability vs deferred tax concept (IAS 12 introductory)"
+              ],
+              "learningOutcomes": [
+                "Apply TDS rates to various commercial transactions.",
+                "Calculate quarterly advance income tax obligations.",
+                "Explain return submission procedures and consequences of non-compliance."
+              ],
+              "checklists": [
+                "Memorize top 10 TDS rates and section numbers",
+                "Review Proof of Submission of Return (PSR) mandatory services list"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5-s4",
+          "title": "Area 4: Value Added Tax (VAT) & Supplementary Duty",
+          "name": "Area 4: Value Added Tax (VAT) & Supplementary Duty",
+          "weightage": "30%",
+          "description": "VAT and SD Act 2012, registration, input tax credit, VAT withholding (VDS), and return filing.",
+          "nodes": [
+            {
+              "id": "c5-s4-n1",
+              "name": "VAT Mechanism, Registration & Standard Rate",
+              "code": "C5.4.1",
+              "category": "Indirect Tax",
+              "weightage": "15%",
+              "description": "Fundamentals of VAT; VAT and SD Act 2012; taxable goods and services; Business Identification Number (BIN) registration; turnover tax vs standard VAT; standard rate (15%) and truncated rates.",
+              "topics": [
+                "Basic concept of VAT as a multi-stage consumption tax",
+                "Taxable supplies, exempt supplies, zero-rated exports",
+                "Mandatory VAT registration thresholds and turnover tax regime",
+                "Application and issuance of 9-digit Business Identification Number (BIN)",
+                "Standard VAT rate (15%), reduced rates (5%, 7.5%, 10%), and specific VAT rates",
+                "Supplementary Duty (SD): Imposition, valuation, and calculation on luxury/sin goods"
+              ],
+              "learningOutcomes": [
+                "Determine VAT registration liability and obtain BIN.",
+                "Calculate Output VAT and Supplementary Duty on commercial transactions.",
+                "Distinguish exempt, zero-rated, standard-rated, and truncated supplies."
+              ],
+              "checklists": [
+                "Review VAT registration thresholds (turnover limits)",
+                "Practice Output VAT calculations with and without Supplementary Duty"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c5-s4-n2",
+              "name": "Input Tax Credit, VDS & Monthly VAT Return",
+              "code": "C5.4.2",
+              "category": "Indirect Tax Compliance",
+              "weightage": "15%",
+              "description": "Input tax credit (rebate) conditions; VAT Deduction at Source (VDS); mandatory VAT records (Mushak 6.3, 6.5, 6.10); monthly VAT return (Mushak 9.1).",
+              "topics": [
+                "Conditions for claiming Input Tax Credit (Mushak 6.3 invoice, banking channel, 4-tax periods)",
+                "Non-creditable input taxes (vehicles, food, gifts, personal consumption)",
+                "VAT Deduction at Source (VDS): Withholding entities, applicable services, certificate (Mushak 6.6)",
+                "Mandatory VAT books: Purchase register (Mushak 6.1), Sales register (Mushak 6.2), Tax invoice (Mushak 6.3)",
+                "Monthly VAT return submission (Mushak 9.1): Due date (15th of following month), structure, adjustments",
+                "Penalties, late interest, and offenses under VAT and SD Act 2012"
+              ],
+              "learningOutcomes": [
+                "Assess admissibility of input tax credit claims.",
+                "Apply VDS deductions and issue Mushak 6.6 certificates.",
+                "Prepare and file monthly Mushak 9.1 VAT return."
+              ],
+              "checklists": [
+                "Complete a mock Mushak 9.1 VAT return with input rebate adjustments",
+                "Memorize VDS withholding service list and invoice validation rules"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

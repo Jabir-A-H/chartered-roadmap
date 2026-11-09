@@ -1,0 +1,199 @@
+{
+  "id": "icab-c2",
+  "title": "ICAB C2 - Assurance",
+  "paperCode": "C2",
+  "level": "Certificate Level",
+  "marks": 100,
+  "duration": "1.5 Hours",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Audit",
+    "Assurance",
+    "Internal Controls"
+  ],
+  "summary": "Explains the concept, purpose and legal framework of assurance, internal controls, obtaining evidence, and professional ethics and acceptance under ISA.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c2"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Assurance. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c2-s1",
+          "title": "Area 1: Concept, Process & Need for Assurance",
+          "name": "Area 1: Concept, Process & Need for Assurance",
+          "weightage": "20%",
+          "description": "Five elements of assurance, levels of assurance (reasonable vs limited), and statutory audit requirements.",
+          "nodes": [
+            {
+              "id": "c2-s1-n1",
+              "name": "Assurance Framework & Audit Demand",
+              "code": "C2.1.1",
+              "category": "Core Theory",
+              "weightage": "20%",
+              "description": "Definition of assurance engagement, the 5 elements (three parties, subject matter, criteria, evidence, written report), reasonable vs limited assurance, audit expectations gap, and benefits of assurance.",
+              "topics": [
+                "Definition and objectives of assurance under IAASB Framework",
+                "The 5 elements of an assurance engagement",
+                "Reasonable assurance (audit) vs Limited assurance (review)",
+                "Inherent limitations of audit: Sampling, human error, collusive fraud, estimates",
+                "The expectations gap: Audit role vs public misconception",
+                "Statutory audit requirements under Bangladesh Companies Act 1994"
+              ],
+              "learningOutcomes": [
+                "Identify the 5 elements of an assurance engagement.",
+                "Distinguish between reasonable and limited assurance conclusions.",
+                "Recognise the inherent limitations of assurance."
+              ],
+              "checklists": [
+                "Master 5 elements diagram and criteria definition",
+                "Review statutory audit appointment rules under Companies Act"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2-s2",
+          "title": "Area 2: Internal Controls & Information Flows",
+          "name": "Area 2: Internal Controls & Information Flows",
+          "weightage": "25%",
+          "description": "Internal control components (COSO), transaction cycles, IT controls, and deficiencies.",
+          "nodes": [
+            {
+              "id": "c2-s2-n1",
+              "name": "Internal Control Framework & IT Controls",
+              "code": "C2.2.1",
+              "category": "Governance & Control",
+              "weightage": "25%",
+              "description": "Five components of internal control (Control environment, Risk assessment, Control activities, Information & communication, Monitoring); General IT controls vs Application controls; Revenue, Purchases, and Payroll transaction cycles.",
+              "topics": [
+                "COSO Internal Control components and auditor evaluation",
+                "Control activities: Authorization, Segregation of duties, Physical, Reconciliations",
+                "General IT controls (access security, backups, change management)",
+                "Application IT controls (input checks, batch totals, sequence checks)",
+                "Sales and revenue cycle controls and testing",
+                "Purchases and payments cycle controls and segregation",
+                "Payroll system controls and employee verification",
+                "Identifying internal control deficiencies and management letter recommendations"
+              ],
+              "learningOutcomes": [
+                "Explain the 5 components of internal control.",
+                "Differentiate general IT controls from application controls.",
+                "Evaluate internal controls across sales, purchases, and payroll cycles.",
+                "Draft control deficiency recommendations."
+              ],
+              "checklists": [
+                "Analyze sales and purchases cycle control flowcharts",
+                "Practice identifying control weaknesses in 5 case scenarios"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2-s3",
+          "title": "Area 3: Gathering Evidence on Engagements",
+          "name": "Area 3: Gathering Evidence on Engagements",
+          "weightage": "35%",
+          "description": "Financial statement assertions, audit procedures (AEIOU), substantive testing, and documentation.",
+          "nodes": [
+            {
+              "id": "c2-s3-n1",
+              "name": "Audit Procedures, Assertions & Testing",
+              "code": "C2.3.1",
+              "category": "Audit Procedures",
+              "weightage": "35%",
+              "description": "Sufficient appropriate audit evidence (relevance and reliability); management assertions for classes of transactions and account balances; audit procedures: Analytical, Enquiry, Inspection, Observation, Recalculation/Reperformance (AEIOU); test of controls vs substantive testing; sampling fundamentals; audit working papers.",
+              "topics": [
+                "Sufficient appropriate evidence: Quality vs quantity, reliability hierarchy",
+                "Management assertions: Occurrence, Completeness, Accuracy, Cut-off, Classification, Existence, Rights & Obligations, Valuation & Allocation",
+                "Audit procedures (AEIOU): Inspection, Observation, External confirmation, Recalculation, Reperformance, Analytical procedures, Inquiry",
+                "Substantive testing for Tangible Assets, Inventory, Receivables, Payables, Cash",
+                "Bank confirmation letters and direct receivables circularisation",
+                "Inventory count attendance procedures (ISA 501)",
+                "Audit documentation: Working papers, retention, and confidentiality"
+              ],
+              "learningOutcomes": [
+                "Map audit procedures to specific financial statement assertions.",
+                "Evaluate the reliability of internal vs external evidence.",
+                "Design substantive audit tests for assets, liabilities, income, and expenses."
+              ],
+              "checklists": [
+                "Memorize all 8 audit assertions for P&L and Balance Sheet",
+                "Draft substantive audit program for inventory valuation and receivables",
+                "Practice bank reconciliation audit procedures"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2-s4",
+          "title": "Area 4: Professional Ethics & Acceptance",
+          "name": "Area 4: Professional Ethics & Acceptance",
+          "weightage": "20%",
+          "description": "IESBA Code of Ethics, ethical threats and safeguards, client acceptance, engagement letters, and reporting.",
+          "nodes": [
+            {
+              "id": "c2-s4-n1",
+              "name": "Professional Ethics, Threats & Acceptance",
+              "code": "C2.4.1",
+              "category": "Ethics & Compliance",
+              "weightage": "20%",
+              "description": "Ethical threats (Self-interest, Self-review, Advocacy, Familiarity, Intimidation); safeguards; independence requirements; client acceptance and continuance checks; money laundering procedures; engagement letters (ISA 210); unmodified vs modified audit reports.",
+              "topics": [
+                "Fundamental principles: Integrity, Objectivity, Competence, Confidentiality, Behaviour",
+                "The 5 ethical threats and concrete safeguards in assurance",
+                "Auditor independence of mind and appearance",
+                "Client onboarding checks: Integrity, competence, legal capacity, AML/KYC",
+                "Communication with predecessor auditor (professional clearance)",
+                "Engagement letters: Purpose, contents, and agreement of terms (ISA 210)",
+                "Overview of auditor reporting: Unmodified report structure vs modifications"
+              ],
+              "learningOutcomes": [
+                "Identify ethical threats and formulate appropriate safeguards.",
+                "Evaluate acceptance of new assurance engagements.",
+                "Explain the purpose and key contents of an engagement letter."
+              ],
+              "checklists": [
+                "Practice 15 scenario questions on ethical threats and safeguards",
+                "Review standard engagement letter clauses under ISA 210"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

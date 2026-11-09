@@ -1,0 +1,238 @@
+{
+  "id": "icab-c6",
+  "title": "ICAB C6 - Business Laws",
+  "paperCode": "C6",
+  "level": "Certificate Level",
+  "marks": 50,
+  "duration": "1.0 Hour",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Business Law",
+    "Companies Act",
+    "Contracts"
+  ],
+  "summary": "Covers Companies Act 1994, Negotiable Instruments Act 1881, Partnership Act 1932, Contract Act 1872, Sale of Goods Act 1930, and Labour Act 2006.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c6"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Business Laws. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c6-s1",
+          "title": "Area 1: Companies Act 1994",
+          "name": "Area 1: Companies Act 1994",
+          "weightage": "15%",
+          "description": "Company incorporation, Memorandum & Articles, shares, directors, and basic corporate governance.",
+          "nodes": [
+            {
+              "id": "c6-s1-n1",
+              "name": "Company Formation, MoA, AoA & Directors",
+              "code": "C6.1.1",
+              "category": "Corporate Law",
+              "weightage": "15%",
+              "description": "Types of companies (private, public, one person company); incorporation process with RJSC; Memorandum and Articles of Association; doctrine of ultra vires and indoor management; appointment, qualification, and duties of directors; meetings (AGM, EGM) and resolutions.",
+              "topics": [
+                "Classification of companies: Private limited, Public limited, One Person Company (OPC)",
+                "Registration and incorporation steps with RJSC",
+                "Memorandum of Association: Clauses and alteration procedures",
+                "Articles of Association: Regulations, alteration by special resolution",
+                "Doctrine of Ultra Vires and Doctrine of Constructive Notice / Indoor Management",
+                "Directors: Legal position, appointment, disqualification, retirement by rotation",
+                "Company meetings: Statutory meeting, Annual General Meeting (AGM), Extra-ordinary General Meeting (EGM)",
+                "Ordinary and special resolutions, quorum, and voting"
+              ],
+              "learningOutcomes": [
+                "Explain the legal characteristics and incorporation procedures of companies.",
+                "Apply the doctrines of ultra vires and indoor management to contracts.",
+                "Determine legal requirements for directors' appointments and shareholder meetings."
+              ],
+              "checklists": [
+                "Review RJSC incorporation steps and required documentation",
+                "Memorize AGM statutory timeline and notice periods"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6-s2",
+          "title": "Area 2: Negotiable Instruments Act 1881",
+          "name": "Area 2: Negotiable Instruments Act 1881",
+          "weightage": "10%",
+          "description": "Promissory notes, bills of exchange, cheques, crossing, endorsement, and dishonor under Section 138.",
+          "nodes": [
+            {
+              "id": "c6-s2-n1",
+              "name": "Promissory Notes, Bills of Exchange & Cheque Dishonor",
+              "code": "C6.2.1",
+              "category": "Commercial Law",
+              "weightage": "10%",
+              "description": "Definition and characteristics of negotiable instruments; promissory note vs bill of exchange vs cheque; holder and holder in due course; negotiation, endorsement, and crossing of cheques; dishonour of cheques and legal remedies under Section 138.",
+              "topics": [
+                "Essential characteristics of negotiable instruments",
+                "Promissory notes vs Bills of exchange vs Cheques",
+                "Holder in due course: Rights, privileges, and protection",
+                "Endorsement types: Blank, full, restrictive, conditional",
+                "Types of crossing of cheques: General crossing vs Special crossing and protection to paying banker",
+                "Dishonour of cheque for insufficiency of funds (Section 138 NI Act): Legal notice, timelines, and penal consequences"
+              ],
+              "learningOutcomes": [
+                "Distinguish between promissory notes, bills of exchange, and cheques.",
+                "Identify the rights of a holder in due course.",
+                "Explain the legal procedure and notice requirements for cheque dishonor under Section 138."
+              ],
+              "checklists": [
+                "Memorize Section 138 statutory timeline (30 days notice, 30 days filing)",
+                "Practice identifying valid endorsements and crossing types"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6-s3",
+          "title": "Area 3: Partnership Act 1932",
+          "name": "Area 3: Partnership Act 1932",
+          "weightage": "10%",
+          "description": "Partnership nature, mutual rights, duties, dissolution, and effects of non-registration.",
+          "nodes": [
+            {
+              "id": "c6-s3-n1",
+              "name": "Partnership Formation, Relations & Dissolution",
+              "code": "C6.3.1",
+              "category": "Commercial Law",
+              "weightage": "10%",
+              "description": "Definition and essential elements of partnership; mutual agency test; rights and duties of partners inter se; implied authority of a partner; position of a minor; dissolution of firm; consequences of non-registration of firm.",
+              "topics": [
+                "Definition of partnership: Agreement, business, profit sharing, mutual agency",
+                "True test of partnership (Section 6 - Cox v. Hickman principle)",
+                "Rights, duties, and liabilities of partners to one another and third parties",
+                "Implied authority of a partner and statutory restrictions",
+                "Admission, retirement, expulsion, and insolvency of a partner",
+                "Position of a minor admitted to benefits of partnership",
+                "Dissolution of a partnership firm by agreement, notice, contingencies, or court order",
+                "Consequences of non-registration of a firm (disability to sue third parties)"
+              ],
+              "learningOutcomes": [
+                "Apply the mutual agency test to identify partnership relationships.",
+                "Determine the extent of a partner's implied authority.",
+                "Explain grounds for dissolution and legal impact of non-registration."
+              ],
+              "checklists": [
+                "Review Section 69 consequences of non-registration",
+                "Analyze court order dissolution grounds under Section 44"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6-s4",
+          "title": "Area 4: Contract Act 1872 & Sale of Goods Act 1930",
+          "name": "Area 4: Contract Act 1872 & Sale of Goods Act 1930",
+          "weightage": "10%",
+          "description": "Offer, acceptance, consideration, free consent, breach of contract, conditions and warranties.",
+          "nodes": [
+            {
+              "id": "c6-s4-n1",
+              "name": "Contract Essentials, Breach & Sale of Goods",
+              "code": "C6.4.1",
+              "category": "Contract Law",
+              "weightage": "10%",
+              "description": "Essentials of a valid contract (Section 10); offer, acceptance, consideration; capacity to contract; free consent (coercion, undue influence, fraud, misrepresentation, mistake); discharge of contract; remedies for breach of contract (damages); Sale of Goods Act: Sale vs agreement to sell, conditions vs warranties, doctrine of caveat emptor.",
+              "topics": [
+                "Elements of a valid contract: Offer, acceptance, lawful consideration, intention",
+                "Vitiating factors: Coercion, Undue Influence, Fraud, Misrepresentation, Mistake",
+                "Void agreements vs voidable contracts vs illegal agreements",
+                "Discharge of contracts: By performance, agreement, frustration/impossibility, breach",
+                "Remedies for breach of contract: Damages (ordinary, special, nominal), specific performance, injunction",
+                "Sale of Goods Act: Sale vs agreement to sell, transfer of property/risk",
+                "Conditions and Warranties: Implied conditions as to title, description, quality/fitness",
+                "Doctrine of Caveat Emptor (buyer beware) and statutory exceptions"
+              ],
+              "learningOutcomes": [
+                "Evaluate validity of contracts under Contract Act 1872.",
+                "Determine available remedies for contractual breach.",
+                "Distinguish between conditions and warranties in sale of goods."
+              ],
+              "checklists": [
+                "Review Hadley v. Baxendale rule for contractual damages",
+                "List implied conditions under Sale of Goods Act 1930"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6-s5",
+          "title": "Area 5: Labour Act 2006 & Employment Regulations",
+          "name": "Area 5: Labour Act 2006 & Employment Regulations",
+          "weightage": "5%",
+          "description": "Employment conditions, leave, working hours, misconduct, retrenchment, and workers' participation fund.",
+          "nodes": [
+            {
+              "id": "c6-s5-n1",
+              "name": "Employment Conditions, Termination & WPPF",
+              "code": "C6.5.1",
+              "category": "Labour Law",
+              "weightage": "5%",
+              "description": "Classification of workers (permanent, probationer, casual); service book and appointment letter; working hours, overtime, annual leave; termination of employment (discharge, dismissal, retrenchment, lay-off); misconduct disciplinary process; Workers' Profit Participation Fund (WPPF).",
+              "topics": [
+                "Worker classification under Bangladesh Labour Act 2006",
+                "Conditions of employment: Working hours (8h/day, 48h/week), overtime rate (double ordinary wage)",
+                "Leave entitlements: Casual leave, sick leave, annual leave with wages, maternity benefit",
+                "Termination modalities: Retrenchment, discharge, dismissal for misconduct",
+                "Disciplinary proceedings: Charge-sheet, inquiry committee, right of defense",
+                "Workers' Profit Participation Fund (WPPF): Participation fund and welfare fund allocation (5% of net profit)"
+              ],
+              "learningOutcomes": [
+                "Explain statutory working hours and leave entitlements.",
+                "Describe the legal procedure for dismissal on grounds of misconduct.",
+                "State employer obligations regarding WPPF establishment."
+              ],
+              "checklists": [
+                "Memorize misconduct disciplinary inquiry process timeline",
+                "Review maternity benefit calculation and notice rules"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "id": "icab-c1",
+  "title": "ICAB C1 - Accounting",
+  "paperCode": "C1",
+  "level": "Certificate Level",
+  "marks": 100,
+  "duration": "1.5 Hours",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Accounting",
+    "Financial Statements"
+  ],
+  "summary": "Covers double-entry accounting principles, recording transactions, adjustments, preparation of financial statements for sole traders, partnerships, and limited companies under IFRS, and public financial management fundamentals.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c1"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Accounting. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c1-s1",
+          "title": "Area 1: Accounting Concepts, Ethics & Sustainability",
+          "name": "Area 1: Accounting Concepts, Ethics & Sustainability",
+          "weightage": "15%",
+          "description": "IFRS Conceptual Framework, qualitative characteristics, accounting principles, and ISSB sustainability disclosures.",
+          "nodes": [
+            {
+              "id": "c1-s1-n1",
+              "name": "Conceptual Framework & Standard Setting",
+              "code": "C1.1.1",
+              "category": "Core Theory",
+              "weightage": "8%",
+              "description": "Standard-setting process used by IASB and local authorities (FRC/ICAB); qualitative characteristics of financial information; effects of transactions under the Conceptual Framework; true and fair view override.",
+              "topics": [
+                "IASB standard-setting structure and Bangladesh endorsement process",
+                "Fundamental qualitative characteristics: Relevance and Faithful Representation",
+                "Enhancing characteristics: Comparability, Verifiability, Timeliness, Understandability",
+                "Elements of financial statements: Asset, Liability, Equity, Income, Expense",
+                "Concepts of 'fair presentation' and 'true and fair view'"
+              ],
+              "learningOutcomes": [
+                "Understand the standard-setting process used by IASB and local authority.",
+                "Identify the qualitative characteristics of financial information.",
+                "Apply recognition and derecognition criteria to business events."
+              ],
+              "checklists": [
+                "Read Conceptual Framework chapter in ICAB Manual",
+                "Practice 20 objective questions on qualitative characteristics",
+                "Summarize True and Fair view criteria in revision notebook"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c1-s1-n2",
+              "name": "Ethics & Sustainability in Reporting",
+              "code": "C1.1.2",
+              "category": "Ethics & Governance",
+              "weightage": "7%",
+              "description": "Professional ethics under IESBA Code, ICAB Bye-laws on misconduct, and introduction to IFRS Sustainability Disclosure Standards (ISSB S1/S2).",
+              "topics": [
+                "IESBA Code of Ethics fundamental principles: Integrity, Objectivity, Professional Competence, Confidentiality, Professional Behaviour",
+                "Professional misconduct prescribed by ICAB bye-laws",
+                "Principles-based vs rules-based ethical reasoning",
+                "Introduction to sustainability in financial reporting and ISSB aims (IFRS S1 & S2)",
+                "Stakeholder information needs regarding climate and ESG impacts"
+              ],
+              "learningOutcomes": [
+                "Specify ethical considerations for preparers of financial statements.",
+                "Identify professional misconduct rules under ICAB bye-laws.",
+                "Explain the aims of ISSB and how standards meet investor information needs."
+              ],
+              "checklists": [
+                "Memorize 5 IESBA ethical principles and threats/safeguards",
+                "Review ICAB bye-laws regarding disciplinary procedures",
+                "Understand basic scope of IFRS S1 General Requirements"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-s2",
+          "title": "Area 2: Maintaining Financial Records",
+          "name": "Area 2: Maintaining Financial Records",
+          "weightage": "20%",
+          "description": "Double-entry bookkeeping techniques, books of prime entry, ledger accounting, and transaction recording.",
+          "nodes": [
+            {
+              "id": "c1-s2-n1",
+              "name": "Double Entry Techniques & Prime Entry",
+              "code": "C1.2.1",
+              "category": "Technical Procedure",
+              "weightage": "10%",
+              "description": "Why entities maintain financial records; sources of financial information; sales, purchases, cash books, petty cash and general journals.",
+              "topics": [
+                "Purpose of maintaining records: Stewardship, tax compliance, management control",
+                "Books of prime entry: Sales daybook, Purchases daybook, Returns daybooks",
+                "Cash book, two-column and three-column formats, Petty cash imprest system",
+                "General journal entries for non-routine transactions",
+                "Trade discounts vs cash discounts recording"
+              ],
+              "learningOutcomes": [
+                "Specify why entities maintain financial records and prepare statements.",
+                "Identify sources of information for accounting records.",
+                "Record transactions across prime books into general ledger."
+              ],
+              "checklists": [
+                "Solve 15 practical exercises on books of prime entry",
+                "Balance off ledger accounts and extract initial trial balance"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c1-s2-n2",
+              "name": "Ledger Accounting & Trial Balance",
+              "code": "C1.2.2",
+              "category": "Technical Procedure",
+              "weightage": "10%",
+              "description": "Posting to nominal ledger accounts, receivable/payable control accounts, and extracting initial trial balance.",
+              "topics": [
+                "Nominal ledger architecture: T-accounts, balancing off accounts",
+                "Sales ledger and purchase ledger control accounts and reconciliation",
+                "Trial balance extraction and role as an arithmetical validation check",
+                "Differences not revealed by a trial balance (error of commission, omission, principle, etc.)"
+              ],
+              "learningOutcomes": [
+                "Post transactions accurately to ledger accounts.",
+                "Prepare receivables and payables ledger reconciliations.",
+                "Extract and evaluate a trial balance."
+              ],
+              "checklists": [
+                "Complete control account reconciliation practice problems",
+                "Master identification of trial balance error types"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-s3",
+          "title": "Area 3: Adjustments to Accounting Records",
+          "name": "Area 3: Adjustments to Accounting Records",
+          "weightage": "20%",
+          "description": "Accruals, prepayments, depreciation, bad debts, inventory valuation, and suspense accounts.",
+          "nodes": [
+            {
+              "id": "c1-s3-n1",
+              "name": "Accruals, Prepayments & Depreciation",
+              "code": "C1.3.1",
+              "category": "Practical Computation",
+              "weightage": "10%",
+              "description": "Year-end period adjustments for revenue and expenses; property, plant and equipment depreciation methods (straight-line, reducing balance).",
+              "topics": [
+                "Matching concept and accruals / prepayments calculations",
+                "Property, plant and equipment (IAS 16) capitalization criteria",
+                "Depreciation calculation: Straight-line vs reducing balance methods",
+                "Disposal of non-current assets and profit/loss on disposal",
+                "Asset registers and reconciliation with ledger accounts"
+              ],
+              "learningOutcomes": [
+                "Calculate and record year-end accruals and prepayments.",
+                "Compute depreciation charges and maintain asset schedules.",
+                "Account for non-current asset disposals and part-exchanges."
+              ],
+              "checklists": [
+                "Practice 10 complex multi-period depreciation questions",
+                "Solve combined accruals and prepayments ledger problems"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c1-s3-n2",
+              "name": "Bad Debts, Inventory & Suspense Accounts",
+              "code": "C1.3.2",
+              "category": "Practical Computation",
+              "weightage": "10%",
+              "description": "Allowance for doubtful debts, inventory valuation under IAS 2 (lower of cost and NRV), and correcting errors via suspense accounts.",
+              "topics": [
+                "Irrecoverable debts write-off and allowance for receivables",
+                "Inventory valuation under IAS 2: Cost determination (FIFO vs Weighted Average)",
+                "Net Realizable Value (NRV) write-downs and damaged stock adjustments",
+                "Suspense account creation, error classification, and journal adjustments",
+                "Impact of errors on reported profit and statement of financial position"
+              ],
+              "learningOutcomes": [
+                "Calculate allowance for doubtful debts and record adjustments.",
+                "Value closing inventory applying lower of cost and NRV rule.",
+                "Correct trial balance errors using suspense accounts and evaluate profit impact."
+              ],
+              "checklists": [
+                "Solve 5 comprehensive suspense account correction problems",
+                "Practice inventory valuation under FIFO and AVCO"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-s4",
+          "title": "Area 4: Preparing Financial Statements",
+          "name": "Area 4: Preparing Financial Statements",
+          "weightage": "40%",
+          "description": "Preparation of financial statements for sole traders, partnerships, and limited liability companies under IFRS/BFRS.",
+          "nodes": [
+            {
+              "id": "c1-s4-n1",
+              "name": "Sole Trader & Partnership Financial Statements",
+              "code": "C1.4.1",
+              "category": "Financial Statements",
+              "weightage": "18%",
+              "description": "Preparation of Statement of Profit or Loss and Statement of Financial Position for sole proprietorships and partnerships, including partnership appropriation accounts.",
+              "topics": [
+                "Sole trader final accounts: Trading, profit or loss, and balance sheet extracts",
+                "Partnership profit sharing: Interest on capital, interest on drawings, partner salaries",
+                "Partnership appropriation account and partner current/capital accounts",
+                "Admission of a partner, retirement, and goodwill adjustments at certificate level"
+              ],
+              "learningOutcomes": [
+                "Prepare sole trader financial statements from adjusted trial balance.",
+                "Draft partnership appropriation accounts and allocate net profit.",
+                "Maintain partner capital and current accounts."
+              ],
+              "checklists": [
+                "Draft 3 full sole trader financial statements from raw trial balance",
+                "Solve 3 complete partnership profit allocation scenarios"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "c1-s4-n2",
+              "name": "Limited Company Financial Statements (IAS 1)",
+              "code": "C1.4.2",
+              "category": "Financial Statements",
+              "weightage": "22%",
+              "description": "Preparation of Statement of Profit or Loss, Statement of Financial Position, and Statement of Changes in Equity for limited liability companies.",
+              "topics": [
+                "Components of complete financial statements under IAS 1",
+                "Share capital, share premium, retained earnings and other reserves",
+                "Taxation in company accounts (current tax provision)",
+                "Statement of Profit or Loss format (Cost of sales, administrative, distribution expenses)",
+                "Statement of Financial Position presentation (Current vs Non-current classification)",
+                "Statement of Changes in Equity (SOCIE) preparation and dividend accounting"
+              ],
+              "learningOutcomes": [
+                "Specify the components of financial statements under IAS 1.",
+                "Prepare Statement of Profit or Loss and Statement of Financial Position for limited companies.",
+                "Construct Statement of Changes in Equity and account for share issues/dividends."
+              ],
+              "checklists": [
+                "Complete 5 comprehensive limited company final accounts questions",
+                "Review IAS 1 presentation formats and disclosure requirements"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-s5",
+          "title": "Area 5: Public Financial Management (PFM)",
+          "name": "Area 5: Public Financial Management (PFM)",
+          "weightage": "5%",
+          "description": "Public sector characteristics, budget systems, IPSAS overview, and public sector accounting in Bangladesh.",
+          "nodes": [
+            {
+              "id": "c1-s5-n1",
+              "name": "Public Sector Accounting & IFMIS",
+              "code": "C1.5.1",
+              "category": "Public Sector",
+              "weightage": "5%",
+              "description": "Differences between public and private sectors; legal framework for PFM; national budget preparation in Bangladesh; fund accounting; overview of IPSAS; Integrated Financial Management Information System (iBAS++).",
+              "topics": [
+                "Characteristics of public sector vs private sector accountability",
+                "Legal and administrative framework for PFM in Bangladesh",
+                "Budget preparation steps, budget classification code (BACS), and fiscal reporting",
+                "Fund accounting principles in government organizations",
+                "Introduction to International Public Sector Accounting Standards (IPSAS)",
+                "Integrated Financial Management Information System (iBAS++ / IFMIS)"
+              ],
+              "learningOutcomes": [
+                "Differentiate public sector financial governance from commercial entities.",
+                "Explain the budget preparation process and classification codes in Bangladesh.",
+                "Explain the role and architecture of IFMIS/iBAS++."
+              ],
+              "checklists": [
+                "Review government budgeting steps and BACS coding structure",
+                "Understand key differences between cash basis and accrual basis IPSAS"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

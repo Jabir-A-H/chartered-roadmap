@@ -1,63 +1,90 @@
 # Chartered Roadmap 🧭
 
-> Interactive visual roadmaps and study trackers for professional accountancy and finance qualifications (ICAB CA, ACCA, and beyond). Inspired by [roadmap.sh](https://roadmap.sh).
+> Interactive visual roadmaps, chapter-by-chapter study trackers, and qualification pathways for professional accountancy and finance qualifications (ICAB CA Curriculum 2025, ACCA, and beyond). Inspired by [roadmap.sh](https://roadmap.sh).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Deployment](https://img.shields.io/badge/Deploy-Cloudflare%20Pages%20%7C%20GitHub%20Pages-blue.svg)](#deployment)
+[![Version](https://img.shields.io/badge/Version-1.3.0-blue.svg)](package.json)
 
 ---
 
 ## 🌟 Why Chartered Roadmap?
 
-Information for professional qualifications—such as Chartered Accountancy (CA) and ACCA—is notoriously scattered across lengthy PDF circulars, forum discussions, and institutional portals. Students face complex academic rules:
+Information for professional qualifications—such as Chartered Accountancy (CA) and ACCA—is notoriously scattered across lengthy PDF circulars, 180-page syllabus manuals, and institutional portals. Students face complex challenges:
 - **Multiple Entry Routes:** Graduate entry, HSC/A-Level direct entry, Pre-Articleship (PAS), and mutual professional exemptions.
-- **Concurrent Requirements:** Running intensive articleship alongside multi-tier exams (Certificate, Professional, and Advanced levels).
-- **Credit for Prior Learning (CPL):** University-specific exemption agreements that differ from student to student.
+- **Concurrent Milestones:** Managing intensive articleship alongside multi-tier exams (Certificate, Professional, and Advanced levels).
+- **Chapter-Level Study Tracking:** Moving beyond exam-level milestones to track specific chapters, syllabus areas, learning outcomes (CLOs), and study checklists.
 
-**Chartered Roadmap** gives aspirants a clear, visual, node-based progression map. Tap any milestone for syllabus breakdowns and tick off modules as you complete them—persisted locally in your browser.
-
----
-
-## 🗺️ Available Roadmaps
-
-### 1. [ICAB Chartered Accountancy (Bangladesh)](data/icab.json)
-Fully mapped to the official **ICAB Syllabus 2025** (17 examinations, 1,600 total marks):
-- **17 Exam Papers & 1,600 Total Marks:**
-  - **Certificate Level (600 Marks):** 5 papers at 1.5h / 100m + 2 condensed papers (*Business Laws* and *Information Technology*) at 1.0h / 50m. Sat 3 times/year.
-  - **Professional Level (700 Marks):** 6 papers at 3.5h / 100m + extended *IT Governance* at 4.0h / 100m. Sat 2 times/year.
-  - **Advanced Level (300 Marks):** *Corporate Reporting* (3.5h), *Strategic Business Management and Leadership* (3.5h), and capstone *Case Study* (4.5h / 100m). Sat 2 times/year.
-- **Mandatory Hands-On Practical IT Labs:** Decoupled from written examination papers and hosted on an autonomous companion roadmap (`icab-it-labs`), covering Certificate Level (QuickBooks/Sage and Applied Excel modeling) and Professional Level (Power BI/AI, Cybersecurity Forensics, and Banking CAATs).
-- **Contemporary Cross-Disciplinary Themes:** Pervasive integration of ESG & sustainability (ISSB S1/S2, IAASB ISSA 5000, double materiality), AI & big data analytics, ISACA/CISA standards, and Islamic finance.
-- **Four Progression Routes:**
-  - **Graduate Route (Honours / Masters):** 3-year articleship with parallel exams.
-  - **HSC / A-Level Route:** 4-year articleship (3.5 years for top A-Level results).
-  - **Pre-Articleship Student (PAS) Route:** Sit Certificate and Professional papers while still at university, reducing subsequent articleship to 2.5 or 2 years.
-  - **ACCA / ICMAB Exemption Route:** Full 7-paper Certificate exemption, selective Professional exemptions, and a 2-year articleship.
-- **Mandatory Milestones:** Pre-Articleship Training Course (PATC), Articleship registration, and Ethics & Continuous Professional Development.
-
-### 2. [ACCA (Global)](data/acca.json)
-Structured into 7 progression stages:
-- **Applied Knowledge:** Business and Technology (BT), Management Accounting (MA), Financial Accounting (FA).
-- **Applied Skills:** 6 core technical papers (LW, PM, TX, FR, AA, FM).
-- **Strategic Professional:** Essentials (SBL, SBR) + 2 chosen Options (AFM, APM, ATX, AAA).
-- **Professional Requirements:** 36-month Practical Experience Requirement (PER) and the online Ethics and Professional Skills Module (EPSM).
-
-### 3. [ICAB IT Practical Labs (Companion Sub-Roadmap)](data/icab-it-labs.json)
-Autonomous practical skills curriculum linked directly from Certificate (`c7`) and Professional (`p7`) gateways:
-- **Certificate Level Labs (2 Workshops):** Accounting Software Implementation (QuickBooks / Sage / ERP) and Applied Excel for Professional Accountants (Power Query ETL, 3-statement dynamic modeling).
-- **Professional Level Labs (3 Workshops):** Business Intelligence & AI Analytics (Power BI / Tableau / BigQuery), Information Systems Security & Digital Forensics (ISO 27001, AWS/Azure RBAC, SIEM, FTK Imager, Autopsy), and IS Audit Banking CAATs (CaseWare IDEA / ACL duplicate scans, Maker-Checker bypass, dormant account reactivation, AML structuring).
-
-*(Planned additions: CMA, CPA, CIA, CFA)*
+**Chartered Roadmap** gives aspirants a comprehensive, node-based progression map and interactive study tracker. Search across any topic, tap any milestone for syllabus breakdowns, and tick off topics as you master them—persisted locally in your browser.
 
 ---
 
-## 🚀 Live Demo & Hosting
+## 🗺️ 20 Available Roadmaps & Study Trackers
 
-You can host Chartered Roadmap anywhere as a zero-dependency static web app:
+### 1. Full Professional Qualifications (2)
+- **[ICAB Chartered Accountancy (Curriculum 2025)](data/icab.json):** 17 examinations (1,600 marks), 5 IT practical labs, 4 entry routes (Graduate, HSC, PAS, Professional Exemption), and articleship milestones.
+- **[ACCA (Global)](data/acca.json):** 7 stages across Applied Knowledge, Applied Skills, Strategic Professional, EPSM ethics, and 36-month Practical Experience Requirement (PER).
 
-* **Cloudflare Pages:** `https://chartered-roadmap.pages.dev`
-* **GitHub Pages:** `https://Jabir-A-H.github.io/chartered-roadmap`
+### 2. Certificate Level Individual Paper Study Trackers (7)
+Official 2025 Syllabus chapter and topic study roadmaps with specification grid weightings and learning outcome checklists:
+- **[C1 - Accounting](data/icab-c1.json):** Double-entry, adjustments, sole trader & company accounts (IAS 1), public financial management (PFM). (100 Marks · 1.5h)
+- **[C2 - Assurance](data/icab-c2.json):** 5 elements of assurance, COSO internal controls, substantive testing (AEIOU), and IESBA ethics. (100 Marks · 1.5h)
+- **[C3 - Business, Technology and Finance](data/icab-c3.json):** Organizational structures, financial markets, PESTEL, CSR, and digital transformation. (100 Marks · 1.5h)
+- **[C4 - Management Information](data/icab-c4.json):** Costing methods, budgeting, standard costing variance analysis, CVP, and data analytics. (100 Marks · 1.5h)
+- **[C5 - Principles of Taxation](data/icab-c5.json):** Income Tax Act 2023 individual and corporate computations, TDS, and VAT Act 2012. (100 Marks · 1.5h)
+- **[C6 - Business Laws](data/icab-c6.json):** Companies Act 1994, Negotiable Instruments Act 1881, Partnership Act 1932, and Contract Act 1872. (50 Marks · 1.0h)
+- **[C7 - Information Technology](data/icab-c7.json):** Systems analysis & SDLC, agile, cloud architectures, relational DBMS/SQL, and cybersecurity. (50 Marks · 1.0h)
+
+### 3. Professional Level Individual Paper Study Trackers (7)
+- **[P1 - Financial Accounting and Reporting](data/icab-p1.json):** Single entity IFRS/BFRS, group consolidation (IFRS 10/3), AAOIFI Islamic finance, and IPSAS. (100 Marks · 3.0h)
+- **[P2 - Audit and Assurance](data/icab-p2.json):** ISA risk assessment (ISA 315), planning materiality, fraud responsibilities, KAM, and auditor reporting. (100 Marks · 3.0h)
+- **[P3 - Business Planning: Taxation & Compliance](data/icab-p3.json):** Tax litigation, Appellate Tribunal, ADR, transfer pricing, corporate M&A tax, and VAT disputes. (100 Marks · 3.0h)
+- **[P4 - Financial Management](data/icab-p4.json):** WACC, Modigliani-Miller capital structure, DCF appraisal under capital rationing, business valuation, and derivatives. (100 Marks · 3.0h)
+- **[P5 - Business Strategy & Technology](data/icab-p5.json):** VRIO analysis, Porter models, Bowman Strategy Clock, Balanced Scorecard, and change management. (100 Marks · 3.0h)
+- **[P6 - Corporate Laws & Practices](data/icab-p6.json):** Advanced Companies Act practice, RJSC charges, BSEC IPO/Rights rules, Bank Companies Act, and FERA. (100 Marks · 3.0h)
+- **[P7 - IT Governance](data/icab-p7.json):** Aligned with ISACA CISA: National IT Policy, Cyber Security Act 2023, COBIT 2019, ITIL 4, CAATs, and BCP/DRP. (100 Marks · 4.0h)
+
+### 4. Advanced Level Individual Paper Study Trackers (3)
+- **[V1 - Corporate Reporting](data/icab-v1.json):** Complex IFRS 9 (ECL, hedging), IAS 19 pensions, step acquisitions, foreign subsidiaries, and ISSB S1/S2. (100 Marks · 3.5h)
+- **[V2 - Strategic Business Management & Leadership](data/icab-v2.json):** Executive leadership, digital disruption, COSO ERM, M&A/LBO deal structuring, and Integrated Reporting. (100 Marks · 3.5h)
+- **[V3 - Case Study](data/icab-v3.json):** Capstone simulation: Advance information analysis, unseen exhibit processing, financial modeling, and executive board reporting. (100 Marks · 4.5h)
+
+### 5. Practical Skills & IT Workshops (1)
+- **[ICAB IT Practical Labs](data/icab-it-labs.json):** 5 hands-on workshops (QuickBooks/Sage, Applied Excel modeling, BI/AI, Cybersecurity Forensics, and IS Audit Banking CAATs).
+
+---
+
+## ⚡ Key Features
+
+- **🔍 Omnipresent Command Palette (`Ctrl+K` / `⌘K`):** Instantly search across all 20 roadmaps, paper codes (`C1`, `P7`, `V3`), syllabus topics, and keywords with real-time match highlighting and category filtering.
+- **🧭 Explore All Roadmaps Catalog:** Interactive card catalog grouped by qualification level with live progress tracking bars for each paper.
+- **📖 Granular Topic Study Trackers:** Every individual paper features official syllabus areas with percentage weightings, chapter nodes, Course Learning Outcomes (CLOs), and study checklists.
+- **🔗 Bidirectional Deep-Linking & Breadcrumbs:** Jump seamlessly from parent qualification papers to individual study trackers and back with context preservation (e.g. `#icab-c1/c1-s1-n1`).
+- **💾 Safe Multi-Roadmap Storage:** Namespaced progress persistence (`roadmapId:nodeId`) in local storage with in-memory fallback.
+- **🌐 100% Zero-Dependency Offline Runtime:** Pre-compiled `data/roadmaps.js` bundle enables instant loading even when opening via local `file:///`.
+- **🌓 Dark & Light Theme:** Accessible high-contrast typography adhering to WCAG 2.1 AA standards.
+
+---
+
+## 🛠️ Developer & Build Scripts
+
+```bash
+# Install zero-dependency scripts
+npm install
+
+# Start local development server
+npm start
+# -> Runs at http://localhost:3000/
+
+# Re-bundle all 20 JSON datasets for offline file:/// support
+npm run build
+# -> Compiles data/*.json into data/roadmaps.js
+
+# Run full automated verification gate (100% pass required)
+npm test
+# -> Validates JSON schemas, bundle, routing, search engine, and storage
+```
 
 ---
 
@@ -65,85 +92,42 @@ You can host Chartered Roadmap anywhere as a zero-dependency static web app:
 
 ```text
 chartered-roadmap/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── syllabus_update.md
-│   │   └── new_qualification_request.md
-│   └── PULL_REQUEST_TEMPLATE.md
+├── archive/             # Safely quarantined legacy prototypes (Rule 4)
+│   ├── roadmap.html
+│   ├── test-acca-hash.js
+│   └── roadmap-for-professional-accounting-certifications-2026-10-27.md
 ├── data/
-│   ├── icab.json        # Pure JSON dataset for ICAB CA routes & syllabus
-│   ├── icab-it-labs.json# Autonomous JSON dataset for ICAB hands-on IT labs
-│   ├── acca.json        # Pure JSON dataset for ACCA qualification stages
-│   └── roadmaps.js      # Offline-friendly bundle for seamless local file:/// opening
+│   ├── icab.json        # Core ICAB CA qualification roadmap & route definitions
+│   ├── acca.json        # Core ACCA qualification roadmap
+│   ├── icab-it-labs.json# 5 practical IT workshops companion dataset
+│   ├── icab-c1.json .. icab-c7.json # 7 Certificate Level paper study trackers
+│   ├── icab-p1.json .. icab-p7.json # 7 Professional Level paper study trackers
+│   ├── icab-v1.json .. icab-v3.json # 3 Advanced Level paper study trackers
+│   └── roadmaps.js      # Bundled offline datasets (20 roadmaps)
 ├── docs/
-│   ├── ADR/
+│   ├── ADR/             # Architecture Decision Records
 │   │   ├── 0001-static-json-driven-architecture.md
 │   │   ├── 0002-icab-2025-curriculum-modernization.md
-│   │   └── 0003-autonomous-it-labs-and-subroadmap-architecture.md
-│   ├── critiquesGPT/
-│   │   ├── segment_1_data_and_schemas_critique.md
-│   │   ├── segment_2_ui_ux_presentation_critique.md
-│   │   ├── segment_3_behavioral_routing_critique.md
-│   │   └── master_architectural_synthesis.md
-│   ├── ICAB_2025_CURRICULUM_SPECIFICATION.md
-│   ├── CURRICULUM_COMPARISON_2023_VS_2025.md
-│   ├── ROADMAP_PROGRESSION_AND_EXEMPTION_GUIDE.md
-│   └── MULTI_AGENT_AUDIT_AND_IMPLEMENTATION_BLUEPRINT.md
+│   │   ├── 0003-autonomous-it-labs-and-subroadmap-architecture.md
+│   │   └── 0004-individual-paper-study-trackers-and-search-catalog.md
+│   ├── critiquesGPT/    # Multi-agent audit & critique reports
+│   └── Curriculum-2025-Technical-Specification.md
 ├── scripts/
-│   ├── bundle-data.js   # Synchronizes data/*.json into data/roadmaps.js
-│   ├── verify-segment1.js # Automated verification gate for Segment 1
-│   ├── verify-segment2.js # Automated verification gate for Segment 2
-│   ├── verify-segment3.js # Automated verification gate for Segment 3
-│   └── update_icab_json.py # Reproducible ICAB dataset generator
+│   ├── bundle-data.js   # Generates data/roadmaps.js
+│   ├── build_all_paper_roadmaps.py # Syllabus 2025 paper extractor
+│   ├── link_icab_papers.py # Links paper nodes to trackers
+│   └── verify-all.js    # Unified automated test runner (npm test)
+├── tools/
+│   └── server.js        # Zero-dependency local static HTTP server (npm start)
+├── app.js               # Application state, router, search & explore controller
 ├── index.html           # Main semantic single-page application
-├── styles.css           # Modern roadmap.sh inspired styling & dark mode
-├── app.js               # Application state, hash routing, & progress tracker
-├── CONTRIBUTING.md      # Community contribution guidelines
-├── LICENSE              # MIT License
-└── README.md
+├── package.json         # Project metadata and npm scripts
+└── styles.css           # Modern roadmap.sh aesthetic, search & catalog styles
 ```
 
 ---
 
-## 💻 Running Locally
+## 📄 License & Attribution
 
-Because this project is built using native web standards with zero dependencies, you can run it immediately without `npm install`:
-
-1. **Option A (Direct File Opening):**
-   Simply open `index.html` in any web browser. Local storage and the bundled dataset will work seamlessly.
-
-2. **Option B (Local Static Server):**
-   ```bash
-   # Using Node.js npx
-   npx serve .
-
-   # Or using Python
-   python -m http.server 8000
-   ```
-   Visit `http://localhost:8000`.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from qualified accountants, current students, and developers!
-Whether you are reporting a syllabus update, adding missing pass rates/exam windows, or proposing a new qualification:
-
-1. Check out our [Contributing Guidelines](CONTRIBUTING.md).
-2. Edit the corresponding dataset under [`data/`](data/).
-3. Run `node scripts/bundle-data.js` to compile the offline bundle.
-4. Open a Pull Request!
-
----
-
-## ⚖️ Official Notice & Disclaimer
-
-Chartered Roadmap is an independent, community-driven educational open-source project. It is not officially affiliated with, endorsed by, or sponsored by the **Institute of Chartered Accountants of Bangladesh (ICAB)** or the **Association of Chartered Certified Accountants (ACCA)**.
-
-Always consult official portals ([icab.org.bd](https://www.icab.org.bd) and [accaglobal.com](https://www.accaglobal.com)) for binding regulatory criteria, circulars, fees, and exam registration deadlines.
-
----
-
-## 📄 License
-
-Distributed under the [MIT License](LICENSE).
+- Released under the [MIT License](LICENSE).
+- Curriculum specifications derived from official publications of the **Institute of Chartered Accountants of Bangladesh (ICAB)** and **Association of Chartered Certified Accountants (ACCA)**.

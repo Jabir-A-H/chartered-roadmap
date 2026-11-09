@@ -1,0 +1,228 @@
+{
+  "id": "icab-v1",
+  "title": "ICAB V1 - Corporate Reporting",
+  "paperCode": "V1",
+  "level": "Advanced Level",
+  "marks": 100,
+  "duration": "3.5 Hours",
+  "format": "Written & Complex Multi-Disciplinary Case Examination",
+  "region": "Bangladesh",
+  "category": "Advanced Level Papers",
+  "tags": [
+    "Advanced Level",
+    "Core Exam",
+    "Study Tracker",
+    "Complex IFRS",
+    "Advanced Audit",
+    "ESG Reporting"
+  ],
+  "summary": "Mastery of complex IFRS/IAS/IFRIC standards, group reporting with foreign subsidiaries, complex financial instruments, business valuations, advanced audit and forensic assurance, and IFRS Sustainability Standards (S1/S2).",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "v1"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Corporate Reporting. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "v1-s1",
+          "title": "Area 1: Complex Corporate Reporting – Compliance",
+          "name": "Area 1: Complex Corporate Reporting – Compliance",
+          "weightage": "45%",
+          "description": "Complex IFRS/IAS (IFRS 9, IFRS 15, IFRS 16, IAS 19, IAS 21 foreign currency, step acquisitions).",
+          "nodes": [
+            {
+              "id": "v1-s1-n1",
+              "name": "Complex Financial Instruments (IFRS 9) & Employee Benefits (IAS 19)",
+              "code": "V1.1.1",
+              "category": "Advanced Standards",
+              "weightage": "20%",
+              "description": "IFRS 9 classification and measurement (Amortized Cost, FVOCI, FVTPL); Expected Credit Loss (ECL) 3-stage model; hedge accounting (fair value hedges, cash flow hedges); IAS 19 Employee Benefits: Defined benefit pension schemes, actuarial gains/losses, asset ceiling.",
+              "topics": [
+                "IFRS 9 Business model test and SPPI (Solely Payments of Principal and Interest) cash flow test",
+                "Financial liabilities: Amortized cost vs fair value option and credit risk treatment",
+                "Expected Credit Loss (ECL) impairment: Stage 1 (12-month), Stage 2 (lifetime), Stage 3 (default)",
+                "Hedge accounting requirements: Designated hedging instrument, hedged item, hedge ratio, testing",
+                "Cash flow hedge reserve accounting vs fair value hedge adjustments",
+                "IAS 19 Defined Benefit plans: Present value of obligation, plan assets, service costs",
+                "Remeasurements through OCI and asset ceiling test (IFRIC 14)"
+              ],
+              "learningOutcomes": [
+                "Apply IFRS 9 ECL model to banking and corporate loan portfolios.",
+                "Account for complex derivatives and cash flow hedges.",
+                "Calculate defined benefit pension liabilities and OCI remeasurements."
+              ],
+              "checklists": [
+                "Read Complex Financial Instruments (IFRS 9) & Employee Benefits (IAS 19) in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "v1-s1-n2",
+              "name": "Advanced Group Accounts: Step Acquisitions & Foreign Subsidiaries (IAS 21)",
+              "code": "V1.1.2",
+              "category": "Complex Consolidation",
+              "weightage": "25%",
+              "description": "Step acquisitions (associate becoming subsidiary); partial disposals retaining control or losing control; foreign currency translation of overseas subsidiaries (IAS 21: Closing rate method, exchange differences in OCI); group statement of cash flows; joint arrangements (IFRS 11).",
+              "topics": [
+                "Step acquisitions: Remeasuring previously held interest to fair value through P&L",
+                "Disposal of subsidiary with loss of control: Derecognition, fair value of retained interest, gain/loss calculation",
+                "Disposal without loss of control: Equity transaction with NCI, no gain/loss in P&L",
+                "IAS 21 Foreign currency translation: Functional currency determination",
+                "Translating foreign subsidiary financial statements: Closing rate for B/S, average rate for P&L, translation reserve in OCI",
+                "Group Statement of Cash Flows: Acquisitions, disposals, foreign exchange effects on cash balances",
+                "IFRS 11 Joint Arrangements: Joint Operations vs Joint Ventures (equity method)"
+              ],
+              "learningOutcomes": [
+                "Prepare group accounts for step acquisitions and partial disposals.",
+                "Translate foreign subsidiary financial statements and compute exchange reserves.",
+                "Construct group consolidated cash flow statements."
+              ],
+              "checklists": [
+                "Read Advanced Group Accounts: Step Acquisitions & Foreign Subsidiaries (IAS 21) in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v1-s2",
+          "title": "Area 2: Financial Statement Analysis & Valuation",
+          "name": "Area 2: Financial Statement Analysis & Valuation",
+          "weightage": "15%",
+          "description": "Multi-year earnings quality, financial distress modeling (Altman Z-score), and entity valuation.",
+          "nodes": [
+            {
+              "id": "v1-s2-n1",
+              "name": "Earnings Quality, Distress Prediction & Valuation",
+              "code": "V1.2.1",
+              "category": "Advanced Analysis",
+              "weightage": "15%",
+              "description": "Earnings quality analysis; aggressive revenue recognition detection; Beneish M-Score and Altman Z-Score financial distress models; enterprise valuation synthesizing discounted cash flows and market multiples for M&A transactions.",
+              "topics": [
+                "Evaluating earnings quality: Accruals quality, persistence, and cash flow backing",
+                "Detecting financial statement manipulation using Beneish M-Score indicators",
+                "Bankruptcy prediction models: Altman Z-Score for manufacturing and service entities",
+                "Adjusted Present Value (APV) method for highly leveraged buyouts",
+                "Enterprise valuation under complex capital structures and cross-holding adjustments"
+              ],
+              "learningOutcomes": [
+                "Audit earnings quality and identify manipulation signals.",
+                "Calculate Altman Z-score to predict insolvency risk.",
+                "Value acquisition targets in cross-border takeovers."
+              ],
+              "checklists": [
+                "Read Earnings Quality, Distress Prediction & Valuation in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v1-s3",
+          "title": "Area 3: Audit & Assurance in Complex Environments",
+          "name": "Area 3: Audit & Assurance in Complex Environments",
+          "weightage": "30%",
+          "description": "Advanced auditing of complex groups, forensic accounting, transnational audit, and audit opinions.",
+          "nodes": [
+            {
+              "id": "v1-s3-n1",
+              "name": "Group Audits (ISA 600), Forensic Investigations & Reporting",
+              "code": "V1.3.1",
+              "category": "Advanced Assurance",
+              "weightage": "30%",
+              "description": "ISA 600 (Revised) Audits of Group Financial Statements: Component auditors, group materiality, consolidation adjustments; forensic accounting investigations and fraud evidence; transnational auditing challenges; audit reporting on complex groups.",
+              "topics": [
+                "ISA 600 (Revised): Group auditor responsibilities, component identification, communication",
+                "Evaluating work of component auditors and determining component materiality",
+                "Auditing consolidation journals, goodwill impairment tests, and foreign exchange reserves",
+                "Forensic investigation techniques: Interviewing, digital evidence forensics, asset tracing",
+                "Auditing transnational and multinational entities with divergent regulatory frameworks",
+                "Complex auditor reporting: Group audit opinion modifications, emphasis of matters, KAM synthesis"
+              ],
+              "learningOutcomes": [
+                "Lead group audit engagements in compliance with ISA 600 (Revised).",
+                "Design forensic audit procedures for suspected corporate fraud.",
+                "Formulate audit opinions for complex global corporate groups."
+              ],
+              "checklists": [
+                "Read Group Audits (ISA 600), Forensic Investigations & Reporting in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v1-s4",
+          "title": "Area 4: Public Financial Management & Sustainability (ISSB)",
+          "name": "Area 4: Public Financial Management & Sustainability (ISSB)",
+          "weightage": "10%",
+          "description": "IFRS S1 and S2 sustainability disclosures, ESG metrics assurance, and public sector governance.",
+          "nodes": [
+            {
+              "id": "v1-s4-n1",
+              "name": "IFRS S1/S2 Sustainability Disclosures & ESG Assurance",
+              "code": "V1.4.1",
+              "category": "ESG & Sustainability",
+              "weightage": "10%",
+              "description": "IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information; IFRS S2 Climate-related Disclosures (Scope 1, 2, and 3 greenhouse gas emissions); assurance on sustainability reports under ISSA 5000; public sector financial reporting and IPSAS.",
+              "topics": [
+                "IFRS S1 Core content: Governance, Strategy, Risk Management, Metrics and Targets",
+                "IFRS S2 Climate disclosures: Physical climate risks, transition risks, scenario analysis",
+                "Greenhouse Gas (GHG) Protocol: Scope 1 (direct), Scope 2 (electricity), Scope 3 (value chain)",
+                "Independent assurance on ESG disclosures under ISSA 5000 General Requirements",
+                "Public Financial Management (PFM) reforms and IPSAS implementation in government entities"
+              ],
+              "learningOutcomes": [
+                "Structure corporate sustainability disclosures under IFRS S1 and S2.",
+                "Compute and report Scope 1, 2, and 3 GHG emissions.",
+                "Plan an assurance engagement on sustainability reports under ISSA 5000."
+              ],
+              "checklists": [
+                "Read IFRS S1/S2 Sustainability Disclosures & ESG Assurance in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

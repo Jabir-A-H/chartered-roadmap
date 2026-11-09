@@ -1,0 +1,194 @@
+{
+  "id": "icab-v3",
+  "title": "ICAB V3 - Case Study",
+  "paperCode": "V3",
+  "level": "Advanced Level",
+  "marks": 100,
+  "duration": "4.5 Hours",
+  "format": "Written & Capstone Strategic Simulation (Advance Information + Unseen)",
+  "region": "Bangladesh",
+  "category": "Advanced Level Papers",
+  "tags": [
+    "Advanced Level",
+    "Capstone Exam",
+    "Study Tracker",
+    "Case Simulation",
+    "Executive Report",
+    "Board Advisory"
+  ],
+  "summary": "Capstone professional simulation requiring candidates to analyze advance business information, process unseen exam-day material, synthesize complex financial, strategic, ethical, and assurance challenges, and draft an executive report with actionable board recommendations.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "v3"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Case Study. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "v3-s1",
+          "title": "Area 1: Strategic Business Analysis & Environmental Evaluation",
+          "name": "Area 1: Strategic Business Analysis & Environmental Evaluation",
+          "weightage": "25%",
+          "description": "Deconstructing advance information, industry dynamics, competitive positioning, and SWOT synthesis.",
+          "nodes": [
+            {
+              "id": "v3-s1-n1",
+              "name": "Advance Information Analysis & Strategic Diagnosis",
+              "code": "V3.1.1",
+              "category": "Case Analysis",
+              "weightage": "25%",
+              "description": "Scrutiny of Advance Information (AI); industry benchmark comparisons; business model identification; external threats and opportunities; internal operational bottlenecks; stakeholder power dynamics.",
+              "topics": [
+                "Advance Information (AI) analytical methodology: Timeline, key actors, financial baseline",
+                "Industry analysis and macro-economic factors impacting the case entity",
+                "SWOT and PESTEL synthesis tailored to specific industry context",
+                "Competitor benchmarking and operational cost driver analysis",
+                "Identifying operational vulnerabilities, capacity constraints, and supply chain dependencies"
+              ],
+              "learningOutcomes": [
+                "Synthesize complex advance business data into a strategic diagnosis.",
+                "Benchmark operational performance against industry competitors.",
+                "Identify strategic threats requiring executive board intervention."
+              ],
+              "checklists": [
+                "Read Advance Information Analysis & Strategic Diagnosis in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v3-s2",
+          "title": "Area 2: Financial Analysis, Corporate Reporting & Forecasting",
+          "name": "Area 2: Financial Analysis, Corporate Reporting & Forecasting",
+          "weightage": "25%",
+          "description": "Unseen financial data processing, ratio interpretation, forecasting, and investment evaluation.",
+          "nodes": [
+            {
+              "id": "v3-s2-n1",
+              "name": "Financial Appraisal, Ratio Analysis & Sensitivity Modeling",
+              "code": "V3.2.1",
+              "category": "Financial Synthesis",
+              "weightage": "25%",
+              "description": "Analysis of unseen financial exhibits; recalculating profitability, working capital cycles, and debt covenants; preparing financial projections; sensitivity analysis on proposed capital projects or acquisitions.",
+              "topics": [
+                "Interpreting unseen financial information under strict exam time constraints",
+                "Recalculating key financial ratios: Gross margin, EBITDA margin, ROCE, interest cover, gearing",
+                "Evaluating financial projections and cash flow forecasts provided by management",
+                "Conducting sensitivity analysis on critical revenue, cost, and interest rate assumptions",
+                "Assessing impact on bank borrowing covenants and liquidity cushions"
+              ],
+              "learningOutcomes": [
+                "Extract and recalculate critical financial metrics from unseen exhibits.",
+                "Perform sensitivity analysis on proposed investments.",
+                "Evaluate loan covenant compliance under stressed scenarios."
+              ],
+              "checklists": [
+                "Read Financial Appraisal, Ratio Analysis & Sensitivity Modeling in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v3-s3",
+          "title": "Area 3: Assurance, Risk Management, Governance & Ethics",
+          "name": "Area 3: Assurance, Risk Management, Governance & Ethics",
+          "weightage": "25%",
+          "description": "Identifying hidden financial/operational risks, ethical conflicts, and internal control breakdowns.",
+          "nodes": [
+            {
+              "id": "v3-s3-n1",
+              "name": "Risk Evaluation, Internal Controls & Ethical Dilemmas",
+              "code": "V3.3.1",
+              "category": "Risk & Ethics",
+              "weightage": "25%",
+              "description": "Identification and prioritization of strategic, operational, financial, and compliance risks; evaluation of internal control failures and fraud red flags; resolution of complex ethical dilemmas involving management pressure, confidentiality, and public interest.",
+              "topics": [
+                "Enterprise risk mapping: Impact vs likelihood matrix for case enterprise",
+                "Identifying internal control deficiencies and accounting irregularities",
+                "Evaluating fraud indicators, whistleblowing reports, and related-party dealings",
+                "Ethical evaluation using IESBA fundamental principles and threat framework",
+                "Balancing commercial profitability with stakeholder welfare and legal compliance"
+              ],
+              "learningOutcomes": [
+                "Prioritize enterprise risks and design mitigating controls.",
+                "Identify and resolve complex professional ethical dilemmas.",
+                "Recommend governance enhancements to prevent corporate irregularities."
+              ],
+              "checklists": [
+                "Read Risk Evaluation, Internal Controls & Ethical Dilemmas in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v3-s4",
+          "title": "Area 4: Strategic Recommendations & Executive Report Writing",
+          "name": "Area 4: Strategic Recommendations & Executive Report Writing",
+          "weightage": "25%",
+          "description": "Report structure, professional tone, actionable recommendations, and implementation plan.",
+          "nodes": [
+            {
+              "id": "v3-s4-n1",
+              "name": "Professional Report Structure, Strategy & Implementation Plan",
+              "code": "V3.4.1",
+              "category": "Executive Reporting",
+              "weightage": "25%",
+              "description": "Structuring a formal board report (Title, Executive Summary, Introduction, Strategic Analysis, Financial Analysis, Strategic Options, Recommendations, Implementation Timetable); drafting persuasive, commercially realistic, and ethically sound recommendations.",
+              "topics": [
+                "Formal report format: Title, To/From/Date/Subject, Executive Summary, Table of Contents",
+                "Drafting a concise Executive Summary capturing key findings and strategic proposals",
+                "Formulating 2 to 3 distinct strategic alternatives with pros, cons, and financial impacts",
+                "Justifying a definitive commercial recommendation with clear rationale",
+                "Developing a detailed implementation plan: Milestones, resource allocation, KPI targets, risk mitigation",
+                "Maintaining professional skepticism and executive communication tone throughout"
+              ],
+              "learningOutcomes": [
+                "Author a professional board-level report under strict time limits.",
+                "Provide clear, prioritized, and commercially viable strategic recommendations.",
+                "Design realistic implementation roadmaps with risk contingencies."
+              ],
+              "checklists": [
+                "Read Professional Report Structure, Strategy & Implementation Plan in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

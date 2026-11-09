@@ -1,0 +1,204 @@
+{
+  "id": "icab-p4",
+  "title": "ICAB P4 - Financial Management",
+  "paperCode": "P4",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Quantitative Technical Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "Corporate Finance",
+    "WACC",
+    "Valuation",
+    "Hedging"
+  ],
+  "summary": "Advanced corporate finance, capital structure, cost of capital (WACC), investment appraisal under uncertainty, business valuation, treasury risk management, and ESG finance.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p4"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Financial Management. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p4-s1",
+          "title": "Area 1: Business Finance – Methods & Strategies",
+          "name": "Area 1: Business Finance – Methods & Strategies",
+          "weightage": "30%",
+          "description": "Cost of capital, WACC, capital structure theories (Modigliani-Miller), and dividend policy.",
+          "nodes": [
+            {
+              "id": "p4-s1-n1",
+              "name": "Cost of Capital (WACC) & Capital Structure Theories",
+              "code": "P4.1.1",
+              "category": "Corporate Finance",
+              "weightage": "30%",
+              "description": "Cost of equity using CAPM and Dividend Growth Model; cost of debt (irredeemable, redeemable, convertible); calculation of Weighted Average Cost of Capital (WACC); capital structure theories: Traditional view, Modigliani-Miller with and without corporate taxes, pecking order theory; dividend policy theories and signaling.",
+              "topics": [
+                "Cost of equity calculation: Capital Asset Pricing Model (CAPM) and Gordon Growth Model",
+                "Systematic vs unsystematic risk, Beta estimation, de-gearing and re-gearing betas",
+                "Cost of redeemable debt using internal rate of return (IRR) interpolation",
+                "Cost of convertible bonds and floor value analysis",
+                "Weighted Average Cost of Capital (WACC) calculation and conditions for use in appraisal",
+                "Capital structure debate: Traditional view vs MM Proposition I & II (tax shield)",
+                "Pecking order hypothesis, trade-off theory, and financial distress costs",
+                "Dividend irrelevance (MM) vs Walter/Gordon models, clientele effect, signaling"
+              ],
+              "learningOutcomes": [
+                "Calculate WACC for complex financing structures.",
+                "Evaluate capital structure decisions applying MM theories.",
+                "De-gear and re-gear equity betas for investment projects."
+              ],
+              "checklists": [
+                "Solve 3 complex WACC calculations with convertible debt",
+                "Master asset beta formula: Beta_A = Beta_E * (E/(E+D(1-t)))"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p4-s2",
+          "title": "Area 2: Investment Appraisal & Business Valuation",
+          "name": "Area 2: Investment Appraisal & Business Valuation",
+          "weightage": "30%",
+          "description": "Discounted cash flow (DCF), sensitivity, real options, M&A, and company valuation methods.",
+          "nodes": [
+            {
+              "id": "p4-s2-n1",
+              "name": "DCF Appraisal, Risk Analysis & Business Valuation",
+              "code": "P4.2.1",
+              "category": "Valuation & Investments",
+              "weightage": "30%",
+              "description": "Net Present Value (NPV), IRR, MIRR, Payback; dealing with inflation, taxation, and capital rationing; sensitivity analysis and simulation; real options (delay, expand, abandon); business valuation methods: Asset-based, Earnings multiples (P/E, EV/EBITDA), Free Cash Flow to Firm (FCFF) and Equity (FCFE).",
+              "topics": [
+                "NPV analysis incorporating working capital, tax depreciation allowances, and residual values",
+                "Inflation in investment appraisal: Real discount rate vs nominal cash flows (Fisher equation)",
+                "Single-period capital rationing: Profitability Index (PI) ranking",
+                "Multi-period capital rationing and linear programming principles",
+                "Risk in investment appraisal: Sensitivity analysis, scenario analysis, real options value",
+                "Business valuation approaches: Net Asset Value (NAV), book value vs liquidation value",
+                "Earnings-based valuation: P/E multiples, EV/EBITDA, earnings yield method",
+                "Discounted Free Cash Flow valuation: FCFF discounted at WACC, FCFE discounted at Ke",
+                "Mergers and acquisitions: Valuation of synergies and defense against hostile bids"
+              ],
+              "learningOutcomes": [
+                "Formulate advanced DCF models with tax shields and capital rationing.",
+                "Value private and public companies using FCFF and market multiple methods.",
+                "Quantify real options in high-uncertainty capital investments."
+              ],
+              "checklists": [
+                "Read DCF Appraisal, Risk Analysis & Business Valuation in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p4-s3",
+          "title": "Area 3: Treasury & Financial Risk Management",
+          "name": "Area 3: Treasury & Financial Risk Management",
+          "weightage": "25%",
+          "description": "Currency and interest rate risk management using forwards, futures, options, and swaps.",
+          "nodes": [
+            {
+              "id": "p4-s3-n1",
+              "name": "FX Hedging, Interest Rate Risk & Derivatives",
+              "code": "P4.3.1",
+              "category": "Risk Management",
+              "weightage": "25%",
+              "description": "Foreign exchange risk exposure: Transaction, translation, and economic risk; hedging techniques: Forward contracts, money market hedges, futures, currency options, currency swaps; interest rate risk: Forward Rate Agreements (FRAs), interest rate futures, options (caps, floors, collars), interest rate swaps.",
+              "topics": [
+                "Foreign exchange exposure types: Transaction, translation, economic risk",
+                "Internal hedging techniques: Invoicing in home currency, netting, matching, leading/lagging",
+                "External FX hedging: Forward contracts vs Money market hedge step-by-step comparison",
+                "Currency futures and options hedging: Call vs Put option strategies",
+                "Interest rate risk sources: Gap analysis, basis risk",
+                "Forward Rate Agreements (FRAs) structure, fixing rates, and settlement calculations",
+                "Interest rate swaps: Comparative advantage argument, mechanics, counterparty risk",
+                "Options on interest rates: Caps, Floors, Collars construction and cost optimization"
+              ],
+              "learningOutcomes": [
+                "Construct money market hedges for FX payments and receipts.",
+                "Hedge floating interest rate exposure using FRAs and interest rate swaps.",
+                "Design option collar strategies to bound interest rate costs."
+              ],
+              "checklists": [
+                "Read FX Hedging, Interest Rate Risk & Derivatives in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p4-s4",
+          "title": "Area 4: Sustainable Finance, ESG & FinTech",
+          "name": "Area 4: Sustainable Finance, ESG & FinTech",
+          "weightage": "15%",
+          "description": "Green bonds, ESG investment metrics, FinTech innovations, and climate risk finance.",
+          "nodes": [
+            {
+              "id": "p4-s4-n1",
+              "name": "Green Finance, ESG Integration & Financial Technology",
+              "code": "P4.4.1",
+              "category": "Emerging Finance",
+              "weightage": "15%",
+              "description": "Role of sustainable finance and Bangladesh Bank Green Banking Policy; green bonds, sustainability-linked loans (SLL); ESG ratings and investment screening; financial technology (FinTech): Mobile financial services (bKash/Nagad), blockchain in settlement, and crowdfunding.",
+              "topics": [
+                "Bangladesh Bank Green Banking policy guidelines and mandatory refinancing schemes",
+                "Green bonds and sustainability-linked debt: Issuance criteria, verification, greenium",
+                "Integrating ESG criteria into corporate cost of capital and DCF valuation",
+                "Climate-related financial risks: Physical risks vs transition risks",
+                "FinTech ecosystem in Bangladesh: MFS, digital credit, peer-to-peer lending",
+                "Blockchain and distributed ledger technology (DLT) in international trade finance and remittances"
+              ],
+              "learningOutcomes": [
+                "Apply green banking criteria to evaluate project financing proposals.",
+                "Explain the pricing and structuring of green bonds in Bangladesh.",
+                "Assess FinTech business models and regulatory sandboxes."
+              ],
+              "checklists": [
+                "Read Green Finance, ESG Integration & Financial Technology in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

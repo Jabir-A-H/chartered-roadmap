@@ -1,0 +1,234 @@
+{
+  "id": "icab-c4",
+  "title": "ICAB C4 - Management Information",
+  "paperCode": "C4",
+  "level": "Certificate Level",
+  "marks": 100,
+  "duration": "1.5 Hours",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Management Accounting",
+    "Costing",
+    "Budgeting"
+  ],
+  "summary": "Covers cost accounting, absorption vs marginal costing, pricing, budgeting, variance analysis, performance management, capital investment appraisal, and data analysis.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c4"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Management Information. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c4-s1",
+          "title": "Area 1: Costing and Pricing",
+          "name": "Area 1: Costing and Pricing",
+          "weightage": "20%",
+          "description": "Cost classification, absorption costing, marginal costing, pricing strategies.",
+          "nodes": [
+            {
+              "id": "c4-s1-n1",
+              "name": "Cost Classification, Absorption & Marginal Costing",
+              "code": "C4.1.1",
+              "category": "Cost Accounting",
+              "weightage": "20%",
+              "description": "Direct vs indirect, fixed vs variable costs; overhead absorption rates (OAR), under/over absorption; Marginal Costing vs Absorption Costing profit reconciliation; pricing methods (cost-plus, target, skimming, penetration).",
+              "topics": [
+                "Cost classification by nature, function, behavior, and decision relevance",
+                "Overhead allocation, apportionment, and absorption rates",
+                "Calculation and ledger treatment of under- and over-absorbed overheads",
+                "Marginal costing principles, contribution calculation, and CVP analysis",
+                "Reconciliation of absorption costing and marginal costing profit due to stock changes",
+                "Pricing strategies: Full-cost plus, marginal-cost plus, price skimming, market penetration"
+              ],
+              "learningOutcomes": [
+                "Classify costs and calculate overhead absorption rates.",
+                "Compare profit statements under marginal and absorption costing.",
+                "Calculate selling prices using various pricing strategies."
+              ],
+              "checklists": [
+                "Solve 5 profit reconciliation problems between absorption and marginal costing",
+                "Calculate predetermined OAR across multiple production cost centers"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4-s2",
+          "title": "Area 2: Budgeting and Forecasting",
+          "name": "Area 2: Budgeting and Forecasting",
+          "weightage": "25%",
+          "description": "Forecasting techniques, functional budgets, cash budgeting, and flexed budgets.",
+          "nodes": [
+            {
+              "id": "c4-s2-n1",
+              "name": "Budget Preparation, Cash Budgets & Flexing",
+              "code": "C4.2.1",
+              "category": "Budgeting",
+              "weightage": "25%",
+              "description": "High-low method, regression and time series analysis; principal budget factor; sales, production, materials and labor budgets; master budget; cash budgeting; fixed vs flexible budgets.",
+              "topics": [
+                "Forecasting techniques: High-low method, moving averages, time series decomposition",
+                "Use of spreadsheets and data analytics in budgeting",
+                "Principal budget factor identification and functional budget preparation order",
+                "Sales, production, raw materials usage and purchases budgets",
+                "Labor and overhead budgets, preparation of master budget",
+                "Cash flow forecasting and monthly cash budget preparation",
+                "Fixed budgets vs flexed budgets for valid performance appraisal"
+              ],
+              "learningOutcomes": [
+                "Forecast revenues and costs using high-low and time-series techniques.",
+                "Construct comprehensive functional budgets and cash forecasts.",
+                "Prepare flexed budgets based on actual activity levels."
+              ],
+              "checklists": [
+                "Construct a 6-month rolling cash budget with timing delays",
+                "Flex a budget for 3 different volume scenarios"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4-s3",
+          "title": "Area 3: Performance Management & Variance Analysis",
+          "name": "Area 3: Performance Management & Variance Analysis",
+          "weightage": "25%",
+          "description": "Standard costing, calculation of variances, operating statements, and divisional performance.",
+          "nodes": [
+            {
+              "id": "c4-s3-n1",
+              "name": "Standard Costing & Variance Analysis",
+              "code": "C4.3.1",
+              "category": "Variance Analysis",
+              "weightage": "25%",
+              "description": "Establishing standard costs; sales price and volume variances; material price and usage variances; labor rate, efficiency, and idle time variances; overhead variances; operating statement reconciliation; ROI and RI for divisional performance.",
+              "topics": [
+                "Purpose of standard costing and types of standards (ideal, attainable, basic, current)",
+                "Sales variances: Price variance and volume variance",
+                "Direct material variances: Price variance and usage variance",
+                "Direct labor variances: Rate variance, efficiency variance, and idle time variance",
+                "Variable overhead expenditure and efficiency variances",
+                "Fixed overhead expenditure and volume variances",
+                "Preparation of standard cost operating statements reconciling budgeted and actual profit",
+                "Divisional performance metrics: Return on Investment (ROI) vs Residual Income (RI)"
+              ],
+              "learningOutcomes": [
+                "Calculate all standard cost variances and identify operational causes.",
+                "Reconcile budgeted profit to actual profit in an operating statement.",
+                "Evaluate investment centers using ROI and Residual Income."
+              ],
+              "checklists": [
+                "Master formulas for all 10 standard cost variances",
+                "Draft 2 full profit reconciliation statements with all variances"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4-s4",
+          "title": "Area 4: Management Decision Making",
+          "name": "Area 4: Management Decision Making",
+          "weightage": "20%",
+          "description": "Breakeven analysis, limiting factor decisions, make or buy, shutdown decisions.",
+          "nodes": [
+            {
+              "id": "c4-s4-n1",
+              "name": "CVP Analysis & Short-term Decisions",
+              "code": "C4.4.1",
+              "category": "Decision Science",
+              "weightage": "20%",
+              "description": "Cost-Volume-Profit (CVP) analysis, break-even point, margin of safety, target profit; single limiting factor decisions; make-or-buy decisions; shutdown or continuation of segments; relevant costing principles.",
+              "topics": [
+                "CVP analysis assumptions and multi-product break-even charts",
+                "Break-even volume, break-even revenue, and margin of safety calculations",
+                "Single limiting factor analysis: Contribution per unit of scarce resource",
+                "Make-or-buy decisions and optimal product mix determination",
+                "Relevant costs: Opportunity costs, avoidable costs, sunk costs",
+                "Special order acceptance and minimum pricing decisions"
+              ],
+              "learningOutcomes": [
+                "Calculate break-even points, contribution-to-sales ratios, and margins of safety.",
+                "Determine optimal production schedules under resource constraints.",
+                "Apply relevant costing to make-or-buy and special pricing decisions."
+              ],
+              "checklists": [
+                "Solve 4 scarce resource ranking and allocation problems",
+                "Review relevant vs non-relevant cost rules"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4-s5",
+          "title": "Area 5: Technology & Data in Management Accounting",
+          "name": "Area 5: Technology & Data in Management Accounting",
+          "weightage": "10%",
+          "description": "Data analytics, spreadsheet modeling, ERP integration, and ethical data governance.",
+          "nodes": [
+            {
+              "id": "c4-s5-n1",
+              "name": "Digital Management Information & BI",
+              "code": "C4.5.1",
+              "category": "Management Information Systems",
+              "weightage": "10%",
+              "description": "Role of Management Information Systems (MIS); data extraction, transformation and loading (ETL); business intelligence dashboards; sensitivity analysis using spreadsheet tools; data integrity and ethics in reporting.",
+              "topics": [
+                "Role of enterprise resource planning (ERP) systems in management accounting",
+                "Business intelligence (BI) tools: Power BI, Tableau for executive KPI dashboards",
+                "Spreadsheet modeling techniques: What-if analysis, Goal seek, Scenario manager",
+                "Data security, validation controls, and error prevention in financial models",
+                "Ethical obligations when presenting management information to leadership"
+              ],
+              "learningOutcomes": [
+                "Explain how modern MIS and BI tools enhance managerial decision-making.",
+                "Apply spreadsheet sensitivity analysis to cost models.",
+                "Ensure accuracy, objectivity, and ethical presentation of operational reports."
+              ],
+              "checklists": [
+                "Review key Excel financial modeling functions (XLOOKUP, SUMIFS, What-If)",
+                "Understand data governance rules in management reporting"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

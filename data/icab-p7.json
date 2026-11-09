@@ -1,0 +1,240 @@
+{
+  "id": "icab-p7",
+  "title": "ICAB P7 - IT Governance",
+  "paperCode": "P7",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "4.0 Hours",
+  "format": "Written & IS Audit Technical Paper (Aligned with CISA)",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "CISA",
+    "IT Audit",
+    "COBIT",
+    "Cybersecurity"
+  ],
+  "summary": "Aligned with ISACA CISA standards, covering IT policies and cyber laws, COBIT/ITIL governance frameworks, Information Systems audit process, cybersecurity, BCP/DRP, and Big Data/AI.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p7"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for IT Governance. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p7-s1",
+          "title": "Area 1: IT Policies, Cyber Laws & Data Protection",
+          "name": "Area 1: IT Policies, Cyber Laws & Data Protection",
+          "weightage": "15%",
+          "description": "National IT Policy 2018, Cyber Security Act 2023, ICT Act 2006, and international data laws (GDPR).",
+          "nodes": [
+            {
+              "id": "p7-s1-n1",
+              "name": "National Cyber Legislation & Regulatory Compliance",
+              "code": "P7.1.1",
+              "category": "IT Law & Compliance",
+              "weightage": "15%",
+              "description": "National IT Policy 2018 strategic objectives; Information and Communication Technology (ICT) Act 2006 (amended 2013); Cyber Security Act 2023; digital evidence admissibility; legal protections for critical information infrastructure (CII); GDPR and global data compliance.",
+              "topics": [
+                "National IT Policy 2018: Vision for digital economy, governance, and human capital",
+                "ICT Act 2006 & Cyber Security Act 2023: Offenses, unauthorized access, hacking, electronic fraud",
+                "Critical Information Infrastructure (CII): Identification, security audits, and penalties for attack",
+                "Electronic signatures and legal evidentiary value of digital records",
+                "Data privacy principles and cross-border data transfer rules under GDPR and local laws",
+                "Intellectual property in software, copyright, and software licensing compliance"
+              ],
+              "learningOutcomes": [
+                "Evaluate enterprise compliance with Bangladesh Cyber Security Act 2023.",
+                "Determine legal admissibility requirements for digital audit evidence.",
+                "Assess GDPR risks for cross-border e-commerce and financial platforms."
+              ],
+              "checklists": [
+                "Read National Cyber Legislation & Regulatory Compliance in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p7-s2",
+          "title": "Area 2: IT Governance Frameworks & Board Oversight",
+          "name": "Area 2: IT Governance Frameworks & Board Oversight",
+          "weightage": "25%",
+          "description": "COBIT 2019, ITIL 4, ISO/IEC 27001, IT steering committees, and IT investment governance.",
+          "nodes": [
+            {
+              "id": "p7-s2-n1",
+              "name": "COBIT 2019, ITIL 4 & Strategic Alignment",
+              "code": "P7.2.1",
+              "category": "IT Governance",
+              "weightage": "25%",
+              "description": "IT governance principles and Board oversight; COBIT 2019 framework (Governance vs Management, 40 core objectives); ITIL 4 service management; ISO/IEC 27001 Information Security Management System (ISMS); IT strategy committee and steering committee roles; IT balanced scorecard.",
+              "topics": [
+                "Definition of IT Governance and difference between governance and management",
+                "COBIT 2019 architecture: Governance System Principles, Design Factors, Focus Areas",
+                "COBIT domains: EDM (Evaluate, Direct, Monitor), APO, BAI, DSS, MEA",
+                "ITIL 4 Service Value System (SVS) and Service Value Chain",
+                "Role of IT Strategy Committee at the Board level and executive IT Steering Committee",
+                "IT risk management frameworks: Risk appetite, risk register, and heat maps",
+                "Measuring IT value delivery using IT Balanced Scorecard"
+              ],
+              "learningOutcomes": [
+                "Design enterprise IT governance structures applying COBIT 2019.",
+                "Establish roles for Board IT Strategy Committees.",
+                "Evaluate IT service delivery against ITIL 4 standards."
+              ],
+              "checklists": [
+                "Read COBIT 2019, ITIL 4 & Strategic Alignment in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p7-s3",
+          "title": "Area 3: Information Systems Audit Process & CAATs",
+          "name": "Area 3: Information Systems Audit Process & CAATs",
+          "weightage": "30%",
+          "description": "IS audit planning, ISACA Standards, testing IT controls, sampling, and CAATs.",
+          "nodes": [
+            {
+              "id": "p7-s3-n1",
+              "name": "IS Audit Execution, Controls Testing & CAATs",
+              "code": "P7.3.1",
+              "category": "IS Audit",
+              "weightage": "30%",
+              "description": "ISACA Information Systems Audit Standards and Code of Professional Ethics; risk-based IS audit planning; auditing IT General Controls (ITGC) and Application Controls; Computer-Assisted Audit Techniques (CAATs: IDEA, ACL); continuous auditing and reporting.",
+              "topics": [
+                "ISACA IS Audit Standards, Guidelines, and Code of Professional Ethics",
+                "Developing a risk-based IS audit program and audit charter",
+                "Auditing IT General Controls: Logical access, physical security, program change management, computer operations",
+                "Auditing Application Controls: Input controls, processing controls, output controls, error handling",
+                "Computer-Assisted Audit Techniques (CAATs): Data extraction, reconciliation, duplicate detection using ACL/IDEA",
+                "Continuous auditing and automated continuous monitoring techniques",
+                "Drafting IS audit findings, risk ratings, and management recommendations"
+              ],
+              "learningOutcomes": [
+                "Conduct an IS audit in accordance with ISACA standards.",
+                "Perform comprehensive testing of ITGCs and application controls.",
+                "Apply CAATs for automated audit testing and fraud detection."
+              ],
+              "checklists": [
+                "Read IS Audit Execution, Controls Testing & CAATs in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p7-s4",
+          "title": "Area 4: Cybersecurity, BCP & Disaster Recovery",
+          "name": "Area 4: Cybersecurity, BCP & Disaster Recovery",
+          "weightage": "20%",
+          "description": "Threat intelligence, penetration testing, SOC, BCP/DRP testing, and ransomware resilience.",
+          "nodes": [
+            {
+              "id": "p7-s4-n1",
+              "name": "Cyber Defense, Incident Response & BCP/DRP",
+              "code": "P7.4.1",
+              "category": "Cyber & Resilience",
+              "weightage": "20%",
+              "description": "Defense-in-depth architecture; Security Operations Center (SOC); vulnerability assessments and penetration testing; cyber incident response plan; Business Impact Analysis (BIA); Business Continuity Plan (BCP) and Disaster Recovery Plan (DRP) testing methods (walkthrough, simulation, parallel, full interruption).",
+              "topics": [
+                "Defense-in-depth principles: Perimeter security, endpoint protection, zero-trust architecture",
+                "Vulnerability scanning, ethical hacking, and penetration testing methodologies",
+                "Security Information and Event Management (SIEM) and 24/7 SOC monitoring",
+                "Cyber incident response lifecycle: Preparation, Detection, Containment, Eradication, Recovery",
+                "Business Impact Analysis (BIA): Determining critical business functions, RTO, and RPO",
+                "Disaster Recovery hot sites, warm sites, and cold sites evaluation",
+                "BCP/DRP testing types: Checklist review, tabletop walkthrough, simulation, parallel test, cutover"
+              ],
+              "learningOutcomes": [
+                "Evaluate zero-trust and defense-in-depth cybersecurity architectures.",
+                "Conduct a Business Impact Analysis (BIA) and establish recovery targets.",
+                "Design and evaluate disaster recovery testing exercises."
+              ],
+              "checklists": [
+                "Read Cyber Defense, Incident Response & BCP/DRP in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p7-s5",
+          "title": "Area 5: Big Data, AI & Emerging Tech in AIS",
+          "name": "Area 5: Big Data, AI & Emerging Tech in AIS",
+          "weightage": "10%",
+          "description": "Big Data in AIS, blockchain in auditing, AI-powered fraud detection, and cloud audit.",
+          "nodes": [
+            {
+              "id": "p7-s5-n1",
+              "name": "Big Data Analytics, Blockchain & AI in Audit",
+              "code": "P7.5.1",
+              "category": "Emerging Tech Audit",
+              "weightage": "10%",
+              "description": "Big Data applications in Accounting Information Systems (AIS); blockchain technology for audit trail verification; Artificial Intelligence in forensic accounting and automated fraud detection; auditing cloud service providers and SOC reports (SOC 1, SOC 2 Type II).",
+              "topics": [
+                "Big Data architecture in modern enterprise accounting systems",
+                "Using analytics and machine learning for journal entry testing and anomaly detection",
+                "Blockchain and smart contracts: Triple-entry bookkeeping and immutable audit logs",
+                "Auditing artificial intelligence algorithms: Bias, explainability, and validation",
+                "Third-party cloud vendor audits: Evaluating SOC 1 / SSAE 18 and SOC 2 Type II reports"
+              ],
+              "learningOutcomes": [
+                "Analyze Big Data in financial systems for fraud patterns.",
+                "Audit smart contracts and blockchain ledger transactions.",
+                "Interpret SOC 1 and SOC 2 reports for cloud outsourced services."
+              ],
+              "checklists": [
+                "Read Big Data Analytics, Blockchain & AI in Audit in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

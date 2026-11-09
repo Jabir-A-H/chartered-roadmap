@@ -1,0 +1,198 @@
+{
+  "id": "icab-p5",
+  "title": "ICAB P5 - Business Strategy & Technology",
+  "paperCode": "P5",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Strategic Case Analysis Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "Strategy",
+    "Tech Transformation",
+    "Leadership"
+  ],
+  "summary": "Strategic formulation, competitive analysis, strategic choice, methods of strategic development, technology integration, performance monitoring, and business ethics.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p5"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Business Strategy & Technology. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p5-s1",
+          "title": "Area 1: Strategic Formulation & Manifold Analysis",
+          "name": "Area 1: Strategic Formulation & Manifold Analysis",
+          "weightage": "35%",
+          "description": "External environmental analysis, resource-based view (VRIO), core competencies, competitor profiling.",
+          "nodes": [
+            {
+              "id": "p5-s1-n1",
+              "name": "Strategic Audit, Resource View & Industry Dynamics",
+              "code": "P5.1.1",
+              "category": "Strategic Analysis",
+              "weightage": "35%",
+              "description": "Strategic direction and mission; PESTEL environmental audit; Porter's Diamond of national advantage; Resource-Based View (RBV); VRIO framework (Value, Rarity, Inimitability, Organization); Porter's Value Chain; strategic groups and benchmarking.",
+              "topics": [
+                "Strategic planning process: Vision, mission, strategic intent",
+                "External macro-environmental forecasting and scenario planning",
+                "Porter's Diamond model for competitive advantage of nations (Bangladesh RMG/Pharma)",
+                "Resource-Based View: Tangible vs intangible assets, threshold vs distinctive capabilities",
+                "VRIO framework analysis to test for sustainable competitive advantage",
+                "Porter's Value Chain: Primary activities, support activities, margin optimization",
+                "Strategic group analysis and competitive rivalry mapping"
+              ],
+              "learningOutcomes": [
+                "Conduct comprehensive VRIO resource audits.",
+                "Apply Porter's Diamond to analyze emerging export sectors in Bangladesh.",
+                "Deconstruct corporate operations using Value Chain analysis."
+              ],
+              "checklists": [
+                "Read Strategic Audit, Resource View & Industry Dynamics in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p5-s2",
+          "title": "Area 2: Strategic Choice & Evaluation",
+          "name": "Area 2: Strategic Choice & Evaluation",
+          "weightage": "35%",
+          "description": "Porter's generic strategies, Ansoff's matrix, evaluation criteria (SFA: Suitability, Feasibility, Acceptability).",
+          "nodes": [
+            {
+              "id": "p5-s2-n1",
+              "name": "Generic Strategies, Growth Vectors & SFA Evaluation",
+              "code": "P5.2.1",
+              "category": "Strategic Choice",
+              "weightage": "35%",
+              "description": "Porter's Generic Strategies (Cost leadership, Differentiation, Focus); Bowman's Strategy Clock; Ansoff's Growth Vector matrix; Blue Ocean Strategy; methods of development: Organic growth, Mergers & Acquisitions, Strategic alliances/Joint ventures; SFA evaluation framework (Suitability, Feasibility, Acceptability).",
+              "topics": [
+                "Porter's generic competitive strategies: Cost leadership, differentiation, focus",
+                "Bowman's Strategy Clock: 8 strategic positions and hybrid strategies",
+                "Ansoff's Matrix: Market penetration, market development, product development, diversification",
+                "Blue Ocean Strategy: Value innovation, 4 Actions framework (Eliminate, Reduce, Raise, Create)",
+                "Growth pathways: Organic internal development vs M&A vs Joint ventures/alliances",
+                "Johnson, Scholes & Whittington SFA framework: Suitability, Feasibility, Acceptability",
+                "Financial acceptability metrics: Return on Capital, Cash flow impact, Shareholder Value Added"
+              ],
+              "learningOutcomes": [
+                "Select competitive positioning using Bowman's Strategy Clock.",
+                "Evaluate strategic options using the SFA framework.",
+                "Formulate M&A versus alliance strategies for international expansion."
+              ],
+              "checklists": [
+                "Read Generic Strategies, Growth Vectors & SFA Evaluation in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p5-s3",
+          "title": "Area 3: Implementation, Technology & Digital KPIs",
+          "name": "Area 3: Implementation, Technology & Digital KPIs",
+          "weightage": "20%",
+          "description": "Balanced Scorecard, change management, digital business models, and IT integration.",
+          "nodes": [
+            {
+              "id": "p5-s3-n1",
+              "name": "Balanced Scorecard, Change Management & Tech Execution",
+              "code": "P5.3.1",
+              "category": "Strategy Execution",
+              "weightage": "20%",
+              "description": "Strategy implementation across business units; Kaplan & Norton's Balanced Scorecard; change management models (Kotter's 8 steps, Lewin's unfreeze-change-refreeze); digital transformation and technology integration in supply chains; monitoring strategic performance.",
+              "topics": [
+                "Aligning functional strategies (Marketing, Finance, Operations, HR) with corporate goals",
+                "Balanced Scorecard perspectives: Financial, Customer, Internal Business Process, Learning & Growth",
+                "Strategy maps linking non-financial leading indicators to financial lagging outcomes",
+                "Managing organizational change: Resistance causes, cultural web analysis (Johnson)",
+                "Lewin's 3-stage change model and Kotter's 8-step transformation framework",
+                "Integrating cloud, AI, and big data into enterprise operational models"
+              ],
+              "learningOutcomes": [
+                "Construct Balanced Scorecards with balanced financial and operational KPIs.",
+                "Design change management programs to overcome resistance.",
+                "Align technology investments with strategic enterprise objectives."
+              ],
+              "checklists": [
+                "Read Balanced Scorecard, Change Management & Tech Execution in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p5-s4",
+          "title": "Area 4: Strategic Ethics, Governance & ESG",
+          "name": "Area 4: Strategic Ethics, Governance & ESG",
+          "weightage": "10%",
+          "description": "Business ethics in strategy, stakeholder management, and corporate sustainability.",
+          "nodes": [
+            {
+              "id": "p5-s4-n1",
+              "name": "Strategic Ethics, Stakeholder Governance & ESG Strategy",
+              "code": "P5.4.1",
+              "category": "Strategic Governance",
+              "weightage": "10%",
+              "description": "Ethical considerations in strategic planning; Carroll's CSR Pyramid; stakeholder management and ethical leadership; ESG strategy alignment with UN Sustainable Development Goals (SDGs); data privacy and algorithmic ethics in corporate decisions.",
+              "topics": [
+                "Ethical dilemmas in strategic decisions (outsourcing, factory relocations, environmental trade-offs)",
+                "Carroll's Corporate Social Responsibility Pyramid: Economic, Legal, Ethical, Philanthropic",
+                "ESG integration in corporate strategy and national SDG commitments in Bangladesh",
+                "Ethical governance of technology, artificial intelligence, and automated decision systems",
+                "Whistleblowing policies and fostering ethical corporate cultures"
+              ],
+              "learningOutcomes": [
+                "Evaluate strategic plans against ethical principles and ESG standards.",
+                "Apply Carroll's CSR pyramid to business decisions.",
+                "Address data ethics and privacy in algorithmic business models."
+              ],
+              "checklists": [
+                "Read Strategic Ethics, Stakeholder Governance & ESG Strategy in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

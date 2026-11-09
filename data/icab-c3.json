@@ -1,0 +1,275 @@
+{
+  "id": "icab-c3",
+  "title": "ICAB C3 - Business, Technology and Finance",
+  "paperCode": "C3",
+  "level": "Certificate Level",
+  "marks": 100,
+  "duration": "1.5 Hours",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "Business Strategy",
+    "Technology",
+    "Finance"
+  ],
+  "summary": "Introduces business operations, organisational design, financial markets, strategic management, corporate governance, CSR, and digital transformation.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c3"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Business, Technology and Finance. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c3-s1",
+          "title": "Area 1: Business Objectives & Functions",
+          "name": "Area 1: Business Objectives & Functions",
+          "weightage": "10%",
+          "description": "Business purpose, mission, stakeholder theory, and core operational functions.",
+          "nodes": [
+            {
+              "id": "c3-s1-n1",
+              "name": "Business Purpose, Stakeholders & Functions",
+              "code": "C3.1.1",
+              "category": "Business Management",
+              "weightage": "10%",
+              "description": "What is a business; primary and secondary objectives; profit-seeking vs non-profit; Mendelow's stakeholder matrix; core business functions: Operations, Marketing, HR, IT, and Finance.",
+              "topics": [
+                "Business definitions, mission statements, vision and values",
+                "Stakeholder identification and Mendelow's Power-Interest matrix",
+                "Core functional areas: Marketing mix (4Ps/7Ps), Operations management, Supply chain",
+                "Human Resource Management: Recruitment, appraisal, and labor regulations",
+                "Coordination between business functions to deliver customer value"
+              ],
+              "learningOutcomes": [
+                "Analyze organizational objectives and stakeholder expectations.",
+                "Apply Mendelow's matrix to categorize stakeholder influence.",
+                "Describe how core business functions interact."
+              ],
+              "checklists": [
+                "Review stakeholder power/interest mapping",
+                "Summarize marketing 7Ps and supply chain concepts"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3-s2",
+          "title": "Area 2: Business & Organisational Structures",
+          "name": "Area 2: Business & Organisational Structures",
+          "weightage": "15%",
+          "description": "Organisational design, centralization vs decentralization, Mintzberg's configurations.",
+          "nodes": [
+            {
+              "id": "c3-s2-n1",
+              "name": "Organisational Structures & Design",
+              "code": "C3.2.1",
+              "category": "Organisational Behaviour",
+              "weightage": "15%",
+              "description": "Management hierarchy, authority, power, delegation, span of control; functional, divisional, matrix and boundaryless structures; Mintzberg's five organisational configurations; shared service centres and outsourcing.",
+              "topics": [
+                "Power, authority, responsibility, and accountability definitions",
+                "Tall vs flat organizational structures and span of control",
+                "Functional, divisional, matrix, and project-based structures",
+                "Mintzberg's 5 organizational building blocks and configurations",
+                "Centralization vs decentralization trade-offs",
+                "Shared service centers, outsourcing, and offshoring models"
+              ],
+              "learningOutcomes": [
+                "Evaluate advantages and disadvantages of various organizational structures.",
+                "Apply Mintzberg's organizational configuration models.",
+                "Assess structural fit with strategic objectives."
+              ],
+              "checklists": [
+                "Draw matrix and divisional structure comparison diagrams",
+                "Learn Mintzberg's 5 organizational components"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3-s3",
+          "title": "Area 3: The Role of Finance & Financial Markets",
+          "name": "Area 3: The Role of Finance & Financial Markets",
+          "weightage": "20%",
+          "description": "Finance function structure, capital markets, banking system, and sources of finance.",
+          "nodes": [
+            {
+              "id": "c3-s3-n1",
+              "name": "Finance Function & Financial Markets",
+              "code": "C3.3.1",
+              "category": "Financial Markets",
+              "weightage": "20%",
+              "description": "Role of the finance function: Treasury, financial accounting, management accounting; the banking system and Bangladesh Bank; money markets vs capital markets; equity, debt, Islamic finance (Sukuk, Murabaha); SME financing options.",
+              "topics": [
+                "Key responsibilities of the modern finance function",
+                "Financial intermediaries, central banking role of Bangladesh Bank",
+                "Money markets (Treasury bills, commercial paper) vs Capital markets (Shares, bonds)",
+                "Stock exchanges: Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE)",
+                "Short-term vs long-term sources of business finance",
+                "Islamic finance principles and key contracts: Murabaha, Ijara, Mudaraba, Sukuk",
+                "Microfinance, angel investing, and venture capital for SMEs in Bangladesh"
+              ],
+              "learningOutcomes": [
+                "Explain the structure and responsibilities of the finance function.",
+                "Differentiate money market and capital market instruments in Bangladesh.",
+                "Compare conventional finance with Islamic financial contracts."
+              ],
+              "checklists": [
+                "Study DSE and capital market structure",
+                "Compare equity vs debt financing pros and cons",
+                "Review Islamic finance terminology"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3-s4",
+          "title": "Area 4: External Environment of Business",
+          "name": "Area 4: External Environment of Business",
+          "weightage": "15%",
+          "description": "PESTEL environmental analysis, Porter's Five Forces, macroeconomic policy.",
+          "nodes": [
+            {
+              "id": "c3-s4-n1",
+              "name": "PESTEL Analysis & Industry Competitiveness",
+              "code": "C3.4.1",
+              "category": "Strategic Analysis",
+              "weightage": "15%",
+              "description": "PESTEL framework (Political, Economic, Social, Technological, Environmental, Legal); macroeconomic policies (fiscal, monetary, inflation, interest rates, exchange rates); Porter's Five Forces industry analysis.",
+              "topics": [
+                "Macro-environmental scanning using PESTEL",
+                "Fiscal policy, government expenditure, taxation, and budget deficits",
+                "Monetary policy, interest rate transmission, and foreign exchange reserves",
+                "Demographic trends and socio-cultural shifts in emerging markets",
+                "Porter's Five Forces: Buyer power, supplier power, substitutes, new entrants, rivalry",
+                "Competitor analysis and industry life cycle phases"
+              ],
+              "learningOutcomes": [
+                "Conduct a PESTEL analysis for a commercial enterprise.",
+                "Explain how fiscal and monetary policy decisions affect businesses.",
+                "Apply Porter's Five Forces to evaluate industry attractiveness."
+              ],
+              "checklists": [
+                "Practice PESTEL breakdown on a Bangladesh textile or fintech firm",
+                "Map Porter's 5 forces for local pharmaceutical industry"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3-s5",
+          "title": "Area 5: Governance, Ethics & CSR",
+          "name": "Area 5: Governance, Ethics & CSR",
+          "weightage": "15%",
+          "description": "Corporate governance codes, agency theory, board structures, ethical culture, and CSR.",
+          "nodes": [
+            {
+              "id": "c3-s5-n1",
+              "name": "Corporate Governance & Sustainability",
+              "code": "C3.5.1",
+              "category": "Ethics & Governance",
+              "weightage": "15%",
+              "description": "Agency theory and conflict of interest; role of the Board of Directors, NEDs, and Audit Committee; BSEC Corporate Governance Code; corporate social responsibility (CSR); sustainability reporting frameworks.",
+              "topics": [
+                "Separation of ownership and control (Agency problem)",
+                "Corporate governance principles: Fairness, Transparency, Accountability, Responsibility",
+                "Board composition: Executive vs Independent Non-Executive Directors (NEDs)",
+                "Role of board committees: Audit, Nomination, Remuneration",
+                "BSEC Corporate Governance Code requirements for listed companies in Bangladesh",
+                "Corporate Social Responsibility (CSR) and stakeholder engagement",
+                "Triple Bottom Line (People, Planet, Profit) and UN SDGs"
+              ],
+              "learningOutcomes": [
+                "Explain the agency theory and governance mechanisms to protect shareholders.",
+                "State the requirements of BSEC Corporate Governance Code.",
+                "Describe how CSR and sustainability impact long-term corporate value."
+              ],
+              "checklists": [
+                "Review key provisions of BSEC Corporate Governance Code 2018",
+                "Summarize duties and independence requirements of Audit Committee"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3-s6",
+          "title": "Area 6: Technology, Data Analysis & Digitalization",
+          "name": "Area 6: Technology, Data Analysis & Digitalization",
+          "weightage": "25%",
+          "description": "Cloud computing, Big Data, AI, automation, cybersecurity, and digital business models.",
+          "nodes": [
+            {
+              "id": "c3-s6-n1",
+              "name": "Digital Transformation & Data Analytics",
+              "code": "C3.6.1",
+              "category": "Technology & AI",
+              "weightage": "25%",
+              "description": "Digital disruption and business model innovation (e-commerce, platforms, FinTech); Big Data characteristics (5Vs); Artificial Intelligence, Machine Learning and Robotic Process Automation (RPA) in business; cloud services (SaaS, PaaS, IaaS); cybersecurity threats and data protection fundamentals.",
+              "topics": [
+                "Digital business models: E-commerce, platform ecosystems, subscription economy",
+                "Big Data analytics: Volume, Velocity, Variety, Veracity, Value",
+                "AI and Machine Learning applications in accounting, auditing, and forecasting",
+                "Robotic Process Automation (RPA) for routine finance operations",
+                "Cloud computing architectures and benefits/risks for enterprise systems",
+                "Cybersecurity threats: Phishing, ransomware, data breaches, and controls",
+                "Data privacy, Bangladesh Cyber Security Act, and ethical use of customer data"
+              ],
+              "learningOutcomes": [
+                "Explain how emerging technologies transform business models and finance operations.",
+                "Identify the business value and risks of Big Data and Artificial Intelligence.",
+                "Recognize cybersecurity threats and essential enterprise control measures."
+              ],
+              "checklists": [
+                "Learn the 5Vs of Big Data and their business applications",
+                "Understand Cloud deployment models (Public, Private, Hybrid)",
+                "Review Cyber Security Act data protection obligations"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

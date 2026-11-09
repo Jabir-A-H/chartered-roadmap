@@ -1,17 +1,226 @@
 /**
  * Chartered Roadmap - Application Controller
  * Handles interactive node mapping, route switching, progress tracking,
- * drawer state, sub-roadmap portals, and URL hash routing.
+ * drawer state, sub-roadmap portals, search & command palette, explore catalog,
+ * and URL hash routing.
  */
 
 (function () {
   'use strict';
 
-  // State keys & Constants
+  // -------------------------------------------------------------
+  // State Keys & Roadmap Catalog
+  // -------------------------------------------------------------
   const PROGRESS_STORAGE_KEY_V2 = 'chartered-roadmap-progress-v2';
   const PROGRESS_STORAGE_KEY_V1 = 'chartered-roadmap-progress-v1';
   const THEME_STORAGE_KEY = 'chartered-roadmap-theme';
-  const KNOWN_ROADMAPS = ['icab-it-labs', 'icab', 'acca'];
+
+  const ROADMAP_CATALOG = {
+    'icab': {
+      id: 'icab',
+      title: 'ICAB CA Qualification (Curriculum 2025)',
+      code: 'ICAB',
+      level: 'All Levels (1,600 Marks)',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Complete qualification roadmap covering Certificate, Professional, and Advanced levels, 17 exam papers, 5 IT practical labs, articleship routes, and ethics modules under the 2025 Syllabus.',
+      tags: ['ICAB', 'CA', 'Bangladesh', 'Chartered Accountant', 'Curriculum 2025']
+    },
+    'acca': {
+      id: 'acca',
+      title: 'ACCA Global Qualification',
+      code: 'ACCA',
+      level: 'Global Qualification',
+      category: 'qual',
+      categoryLabel: 'Full Qualification',
+      summary: 'Comprehensive ACCA qualification pathway: Applied Knowledge, Applied Skills, Strategic Professional, Ethics and Professional Skills Module (EPSM), and Practical Experience Requirement (PER).',
+      tags: ['ACCA', 'Global', 'Chartered Certified', 'IFRS']
+    },
+    'icab-it-labs': {
+      id: 'icab-it-labs',
+      title: 'ICAB IT Practical Labs',
+      code: 'IT LABS',
+      level: 'Certificate & Professional Skills',
+      category: 'labs',
+      categoryLabel: 'Practical Skills',
+      summary: '5 hands-on IT practical workshops: QuickBooks/Sage ERP, Applied Excel for Accountants, BI & Big Data Analytics with AI, IS Security & Forensics, and IS Audit Banking CAATs.',
+      tags: ['IT Labs', 'QuickBooks', 'Excel', 'Data Analytics', 'IS Audit', 'AI', 'Cybersecurity']
+    },
+    'icab-c1': {
+      id: 'icab-c1',
+      title: 'ICAB C1 - Accounting',
+      code: 'C1',
+      level: 'Certificate Level · 100 Marks · 1.5 Hours',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Double-entry bookkeeping, adjusting entries, financial statement preparation for sole traders, partnerships, and limited companies under IFRS, and public financial management.',
+      tags: ['C1', 'Accounting', 'Bookkeeping', 'IFRS', 'PFM', 'Trial Balance']
+    },
+    'icab-c2': {
+      id: 'icab-c2',
+      title: 'ICAB C2 - Assurance',
+      code: 'C2',
+      level: 'Certificate Level · 100 Marks · 1.5 Hours',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Assurance framework, five elements, internal control systems, obtaining audit evidence, and professional ethics under ISA.',
+      tags: ['C2', 'Assurance', 'Audit', 'Internal Controls', 'Evidence', 'Ethics']
+    },
+    'icab-c3': {
+      id: 'icab-c3',
+      title: 'ICAB C3 - Business, Technology and Finance',
+      code: 'C3',
+      level: 'Certificate Level · 100 Marks · 1.5 Hours',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Business objectives, organizational structures, financial markets, PESTEL environment, corporate governance, CSR, and digital transformation.',
+      tags: ['C3', 'BTF', 'Business Strategy', 'Finance', 'Governance', 'Digital']
+    },
+    'icab-c4': {
+      id: 'icab-c4',
+      title: 'ICAB C4 - Management Information',
+      code: 'C4',
+      level: 'Certificate Level · 100 Marks · 1.5 Hours',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Cost classification, absorption vs marginal costing, budgeting, variance analysis, CVP decision making, and data analytics in management accounting.',
+      tags: ['C4', 'MI', 'Costing', 'Budgeting', 'Variance Analysis', 'CVP']
+    },
+    'icab-c5': {
+      id: 'icab-c5',
+      title: 'ICAB C5 - Principles of Taxation',
+      code: 'C5',
+      level: 'Certificate Level · 100 Marks · 1.5 Hours',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Bangladesh Income Tax Act 2023, individual and company tax computations, TDS, return filing, and VAT and SD Act 2012.',
+      tags: ['C5', 'Taxation', 'Income Tax Act 2023', 'VAT', 'TDS', 'NBR']
+    },
+    'icab-c6': {
+      id: 'icab-c6',
+      title: 'ICAB C6 - Business Laws',
+      code: 'C6',
+      level: 'Certificate Level · 50 Marks · 1.0 Hour',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'Companies Act 1994, Negotiable Instruments Act 1881, Partnership Act 1932, Contract Act 1872, Sale of Goods Act, and Labour Act 2006.',
+      tags: ['C6', 'Business Laws', 'Companies Act', 'Contracts', 'Negotiable Instruments', 'Labour Act']
+    },
+    'icab-c7': {
+      id: 'icab-c7',
+      title: 'ICAB C7 - Information Technology',
+      code: 'C7',
+      level: 'Certificate Level · 50 Marks · 1.0 Hour',
+      category: 'cl',
+      categoryLabel: 'Certificate Level',
+      summary: 'System development lifecycle (SDLC), agile methodologies, cloud computing, relational DBMS/SQL, business intelligence, and cybersecurity resilience.',
+      tags: ['C7', 'IT', 'SDLC', 'Agile', 'Cloud', 'DBMS', 'Cybersecurity']
+    },
+    'icab-p1': {
+      id: 'icab-p1',
+      title: 'ICAB P1 - Financial Accounting and Reporting',
+      code: 'P1',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'Single entity financial statements under BFRS/IFRS, consolidated group statements, financial ratio analysis, AAOIFI Islamic accounting, and IPSAS.',
+      tags: ['P1', 'FAR', 'IFRS', 'Consolidation', 'Islamic Finance', 'Cash Flows']
+    },
+    'icab-p2': {
+      id: 'icab-p2',
+      title: 'ICAB P2 - Audit and Assurance',
+      code: 'P2',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'Audit risk model (ISA 315), planning materiality, fraud responsibilities (ISA 240), substantive testing, Key Audit Matters (KAM), and auditor reporting.',
+      tags: ['P2', 'Audit', 'ISA', 'Materiality', 'KAM', 'Audit Risk']
+    },
+    'icab-p3': {
+      id: 'icab-p3',
+      title: 'ICAB P3 - Business Planning: Taxation & Compliance',
+      code: 'P3',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'Tax litigation, appellate tribunal, Alternative Dispute Resolution (ADR), transfer pricing, corporate restructuring, tax holidays, and VAT investigations.',
+      tags: ['P3', 'Tax Planning', 'Transfer Pricing', 'ADR', 'Tribunal', 'VAT Audit']
+    },
+    'icab-p4': {
+      id: 'icab-p4',
+      title: 'ICAB P4 - Financial Management',
+      code: 'P4',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'WACC, Modigliani-Miller capital structure, DCF appraisal under capital rationing, business valuation (FCFF/FCFE), FX/interest rate derivatives, and green finance.',
+      tags: ['P4', 'Financial Management', 'WACC', 'Valuation', 'Derivatives', 'Hedging', 'ESG']
+    },
+    'icab-p5': {
+      id: 'icab-p5',
+      title: 'ICAB P5 - Business Strategy & Technology',
+      code: 'P5',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'VRIO analysis, Porter generic strategies, Bowman Strategy Clock, Ansoff matrix, Balanced Scorecard, change management, and strategic ethics.',
+      tags: ['P5', 'BST', 'Strategy', 'Porter', 'Balanced Scorecard', 'VRIO']
+    },
+    'icab-p6': {
+      id: 'icab-p6',
+      title: 'ICAB P6 - Corporate Laws & Practices',
+      code: 'P6',
+      level: 'Professional Level · 100 Marks · 3.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'Advanced Companies Act practice, RJSC charges, winding up, BSEC Public Issue Rules (IPO book building), Rights Issue, Bank Companies Act, and FERA.',
+      tags: ['P6', 'Corporate Law', 'BSEC', 'IPO', 'Banking Act', 'FERA', 'RJSC']
+    },
+    'icab-p7': {
+      id: 'icab-p7',
+      title: 'ICAB P7 - IT Governance',
+      code: 'P7',
+      level: 'Professional Level · 100 Marks · 4.0 Hours',
+      category: 'pl',
+      categoryLabel: 'Professional Level',
+      summary: 'Aligned with ISACA CISA: National IT Policy, Cyber Security Act 2023, COBIT 2019, ITIL 4, risk-based IS auditing, CAATs, cybersecurity defense, and BCP/DRP.',
+      tags: ['P7', 'IT Governance', 'CISA', 'COBIT', 'IS Audit', 'CAATs', 'BCP']
+    },
+    'icab-v1': {
+      id: 'icab-v1',
+      title: 'ICAB V1 - Corporate Reporting',
+      code: 'V1',
+      level: 'Advanced Level · 100 Marks · 3.5 Hours',
+      category: 'al',
+      categoryLabel: 'Advanced Level',
+      summary: 'Complex IFRS 9 (ECL, hedge accounting), IAS 19 pensions, step acquisitions, foreign subsidiaries (IAS 21), group cash flows, forensic auditing, and IFRS S1/S2 sustainability.',
+      tags: ['V1', 'CR', 'Complex IFRS', 'Group Accounts', 'Forensic', 'ISSB', 'ESG']
+    },
+    'icab-v2': {
+      id: 'icab-v2',
+      title: 'ICAB V2 - Strategic Business Management & Leadership',
+      code: 'V2',
+      level: 'Advanced Level · 100 Marks · 3.5 Hours',
+      category: 'al',
+      categoryLabel: 'Advanced Level',
+      summary: 'Executive leadership, digital disruption, COSO ERM, M&A deal structuring, management buyouts (MBO/LBO), international treasury pooling, and Integrated Reporting (<IR>).',
+      tags: ['V2', 'SBM', 'Executive Strategy', 'M&A', 'LBO', 'Integrated Reporting', 'ERM']
+    },
+    'icab-v3': {
+      id: 'icab-v3',
+      title: 'ICAB V3 - Case Study',
+      code: 'V3',
+      level: 'Advanced Level · 100 Marks · 4.5 Hours',
+      category: 'al',
+      categoryLabel: 'Advanced Level',
+      summary: 'Capstone professional simulation: Advance business information analysis, unseen material synthesis, financial appraisal, risk management, ethical dilemma resolution, and executive board reporting.',
+      tags: ['V3', 'Case Study', 'Capstone', 'Simulation', 'Board Report', 'Executive Advisory']
+    }
+  };
+
+  // Sort KNOWN_ROADMAPS by length descending so specific prefixes (e.g. icab-c1) match before 'icab'
+  const KNOWN_ROADMAPS = Object.keys(ROADMAP_CATALOG).sort((a, b) => b.length - a.length);
+
   const KNOWN_ROUTES = {
     'icab': ['grad', 'hsc', 'pas', 'pro'],
     'icab-it-labs': ['all', 'cl_labs', 'pl_labs'],
@@ -63,12 +272,22 @@
     nodesById: {}
   };
 
+  // Search & Explore UI State
+  const searchState = {
+    isOpen: false,
+    filter: 'all',
+    selectedIndex: -1,
+    results: [],
+    query: ''
+  };
+
   // DOM Elements
   const el = {
     themeToggle: document.getElementById('theme-toggle'),
     themeIcon: document.getElementById('theme-icon'),
     tabIcab: document.getElementById('tab-icab'),
     tabAcca: document.getElementById('tab-acca'),
+    tabExplore: document.getElementById('tab-explore'),
     subroadmapBanner: document.getElementById('subroadmap-banner'),
     subroadmapBackBtn: document.getElementById('subroadmap-back-btn'),
     routeContainer: document.getElementById('route-selector-container'),
@@ -84,7 +303,19 @@
     drawerTitle: document.getElementById('drawer-title'),
     drawerBody: document.getElementById('drawer-body'),
     drawerToggleBtn: document.getElementById('drawer-toggle-btn'),
-    drawerCloseBtn: document.getElementById('drawer-close-btn')
+    drawerCloseBtn: document.getElementById('drawer-close-btn'),
+    modalBackdrop: document.getElementById('modal-backdrop'),
+    searchTriggerBtn: document.getElementById('search-trigger-btn'),
+    searchModal: document.getElementById('search-modal'),
+    searchInput: document.getElementById('search-input'),
+    searchCloseBtn: document.getElementById('search-close-btn'),
+    searchResultsList: document.getElementById('search-results-list'),
+    exploreTriggerBtn: document.getElementById('explore-trigger-btn'),
+    exploreModal: document.getElementById('explore-modal'),
+    exploreCloseBtn: document.getElementById('explore-close-btn'),
+    exploreSearchInput: document.getElementById('explore-search-input'),
+    exploreCatalogGrid: document.getElementById('explore-catalog-grid'),
+    exploreStatSummary: document.getElementById('explore-stat-summary')
   };
 
   // -------------------------------------------------------------
@@ -160,36 +391,39 @@
   }
 
   function loadProgress() {
-    const v2Raw = safeStorage.get(PROGRESS_STORAGE_KEY_V2);
-    if (v2Raw) {
+    let raw = safeStorage.get(PROGRESS_STORAGE_KEY_V2);
+    if (raw) {
       try {
-        state.progress = JSON.parse(v2Raw) || {};
+        state.progress = JSON.parse(raw);
         return;
       } catch (e) {
-        console.warn('Could not parse progress v2:', e);
         state.progress = {};
       }
     }
 
-    // Check for v1 migration
+    // Migration from v1
     const v1Raw = safeStorage.get(PROGRESS_STORAGE_KEY_V1);
     if (v1Raw) {
       try {
-        const v1Data = JSON.parse(v1Raw) || {};
+        const v1Data = JSON.parse(v1Raw);
         state.progress = {};
-        Object.keys(v1Data).forEach((nodeId) => {
-          if (v1Data[nodeId]) {
-            const prefix = nodeId.startsWith('ac') ? 'acca' : 'icab';
-            state.progress[`${prefix}:${nodeId}`] = true;
+        Object.keys(v1Data).forEach((key) => {
+          if (v1Data[key]) {
+            if (key.includes(':')) {
+              state.progress[key] = true;
+            } else if (key.startsWith('lab-')) {
+              state.progress[`icab-it-labs:${key}`] = true;
+            } else if (key.startsWith('a') || key.startsWith('f') || key.startsWith('p') || key.startsWith('s')) {
+              state.progress[`acca:${key}`] = true;
+            } else {
+              state.progress[`icab:${key}`] = true;
+            }
           }
         });
         saveProgress();
       } catch (e) {
-        console.warn('Could not migrate progress v1:', e);
         state.progress = {};
       }
-    } else {
-      state.progress = {};
     }
   }
 
@@ -238,7 +472,7 @@
           } else {
             // Single parameter is a nodeId
             nodeId = parts[0];
-            routeId = matchedQual === 'icab-it-labs' ? 'all' : (matchedQual === 'acca' ? 'standard' : null);
+            routeId = matchedQual === 'icab' ? 'grad' : (matchedQual === 'acca' ? 'standard' : 'all');
           }
         } else {
           routeId = parts[0];
@@ -247,13 +481,17 @@
       }
     }
 
-    if (matchedQual === 'icab-it-labs' && !routeId) {
-      routeId = 'all';
+    if (!routeId) {
+      if (matchedQual === 'icab') routeId = 'grad';
+      else if (matchedQual === 'icab-it-labs') routeId = 'all';
+      else if (matchedQual.startsWith('icab-')) routeId = 'all';
+      else if (matchedQual === 'acca') routeId = 'standard';
+      else routeId = 'all';
     }
 
     return {
       qualId: matchedQual,
-      routeId: routeId || null,
+      routeId: routeId,
       nodeId: nodeId || null
     };
   }
@@ -277,6 +515,8 @@
       baseHash = `icab-${state.routeId || 'grad'}`;
     } else if (state.qualId === 'icab-it-labs') {
       baseHash = `icab-it-labs-${state.routeId || 'all'}`;
+    } else if (state.qualId.startsWith('icab-')) {
+      baseHash = state.qualId;
     } else {
       baseHash = state.routeId && state.routeId !== 'standard' ? `acca-${state.routeId}` : 'acca';
     }
@@ -410,8 +650,8 @@
       const r = routes[key];
       const isActive = key === state.routeId;
       pillsHtml += `
-        <button class="pill-btn ${isActive ? 'active' : ''}" data-route="${key}" title="${r.tag || ''}">
-          ${r.name}
+        <button class="pill-btn ${isActive ? 'active' : ''}" data-route="${key}" title="${escapeHtml(r.tag || '')}">
+          ${escapeHtml(r.name)}
         </button>
       `;
     });
@@ -431,35 +671,48 @@
     let totalNodes = 0;
     let completedNodes = 0;
 
-    stages.forEach((stage, stageIndex) => {
-      const nodes = stage.nodes || [];
-      let stageDone = 0;
-      nodes.forEach((n) => {
+    stages.forEach((stage) => {
+      (stage.nodes || []).forEach((node) => {
         totalNodes++;
-        if (isNodeCompleted(n.id)) {
+        if (isNodeCompleted(node.id)) {
           completedNodes++;
-          stageDone++;
         }
       });
-      const countEl = el.roadmapTree.querySelector(`.hub-btn[data-stage-index="${stageIndex}"] .hub-count`);
-      if (countEl) {
-        countEl.textContent = `${stageDone} / ${nodes.length} completed`;
-      }
     });
 
-    const pct = totalNodes > 0 ? Math.round((completedNodes / totalNodes) * 100) : 0;
-    el.progressBarFill.style.width = `${pct}%`;
-    el.progressText.textContent = `${completedNodes} of ${totalNodes} milestones completed (${pct}%)`;
+    const percent = totalNodes > 0 ? Math.round((completedNodes / totalNodes) * 100) : 0;
+    el.progressBarFill.style.width = `${percent}%`;
+    el.progressText.textContent = `${completedNodes} of ${totalNodes} milestones completed (${percent}%)`;
+
+    // Update hub counters
+    stages.forEach((stage, stageIndex) => {
+      const hubBtn = el.roadmapTree.querySelector(`.hub-btn[data-stage-index="${stageIndex}"]`);
+      if (hubBtn) {
+        const countSpan = hubBtn.querySelector('.hub-count');
+        const nodes = stage.nodes || [];
+        const doneCount = nodes.filter((n) => isNodeCompleted(n.id)).length;
+        if (countSpan) {
+          countSpan.textContent = `${doneCount} / ${nodes.length} completed`;
+        }
+      }
+    });
   }
 
   function renderMap() {
     const stages = getActiveStages();
-    let mapHtml = '';
     state.nodesById = {};
+
+    if (!stages || stages.length === 0) {
+      el.roadmapTree.innerHTML = '<p class="empty-state">No roadmap stages found for this stream.</p>';
+      return;
+    }
+
+    let mapHtml = '';
 
     stages.forEach((stage, stageIndex) => {
       const nodes = stage.nodes || [];
       const half = Math.ceil(nodes.length / 2);
+
       let leftHtml = '';
       let rightHtml = '';
       let stageDoneCount = 0;
@@ -467,22 +720,26 @@
       nodes.forEach((node, nodeIndex) => {
         state.nodesById[node.id] = node;
         const isDone = isNodeCompleted(node.id);
-        if (isDone) {
-          stageDoneCount++;
-        }
+        if (isDone) stageDoneCount++;
 
         const isSelected = state.activeNodeId === node.id;
         const hasSubroadmap = Boolean(node.linkedRoadmaps && node.linkedRoadmaps.length > 0);
+        const subBadgeText = hasSubroadmap ? (node.linkedRoadmaps[0].badge || 'Tracker ↗') : '';
         const categoryClass = `cat-${node.category || 'Admin'}`;
+        const codePrefix = node.code ? `<span class="node-code-tag">${escapeHtml(node.code)}</span> ` : '';
+        const weightTag = node.weightage ? `<span class="node-weight-tag">${escapeHtml(node.weightage)}</span>` : '';
 
         const cardHtml = `
           <button class="node-card ${isDone ? 'done' : ''} ${isSelected ? 'selected' : ''} ${hasSubroadmap ? 'has-subroadmap' : ''}" 
                   data-node-id="${node.id}"
                   aria-pressed="${isDone}">
             <span class="check-icon">✓</span>
-            <span class="node-name">${node.name}</span>
-            <span class="legend-tag ${categoryClass}" style="font-size: 0.65rem; padding: 1px 6px;">${node.category}</span>
-            ${hasSubroadmap ? '<span class="subroadmap-badge" title="Dedicated Practical Skills Roadmap Available">Labs ↗</span>' : ''}
+            <span class="node-name">${codePrefix}${escapeHtml(node.name)}</span>
+            <div class="node-tags-row">
+              <span class="legend-tag ${categoryClass}" style="font-size: 0.65rem; padding: 1px 6px;">${escapeHtml(node.category)}</span>
+              ${weightTag}
+            </div>
+            ${hasSubroadmap ? `<span class="subroadmap-badge" title="Dedicated Tracker / Labs Available">${escapeHtml(subBadgeText)}</span>` : ''}
           </button>
         `;
 
@@ -493,11 +750,13 @@
         }
       });
 
+      const weightageBadge = stage.weightage ? `<span class="stage-weightage-badge">${escapeHtml(stage.weightage)}</span>` : '';
+
       mapHtml += `
         <div class="stage-row" data-stage-index="${stageIndex}">
           <div class="stage-hub-col">
             <button class="hub-btn" data-stage-index="${stageIndex}">
-              ${stage.title}
+              ${escapeHtml(stage.title || stage.name)} ${weightageBadge}
               <span class="hub-count">${stageDoneCount} / ${nodes.length} completed</span>
             </button>
           </div>
@@ -513,23 +772,34 @@
     updateSubroadmapBanner();
 
     // Update Tabs
-    el.tabIcab.classList.toggle('active', state.qualId === 'icab' || state.qualId === 'icab-it-labs');
-    el.tabAcca.classList.toggle('active', state.qualId === 'acca');
+    if (el.tabIcab) {
+      el.tabIcab.classList.toggle('active', state.qualId === 'icab' || state.qualId.startsWith('icab-'));
+    }
+    if (el.tabAcca) {
+      el.tabAcca.classList.toggle('active', state.qualId === 'acca');
+    }
+    if (el.tabExplore) {
+      el.tabExplore.classList.toggle('active', false);
+    }
   }
 
   function updateSubroadmapBanner() {
     if (!el.subroadmapBanner) return;
 
-    if (state.qualId === 'icab-it-labs') {
+    if (state.currentData && state.currentData.parentRoadmap) {
       el.subroadmapBanner.style.display = 'flex';
       if (el.subroadmapBackBtn) {
-        let backText = 'Return to ICAB CA Exam Roadmap';
+        let backText = 'Return to ICAB CA Qualification Roadmap';
         if (state.returnContext && state.returnContext.nodeId) {
           backText = `Return to ICAB (${state.returnContext.nodeId.toUpperCase()})`;
-        } else if (state.returnContext && state.returnContext.routeId) {
-          backText = `Return to ICAB (${state.returnContext.routeId.toUpperCase()})`;
+        } else if (state.currentData.parentRoadmap.nodeId) {
+          backText = `Return to ICAB (${state.currentData.parentRoadmap.nodeId.toUpperCase()})`;
         }
         el.subroadmapBackBtn.innerHTML = `<span class="back-arrow">←</span> ${escapeHtml(backText)}`;
+      }
+      const tag = el.subroadmapBanner.querySelector('.subroadmap-indicator-tag');
+      if (tag) {
+        tag.textContent = state.currentData.level || (state.qualId === 'icab-it-labs' ? 'Companion Practical Skills' : 'Paper Study Tracker');
       }
     } else {
       el.subroadmapBanner.style.display = 'none';
@@ -571,8 +841,14 @@
     // Build rich drawer content
     let html = '';
 
-    // Metadata badges (Marks, Duration, Frequency, Format)
+    // Metadata badges (Marks, Duration, Frequency, Format, Weightage)
     const pills = [];
+    if (node.code) {
+      pills.push(`<span class="drawer-meta-pill pill-code">📌 Code: ${escapeHtml(node.code)}</span>`);
+    }
+    if (node.weightage) {
+      pills.push(`<span class="drawer-meta-pill pill-marks">📊 Weight: ${escapeHtml(node.weightage)}</span>`);
+    }
     if (node.marks) {
       pills.push(`<span class="drawer-meta-pill pill-marks">🎯 ${node.marks} Marks</span>`);
     }
@@ -608,7 +884,55 @@
       </div>
     `;
 
-    // Specification Grid Table
+    // Syllabus Topics / Competencies
+    if (Array.isArray(node.topics) && node.topics.length > 0) {
+      html += `
+        <div class="drawer-section">
+          <div class="drawer-section-label">Syllabus Topics & Competencies</div>
+          <ul class="drawer-bullet-list">
+            ${node.topics.map(t => `<li>${escapeHtml(t)}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    // Learning Outcomes
+    if (Array.isArray(node.learningOutcomes) && node.learningOutcomes.length > 0) {
+      html += `
+        <div class="drawer-section">
+          <div class="drawer-section-label">Course Learning Outcomes (CLOs)</div>
+          <ul class="drawer-bullet-list">
+            ${node.learningOutcomes.map(o => `<li>${escapeHtml(o)}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    // Study Milestones & Checklists
+    if (Array.isArray(node.checklists) && node.checklists.length > 0) {
+      html += `
+        <div class="drawer-section">
+          <div class="drawer-section-label">Study Milestones & Action Checklist</div>
+          <ul class="drawer-check-list">
+            ${node.checklists.map(c => `<li><span class="checklist-bullet">✓</span> ${escapeHtml(c)}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    // Resources & References
+    if (Array.isArray(node.resources) && node.resources.length > 0) {
+      html += `
+        <div class="drawer-section">
+          <div class="drawer-section-label">Recommended Resources</div>
+          <div class="drawer-theme-tags">
+            ${node.resources.map(r => `<span class="theme-tag">📖 ${escapeHtml(r)}</span>`).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Specification Grid Table (for parent ICAB exam papers)
     if (Array.isArray(node.specificationGrid) && node.specificationGrid.length > 0) {
       html += `
         <div class="drawer-section">
@@ -633,20 +957,20 @@
       `;
     }
 
-    // Linked Dedicated Sub-Roadmaps (e.g. ICAB IT Practical Labs)
+    // Linked Dedicated Sub-Roadmaps (e.g. Individual Paper Trackers & IT Practical Labs)
     if (Array.isArray(node.linkedRoadmaps) && node.linkedRoadmaps.length > 0) {
       node.linkedRoadmaps.forEach((link) => {
         html += `
           <div class="companion-card">
             <div class="companion-header">
-              <span class="companion-badge">Companion Practical Skills</span>
-              <h4 class="companion-title">${escapeHtml(link.title || 'Practical Labs Roadmap')}</h4>
+              <span class="companion-badge">${escapeHtml(link.badge || 'Study Tracker ↗')}</span>
+              <h4 class="companion-title">${escapeHtml(link.title || 'Topic Study Roadmap')}</h4>
             </div>
             <p class="companion-desc">
-              ${escapeHtml(link.description || 'Dedicated practical skills roadmap covering applied software and hands-on modules, administered independently by ICAB.')}
+              ${escapeHtml(link.description || 'Dedicated study roadmap covering syllabus chapters, learning outcomes, and topic tracking.')}
             </p>
             <button class="companion-cta-btn" data-action="open-subroadmap" data-roadmap-id="${escapeHtml(link.id)}" data-route="${escapeHtml(link.route || 'all')}">
-              Explore Practical IT Labs Roadmap ↗
+              Open ${escapeHtml(link.title || 'Roadmap')} ↗
             </button>
           </div>
         `;
@@ -678,57 +1002,22 @@
     }
   }
 
-  function openStageDrawer(stageIndex) {
-    const stages = getActiveStages();
-    const stage = stages[stageIndex];
-    if (!stage) return;
-
-    state.activeNodeId = null;
-    state.invokingElement = document.activeElement;
-    let completedCount = 0;
-    (stage.nodes || []).forEach((n) => {
-      if (isNodeCompleted(n.id)) completedCount++;
-    });
-
-    el.drawerCategory.className = 'legend-tag cat-Admin';
-    el.drawerCategory.textContent = 'Stage Overview';
-    el.drawerTitle.textContent = stage.title;
-    el.drawerBody.innerHTML = `
-      <p style="margin-bottom: 8px;"><strong>Focus:</strong> ${stage.subtitle || 'Stage progression'}</p>
-      <p><strong>Status:</strong> ${completedCount} of ${(stage.nodes || []).length} milestones cleared.</p>
-    `;
-
-    el.drawerToggleBtn.style.display = 'none';
-    el.drawer.classList.add('open');
-    el.drawer.setAttribute('aria-hidden', 'false');
-
-    if (el.drawerBackdrop) {
-      el.drawerBackdrop.classList.add('active');
-      el.drawerBackdrop.setAttribute('aria-hidden', 'false');
-    }
-
-    el.roadmapTree.querySelectorAll('.node-card.selected').forEach((c) => c.classList.remove('selected'));
-  }
-
-  function closeDrawer() {
-    const updateUrl = arguments.length > 0 ? arguments[0] : true;
-    state.activeNodeId = null;
-    if (updateUrl) {
-      updateHash(true);
-    }
-
+  function closeDrawer(updateUrl = true) {
     el.drawer.classList.remove('open');
     el.drawer.setAttribute('aria-hidden', 'true');
+
     if (el.drawerBackdrop) {
       el.drawerBackdrop.classList.remove('active');
       el.drawerBackdrop.setAttribute('aria-hidden', 'true');
     }
-    el.drawerToggleBtn.style.display = 'block';
 
-    // Deselect cards surgically
     el.roadmapTree.querySelectorAll('.node-card.selected').forEach((c) => c.classList.remove('selected'));
+    state.activeNodeId = null;
 
-    // Restore focus to invoking element
+    if (updateUrl) {
+      updateHash(true);
+    }
+
     if (state.invokingElement && typeof state.invokingElement.focus === 'function') {
       state.invokingElement.focus();
       state.invokingElement = null;
@@ -736,67 +1025,530 @@
   }
 
   // -------------------------------------------------------------
-  // Event Listeners
+  // Search & Command Palette Controller (Ctrl+K)
+  // -------------------------------------------------------------
+  function openSearchModal() {
+    searchState.isOpen = true;
+    searchState.selectedIndex = -1;
+    searchState.query = '';
+    if (el.searchInput) {
+      el.searchInput.value = '';
+    }
+
+    if (el.searchModal) {
+      el.searchModal.classList.add('open');
+      el.searchModal.setAttribute('aria-hidden', 'false');
+    }
+    if (el.modalBackdrop) {
+      el.modalBackdrop.classList.add('open');
+      el.modalBackdrop.setAttribute('aria-hidden', 'false');
+    }
+
+    renderSearchResults();
+    setTimeout(() => {
+      if (el.searchInput) el.searchInput.focus();
+    }, 50);
+  }
+
+  function closeSearchModal() {
+    searchState.isOpen = false;
+    if (el.searchModal) {
+      el.searchModal.classList.remove('open');
+      el.searchModal.setAttribute('aria-hidden', 'true');
+    }
+    if (el.modalBackdrop && !exploreState.isOpen) {
+      el.modalBackdrop.classList.remove('open');
+      el.modalBackdrop.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  function highlightMatches(text, query) {
+    if (!text || !query) return escapeHtml(text || '');
+    const escapedText = escapeHtml(text);
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return escapedText.replace(regex, '<mark>$1</mark>');
+  }
+
+  function executeSearch(query, filter = 'all') {
+    const q = (query || '').trim().toLowerCase();
+    const results = [];
+
+    // Search catalog roadmaps
+    Object.values(ROADMAP_CATALOG).forEach((item) => {
+      // Category filter check
+      if (filter !== 'all' && item.category !== filter) return;
+
+      let score = 0;
+      let matchedIn = '';
+
+      if (!q) {
+        score = 1;
+      } else {
+        if (item.code && item.code.toLowerCase() === q) {
+          score += 100;
+          matchedIn = `Exact paper code: ${item.code}`;
+        } else if (item.code && item.code.toLowerCase().includes(q)) {
+          score += 50;
+          matchedIn = `Paper code: ${item.code}`;
+        } else if (item.title.toLowerCase().includes(q)) {
+          score += 40;
+          matchedIn = item.title;
+        } else if (item.summary.toLowerCase().includes(q)) {
+          score += 20;
+          matchedIn = item.summary;
+        } else if (item.tags && item.tags.some(t => t.toLowerCase().includes(q))) {
+          score += 15;
+          matchedIn = `Tagged: ${item.tags.join(', ')}`;
+        }
+      }
+
+      if (score > 0) {
+        results.push({
+          type: 'roadmap',
+          roadmapId: item.id,
+          title: item.title,
+          code: item.code,
+          categoryLabel: item.categoryLabel,
+          level: item.level,
+          snippet: matchedIn || item.summary,
+          score: score
+        });
+      }
+    });
+
+    // Also search bundled topics and nodes from window.ROADMAP_DATA if query length >= 2
+    if (q.length >= 2 && window.ROADMAP_DATA) {
+      Object.entries(window.ROADMAP_DATA).forEach(([rId, rData]) => {
+        const catItem = ROADMAP_CATALOG[rId];
+        if (filter !== 'all' && catItem && catItem.category !== filter) return;
+
+        const defaultRoute = rData.routes ? (rData.routes[rData.defaultRoute || 'all'] || Object.values(rData.routes)[0]) : null;
+        if (!defaultRoute) return;
+
+        (defaultRoute.stages || []).forEach((stage) => {
+          (stage.nodes || []).forEach((node) => {
+            let nodeScore = 0;
+            let matchedText = '';
+
+            if (node.name.toLowerCase().includes(q)) {
+              nodeScore += 35;
+              matchedText = `Topic: ${node.name}`;
+            } else if (node.code && node.code.toLowerCase().includes(q)) {
+              nodeScore += 45;
+              matchedText = `Topic code: ${node.code}`;
+            } else if (node.description && node.description.toLowerCase().includes(q)) {
+              nodeScore += 15;
+              matchedText = node.description;
+            } else if (Array.isArray(node.topics) && node.topics.some(t => t.toLowerCase().includes(q))) {
+              nodeScore += 25;
+              const matchedTopic = node.topics.find(t => t.toLowerCase().includes(q));
+              matchedText = `Syllabus item: ${matchedTopic}`;
+            }
+
+            if (nodeScore > 0) {
+              results.push({
+                type: 'node',
+                roadmapId: rId,
+                nodeId: node.id,
+                title: `${node.name} (${catItem ? catItem.code : rId.toUpperCase()})`,
+                code: node.code || (catItem ? catItem.code : ''),
+                categoryLabel: catItem ? catItem.categoryLabel : 'Topic',
+                level: catItem ? catItem.title : rId,
+                snippet: matchedText,
+                score: nodeScore
+              });
+            }
+          });
+        });
+      });
+    }
+
+    // Sort results by score descending
+    results.sort((a, b) => b.score - a.score);
+    return results;
+  }
+
+  function renderSearchResults() {
+    if (!el.searchResultsList) return;
+
+    const query = (el.searchInput ? el.searchInput.value : '').trim();
+    searchState.query = query;
+    const results = executeSearch(query, searchState.filter);
+    searchState.results = results;
+
+    if (results.length === 0) {
+      el.searchResultsList.innerHTML = `
+        <div class="search-empty-state">
+          <p>No roadmaps or topics found matching "<strong>${escapeHtml(query)}</strong>".</p>
+          <p style="font-size: 0.8rem; margin-top: 6px; color: var(--text-muted);">Try searching for paper codes (e.g. C1, P7, V3), topics (e.g. Tax, WACC, Audit), or tools (e.g. QuickBooks, Excel).</p>
+        </div>
+      `;
+      return;
+    }
+
+    let html = '';
+    results.forEach((res, index) => {
+      const isSelected = index === searchState.selectedIndex;
+      const titleHighlighted = highlightMatches(res.title, query);
+      const snippetSnippet = res.snippet.length > 120 ? res.snippet.slice(0, 120) + '...' : res.snippet;
+      const snippetHighlighted = highlightMatches(snippetSnippet, query);
+
+      html += `
+        <li class="search-result-item ${isSelected ? 'selected' : ''}" 
+            role="option" 
+            aria-selected="${isSelected}"
+            data-index="${index}"
+            data-roadmap-id="${escapeHtml(res.roadmapId)}"
+            ${res.nodeId ? `data-node-id="${escapeHtml(res.nodeId)}"` : ''}>
+          <div class="search-result-title-row">
+            <span class="search-result-title">
+              ${res.code ? `<span class="explore-card-code">${escapeHtml(res.code)}</span>` : ''}
+              ${titleHighlighted}
+            </span>
+            <span class="search-result-badge">${escapeHtml(res.categoryLabel)}</span>
+          </div>
+          <div class="search-result-snippet">${snippetHighlighted}</div>
+        </li>
+      `;
+    });
+
+    el.searchResultsList.innerHTML = html;
+  }
+
+  function navigateToSearchResult(item) {
+    if (!item) return;
+    closeSearchModal();
+    closeDrawer(false);
+
+    if (item.type === 'node') {
+      location.hash = `${item.roadmapId}/${item.nodeId}`;
+    } else {
+      location.hash = item.roadmapId;
+    }
+  }
+
+  // -------------------------------------------------------------
+  // Explore All Roadmaps Catalog Controller
+  // -------------------------------------------------------------
+  const exploreState = {
+    isOpen: false,
+    query: ''
+  };
+
+  function openExploreModal() {
+    exploreState.isOpen = true;
+    if (el.exploreSearchInput) el.exploreSearchInput.value = '';
+    exploreState.query = '';
+
+    if (el.exploreModal) {
+      el.exploreModal.classList.add('open');
+      el.exploreModal.setAttribute('aria-hidden', 'false');
+    }
+    if (el.modalBackdrop) {
+      el.modalBackdrop.classList.add('open');
+      el.modalBackdrop.setAttribute('aria-hidden', 'false');
+    }
+
+    renderExploreCatalog();
+    setTimeout(() => {
+      if (el.exploreSearchInput) el.exploreSearchInput.focus();
+    }, 50);
+  }
+
+  function closeExploreModal() {
+    exploreState.isOpen = false;
+    if (el.exploreModal) {
+      el.exploreModal.classList.remove('open');
+      el.exploreModal.setAttribute('aria-hidden', 'true');
+    }
+    if (el.modalBackdrop && !searchState.isOpen) {
+      el.modalBackdrop.classList.remove('open');
+      el.modalBackdrop.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  function getRoadmapProgressStats(roadmapId) {
+    if (!window.ROADMAP_DATA || !window.ROADMAP_DATA[roadmapId]) {
+      return { total: 0, done: 0, percent: 0 };
+    }
+    const data = window.ROADMAP_DATA[roadmapId];
+    const route = data.routes ? (data.routes[data.defaultRoute || 'all'] || Object.values(data.routes)[0]) : null;
+    if (!route) return { total: 0, done: 0, percent: 0 };
+
+    let total = 0;
+    let done = 0;
+    (route.stages || []).forEach((stage) => {
+      (stage.nodes || []).forEach((node) => {
+        total++;
+        if (isNodeCompleted(node.id, roadmapId)) {
+          done++;
+        }
+      });
+    });
+
+    const percent = total > 0 ? Math.round((done / total) * 100) : 0;
+    return { total, done, percent };
+  }
+
+  function renderExploreCatalog() {
+    if (!el.exploreCatalogGrid) return;
+
+    const q = (el.exploreSearchInput ? el.exploreSearchInput.value : '').trim().toLowerCase();
+    exploreState.query = q;
+
+    const categories = [
+      { id: 'qual', title: '🎓 Full Professional Qualifications', items: [] },
+      { id: 'cl', title: '📘 Certificate Level Examination Papers (7)', items: [] },
+      { id: 'pl', title: '📙 Professional Level Examination Papers (7)', items: [] },
+      { id: 'al', title: '📕 Advanced Level Examination Papers (3)', items: [] },
+      { id: 'labs', title: '💻 Companion Practical IT Skills Workshops', items: [] }
+    ];
+
+    let totalMatched = 0;
+
+    Object.values(ROADMAP_CATALOG).forEach((item) => {
+      if (q) {
+        const matchesTitle = item.title.toLowerCase().includes(q);
+        const matchesCode = item.code && item.code.toLowerCase().includes(q);
+        const matchesSummary = item.summary.toLowerCase().includes(q);
+        const matchesTags = item.tags && item.tags.some(t => t.toLowerCase().includes(q));
+        if (!matchesTitle && !matchesCode && !matchesSummary && !matchesTags) {
+          return;
+        }
+      }
+
+      totalMatched++;
+      const cat = categories.find(c => c.id === item.category);
+      if (cat) cat.items.push(item);
+    });
+
+    if (el.exploreStatSummary) {
+      el.exploreStatSummary.textContent = `${totalMatched} of ${Object.keys(ROADMAP_CATALOG).length} roadmaps`;
+    }
+
+    if (totalMatched === 0) {
+      el.exploreCatalogGrid.innerHTML = `
+        <div class="search-empty-state">
+          <p>No roadmaps found matching "<strong>${escapeHtml(q)}</strong>".</p>
+        </div>
+      `;
+      return;
+    }
+
+    let gridHtml = '';
+
+    categories.forEach((cat) => {
+      if (cat.items.length === 0) return;
+
+      let cardsHtml = '';
+      cat.items.forEach((item) => {
+        const stats = getRoadmapProgressStats(item.id);
+        const hasStats = stats.total > 0;
+
+        cardsHtml += `
+          <div class="explore-card" data-roadmap-id="${escapeHtml(item.id)}" tabindex="0" role="button">
+            <div class="explore-card-top">
+              <span class="explore-card-code">${escapeHtml(item.code)}</span>
+              <span class="explore-card-badge">${escapeHtml(item.level)}</span>
+            </div>
+            <h3 class="explore-card-title">${escapeHtml(item.title)}</h3>
+            <p class="explore-card-desc">${escapeHtml(item.summary)}</p>
+            ${hasStats ? `
+              <div class="explore-progress-mini">
+                <div class="explore-progress-track">
+                  <div class="explore-progress-fill" style="width: ${stats.percent}%;"></div>
+                </div>
+                <span>${stats.done}/${stats.total} (${stats.percent}%)</span>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      });
+
+      gridHtml += `
+        <div class="explore-category-group">
+          <h3 class="explore-category-title">${cat.title}</h3>
+          <div class="explore-cards-grid">${cardsHtml}</div>
+        </div>
+      `;
+    });
+
+    el.exploreCatalogGrid.innerHTML = gridHtml;
+  }
+
+  // -------------------------------------------------------------
+  // Event Bindings
   // -------------------------------------------------------------
   function bindEvents() {
-    // Qualification Tabs
-    el.tabIcab.addEventListener('click', () => {
-      if (state.qualId === 'icab') return;
-      state.qualId = 'icab';
-      state.routeId = 'grad';
-      state.activeNodeId = null;
-      updateHash();
-      closeDrawer(false);
-      loadRoadmap('icab');
-    });
+    // Tab switching (ICAB / ACCA / Explore)
+    if (el.tabIcab) {
+      el.tabIcab.addEventListener('click', () => {
+        if (state.qualId === 'icab') return;
+        closeDrawer(false);
+        location.hash = 'icab-grad';
+      });
+    }
 
-    el.tabAcca.addEventListener('click', () => {
-      if (state.qualId === 'acca') return;
-      state.qualId = 'acca';
-      state.routeId = 'standard';
-      state.activeNodeId = null;
-      updateHash();
-      closeDrawer(false);
-      loadRoadmap('acca');
-    });
+    if (el.tabAcca) {
+      el.tabAcca.addEventListener('click', () => {
+        if (state.qualId === 'acca') return;
+        closeDrawer(false);
+        location.hash = 'acca';
+      });
+    }
 
-    // Route selector pills delegation
+    if (el.tabExplore) {
+      el.tabExplore.addEventListener('click', () => {
+        openExploreModal();
+      });
+    }
+
+    // Header Search & Explore Triggers
+    if (el.searchTriggerBtn) {
+      el.searchTriggerBtn.addEventListener('click', openSearchModal);
+    }
+    if (el.exploreTriggerBtn) {
+      el.exploreTriggerBtn.addEventListener('click', openExploreModal);
+    }
+
+    // Modal Close Buttons
+    if (el.searchCloseBtn) {
+      el.searchCloseBtn.addEventListener('click', closeSearchModal);
+    }
+    if (el.exploreCloseBtn) {
+      el.exploreCloseBtn.addEventListener('click', closeExploreModal);
+    }
+
+    // Modal Backdrop Click
+    if (el.modalBackdrop) {
+      el.modalBackdrop.addEventListener('click', () => {
+        closeSearchModal();
+        closeExploreModal();
+      });
+    }
+
+    // Search Input Real-Time Event
+    if (el.searchInput) {
+      el.searchInput.addEventListener('input', () => {
+        searchState.selectedIndex = -1;
+        renderSearchResults();
+      });
+    }
+
+    // Search Category Filter Chips
+    if (el.searchModal) {
+      el.searchModal.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+
+        el.searchModal.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        searchState.filter = chip.dataset.filter || 'all';
+        searchState.selectedIndex = -1;
+        renderSearchResults();
+      });
+    }
+
+    // Search Results Item Click Delegation
+    if (el.searchResultsList) {
+      el.searchResultsList.addEventListener('click', (e) => {
+        const itemEl = e.target.closest('.search-result-item');
+        if (!itemEl) return;
+
+        const idx = parseInt(itemEl.dataset.index, 10);
+        if (!isNaN(idx) && searchState.results[idx]) {
+          navigateToSearchResult(searchState.results[idx]);
+        }
+      });
+    }
+
+    // Explore Catalog Item Click Delegation
+    if (el.exploreCatalogGrid) {
+      el.exploreCatalogGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.explore-card');
+        if (!card) return;
+
+        const rId = card.dataset.roadmapId;
+        if (rId) {
+          closeExploreModal();
+          closeDrawer(false);
+          location.hash = rId;
+        }
+      });
+
+      el.exploreCatalogGrid.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const card = e.target.closest('.explore-card');
+          if (card && card.dataset.roadmapId) {
+            closeExploreModal();
+            closeDrawer(false);
+            location.hash = card.dataset.roadmapId;
+          }
+        }
+      });
+    }
+
+    // Explore Search Input Filter
+    if (el.exploreSearchInput) {
+      el.exploreSearchInput.addEventListener('input', renderExploreCatalog);
+    }
+
+    // Route pill selection
     el.routePills.addEventListener('click', (e) => {
-      const btn = e.target.closest('button[data-route]');
+      const btn = e.target.closest('.pill-btn');
       if (!btn) return;
+
       const targetRoute = btn.dataset.route;
-      if (state.routeId === targetRoute) return;
+      if (!targetRoute || targetRoute === state.routeId) return;
 
       state.routeId = targetRoute;
       state.activeNodeId = null;
-      updateHash();
+
       closeDrawer(false);
+      updateHash(false);
       renderRouteSelector();
       renderMap();
     });
 
-    // Map delegation: Node or Hub clicks
+    // Stage Hub Button Clicks (Toggle all nodes in stage)
     el.roadmapTree.addEventListener('click', (e) => {
-      const nodeCard = e.target.closest('.node-card');
-      if (nodeCard) {
-        state.invokingElement = nodeCard;
-        openNodeDrawer(nodeCard.dataset.nodeId);
+      const hubBtn = e.target.closest('.hub-btn');
+      if (hubBtn) {
+        const stageIndex = parseInt(hubBtn.dataset.stageIndex, 10);
+        const stages = getActiveStages();
+        if (isNaN(stageIndex) || !stages[stageIndex]) return;
+
+        const stage = stages[stageIndex];
+        const nodes = stage.nodes || [];
+        const allDone = nodes.every((n) => isNodeCompleted(n.id));
+        const nextState = !allDone;
+
+        nodes.forEach((n) => setNodeCompleted(n.id, nextState));
+        renderMap();
         return;
       }
 
-      const hubBtn = e.target.closest('.hub-btn');
-      if (hubBtn) {
-        state.invokingElement = hubBtn;
-        openStageDrawer(parseInt(hubBtn.dataset.stageIndex, 10));
+      // Node Card Clicks
+      const card = e.target.closest('.node-card');
+      if (card) {
+        const nodeId = card.dataset.nodeId;
+        if (!nodeId) return;
+
+        if (state.activeNodeId === nodeId && el.drawer.classList.contains('open')) {
+          closeDrawer(true);
+        } else {
+          openNodeDrawer(nodeId, true);
+        }
       }
     });
 
-    // Drawer Toggle Done Button
+    // Drawer Completion Toggle Button
     el.drawerToggleBtn.addEventListener('click', () => {
       const nodeId = el.drawerToggleBtn.dataset.nodeId;
       if (!nodeId) return;
 
-      const nextDone = !isNodeCompleted(nodeId);
+      const currentDone = isNodeCompleted(nodeId);
+      const nextDone = !currentDone;
       setNodeCompleted(nodeId, nextDone);
 
       // Surgical card update
@@ -830,7 +1582,8 @@
           const base = ctx.routeId ? `${ctx.qualId}-${ctx.routeId}` : ctx.qualId;
           targetHash = ctx.nodeId ? `${base}/${ctx.nodeId}` : base;
         } else if (state.currentData && state.currentData.parentRoadmap) {
-          targetHash = state.currentData.parentRoadmap.returnHash || 'icab-grad';
+          const pr = state.currentData.parentRoadmap;
+          targetHash = pr.nodeId ? `${pr.returnHash || 'icab-grad'}/${pr.nodeId}` : (pr.returnHash || 'icab-grad');
         }
         closeDrawer(false);
         location.hash = targetHash;
@@ -854,10 +1607,10 @@
       };
 
       closeDrawer(false);
-      location.hash = targetRoadmap + (targetRoute ? '-' + targetRoute : '');
+      location.hash = targetRoadmap;
     });
 
-    // Reset Progress scoped to active qualification
+    // Reset Progress scoped to active qualification/roadmap
     el.resetProgressBtn.addEventListener('click', () => {
       const qualTitle = state.currentData?.title || state.qualId.toUpperCase();
       if (!confirm(`Are you sure you want to reset your saved progress for ${qualTitle}?`)) {
@@ -887,51 +1640,102 @@
       renderMap();
     });
 
-    // Keyboard navigation (Escape closes drawer)
+    // Keyboard navigation (Ctrl+K for search, Escape for modals)
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && el.drawer.classList.contains('open')) {
-        closeDrawer(true);
+      // Command palette / Search trigger (Ctrl+K or Cmd+K)
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (searchState.isOpen) {
+          closeSearchModal();
+        } else {
+          openSearchModal();
+        }
+        return;
+      }
+
+      // Escape key closes open modals
+      if (e.key === 'Escape') {
+        if (searchState.isOpen) {
+          closeSearchModal();
+          return;
+        }
+        if (exploreState.isOpen) {
+          closeExploreModal();
+          return;
+        }
+        if (el.drawer.classList.contains('open')) {
+          closeDrawer(true);
+          return;
+        }
+      }
+
+      // Search results list keyboard navigation (Arrow Up, Down, Enter)
+      if (searchState.isOpen && searchState.results.length > 0) {
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          searchState.selectedIndex = (searchState.selectedIndex + 1) % searchState.results.length;
+          renderSearchResults();
+          const selectedEl = el.searchResultsList.querySelector(`.search-result-item[data-index="${searchState.selectedIndex}"]`);
+          if (selectedEl && typeof selectedEl.scrollIntoView === 'function') {
+            selectedEl.scrollIntoView({ block: 'nearest' });
+          }
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          searchState.selectedIndex = (searchState.selectedIndex - 1 + searchState.results.length) % searchState.results.length;
+          renderSearchResults();
+          const selectedEl = el.searchResultsList.querySelector(`.search-result-item[data-index="${searchState.selectedIndex}"]`);
+          if (selectedEl && typeof selectedEl.scrollIntoView === 'function') {
+            selectedEl.scrollIntoView({ block: 'nearest' });
+          }
+        } else if (e.key === 'Enter') {
+          if (searchState.selectedIndex >= 0 && searchState.results[searchState.selectedIndex]) {
+            e.preventDefault();
+            navigateToSearchResult(searchState.results[searchState.selectedIndex]);
+          }
+        }
       }
     });
 
     // Window Hashchange
-    window.addEventListener('hashchange', () => {
-      const parsed = parseHash(location.hash);
-      if (!parsed) return;
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      window.addEventListener('hashchange', () => {
+        const parsed = parseHash(location.hash);
+        if (!parsed) return;
 
-      const qualChanged = parsed.qualId !== state.qualId;
-      const routeChanged = Boolean(parsed.routeId && parsed.routeId !== state.routeId);
-      const nodeChanged = (parsed.nodeId || null) !== (state.activeNodeId || null);
+        const qualChanged = parsed.qualId !== state.qualId;
+        const routeChanged = Boolean(parsed.routeId && parsed.routeId !== state.routeId);
+        const nodeChanged = (parsed.nodeId || null) !== (state.activeNodeId || null);
 
-      if (qualChanged) {
-        state.qualId = parsed.qualId;
-        if (parsed.routeId) state.routeId = parsed.routeId;
-        state.activeNodeId = parsed.nodeId || null;
-        loadRoadmap(parsed.qualId, parsed.routeId, parsed.nodeId);
-        return;
-      }
-
-      if (routeChanged) {
-        state.routeId = parsed.routeId;
-        state.activeNodeId = parsed.nodeId || null;
-        renderRouteSelector();
-        renderMap();
-        if (parsed.nodeId) {
-          openNodeDrawer(parsed.nodeId, false);
-        } else {
-          closeDrawer(false);
+        if (qualChanged) {
+          state.qualId = parsed.qualId;
+          if (parsed.routeId) state.routeId = parsed.routeId;
+          state.activeNodeId = parsed.nodeId || null;
+          loadRoadmap(parsed.qualId, parsed.routeId, parsed.nodeId);
+          return;
         }
-        return;
-      }
 
-      if (nodeChanged) {
-        if (parsed.nodeId) {
-          openNodeDrawer(parsed.nodeId, false);
-        } else {
-          closeDrawer(false);
+        if (routeChanged) {
+          state.routeId = parsed.routeId;
+          state.activeNodeId = parsed.nodeId || null;
+          renderRouteSelector();
+          renderMap();
+          if (parsed.nodeId) {
+            openNodeDrawer(parsed.nodeId, false);
+          } else {
+            closeDrawer(false);
+          }
+          return;
         }
-      }
-    });
+
+        if (nodeChanged) {
+          if (parsed.nodeId) {
+            openNodeDrawer(parsed.nodeId, false);
+          } else {
+            closeDrawer(false);
+          }
+        }
+      });
+    }
 
     // Brand and back-to-top smooth scrolling
     const brandHome = document.getElementById('brand-home') || document.querySelector('.brand-group');
@@ -968,8 +1772,10 @@
       parseHash,
       safeStorage,
       KNOWN_ROADMAPS,
+      ROADMAP_CATALOG,
       getNodeStorageKey,
       isNodeCompleted,
+      executeSearch,
       state
     };
   }

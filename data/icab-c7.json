@@ -1,0 +1,197 @@
+{
+  "id": "icab-c7",
+  "title": "ICAB C7 - Information Technology",
+  "paperCode": "C7",
+  "level": "Certificate Level",
+  "marks": 50,
+  "duration": "1.0 Hour",
+  "format": "Computer-Based Assessment (Objective & Scenario Questions)",
+  "region": "Bangladesh",
+  "category": "Certificate Level Papers",
+  "tags": [
+    "Certificate Level",
+    "Core Exam",
+    "Study Tracker",
+    "IT",
+    "SDLC",
+    "Cloud",
+    "Cybersecurity"
+  ],
+  "summary": "Covers systems analysis and design (SDLC), agile development, cloud computing, enterprise software (ERP), database management, business intelligence, and cybersecurity.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "c7"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Information Technology. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "c7-s1",
+          "title": "Area 1: Building Information Systems & SDLC",
+          "name": "Area 1: Building Information Systems & SDLC",
+          "weightage": "15%",
+          "description": "System development lifecycle, project governance, feasibility analysis, agile vs waterfall.",
+          "nodes": [
+            {
+              "id": "c7-s1-n1",
+              "name": "SDLC, Feasibility Analysis & Agile Methodologies",
+              "code": "C7.1.1",
+              "category": "Systems Development",
+              "weightage": "15%",
+              "description": "Building information systems; project governance and management; business case and feasibility analysis (TELOS: Technical, Economic, Legal, Operational, Schedule); System Development Lifecycle (SDLC) stages: Planning, Analysis, Design, Implementation, Testing, Maintenance; Waterfall vs Agile/Scrum methodologies; system changeover strategies (Direct, Parallel, Pilot, Phased).",
+              "topics": [
+                "System development need identification and business case formulation",
+                "Feasibility study: Technical, Economic, Legal, Operational, Schedule (TELOS)",
+                "SDLC phases: Requirements engineering, architectural design, coding, testing",
+                "Waterfall model vs Agile / Scrum methodology (sprints, standups, user stories)",
+                "Software testing methods: Unit, integration, system, user acceptance testing (UAT)",
+                "System changeover strategies: Direct cutover, parallel run, pilot, phased adoption",
+                "Post-implementation review and ongoing system maintenance"
+              ],
+              "learningOutcomes": [
+                "Conduct a TELOS feasibility study for an enterprise software acquisition.",
+                "Compare Waterfall and Agile methodologies for business applications.",
+                "Recommend appropriate system changeover strategies."
+              ],
+              "checklists": [
+                "Review comparison table between 4 system changeover methods",
+                "Practice TELOS feasibility analysis on a real business scenario"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7-s2",
+          "title": "Area 2: Cloud Computing & Enterprise Systems",
+          "name": "Area 2: Cloud Computing & Enterprise Systems",
+          "weightage": "10%",
+          "description": "Cloud service models (IaaS, PaaS, SaaS), ERP architectures, supply chain systems.",
+          "nodes": [
+            {
+              "id": "c7-s2-n1",
+              "name": "Cloud Architectures & Enterprise Resource Planning (ERP)",
+              "code": "C7.2.1",
+              "category": "Enterprise Systems",
+              "weightage": "10%",
+              "description": "Cloud service delivery models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS); cloud deployment models (Public, Private, Hybrid); Enterprise Resource Planning (ERP) systems (SAP, Oracle, Odoo); Customer Relationship Management (CRM) and Supply Chain Management (SCM) systems.",
+              "topics": [
+                "Cloud computing concepts, elasticity, multi-tenancy, pay-per-use economics",
+                "Service models: SaaS (QuickBooks Online, Salesforce), PaaS (AWS Elastic Beanstalk), IaaS (Azure VMs)",
+                "Enterprise Resource Planning (ERP) architecture, centralized database, module integration",
+                "ERP implementation challenges: Change management, data migration, customization risks",
+                "Customer Relationship Management (CRM) and Supply Chain Management (SCM) integration",
+                "Service Level Agreements (SLAs) and cloud vendor risk governance"
+              ],
+              "learningOutcomes": [
+                "Differentiate SaaS, PaaS, and IaaS models and select appropriate solutions.",
+                "Explain the architecture and strategic benefits of integrated ERP systems.",
+                "Assess operational risks associated with cloud service adoption."
+              ],
+              "checklists": [
+                "Map enterprise business processes into standard ERP modules",
+                "Evaluate cloud SLA key performance metrics"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7-s3",
+          "title": "Area 3: Data Management, BI & AI Foundations",
+          "name": "Area 3: Data Management, BI & AI Foundations",
+          "weightage": "10%",
+          "description": "Relational databases, SQL concepts, data warehousing, BI analytics, AI/ML in accounting.",
+          "nodes": [
+            {
+              "id": "c7-s3-n1",
+              "name": "DBMS, SQL, Business Intelligence & Applied AI",
+              "code": "C7.3.1",
+              "category": "Data & AI",
+              "weightage": "10%",
+              "description": "Database Management Systems (DBMS); relational data models, primary keys, foreign keys, normalization; basic SQL queries (SELECT, JOIN, GROUP BY); Data Warehousing and ETL pipelines; Business Intelligence (BI) dashboards; Artificial Intelligence and Machine Learning applications in accounting and auditing.",
+              "topics": [
+                "Relational database concepts: Entities, attributes, tables, relationships (1:1, 1:N, M:N)",
+                "Database normalization concepts (1NF, 2NF, 3NF) for transactional integrity",
+                "SQL fundamentals for financial audit data extraction",
+                "Data warehouses vs Data lakes vs Operational transactional databases",
+                "Business Intelligence (BI) tools: Data visualization and executive reporting",
+                "Artificial Intelligence (AI), Machine Learning (ML), and Natural Language Processing (NLP)",
+                "Automating financial reconciliation and anomaly detection using algorithmic models"
+              ],
+              "learningOutcomes": [
+                "Explain relational database structure and normalization principles.",
+                "Describe how data warehouses and ETL support business analytics.",
+                "Identify practical applications of AI and machine learning in finance."
+              ],
+              "checklists": [
+                "Practice basic SQL SELECT and JOIN statements",
+                "Review normalization rules (1NF to 3NF)"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7-s4",
+          "title": "Area 4: Information Security & Cyber Resilience",
+          "name": "Area 4: Information Security & Cyber Resilience",
+          "weightage": "15%",
+          "description": "Cybersecurity threats, CIA triad, access controls, disaster recovery, data protection laws.",
+          "nodes": [
+            {
+              "id": "c7-s4-n1",
+              "name": "CIA Triad, Cyber Controls & Disaster Recovery",
+              "code": "C7.4.1",
+              "category": "Cybersecurity & Controls",
+              "weightage": "15%",
+              "description": "Confidentiality, Integrity, and Availability (CIA triad); common cyber threats: Malware, Phishing, Ransomware, DDoS, Social Engineering; technical and physical controls: Firewalls, encryption, multi-factor authentication (MFA); Business Continuity Planning (BCP) and Disaster Recovery Planning (DRP); Bangladesh Cyber Security Act 2023.",
+              "topics": [
+                "The CIA triad: Confidentiality, Integrity, Availability principles",
+                "Cyber threat taxonomy: Phishing, Spear-phishing, Ransomware, Man-in-the-middle, Zero-day",
+                "Access controls: Role-based access control (RBAC), Least privilege, Multi-Factor Authentication (MFA)",
+                "Data encryption: In-transit (TLS/SSL) and at-rest (AES-256)",
+                "Backup strategies: Full, differential, incremental; 3-2-1 backup rule",
+                "Business Continuity Planning (BCP) and Disaster Recovery Planning (DRP): RTO and RPO metrics",
+                "Legal framework: Cyber Security Act 2023 obligations and data protection"
+              ],
+              "learningOutcomes": [
+                "Apply the CIA triad to assess enterprise information risks.",
+                "Design multi-layered cybersecurity defense mechanisms.",
+                "Formulate disaster recovery strategies incorporating RTO and RPO targets."
+              ],
+              "checklists": [
+                "Master RTO (Recovery Time Objective) and RPO (Recovery Point Objective) definitions",
+                "Review 3-2-1 backup strategy implementation"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

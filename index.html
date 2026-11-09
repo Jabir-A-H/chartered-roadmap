@@ -16,8 +16,21 @@
         <div class="brand-icon">CR</div>
         <span class="brand-title">Chartered Roadmap</span>
       </a>
+
+      <!-- Roadmap Search Bar (roadmap.sh style) -->
+      <div class="header-search-wrapper">
+        <button id="search-trigger-btn" class="header-search-btn" aria-label="Search roadmaps and topics" title="Search roadmaps and topics (Ctrl+K)">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <span class="search-placeholder">Search roadmaps, papers & topics...</span>
+          <kbd class="search-kbd"><abbr title="Control or Command">Ctrl</abbr> K</kbd>
+        </button>
+      </div>
       
       <div class="nav-actions">
+        <button id="explore-trigger-btn" class="btn-nav-explore" title="Browse all 20 qualification and paper roadmaps">
+          <span class="explore-icon" aria-hidden="true">🧭</span>
+          <span>Explore All (20)</span>
+        </button>
         <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode" title="Toggle theme">
           <span id="theme-icon">🌓</span>
         </button>
@@ -38,6 +51,7 @@
       <nav class="tabs-segmented" aria-label="Choose qualification">
         <button id="tab-icab" class="tab-btn active" data-qual="icab">ICAB CA (Bangladesh)</button>
         <button id="tab-acca" class="tab-btn" data-qual="acca">ACCA (Global)</button>
+        <button id="tab-explore" class="tab-btn" data-qual="explore">🧭 Explore All Roadmaps (20)</button>
       </nav>
 
       <!-- Route Selector (for ICAB & Multi-track qualifications) -->
@@ -88,6 +102,62 @@
     <div id="drawer-body" class="drawer-body">Node details and syllabus description.</div>
     <button id="drawer-toggle-btn" class="drawer-action-btn">Mark as Completed</button>
   </aside>
+
+  <!-- Modal Backdrop / Scrim for Search & Explore -->
+  <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true"></div>
+
+  <!-- Search & Command Palette Modal (Ctrl+K) -->
+  <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="search-modal-box">
+      <div class="search-header-row">
+        <span class="search-dialog-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="search-input" class="search-input" placeholder="Search roadmaps, papers (e.g. C1, P7), topics, or chapters..." autocomplete="off" spellcheck="false" aria-label="Search roadmaps and topics">
+        <button id="search-close-btn" class="modal-close-btn" aria-label="Close search">Esc</button>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="search-filters-bar" role="tablist" aria-label="Search filter categories">
+        <button class="filter-chip active" data-filter="all">All (20)</button>
+        <button class="filter-chip" data-filter="qual">Qualifications (2)</button>
+        <button class="filter-chip" data-filter="cl">Certificate (7)</button>
+        <button class="filter-chip" data-filter="pl">Professional (7)</button>
+        <button class="filter-chip" data-filter="al">Advanced (3)</button>
+        <button class="filter-chip" data-filter="labs">Practical Labs (1)</button>
+      </div>
+
+      <!-- Live Results Container -->
+      <div id="search-results-list" class="search-results-list" role="listbox" aria-label="Search results"></div>
+
+      <!-- Keyboard shortcuts legend -->
+      <div class="search-footer-legend">
+        <span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span>
+        <span><kbd>↵</kbd> Open Roadmap</span>
+        <span><kbd>Esc</kbd> Dismiss</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore All Roadmaps Catalog Modal -->
+  <div id="explore-modal" class="explore-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="explore-modal-title">
+    <div class="explore-modal-box">
+      <div class="explore-modal-header">
+        <div>
+          <h2 id="explore-modal-title" class="explore-modal-title">🧭 Explore All Roadmaps & Syllabus Trackers</h2>
+          <p class="explore-modal-subtitle">Browse full qualification pathways, individual exam paper study trackers, and practical IT labs.</p>
+        </div>
+        <button id="explore-close-btn" class="modal-close-btn" aria-label="Close explore modal">✕</button>
+      </div>
+
+      <!-- Quick Search within Explore -->
+      <div class="explore-filter-row">
+        <input type="search" id="explore-search-input" class="explore-search-input" placeholder="Filter roadmaps by name, code or keyword..." autocomplete="off">
+        <div class="explore-stat-summary" id="explore-stat-summary">20 roadmaps available</div>
+      </div>
+
+      <!-- Catalog Sections Grid -->
+      <div id="explore-catalog-grid" class="explore-catalog-grid"></div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">

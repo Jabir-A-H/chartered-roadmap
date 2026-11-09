@@ -1,0 +1,202 @@
+{
+  "id": "icab-p6",
+  "title": "ICAB P6 - Corporate Laws & Practices",
+  "paperCode": "P6",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Legal Scenario Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "Corporate Law",
+    "BSEC Rules",
+    "Banking Act",
+    "FERA"
+  ],
+  "summary": "Advanced corporate legal practice under Companies Act 1994, BSEC Securities & Exchange rules, Bank Companies Act 1991, Financial Institutions Act, and FERA foreign investment regulations.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p6"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Corporate Laws & Practices. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p6-s1",
+          "title": "Area 1: Companies Act 1994 Advanced Corporate Practice",
+          "name": "Area 1: Companies Act 1994 Advanced Corporate Practice",
+          "weightage": "35%",
+          "description": "Share capital alteration, debentures, mortgages, investigations, amalgamation, and winding up.",
+          "nodes": [
+            {
+              "id": "p6-s1-n1",
+              "name": "Capital Restructuring, Mortgages & Corporate Winding Up",
+              "code": "P6.1.1",
+              "category": "Corporate Law",
+              "weightage": "35%",
+              "description": "Share capital reduction and variation of shareholder rights; registration of charges, mortgages, and debentures (Section 159); corporate investigations by government; schemes of arrangement and compromise (Sections 228-229); modes of winding up: By High Court, voluntary winding up (members' vs creditors'), and role of official liquidator.",
+              "topics": [
+                "Alteration of share capital: Consolidation, subdivision, cancellation under Section 53",
+                "Reduction of share capital: Special resolution and High Court confirmation requirements",
+                "Registration of charges and mortgages with RJSC: 21-day timeline, certificate, consequences of non-registration",
+                "Investigation into company affairs by Registrar or Government under Section 195",
+                "Corporate reconstruction, compromise, and amalgamation procedures under Sections 228 & 229",
+                "Modes of winding up: Compulsory winding up by court (grounds under Section 241)",
+                "Voluntary winding up: Members' voluntary winding up vs Creditors' voluntary winding up",
+                "Powers, duties, and liabilities of Official Liquidators"
+              ],
+              "learningOutcomes": [
+                "Advise on legal procedure for capital reduction and charge registration.",
+                "Draft schemes of compromise and amalgamation under Section 228.",
+                "Determine grounds and statutory procedures for winding up a company."
+              ],
+              "checklists": [
+                "Read Capital Restructuring, Mortgages & Corporate Winding Up in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p6-s2",
+          "title": "Area 2: BSEC Securities & Exchange Regulations",
+          "name": "Area 2: BSEC Securities & Exchange Regulations",
+          "weightage": "35%",
+          "description": "Securities Rules 2020, Public Issue Rules 2015, Rights Issue Rules, and Listing Regulations.",
+          "nodes": [
+            {
+              "id": "p6-s2-n1",
+              "name": "BSEC Public Issue, Rights Issue & Listing Regulations",
+              "code": "P6.2.1",
+              "category": "Capital Market Law",
+              "weightage": "35%",
+              "description": "Securities and Exchange Ordinance 1969; Bangladesh Securities and Exchange Commission (Public Issue) Rules 2015 (Fixed price method vs Book building method); BSEC (Rights Issue) Rules 2006; Listing Regulations 2015 of DSE/CSE; Corporate Governance Code compliance.",
+              "topics": [
+                "BSEC regulatory framework and market surveillance powers",
+                "Public Issue Rules 2015: Eligibility for IPO, minimum paid-up capital, sponsor share lock-in",
+                "IPO methods: Fixed Price Method vs Book Building Method (bidding by institutional investors)",
+                "Rights Issue Rules: Conditions, eligibility, approval process, and renounceable letters of rights",
+                "Private placement of debt securities: BSEC guidelines for sukuk, green bonds, asset-backed securities",
+                "Stock Exchange Listing Regulations 2015: Continuous disclosures, price-sensitive information (PSI)",
+                "Corporate Governance Code 2018: Mandatory compliance, board composition, and governance audits"
+              ],
+              "learningOutcomes": [
+                "Formulate IPO proposals under Fixed Price and Book Building methods.",
+                "Ensure compliance with BSEC Rights Issue Rules.",
+                "Identify Price Sensitive Information (PSI) and fulfill disclosure obligations."
+              ],
+              "checklists": [
+                "Read BSEC Public Issue, Rights Issue & Listing Regulations in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p6-s3",
+          "title": "Area 3: Bank Companies Act & Financial Institutions Act",
+          "name": "Area 3: Bank Companies Act & Financial Institutions Act",
+          "weightage": "15%",
+          "description": "Bank Companies Act 1991, licensing, board governance, non-performing loans, and NBFIs.",
+          "nodes": [
+            {
+              "id": "p6-s3-n1",
+              "name": "Banking Regulation, Governance & Non-Performing Loans",
+              "code": "P6.3.1",
+              "category": "Financial Sector Law",
+              "weightage": "15%",
+              "description": "Bank Companies Act 1991 (with recent amendments): Licensing by Bangladesh Bank, capital requirements (BASEL III overview), board constitution, single borrower exposure limits, classification of non-performing loans (NPLs); Financial Institutions Act 1993 for Non-Bank Financial Institutions (NBFIs).",
+              "topics": [
+                "Licensing and business restrictions of banking companies under Bank Companies Act 1991",
+                "Board of directors rules: Maximum directors from one family, independent directors, tenure limits",
+                "Single borrower exposure limit and related party lending restrictions",
+                "Non-Performing Loans (NPL): Classification categories (Sub-standard, Doubtful, Bad/Loss) and provisioning",
+                "Powers of Bangladesh Bank: Prompt Corrective Action (PCA), appointing observer/administrator",
+                "Financial Institutions Act 1993: Regulation of NBFIs, leasing, and merchant banks"
+              ],
+              "learningOutcomes": [
+                "Apply Bank Companies Act restrictions on lending and family directorships.",
+                "Classify loans and calculate mandatory loan-loss provisions.",
+                "Explain Bangladesh Bank supervisory interventions under PCA."
+              ],
+              "checklists": [
+                "Read Banking Regulation, Governance & Non-Performing Loans in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p6-s4",
+          "title": "Area 4: Foreign Exchange Regulation Act & BIDA",
+          "name": "Area 4: Foreign Exchange Regulation Act & BIDA",
+          "weightage": "15%",
+          "description": "FERA 1947, foreign investment approvals, profit repatriation, and external commercial borrowing.",
+          "nodes": [
+            {
+              "id": "p6-s4-n1",
+              "name": "Foreign Exchange (FERA), BIDA & Profit Repatriation",
+              "code": "P6.4.1",
+              "category": "Foreign Investment Law",
+              "weightage": "15%",
+              "description": "Foreign Exchange Regulation Act 1947 (FERA): Authorized dealers, current account vs capital account transactions; Bangladesh Investment Development Authority (BIDA) registration; opening branch/liaison offices; repatriation of dividends, royalties, and franchise fees; External Commercial Borrowings (ECB).",
+              "topics": [
+                "FERA 1947 framework: Foreign currency dealing, authorized dealers, central bank circulars",
+                "Current account convertibility vs Capital account restrictions in Bangladesh",
+                "BIDA registration procedures for foreign direct investment (FDI)",
+                "Establishing Branch Office, Liaison/Representative Office, and permission renewals",
+                "Legal guidelines for outward remittance of dividend, technical fees, royalty, and consultancy fees",
+                "Foreign borrowing: External Commercial Borrowing (ECB) approvals by Bangladesh Bank committee",
+                "Money Laundering Prevention Act 2012 and compliance by reporting agencies"
+              ],
+              "learningOutcomes": [
+                "Guide foreign investors through BIDA registration and office setup.",
+                "Fulfill regulatory compliance for profit and dividend repatriation under FERA.",
+                "Navigate Bangladesh Bank approvals for foreign currency commercial loans."
+              ],
+              "checklists": [
+                "Read Foreign Exchange (FERA), BIDA & Profit Repatriation in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

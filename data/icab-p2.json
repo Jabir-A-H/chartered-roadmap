@@ -1,0 +1,187 @@
+{
+  "id": "icab-p2",
+  "title": "ICAB P2 - Audit and Assurance",
+  "paperCode": "P2",
+  "level": "Professional Level",
+  "marks": 100,
+  "duration": "3.0 Hours",
+  "format": "Written & Scenario-Based Technical Examination",
+  "region": "Bangladesh",
+  "category": "Professional Level Papers",
+  "tags": [
+    "Professional Level",
+    "Core Exam",
+    "Study Tracker",
+    "ISA",
+    "Audit Risk",
+    "Auditor Report"
+  ],
+  "summary": "Covers acceptance, managing and performing audit and assurance engagements in accordance with International Standards on Auditing (ISAs), risk assessment, audit evidence, and auditor reporting.",
+  "parentRoadmap": {
+    "id": "icab",
+    "label": "ICAB CA Curriculum (2025)",
+    "returnHash": "icab-grad",
+    "nodeId": "p2"
+  },
+  "defaultRoute": "all",
+  "routes": {
+    "all": {
+      "id": "all",
+      "name": "Full Syllabus Tracker",
+      "default": true,
+      "blurb": "Official 2025 Syllabus chapter and topic tracker for Audit and Assurance. Track your study progress across all syllabus areas.",
+      "stages": [
+        {
+          "id": "p2-s1",
+          "title": "Area 1: Legal/Professional Regulations, Ethics & Acceptance",
+          "name": "Area 1: Legal/Professional Regulations, Ethics & Acceptance",
+          "weightage": "25%",
+          "description": "Statutory audit requirements, IESBA Code of Ethics, quality management (ISQM 1), and client acceptance.",
+          "nodes": [
+            {
+              "id": "p2-s1-n1",
+              "name": "ISQM 1, Professional Ethics & Client Acceptance",
+              "code": "P2.1.1",
+              "category": "Ethics & Governance",
+              "weightage": "25%",
+              "description": "Appointment, removal, and duties of auditors under Companies Act 1994; FRC audit oversight; IESBA Code of Ethics for Professional Accountants; ISQM 1 Quality Management for Firms; client acceptance and engagement management.",
+              "topics": [
+                "Auditor appointment, qualifications, disqualifications, and removal under Companies Act 1994",
+                "Role of Financial Reporting Council (FRC) Bangladesh in auditing oversight",
+                "IESBA Code fundamental principles, independence in mind and appearance",
+                "Ethical threats (long association, non-audit services, fee dependence) and safeguards",
+                "ISQM 1: System of quality management, governance, ethics, risk assessment, monitoring",
+                "Pre-conditions for audit (ISA 210), engagement letters, client onboarding and KYC"
+              ],
+              "learningOutcomes": [
+                "Evaluate compliance with Companies Act 1994 auditor appointment rules.",
+                "Design firm quality management procedures under ISQM 1.",
+                "Resolve complex independence and conflict of interest scenarios."
+              ],
+              "checklists": [
+                "Review ISQM 1 eight components checklist",
+                "Practice 4 ethical threat scenarios with appropriate safeguards"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2-s2",
+          "title": "Area 2: Planning & Performing Audit Engagements",
+          "name": "Area 2: Planning & Performing Audit Engagements",
+          "weightage": "50%",
+          "description": "Audit risk (ISA 315), materiality (ISA 320), fraud (ISA 240), internal control evaluation, and substantive procedures.",
+          "nodes": [
+            {
+              "id": "p2-s2-n1",
+              "name": "Audit Risk Assessment & Materiality (ISA 315 & 320)",
+              "code": "P2.2.1",
+              "category": "Audit Risk & Planning",
+              "weightage": "25%",
+              "description": "Audit risk model: Inherent risk, Control risk, Detection risk; understanding the entity and environment (ISA 315 Revised); planning and performance materiality (ISA 320); auditor responsibilities for fraud (ISA 240); IT environment risks and automated controls.",
+              "topics": [
+                "The audit risk model: AR = IR x CR x DR and its practical application",
+                "ISA 315 (Revised 2019): Identifying and assessing risks of material misstatement (RMM)",
+                "Assessing IT general controls (ITGCs) and automated application controls",
+                "Determination of planning materiality, performance materiality, and trivial threshold (ISA 320)",
+                "Auditor's responsibilities relating to fraud in an audit (ISA 240): Fraud risk factors and skepticism",
+                "Laws and regulations in an audit (ISA 250): Direct vs indirect compliance"
+              ],
+              "learningOutcomes": [
+                "Calculate planning and performance materiality benchmarks.",
+                "Identify and assess risks of material misstatement at financial statement and assertion levels.",
+                "Design responses to address identified fraud risks."
+              ],
+              "checklists": [
+                "Calculate materiality on 3 scenario financial statements",
+                "Draft risk and response audit planning matrix"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            },
+            {
+              "id": "p2-s2-n2",
+              "name": "Substantive Audit Procedures & Complex Balances",
+              "code": "P2.2.2",
+              "category": "Substantive Procedures",
+              "weightage": "25%",
+              "description": "Designing substantive audit tests for complex areas: Revenue (IFRS 15), Inventory, Provisions, Going concern (ISA 570), Related parties (ISA 550), and Accounting estimates (ISA 540).",
+              "topics": [
+                "Substantive testing methodology: Analytical procedures vs tests of details",
+                "Auditing revenue recognition under IFRS 15: Cut-off, rebates, multi-element contracts",
+                "Auditing inventory: Count attendance, valuation testing, NRV write-down testing",
+                "Auditing accounting estimates including fair value under ISA 540 (Revised)",
+                "Auditing related party transactions and disclosures under ISA 550",
+                "Going concern evaluation under ISA 570: Indicators, cash forecasts, and management support",
+                "Audit sampling techniques (ISA 530) and Computer-Assisted Audit Techniques (CAATs)"
+              ],
+              "learningOutcomes": [
+                "Design detailed substantive audit programs for high-risk accounts.",
+                "Audit complex accounting estimates and fair value measurements.",
+                "Evaluate going concern adequacy and audit evidence."
+              ],
+              "checklists": [
+                "Read Substantive Audit Procedures & Complex Balances in ICAB Study Manual",
+                "Complete chapter review practice questions",
+                "Review past exam scenario questions"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2-s3",
+          "title": "Area 3: Concluding & Reporting on Engagements",
+          "name": "Area 3: Concluding & Reporting on Engagements",
+          "weightage": "25%",
+          "description": "Subsequent events (ISA 560), written representations (ISA 580), and auditor reporting (ISA 700, 701, 705, 706).",
+          "nodes": [
+            {
+              "id": "p2-s3-n1",
+              "name": "Subsequent Events, Evaluation & Auditor's Report",
+              "code": "P2.3.1",
+              "category": "Auditor Reporting",
+              "weightage": "25%",
+              "description": "Subsequent events up to and after report date (ISA 560); written representations from management (ISA 580); evaluating misstatements (ISA 450); Key Audit Matters (KAM - ISA 701); unmodified vs modified opinions (ISA 705); Emphasis of Matter and Other Matter paragraphs (ISA 706).",
+              "topics": [
+                "Evaluating uncorrected misstatements against materiality thresholds (ISA 450)",
+                "Subsequent events procedures: Adjusting vs non-adjusting events under IAS 10 / ISA 560",
+                "Written representations: Purpose, limitations, and refusal to provide (ISA 580)",
+                "Standard unmodified auditor's report structure under ISA 700 (Revised)",
+                "Communicating Key Audit Matters (KAM) in listed entity reports (ISA 701)",
+                "Modifications to the opinion (ISA 705): Qualified, Adverse, Disclaimer of opinion",
+                "Emphasis of Matter and Other Matter paragraphs (ISA 706) criteria and placement"
+              ],
+              "learningOutcomes": [
+                "Determine required modifications to the audit opinion based on pervasive/material tests.",
+                "Draft Key Audit Matters (KAM) descriptions for listed entities.",
+                "Evaluate the impact of subsequent events on audit reports."
+              ],
+              "checklists": [
+                "Memorize opinion decision matrix (Material vs Material & Pervasive)",
+                "Draft sample Key Audit Matter paragraph for inventory valuation"
+              ],
+              "resources": [
+                "ICAB Study Manual (2025 Edition)",
+                "ICAB Latest Syllabus 2025 (Official Document)",
+                "Relevant Acts & Standards (IFRS / ISA / Tax Acts)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

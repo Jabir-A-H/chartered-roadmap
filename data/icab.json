@@ -100,7 +100,16 @@
                   "weight": "5%"
                 }
               ],
-              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals."
+              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c1",
+                  "route": "all",
+                  "title": "C1 Accounting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Chapter-by-chapter study roadmap, double-entry, IFRS adjustments, and PFM."
+                }
+              ]
             },
             {
               "id": "c2",
@@ -135,7 +144,16 @@
                   "weight": "20%"
                 }
               ],
-              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes."
+              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c2",
+                  "route": "all",
+                  "title": "C2 Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Assurance framework, COSO internal controls, substantive procedures, and ethics."
+                }
+              ]
             },
             {
               "id": "c3",
@@ -169,7 +187,16 @@
                   "weight": "55%"
                 }
               ],
-              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR)."
+              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR).",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c3",
+                  "route": "all",
+                  "title": "C3 Business, Technology and Finance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Business structures, financial markets, PESTEL, and digital transformation."
+                }
+              ]
             },
             {
               "id": "c4",
@@ -203,7 +230,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance."
+              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c4",
+                  "route": "all",
+                  "title": "C4 Management Information Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Costing methods, budgeting, variance analysis, CVP, and data analytics."
+                }
+              ]
             },
             {
               "id": "c5",
@@ -237,7 +273,16 @@
                   "weight": "40–55%"
                 }
               ],
-              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection."
+              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c5",
+                  "route": "all",
+                  "title": "C5 Principles of Taxation Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Income Tax Act 2023, individual/company computation, TDS, and VAT Act 2012."
+                }
+              ]
             },
             {
               "id": "c6",
@@ -270,7 +315,16 @@
                   "weight": "10 Marks (20%)"
                 }
               ],
-              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights."
+              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c6",
+                  "route": "all",
+                  "title": "C6 Business Laws Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Companies Act 1994, Negotiable Instruments, Partnership, and Contract Acts."
+                }
+              ]
             },
             {
               "id": "c7",
@@ -305,6 +359,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-c7",
+                  "route": "all",
+                  "title": "C7 Information Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "SDLC, agile, cloud computing, DBMS/SQL, and cybersecurity resilience."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "cl_labs",
@@ -359,7 +420,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products."
+              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p1",
+                  "route": "all",
+                  "title": "P1 Financial Accounting and Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Single entity IFRS, complex consolidation, AAOIFI Islamic finance, and IPSAS."
+                }
+              ]
             },
             {
               "id": "p2",
@@ -389,7 +459,16 @@
                   "weight": "20–25%"
                 }
               ],
-              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting."
+              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p2",
+                  "route": "all",
+                  "title": "P2 Audit and Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "ISA risk assessment, materiality, fraud procedures, KAM, and auditor reporting."
+                }
+              ]
             },
             {
               "id": "p3",
@@ -418,7 +497,16 @@
                   "weight": "15–20%"
                 }
               ],
-              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution."
+              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p3",
+                  "route": "all",
+                  "title": "P3 Business Planning: Taxation & Compliance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Tax litigation, transfer pricing, corporate reorganization, and VAT disputes."
+                }
+              ]
             },
             {
               "id": "p4",
@@ -448,7 +536,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing."
+              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p4",
+                  "route": "all",
+                  "title": "P4 Financial Management Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "WACC, DCF valuation, real options, treasury FX/interest rate derivatives, and ESG."
+                }
+              ]
             },
             {
               "id": "p5",
@@ -477,7 +574,16 @@
                   "weight": "20–30%"
                 }
               ],
-              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking."
+              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p5",
+                  "route": "all",
+                  "title": "P5 Business Strategy & Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "VRIO, Porter's models, digital KPIs, Balanced Scorecard, and change management."
+                }
+              ]
             },
             {
               "id": "p6",
@@ -515,7 +621,16 @@
                   "weight": "15%"
                 }
               ],
-              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices."
+              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p6",
+                  "route": "all",
+                  "title": "P6 Corporate Laws & Practices Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Advanced RJSC compliance, BSEC IPO/Rights regulations, and Bank Companies Act."
+                }
+              ]
             },
             {
               "id": "p7",
@@ -554,6 +669,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-p7",
+                  "route": "all",
+                  "title": "P7 IT Governance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "COBIT 2019, ISACA IS audit standards, CAATs, cyber resilience, and BCP/DRP."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "pl_labs",
@@ -604,7 +726,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000."
+              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v1",
+                  "route": "all",
+                  "title": "V1 Corporate Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Complex IFRS 9/15/16, step acquisitions, foreign subsidiaries, and ISSB S1/S2."
+                }
+              ]
             },
             {
               "id": "v2",
@@ -637,7 +768,16 @@
                   "weight": "10–15%"
                 }
               ],
-              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level."
+              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v2",
+                  "route": "all",
+                  "title": "V2 Strategic Business Management & Leadership Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Executive digital strategy, M&A/LBO financial engineering, and Integrated Reporting."
+                }
+              ]
             },
             {
               "id": "v3",
@@ -670,7 +810,16 @@
                   "weight": "25%"
                 }
               ],
-              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards."
+              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v3",
+                  "route": "all",
+                  "title": "V3 Case Study Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Capstone advance information synthesis, financial modeling, and executive board reporting."
+                }
+              ]
             }
           ]
         },
@@ -780,7 +929,16 @@
                   "weight": "5%"
                 }
               ],
-              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals."
+              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c1",
+                  "route": "all",
+                  "title": "C1 Accounting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Chapter-by-chapter study roadmap, double-entry, IFRS adjustments, and PFM."
+                }
+              ]
             },
             {
               "id": "c2",
@@ -815,7 +973,16 @@
                   "weight": "20%"
                 }
               ],
-              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes."
+              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c2",
+                  "route": "all",
+                  "title": "C2 Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Assurance framework, COSO internal controls, substantive procedures, and ethics."
+                }
+              ]
             },
             {
               "id": "c3",
@@ -849,7 +1016,16 @@
                   "weight": "55%"
                 }
               ],
-              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR)."
+              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR).",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c3",
+                  "route": "all",
+                  "title": "C3 Business, Technology and Finance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Business structures, financial markets, PESTEL, and digital transformation."
+                }
+              ]
             },
             {
               "id": "c4",
@@ -883,7 +1059,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance."
+              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c4",
+                  "route": "all",
+                  "title": "C4 Management Information Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Costing methods, budgeting, variance analysis, CVP, and data analytics."
+                }
+              ]
             },
             {
               "id": "c5",
@@ -917,7 +1102,16 @@
                   "weight": "40–55%"
                 }
               ],
-              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection."
+              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c5",
+                  "route": "all",
+                  "title": "C5 Principles of Taxation Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Income Tax Act 2023, individual/company computation, TDS, and VAT Act 2012."
+                }
+              ]
             },
             {
               "id": "c6",
@@ -950,7 +1144,16 @@
                   "weight": "10 Marks (20%)"
                 }
               ],
-              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights."
+              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c6",
+                  "route": "all",
+                  "title": "C6 Business Laws Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Companies Act 1994, Negotiable Instruments, Partnership, and Contract Acts."
+                }
+              ]
             },
             {
               "id": "c7",
@@ -985,6 +1188,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-c7",
+                  "route": "all",
+                  "title": "C7 Information Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "SDLC, agile, cloud computing, DBMS/SQL, and cybersecurity resilience."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "cl_labs",
@@ -1039,7 +1249,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products."
+              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p1",
+                  "route": "all",
+                  "title": "P1 Financial Accounting and Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Single entity IFRS, complex consolidation, AAOIFI Islamic finance, and IPSAS."
+                }
+              ]
             },
             {
               "id": "p2",
@@ -1069,7 +1288,16 @@
                   "weight": "20–25%"
                 }
               ],
-              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting."
+              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p2",
+                  "route": "all",
+                  "title": "P2 Audit and Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "ISA risk assessment, materiality, fraud procedures, KAM, and auditor reporting."
+                }
+              ]
             },
             {
               "id": "p3",
@@ -1098,7 +1326,16 @@
                   "weight": "15–20%"
                 }
               ],
-              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution."
+              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p3",
+                  "route": "all",
+                  "title": "P3 Business Planning: Taxation & Compliance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Tax litigation, transfer pricing, corporate reorganization, and VAT disputes."
+                }
+              ]
             },
             {
               "id": "p4",
@@ -1128,7 +1365,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing."
+              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p4",
+                  "route": "all",
+                  "title": "P4 Financial Management Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "WACC, DCF valuation, real options, treasury FX/interest rate derivatives, and ESG."
+                }
+              ]
             },
             {
               "id": "p5",
@@ -1157,7 +1403,16 @@
                   "weight": "20–30%"
                 }
               ],
-              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking."
+              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p5",
+                  "route": "all",
+                  "title": "P5 Business Strategy & Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "VRIO, Porter's models, digital KPIs, Balanced Scorecard, and change management."
+                }
+              ]
             },
             {
               "id": "p6",
@@ -1195,7 +1450,16 @@
                   "weight": "15%"
                 }
               ],
-              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices."
+              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p6",
+                  "route": "all",
+                  "title": "P6 Corporate Laws & Practices Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Advanced RJSC compliance, BSEC IPO/Rights regulations, and Bank Companies Act."
+                }
+              ]
             },
             {
               "id": "p7",
@@ -1234,6 +1498,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-p7",
+                  "route": "all",
+                  "title": "P7 IT Governance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "COBIT 2019, ISACA IS audit standards, CAATs, cyber resilience, and BCP/DRP."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "pl_labs",
@@ -1284,7 +1555,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000."
+              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v1",
+                  "route": "all",
+                  "title": "V1 Corporate Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Complex IFRS 9/15/16, step acquisitions, foreign subsidiaries, and ISSB S1/S2."
+                }
+              ]
             },
             {
               "id": "v2",
@@ -1317,7 +1597,16 @@
                   "weight": "10–15%"
                 }
               ],
-              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level."
+              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v2",
+                  "route": "all",
+                  "title": "V2 Strategic Business Management & Leadership Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Executive digital strategy, M&A/LBO financial engineering, and Integrated Reporting."
+                }
+              ]
             },
             {
               "id": "v3",
@@ -1350,7 +1639,16 @@
                   "weight": "25%"
                 }
               ],
-              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards."
+              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v3",
+                  "route": "all",
+                  "title": "V3 Case Study Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Capstone advance information synthesis, financial modeling, and executive board reporting."
+                }
+              ]
             }
           ]
         },
@@ -1447,7 +1745,16 @@
                   "weight": "5%"
                 }
               ],
-              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals."
+              "description": "Foundations of financial accounting, double-entry mechanics, trial balances, and statutory financial statement preparation under IFRS. Integrates ethical considerations for preparers, fair presentation overrides, introduction to ISSB sustainability reporting, and Public Financial Management (PFM) fundamentals.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c1",
+                  "route": "all",
+                  "title": "C1 Accounting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Chapter-by-chapter study roadmap, double-entry, IFRS adjustments, and PFM."
+                }
+              ]
             },
             {
               "id": "c2",
@@ -1482,7 +1789,16 @@
                   "weight": "20%"
                 }
               ],
-              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes."
+              "description": "Fundamentals of audit and assurance services, internal control mechanisms, and professional scepticism. Introduces double materiality, assurance on non-financial metrics and sustainability reports, risk assessment with IT and ESG implications, remote auditing techniques, and IESBA/ICAB ethical codes.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c2",
+                  "route": "all",
+                  "title": "C2 Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Assurance framework, COSO internal controls, substantive procedures, and ethics."
+                }
+              ]
             },
             {
               "id": "c3",
@@ -1516,7 +1832,16 @@
                   "weight": "55%"
                 }
               ],
-              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR)."
+              "description": "Organisational governance, business functions, financial markets, and capital finance basics. Features a 55% focus on key issues for the profession and technology, including digital business models, cloud computing platforms, cybersecurity, and corporate social responsibility (CSR).",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c3",
+                  "route": "all",
+                  "title": "C3 Business, Technology and Finance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Business structures, financial markets, PESTEL, and digital transformation."
+                }
+              ]
             },
             {
               "id": "c4",
@@ -1550,7 +1875,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance."
+              "description": "Cost accounting methodologies, budgeting techniques, variance analysis, and operational decision support systems. Highlights a 35% weighting on evaluating the external commercial environment, KPI benchmarking, and data-driven management performance.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c4",
+                  "route": "all",
+                  "title": "C4 Management Information Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Costing methods, budgeting, variance analysis, CVP, and data analytics."
+                }
+              ]
             },
             {
               "id": "c5",
@@ -1584,7 +1918,16 @@
                   "weight": "40–55%"
                 }
               ],
-              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection."
+              "description": "Comprehensive fundamentals of Bangladesh fiscal statutes updated to the Income Tax Act 2023, VAT and Supplementary Duty Act 2012, withholding taxes, return filing compliance, and anti-money laundering (AML) detection.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c5",
+                  "route": "all",
+                  "title": "C5 Principles of Taxation Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Income Tax Act 2023, individual/company computation, TDS, and VAT Act 2012."
+                }
+              ]
             },
             {
               "id": "c6",
@@ -1617,7 +1960,16 @@
                   "weight": "10 Marks (20%)"
                 }
               ],
-              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights."
+              "description": "Fast-paced 1-hour objective assessment (50 marks) covering statutory commercial frameworks: Companies Act 1994 (formation, administration, winding-up), essential commercial contracts, sale of goods, negotiable instruments (cheques, dishonour), and partnership rights.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-c6",
+                  "route": "all",
+                  "title": "C6 Business Laws Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Companies Act 1994, Negotiable Instruments, Partnership, and Contract Acts."
+                }
+              ]
             },
             {
               "id": "c7",
@@ -1652,6 +2004,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-c7",
+                  "route": "all",
+                  "title": "C7 Information Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "SDLC, agile, cloud computing, DBMS/SQL, and cybersecurity resilience."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "cl_labs",
@@ -1706,7 +2065,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products."
+              "description": "Advanced financial statement preparation under IFRS/IAS, complex group consolidations, public sector accounting standards (IPSAS), and Islamic accounting frameworks for Shariah-compliant financial products.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p1",
+                  "route": "all",
+                  "title": "P1 Financial Accounting and Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Single entity IFRS, complex consolidation, AAOIFI Islamic finance, and IPSAS."
+                }
+              ]
             },
             {
               "id": "p2",
@@ -1736,7 +2104,16 @@
                   "weight": "20–25%"
                 }
               ],
-              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting."
+              "description": "Professional audit execution under International Standards on Auditing (ISA), risk assessments, testing automated application controls, forensic fraud detection, audit documentation, and independent reporting.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p2",
+                  "route": "all",
+                  "title": "P2 Audit and Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "ISA risk assessment, materiality, fraud procedures, KAM, and auditor reporting."
+                }
+              ]
             },
             {
               "id": "p3",
@@ -1765,7 +2142,16 @@
                   "weight": "15–20%"
                 }
               ],
-              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution."
+              "description": "Strategic corporate tax planning, transfer pricing documentation under OECD guidelines, international cross-border tax treaties, customs valuation, tax appeals, tribunal procedures, and fiscal dispute resolution.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p3",
+                  "route": "all",
+                  "title": "P3 Business Planning: Taxation & Compliance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Tax litigation, transfer pricing, corporate reorganization, and VAT disputes."
+                }
+              ]
             },
             {
               "id": "p4",
@@ -1795,7 +2181,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing."
+              "description": "Advanced capital budgeting, DCF valuation, cost of capital, dividend decisions, currency and interest rate derivative hedging, alongside Islamic financial instruments (Sukuk, Mudarabah, Murabaha) and sustainable green financing.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p4",
+                  "route": "all",
+                  "title": "P4 Financial Management Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "WACC, DCF valuation, real options, treasury FX/interest rate derivatives, and ESG."
+                }
+              ]
             },
             {
               "id": "p5",
@@ -1824,7 +2219,16 @@
                   "weight": "20–30%"
                 }
               ],
-              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking."
+              "description": "Corporate strategic analysis, competitive positioning, platform business models, AI and technology adoption, corporate sustainability strategies, and operational performance tracking.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p5",
+                  "route": "all",
+                  "title": "P5 Business Strategy & Technology Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "VRIO, Porter's models, digital KPIs, Balanced Scorecard, and change management."
+                }
+              ]
             },
             {
               "id": "p6",
@@ -1862,7 +2266,16 @@
                   "weight": "15%"
                 }
               ],
-              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices."
+              "description": "Regulatory compliance under the Bangladesh Companies Act 1994, BSEC corporate governance guidelines, Financial Reporting Act 2015 / FRC oversight, Banking Companies Act, and corporate secretarial practices.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p6",
+                  "route": "all",
+                  "title": "P6 Corporate Laws & Practices Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Advanced RJSC compliance, BSEC IPO/Rights regulations, and Bank Companies Act."
+                }
+              ]
             },
             {
               "id": "p7",
@@ -1901,6 +2314,13 @@
                 }
               ],
               "linkedRoadmaps": [
+                {
+                  "id": "icab-p7",
+                  "route": "all",
+                  "title": "P7 IT Governance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "COBIT 2019, ISACA IS audit standards, CAATs, cyber resilience, and BCP/DRP."
+                },
                 {
                   "id": "icab-it-labs",
                   "route": "pl_labs",
@@ -1976,7 +2396,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000."
+              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v1",
+                  "route": "all",
+                  "title": "V1 Corporate Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Complex IFRS 9/15/16, step acquisitions, foreign subsidiaries, and ISSB S1/S2."
+                }
+              ]
             },
             {
               "id": "v2",
@@ -2009,7 +2438,16 @@
                   "weight": "10–15%"
                 }
               ],
-              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level."
+              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v2",
+                  "route": "all",
+                  "title": "V2 Strategic Business Management & Leadership Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Executive digital strategy, M&A/LBO financial engineering, and Integrated Reporting."
+                }
+              ]
             },
             {
               "id": "v3",
@@ -2042,7 +2480,16 @@
                   "weight": "25%"
                 }
               ],
-              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards."
+              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v3",
+                  "route": "all",
+                  "title": "V3 Case Study Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Capstone advance information synthesis, financial modeling, and executive board reporting."
+                }
+              ]
             }
           ]
         },
@@ -2158,7 +2605,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Complex IFRS/IAS standards, group accounts, consolidated statements, and practical accounting scenarios. Mandatory paper for both ACCA and ICMAB members."
+              "description": "Complex IFRS/IAS standards, group accounts, consolidated statements, and practical accounting scenarios. Mandatory paper for both ACCA and ICMAB members.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p1",
+                  "route": "all",
+                  "title": "P1 Financial Accounting and Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Single entity IFRS, complex consolidation, AAOIFI Islamic finance, and IPSAS."
+                }
+              ]
             },
             {
               "id": "p2",
@@ -2187,7 +2643,16 @@
                   "weight": "20–25%"
                 }
               ],
-              "description": "Audit execution under International Standards on Auditing (ISA). Required for all ICMAB members; required for ACCA members unless exempt via ACCA Advanced Audit and Assurance (AAA)."
+              "description": "Audit execution under International Standards on Auditing (ISA). Required for all ICMAB members; required for ACCA members unless exempt via ACCA Advanced Audit and Assurance (AAA).",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p2",
+                  "route": "all",
+                  "title": "P2 Audit and Assurance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "ISA risk assessment, materiality, fraud procedures, KAM, and auditor reporting."
+                }
+              ]
             },
             {
               "id": "p3",
@@ -2217,7 +2682,16 @@
                   "weight": "15–20%"
                 }
               ],
-              "description": "Corporate tax planning, fiscal compliance, assessments, appeals, transfer pricing, and VAT administration in Bangladesh. Required for both ACCA and ICMAB members."
+              "description": "Corporate tax planning, fiscal compliance, assessments, appeals, transfer pricing, and VAT administration in Bangladesh. Required for both ACCA and ICMAB members.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p3",
+                  "route": "all",
+                  "title": "P3 Business Planning: Taxation & Compliance Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Tax litigation, transfer pricing, corporate reorganization, and VAT disputes."
+                }
+              ]
             },
             {
               "id": "p4",
@@ -2246,7 +2720,16 @@
                   "weight": "35%"
                 }
               ],
-              "description": "Capital budgeting, cost of capital, dividend policy, financial restructuring, derivative hedging, and Islamic financial modes. Required for both ACCA and ICMAB members."
+              "description": "Capital budgeting, cost of capital, dividend policy, financial restructuring, derivative hedging, and Islamic financial modes. Required for both ACCA and ICMAB members.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p4",
+                  "route": "all",
+                  "title": "P4 Financial Management Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "WACC, DCF valuation, real options, treasury FX/interest rate derivatives, and ESG."
+                }
+              ]
             },
             {
               "id": "p6",
@@ -2283,7 +2766,16 @@
                   "weight": "15%"
                 }
               ],
-              "description": "Bangladesh Companies Act 1994, SEC guidelines, FRA 2015 / FRC oversight, and winding-up procedures. Required for ACCA candidates; exempt for ICMAB members."
+              "description": "Bangladesh Companies Act 1994, SEC guidelines, FRA 2015 / FRC oversight, and winding-up procedures. Required for ACCA candidates; exempt for ICMAB members.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-p6",
+                  "route": "all",
+                  "title": "P6 Corporate Laws & Practices Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Advanced RJSC compliance, BSEC IPO/Rights regulations, and Bank Companies Act."
+                }
+              ]
             }
           ]
         },
@@ -2324,7 +2816,16 @@
                   "weight": "5–10%"
                 }
               ],
-              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000."
+              "description": "Advanced financial reporting integrating multi-entity group accounting, forensic statement diagnostics, external audit execution, and sustainability reporting under IFRS S1/S2 and IAASB ISSA 5000.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v1",
+                  "route": "all",
+                  "title": "V1 Corporate Reporting Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Complex IFRS 9/15/16, step acquisitions, foreign subsidiaries, and ISSB S1/S2."
+                }
+              ]
             },
             {
               "id": "v2",
@@ -2357,7 +2858,16 @@
                   "weight": "10–15%"
                 }
               ],
-              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level."
+              "description": "Executive decision-making synthesizing business strategy, corporate finance, enterprise risk management (ERM), digital leadership, and ethical governance at the senior boardroom level.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v2",
+                  "route": "all",
+                  "title": "V2 Strategic Business Management & Leadership Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Executive digital strategy, M&A/LBO financial engineering, and Integrated Reporting."
+                }
+              ]
             },
             {
               "id": "v3",
@@ -2390,7 +2900,16 @@
                   "weight": "25%"
                 }
               ],
-              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards."
+              "description": "The 4.5-hour capstone simulation placing candidates in the role of a trusted C-suite advisor. Dissects an unseen real-world business case to prepare an integrated board-level diagnostic report covering strategic choices, financial feasibility, risk management, and ethical safeguards.",
+              "linkedRoadmaps": [
+                {
+                  "id": "icab-v3",
+                  "route": "all",
+                  "title": "V3 Case Study Study Tracker",
+                  "badge": "Study Tracker ↗",
+                  "description": "Capstone advance information synthesis, financial modeling, and executive board reporting."
+                }
+              ]
             }
           ]
         },
