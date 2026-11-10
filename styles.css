@@ -1459,12 +1459,16 @@ button {
 /* Category Filter Chips */
 .search-filters-bar {
   display: flex;
+  flex-wrap: nowrap;
   gap: 6px;
   padding: 8px 16px;
   background: var(--bg-subtle);
   border-bottom: 1px solid var(--border-subtle);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  mask-image: linear-gradient(to right, black 0%, black calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 24px), transparent 100%);
 }
 
 .search-filters-bar::-webkit-scrollbar {
@@ -1482,6 +1486,7 @@ button {
   color: var(--text-secondary);
   cursor: pointer;
   white-space: nowrap;
+  flex-shrink: 0;
   transition: var(--transition);
 }
 
@@ -1721,9 +1726,18 @@ button {
 
 .catalog-filters-chips {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   gap: 8px;
-  justify-content: center;
+  padding: 4px 4px 8px;
+  mask-image: linear-gradient(to right, black 0%, black calc(100% - 32px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 32px), transparent 100%);
+}
+
+.catalog-filters-chips::-webkit-scrollbar {
+  display: none;
 }
 
 .catalog-grid {
@@ -1736,20 +1750,21 @@ button {
 .explore-category-group {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .catalog-category-title,
 .explore-category-title {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--border-subtle);
 }
 
 .catalog-cards-grid,

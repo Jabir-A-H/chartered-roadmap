@@ -1,6 +1,6 @@
 {
   "name": "roadmap-for-professional-degrees",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Interactive learning roadmaps, syllabus trackers, and qualification pathways for 28+ global and statutory professional degrees (ICAB, ACCA, CFA, CMA, CISA, CPA, CGMA, ICMAB, ICSB, CISSP, and more).",
   "private": true,
   "scripts": {

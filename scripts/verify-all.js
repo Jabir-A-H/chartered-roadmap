@@ -366,18 +366,40 @@ assert.ok(htmlContent.includes('id="breadcrumb-home-btn"'), 'index.html missing 
 // 2. Verify modal retirement: old explore-modal must NOT be in index.html
 assert.ok(!htmlContent.includes('id="explore-modal"'), 'index.html must not contain retired #explore-modal');
 
-// 3. Verify ROADMAP_CATALOG metadata integrity
+// 3. Verify ROADMAP_CATALOG metadata integrity & 8-domain taxonomy
 const catalogEntries = Object.values(router.ROADMAP_CATALOG);
 assert.strictEqual(catalogEntries.length, 46, 'ROADMAP_CATALOG must contain exactly 46 roadmaps');
+const domainCounts = {};
 catalogEntries.forEach((entry) => {
   assert.ok(entry.id, `Catalog entry missing id: ${JSON.stringify(entry)}`);
   assert.ok(entry.title, `Catalog entry ${entry.id} missing title`);
   assert.ok(entry.code, `Catalog entry ${entry.id} missing code`);
   assert.ok(entry.category, `Catalog entry ${entry.id} missing category`);
   assert.ok(entry.level, `Catalog entry ${entry.id} missing level`);
+  assert.ok(entry.domain, `Catalog entry ${entry.id} missing domain`);
+  domainCounts[entry.domain] = (domainCounts[entry.domain] || 0) + 1;
 });
 
-// 4. Verify router methods
+assert.strictEqual(domainCounts['accounting'], 4, 'accounting domain must have 4 roadmaps');
+assert.strictEqual(domainCounts['mgmt-accounting'], 2, 'mgmt-accounting domain must have 2 roadmaps');
+assert.strictEqual(domainCounts['finance'], 7, 'finance domain must have 7 roadmaps');
+assert.strictEqual(domainCounts['audit-is'], 6, 'audit-is domain must have 6 roadmaps');
+assert.strictEqual(domainCounts['risk-fraud'], 5, 'risk-fraud domain must have 5 roadmaps');
+assert.strictEqual(domainCounts['islamic'], 2, 'islamic domain must have 2 roadmaps');
+assert.strictEqual(domainCounts['statutory-bd'], 2, 'statutory-bd domain must have 2 roadmaps');
+assert.strictEqual(domainCounts['papers'], 17, 'papers domain must have 17 roadmaps');
+assert.strictEqual(domainCounts['labs'], 1, 'labs domain must have 1 roadmap');
+
+// 4. Verify Accessible Domain Filter Chips in HTML
+assert.ok(htmlContent.includes('role="group" aria-label="Filter roadmaps by professional domain"'), 'index.html missing accessible domain filter group');
+assert.ok(htmlContent.includes('data-catalog-filter="accounting"'), 'index.html missing accounting filter chip');
+assert.ok(htmlContent.includes('data-catalog-filter="finance"'), 'index.html missing finance filter chip');
+assert.ok(htmlContent.includes('data-catalog-filter="audit-is"'), 'index.html missing audit-is filter chip');
+assert.ok(htmlContent.includes('data-catalog-filter="risk-fraud"'), 'index.html missing risk-fraud filter chip');
+assert.ok(htmlContent.includes('data-catalog-filter="islamic"'), 'index.html missing islamic filter chip');
+assert.ok(htmlContent.includes('data-catalog-filter="statutory-bd"'), 'index.html missing statutory-bd filter chip');
+
+// 5. Verify router methods
 assert.strictEqual(typeof router.showCatalogView, 'function', 'router.showCatalogView must be a function');
 assert.strictEqual(typeof router.showRoadmapView, 'function', 'router.showRoadmapView must be a function');
 assert.strictEqual(typeof router.handleRoute, 'function', 'router.handleRoute must be a function');

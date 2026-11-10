@@ -28,7 +28,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Micro/macroeconomic business environment, market structures, international trade, financial markets, and banking systems."
+              "description": "Micro/macroeconomic business environment, market structures, international trade, financial markets, and banking systems.",
+              "topics": [
+                "Macroeconomic Environment, Aggregate Demand & Business Cycles",
+                "Microeconomic Market Forces: Demand, Supply, Elasticity & Market Forms",
+                "Financial Markets, Banking Systems & Monetary/Fiscal Policy Impacts",
+                "International Trade, Exchange Rate Determination & Globalization Drivers"
+              ]
             },
             {
               "id": "cima-ba2",
@@ -38,7 +44,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Cost identification, cost accounting systems, marginal costing, variance analysis, planning and budgetary control."
+              "description": "Cost identification, cost accounting systems, marginal costing, variance analysis, planning and budgetary control.",
+              "topics": [
+                "Cost Identification, Classification & Cost Accounting Systems",
+                "Marginal Costing, Absorption Costing & Contribution Margin Analysis",
+                "Budgetary Planning, Operational Budgets & Variance Analysis",
+                "Cost-Volume-Profit (CVP) Analysis & Short-Term Commercial Decision Rules"
+              ]
             },
             {
               "id": "cima-ba3",
@@ -48,7 +60,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Accounting principles, double-entry bookkeeping, adjusting entries, and financial statements preparation under IFRS."
+              "description": "Accounting principles, double-entry bookkeeping, adjusting entries, and financial statements preparation under IFRS.",
+              "topics": [
+                "Principles of Financial Accounting, Accounting Equation & Bookkeeping",
+                "Adjusting Entries, Trial Balance Extraction & Error Corrections",
+                "Preparation of Financial Statements under IFRS/IAS for Single Entities",
+                "Accounting for Non-Current Assets, Depreciation & Working Capital Balances"
+              ]
             },
             {
               "id": "cima-ba4",
@@ -58,7 +76,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Ethics and professional behavior, corporate governance frameworks, corporate law, administration, and employment law."
+              "description": "Ethics and professional behavior, corporate governance frameworks, corporate law, administration, and employment law.",
+              "topics": [
+                "Ethics, Ethical Frameworks & CIMA Code of Professional Ethics",
+                "Corporate Governance Principles, Board Responsibilities & Internal Control",
+                "Company Law: Incorporation, Share Capital, Directors' Fiduciary Duties",
+                "Commercial Contract Law, Employment Law & Professional Negligence Liability"
+              ]
             }
           ]
         },
@@ -75,7 +99,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Finance function organization, technology in finance (cloud, big data, blockchain, AI), and data analytics."
+              "description": "Finance function organization, technology in finance (cloud, big data, blockchain, AI), and data analytics.",
+              "topics": [
+                "Role, Structure & Evolution of the Modern Corporate Finance Function",
+                "Emerging Digital Technologies: Cloud, Big Data, AI, RPA, Blockchain & IoT",
+                "Data Ecosystems, Data Management Pipelines, Governance & Cybersecurity Risks",
+                "Finance Business Partnering, Stakeholder Collaboration & Digital Transformation"
+              ]
             },
             {
               "id": "cima-p1",
@@ -85,7 +115,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Cost accounting systems, budgeting, short-term decision making, and managing risk and uncertainty."
+              "description": "Cost accounting systems, budgeting, short-term decision making, and managing risk and uncertainty.",
+              "topics": [
+                "Cost Accounting Systems: Marginal, Absorption & Activity-Based Costing (ABC)",
+                "Budgeting Frameworks, Flexible Budgets & Rolling Operational Forecasts",
+                "Short-Term Decision Making: CVP Analysis, Limiting Factors & Pricing Models",
+                "Managing Risk and Uncertainty in Operations: Payoff Tables & Decision Trees"
+              ]
             },
             {
               "id": "cima-f1",
@@ -95,7 +131,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Regulatory environment, IFRS financial statements, taxation (corporate income tax and VAT), and working capital management."
+              "description": "Regulatory environment, IFRS financial statements, taxation (corporate income tax and VAT), and working capital management.",
+              "topics": [
+                "Financial Reporting Regulatory Framework & IASB Standard-Setting Architecture",
+                "Preparation of Single-Entity Financial Statements under IFRS (IAS 1, 2, 16, 38)",
+                "Corporate Income Tax Calculation, Tax Provisions & Indirect Taxation (VAT)",
+                "Working Capital Management: Cash Operating Cycles, Receivables & Liquidity"
+              ]
             },
             {
               "id": "cgma-ocs",
@@ -109,6 +151,12 @@
               "checklists": [
                 "Review pre-seen case study materials thoroughly",
                 "Demonstrate role competence as a Finance Officer / Cost Accountant"
+              ],
+              "topics": [
+                "Integrated Scenario Simulation Synthesizing E1, P1, and F1 Competencies",
+                "Operational Financial Performance Diagnostics & Cost Variance Reporting",
+                "Working Capital Liquidity Troubleshooting & Inventory Management Responses",
+                "Preparation of Finance Officer Briefing Memos for Senior Management"
               ]
             }
           ]
@@ -126,7 +174,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Business models, value chains, strategic management, project management, and relationship management."
+              "description": "Business models, value chains, strategic management, project management, and relationship management.",
+              "topics": [
+                "Business Models, Value Creation & Ecosystem Orchestration across Value Chains",
+                "Strategic Environmental Scanning (PESTEL, Porter's 5 Forces) & Strategic Options",
+                "Project Management Methodologies (Agile, Waterfall, PRINCE2) & Critical Path Method",
+                "People Management, High-Performance Teams, Leadership & Change Models (Kotter)"
+              ]
             },
             {
               "id": "cima-p2",
@@ -136,7 +190,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Cost management for competitive advantage, control and performance of responsibility centers, and pricing decisions."
+              "description": "Cost management for competitive advantage, control and performance of responsibility centers, and pricing decisions.",
+              "topics": [
+                "Strategic Cost Management: Target Costing, Life-Cycle Costing & Kaizen",
+                "Capital Investment Appraisal: Discounted Cash Flow (NPV, IRR, MIRR) & Real Options",
+                "Divisional Performance Evaluation: ROI, Residual Income, EVA® & Transfer Pricing",
+                "Revenue Management, Dynamic Pricing Strategies & Long-Term Decision Analysis"
+              ]
             },
             {
               "id": "cima-f2",
@@ -146,7 +206,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Group financial statements (IFRS 10/IFRS 3), financial instruments (IFRS 9), revenue recognition, and financial analysis."
+              "description": "Group financial statements (IFRS 10/IFRS 3), financial instruments (IFRS 9), revenue recognition, and financial analysis.",
+              "topics": [
+                "Consolidated Financial Statements: Group Accounts, Goodwill & NCIs (IFRS 3, 10)",
+                "Accounting for Associates (IAS 28) & Joint Venture Arrangements (IFRS 11)",
+                "Complex Financial Instruments (IFRS 9), Leases (IFRS 16) & Revenue (IFRS 15)",
+                "Financial Analysis, Ratio Diagnostics, Earnings Quality & Corporate Valuation"
+              ]
             },
             {
               "id": "cgma-mcs",
@@ -156,7 +222,13 @@
               "duration": "3 Hours",
               "format": "Integrated Scenario Case Simulation",
               "marks": 150,
-              "description": "3-hour computer-based case simulation evaluating E2, P2, and F2 integration. Acts as the Gateway Exam for qualified accountants. Passing mark: 80/150."
+              "description": "3-hour computer-based case simulation evaluating E2, P2, and F2 integration. Acts as the Gateway Exam for qualified accountants. Passing mark: 80/150.",
+              "topics": [
+                "Integrated Scenario Simulation Synthesizing E2, P2, and F2 Competencies",
+                "Capital Investment Project Evaluation & Strategic Financial Recommendations",
+                "Group Consolidated Reporting Analysis & Divisional Performance Dispute Resolution",
+                "Preparation of Management-Level Strategic Briefing Papers for Executive Directors"
+              ]
             }
           ]
         },
@@ -173,7 +245,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Interlocking context of strategy, formulation of strategic options, digital strategy, and implementing business transformation."
+              "description": "Interlocking context of strategy, formulation of strategic options, digital strategy, and implementing business transformation.",
+              "topics": [
+                "Enterprise Strategic Planning: Purpose, Vision, Competitive Strategies & Blue Ocean",
+                "Digital Strategy Formulation, Platform Business Models & Disruptive Innovation",
+                "Strategy Implementation: Organizational Architecture, Network Models & Controls",
+                "Strategic Leadership, Corporate Governance (OECD) & Ethical Board Stewardship"
+              ]
             },
             {
               "id": "cima-p3",
@@ -183,7 +261,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Enterprise risk management, strategic risk, cyber risk, internal controls, and ethical governance."
+              "description": "Enterprise risk management, strategic risk, cyber risk, internal controls, and ethical governance.",
+              "topics": [
+                "Enterprise Risk Management (ERM): COSO Framework, Risk Appetite & Registers",
+                "Internal Control Systems, SOX Compliance, Fraud Risk Assessment & Internal Audit",
+                "Cybersecurity Governance, Information Asset Protection & Business Continuity (BCM)",
+                "Financial Risk Management: Currency & Interest Rate Hedging via Derivatives"
+              ]
             },
             {
               "id": "cima-f3",
@@ -193,7 +277,13 @@
               "duration": "90 Minutes",
               "format": "60 Objective Test Questions",
               "marks": 150,
-              "description": "Financial strategy formulation, debt and equity financing, business valuation, and mergers and acquisitions."
+              "description": "Financial strategy formulation, debt and equity financing, business valuation, and mergers and acquisitions.",
+              "topics": [
+                "Formulation of Strategic Financial Policy & Long-Term Capital Structure",
+                "Financing Decisions: Equity Rights Offerings, Debt Instruments & Hybrids",
+                "Mergers & Acquisitions (M&A): Target Valuation (DCF, Multiples) & Deal Structuring",
+                "Corporate Restructuring, Divestitures, Dividend Policies & Share Repurchases"
+              ]
             },
             {
               "id": "cgma-scs",
@@ -203,7 +293,13 @@
               "duration": "3 Hours",
               "format": "Executive Boardroom Simulation",
               "marks": 150,
-              "description": "Cap-stone 3-hour executive case study simulating board-level strategic decision-making and risk governance. Passing mark: 80/150."
+              "description": "Cap-stone 3-hour executive case study simulating board-level strategic decision-making and risk governance. Passing mark: 80/150.",
+              "topics": [
+                "Capstone Integrated Scenario Simulation Synthesizing E3, P3, and F3",
+                "Board-Level Strategic Problem Solving, Financial Engineering & Risk Defense",
+                "Evaluating Cross-Border Mergers, Capital Restructuring & Turnaround Proposals",
+                "Drafting Boardroom Executive Memos & Strategic Advisory Presentations"
+              ]
             }
           ]
         },
@@ -272,7 +368,13 @@
               "duration": "3 Hours",
               "format": "Integrated Scenario Case Simulation",
               "marks": 150,
-              "description": "Unified Operational Case Study examination milestone shared with the Traditional Pathway."
+              "description": "Unified Operational Case Study examination milestone shared with the Traditional Pathway.",
+              "topics": [
+                "Integrated Scenario Simulation Synthesizing E1, P1, and F1 Competencies",
+                "Operational Financial Performance Diagnostics & Cost Variance Reporting",
+                "Working Capital Liquidity Troubleshooting & Inventory Management Responses",
+                "Preparation of Finance Officer Briefing Memos for Senior Management"
+              ]
             }
           ]
         },
@@ -301,7 +403,13 @@
               "duration": "3 Hours",
               "format": "Integrated Scenario Case Simulation",
               "marks": 150,
-              "description": "Unified Management Case Study examination milestone shared with the Traditional Pathway."
+              "description": "Unified Management Case Study examination milestone shared with the Traditional Pathway.",
+              "topics": [
+                "Integrated Scenario Simulation Synthesizing E2, P2, and F2 Competencies",
+                "Capital Investment Project Evaluation & Strategic Financial Recommendations",
+                "Group Consolidated Reporting Analysis & Divisional Performance Dispute Resolution",
+                "Preparation of Management-Level Strategic Briefing Papers for Executive Directors"
+              ]
             }
           ]
         },
@@ -330,7 +438,13 @@
               "duration": "3 Hours",
               "format": "Executive Boardroom Simulation",
               "marks": 150,
-              "description": "Unified Strategic Case Study examination milestone shared with the Traditional Pathway."
+              "description": "Unified Strategic Case Study examination milestone shared with the Traditional Pathway.",
+              "topics": [
+                "Capstone Integrated Scenario Simulation Synthesizing E3, P3, and F3",
+                "Board-Level Strategic Problem Solving, Financial Engineering & Risk Defense",
+                "Evaluating Cross-Border Mergers, Capital Restructuring & Turnaround Proposals",
+                "Drafting Boardroom Executive Memos & Strategic Advisory Presentations"
+              ]
             }
           ]
         },

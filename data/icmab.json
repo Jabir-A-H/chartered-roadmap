@@ -36,7 +36,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Double-entry bookkeeping, adjusting entries, bank reconciliation, trial balance, and financial statement preparation under IFRS/IAS."
+              "description": "Double-entry bookkeeping, adjusting entries, bank reconciliation, trial balance, and financial statement preparation under IFRS/IAS.",
+              "topics": [
+                "Double-Entry Bookkeeping & Accounting Equation Mechanics",
+                "Journal Entries, General Ledger & Trial Balance Preparation",
+                "Adjusting Entries, Accruals, Prepayments & Depreciation Methods",
+                "Bank Reconciliation Statements & Cash Control Systems",
+                "Financial Statements Preparation under IFRS for Sole Traders & Partnerships",
+                "Financial Accounting for Non-Profit Organizations & Incomplete Records"
+              ]
             },
             {
               "id": "ta112",
@@ -45,7 +53,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Time value of money, matrices, business calculus, probability distributions, hypothesis testing, and regression analysis."
+              "description": "Time value of money, matrices, business calculus, probability distributions, hypothesis testing, and regression analysis.",
+              "topics": [
+                "Time Value of Money, Compound Interest & Loan Amortization Schedules",
+                "Matrix Algebra, Determinants & Systems of Linear Equations (Cramer's Rule)",
+                "Differential & Integral Calculus for Business Revenue & Cost Optimization",
+                "Descriptive Statistics, Central Tendency & Dispersion Metrics",
+                "Probability Theory, Bayes' Theorem, Binomial, Poisson & Normal Distributions",
+                "Hypothesis Testing (z-tests, t-tests, Chi-square) & Simple Linear Regression"
+              ]
             },
             {
               "id": "ef113",
@@ -54,7 +70,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Microeconomic theory, macroeconomic indicators, fiscal/monetary policy, Bangladesh banking system, foreign trade, and BoP."
+              "description": "Microeconomic theory, macroeconomic indicators, fiscal/monetary policy, Bangladesh banking system, foreign trade, and BoP.",
+              "topics": [
+                "Microeconomics: Demand-Supply Equilibrium, Elasticities & Consumer Utility",
+                "Production Functions, Law of Diminishing Returns & Economies of Scale",
+                "Market Structures: Perfect Competition, Monopoly, Oligopoly & Pricing",
+                "Macroeconomics: National Income Accounting (GDP, GNP) & Circular Flow",
+                "Monetary Policy, Fiscal Policy, Inflation & Bangladesh Bank Guidelines",
+                "International Trade: Comparative Advantage, Balance of Payments & WTO Rules"
+              ]
             },
             {
               "id": "ms114",
@@ -63,7 +87,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Organizational management principles, executive reporting, business communication, and professional ethical frameworks."
+              "description": "Organizational management principles, executive reporting, business communication, and professional ethical frameworks.",
+              "topics": [
+                "Principles of Management, Planning & Modern Organizational Structures",
+                "Leadership Theories, Employee Motivation Models & Conflict Resolution",
+                "Corporate Communication Process, Barriers & Cross-Cultural Dynamics",
+                "Formal Corporate Drafting: Board Minutes, Executive Briefs & Business Reports",
+                "Oral Presentations, Persuasive Pitching & Boardroom Communication",
+                "Professional Ethics, Corporate Integrity & Codes of Professional Conduct"
+              ]
             }
           ]
         },
@@ -79,7 +111,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing."
+              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing.",
+              "topics": [
+                "Cost Concepts, Classifications, Cost Objects & Cost Sheet Architecture",
+                "Direct Material Costing, EOQ, Inventory Valuation & BCAS 24 Compliance",
+                "Direct Labor Costing, Payroll Systems, Incentive Schemes & BCAS 25",
+                "Overhead Allocation, Apportionment & Absorption Rates under BCAS 4 & 5",
+                "Job Order Costing, Batch Costing & Contract Costing (BCAS 7 & 31)",
+                "Process Costing, Equivalent Units of Production & Joint/By-Product Costing (BCAS 8 & 9)"
+              ]
             },
             {
               "id": "fr222",
@@ -88,7 +128,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "IFRS 15 revenue, IFRS 16 leases, IAS 16 PPE, IAS 36 impairment, and comprehensive corporate financial statements."
+              "description": "IFRS 15 revenue, IFRS 16 leases, IAS 16 PPE, IAS 36 impairment, and comprehensive corporate financial statements.",
+              "topics": [
+                "Conceptual Framework for Financial Reporting & Qualitative Characteristics",
+                "Property, Plant and Equipment (IAS 16) & Impairment of Assets (IAS 36)",
+                "Intangible Assets (IAS 38) & Research/Development Capitalization",
+                "Revenue from Contracts with Customers (IFRS 15) 5-Step Recognition Model",
+                "Leases (IFRS 16): Lessee Right-of-Use Accounting & Lessor Classifications",
+                "Preparation of Corporate Financial Statements & Cash Flow Statements (IAS 7)"
+              ]
             },
             {
               "id": "ta223",
@@ -97,7 +145,15 @@
               "category": "Exam",
               "marks": 50,
               "duration": "2 Hours",
-              "description": "DBMS architecture, SQL queries, ERP systems (SAP/Oracle), data analytics, cybersecurity, and internal IT controls."
+              "description": "DBMS architecture, SQL queries, ERP systems (SAP/Oracle), data analytics, cybersecurity, and internal IT controls.",
+              "topics": [
+                "Computer Systems Architecture, Operating Systems & Server Virtualization",
+                "Relational Database Architecture, Normalization (1NF to 3NF) & SQL Queries",
+                "Enterprise Resource Planning (ERP) Modules (SAP S/4HANA & Oracle Cloud)",
+                "Cloud Architectures (IaaS, PaaS, SaaS) & Enterprise Data Warehousing",
+                "Cybersecurity Fundamentals, Cryptography (PKI) & Access Control Models",
+                "IT General Controls (ITGC), Application Controls & COBIT 2019 Framework"
+              ]
             },
             {
               "id": "ms224",
@@ -106,7 +162,15 @@
               "category": "Exam",
               "marks": 50,
               "duration": "2 Hours",
-              "description": "Marketing mix, STP framework, procurement lifecycle, logistics optimization, and supply chain risk mitigation."
+              "description": "Marketing mix, STP framework, procurement lifecycle, logistics optimization, and supply chain risk mitigation.",
+              "topics": [
+                "Customer Value Proposition, Marketing Mix (4Ps/7Ps) & Digital Marketing",
+                "Market Segmentation, Targeting & Positioning (STP Framework)",
+                "Supply Chain Architecture, Push vs. Pull Systems & Bullwhip Effect Mitigation",
+                "Strategic Procurement, Total Cost of Ownership (TCO) & Vendor Evaluation",
+                "Logistics Network Design, Warehousing Operations & Reverse Logistics",
+                "Global Supply Chain Risk Management & Sustainable Sourcing Standards"
+              ]
             },
             {
               "id": "lt125",
@@ -115,7 +179,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006."
+              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006.",
+              "topics": [
+                "Companies Act 1994: Company Types, Incorporation & Memorandum/Articles Alteration",
+                "Corporate Capital: Prospectus, Share Allotment, Transfers & Mortgages/Charges",
+                "Management & Administration: Directors' Duties, Board Meetings & AGMs/EGMs",
+                "Contract Act 1872: Essential Contract Elements, Consideration, Breach & Remedies",
+                "Sale of Goods Act 1930 & Negotiable Instruments Act 1881 (Cheque Dishonor Sec 138)",
+                "Bangladesh Labor Act 2006: Employment Conditions, Workplace Safety & Dispute Redress"
+              ]
             }
           ]
         },
@@ -131,7 +203,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis."
+              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis.",
+              "topics": [
+                "Marginal Costing vs. Absorption Costing & Reconciliation of Income",
+                "Cost-Volume-Profit (CVP) Analysis, Multi-Product Break-Even & Margin of Safety",
+                "Short-Term Commercial Decision Making: Relevant Costs, Make-or-Buy & Special Orders",
+                "Strategic Pricing Models, Target Costing (BCAS 10) & Product Mix Decisions (BCAS 15)",
+                "Master Budget Preparation, Flexible Budgeting & Zero-Based Budgeting (ZBB)",
+                "Standard Costing & Variance Analysis under BCAS 13 (Material, Labor, Overheads)"
+              ]
             },
             {
               "id": "ef232",
@@ -140,7 +220,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Financial ratio analysis, working capital optimization, DCF capital budgeting (NPV/IRR), and WACC capital structure theory."
+              "description": "Financial ratio analysis, working capital optimization, DCF capital budgeting (NPV/IRR), and WACC capital structure theory.",
+              "topics": [
+                "Financial Statement Analysis, Ratio Decomposition & DuPont 5-Factor Model",
+                "Working Capital Management: Cash Conversion Cycle, Receivables & Inventory Models",
+                "Capital Budgeting DCF Decision Models (NPV, IRR, MIRR, PI) under BCAS 21",
+                "Capital Budgeting under Risk: Sensitivity Analysis, Decision Trees & Real Options",
+                "Cost of Capital Estimation: WACC, CAPM Equity Pricing & After-Tax Cost of Debt",
+                "Capital Structure Theories (MM Propositions, Pecking Order) & Leverage Ratios"
+              ]
             },
             {
               "id": "aa133",
@@ -149,7 +237,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Bangladesh Standards on Auditing (BSA/ISA), audit planning, internal control testing, substantive procedures, and audit opinions."
+              "description": "Bangladesh Standards on Auditing (BSA/ISA), audit planning, internal control testing, substantive procedures, and audit opinions.",
+              "topics": [
+                "Auditing Regulatory Framework, Professional Skepticism & IESBA Code of Ethics",
+                "Audit Planning, Risk Assessment Model & Materiality Determination (ISA 300, 315, 320)",
+                "Internal Control Evaluation, Test of Controls & Walk-Through Tests (ISA 330)",
+                "Audit Evidence Gathering, Substantive Testing & Analytical Procedures (ISA 500 & 520)",
+                "Audit Sampling Techniques, Tolerable Error & Misstatement Evaluation (ISA 530)",
+                "Audit Reporting: Audit Opinions, Key Audit Matters (KAM) & Emphasis of Matter (ISA 700 series)"
+              ]
             },
             {
               "id": "lt234",
@@ -158,7 +254,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM."
+              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM.",
+              "topics": [
+                "Income Tax Act 2023: Residential Status, Total Income Scope & Assessee Rates",
+                "Heads of Income: Employment, Rent, Business Income, Capital Gains & Deductions",
+                "Corporate Tax Computation, Allowable Depreciation (3rd Schedule) & Minimum Tax",
+                "VAT & Supplementary Duty Act 2012: Registration, VAT Invoicing (Mushak 6.3) & Rates",
+                "Withholding Tax & VAT (VDS - Mushak 6.6) & Monthly VAT Return (Mushak 9.1)",
+                "Public Financial Management (PFM): National Budget Cycle & Public Procurement (PPA 2006)"
+              ]
             }
           ]
         },
@@ -174,7 +278,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing.",
+              "topics": [
+                "Strategic Cost Management Frameworks, Value Chain Analysis & BCAS 23 Alignment",
+                "Activity-Based Costing (ABC) & Activity-Based Management (ABM) under BCAS 14 & 20",
+                "Target Costing, Life Cycle Costing (LCC) & Kaizen Costing (BCAS 10, 11, 12)",
+                "Theory of Constraints (TOC), Bottleneck Optimization & Throughput Accounting",
+                "Cost of Quality (COQ) Analysis (BCAS 29), TQM & Environmental Cost Accounting",
+                "Divisional Performance Evaluation, Balanced Scorecard, EVA® & Transfer Pricing (BCAS 16)"
+              ]
             },
             {
               "id": "fr342",
@@ -183,7 +295,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Group consolidated accounts (IFRS 10/IFRS 3), financial instruments (IFRS 9), employee benefits (IAS 19), and ISSB sustainability standards."
+              "description": "Group consolidated accounts (IFRS 10/IFRS 3), financial instruments (IFRS 9), employee benefits (IAS 19), and ISSB sustainability standards.",
+              "topics": [
+                "Business Combinations & Group Accounting under IFRS 3 & IFRS 10",
+                "Consolidated Financial Statements: Goodwill, Non-Controlling Interest & Eliminations",
+                "Accounting for Associates (IAS 28) & Joint Arrangements (IFRS 11)",
+                "Complex Financial Instruments Classification, Measurement & Hedging (IFRS 9)",
+                "Accounting for Income Taxes (IAS 12 Deferred Tax) & Employee Benefits (IAS 19)",
+                "Foreign Currency Operations Translation (IAS 21) & ISSB Sustainability Reporting (IFRS S1/S2)"
+              ]
             },
             {
               "id": "ef343",
@@ -192,7 +312,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "M&A valuation, financial restructuring, IPO issuance, money and capital markets, and derivative risk hedging."
+              "description": "M&A valuation, financial restructuring, IPO issuance, money and capital markets, and derivative risk hedging.",
+              "topics": [
+                "Strategic Capital Structuring, Debt Covenant Optimization & Signaling Theory",
+                "Mergers & Acquisitions (M&A): Strategic Valuation (DCF, Multiples) & Deal Financing",
+                "Corporate Financial Restructuring, Divestitures, Spin-Offs & Distressed Debt Management",
+                "Money Market Instruments, Capital Markets & Bond Yield Curve Dynamics",
+                "Equity Financing Strategies: IPO Pricing (Book Building), Rights Issues & Private Equity",
+                "Financial Derivatives: Forwards, Futures, Swaps, Black-Scholes Options & Hedging"
+              ]
             },
             {
               "id": "lt344",
@@ -201,7 +329,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "OECD governance principles, BSEC Corporate Governance Code (CGC 2018), board secretarial procedures, and RJSC compliance."
+              "description": "OECD governance principles, BSEC Corporate Governance Code (CGC 2018), board secretarial procedures, and RJSC compliance.",
+              "topics": [
+                "Corporate Governance Theories (Agency, Stakeholder) & International Frameworks",
+                "BSEC Corporate Governance Code (CGC 2018): Board Structure & Independent Directors",
+                "Board Committees Mandates: Audit Committee Charter & NRC Compliance",
+                "Corporate Secretarial Practice: Board Meetings, Agendas, Minutes & Resolutions",
+                "Organizing AGMs/EGMs, Shareholder Voting Systems & RJSC Statutory Returns",
+                "Corporate Governance Reporting, Whistleblowing Policies & Compliance Certification"
+              ]
             }
           ]
         },
@@ -217,7 +353,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Strategic environmental scanning (PESTEL, Porter's Five Forces), competitive positioning, strategic execution, and turnaround."
+              "description": "Strategic environmental scanning (PESTEL, Porter's Five Forces), competitive positioning, strategic execution, and turnaround.",
+              "topics": [
+                "Strategic Management Process, Vision, Mission & Strategic Intent Formulation",
+                "External Industry Analysis: PESTEL Framework & Porter's Five Forces Model",
+                "Internal Strategic Appraisal: Resource-Based View (RBV), VRIO & Value Chain",
+                "Business Competitive Strategies: Porter's Generic Strategies & Blue Ocean Paradigm",
+                "Corporate Portfolio Strategies (BCG Matrix, Ansoff Grid), M&A & Strategic Alliances",
+                "Strategy Execution, Organizational Architecture, Balanced Scorecard & Change Management"
+              ]
             },
             {
               "id": "aa252",
@@ -226,7 +370,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting.",
+              "topics": [
+                "Statutory Cost Audit Legal Framework: Companies Act 1994 Sec 220 & Cost Audit Rules 1997",
+                "Mandatory Cost Audit Gazette Directives: Pharmaceuticals, Fertilizers, Cement & Textiles",
+                "Application of Bangladesh Cost Accounting Standards (BCAS 1–31) in Audit Engagements",
+                "Cost Audit Planning, Manufacturing Overhead Verification & Capacity Audits (BCAS 28)",
+                "Drafting Statutory Cost Audit Reports, Annexures & Submissions to Ministry of Commerce",
+                "Management Audit, Operational Audit, Efficiency Evaluation & Energy/Environmental Audits"
+              ]
             },
             {
               "id": "lt453",
@@ -235,7 +387,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR."
+              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR.",
+              "topics": [
+                "Corporate Tax Computation for Public, Private, Banking & Export Entities under ITA 2023",
+                "International Tax Treaties (DTAA), Foreign Tax Credits & Permanent Establishment Rules",
+                "Transfer Pricing Regulations: Arm's Length Principle, Pricing Methods & CbC Reporting",
+                "Tax Assessments, Scrutiny, Appeals (Taxes Appellate Tribunal) & High Court References",
+                "Alternative Dispute Resolution (ADR) under Income Tax & VAT Legislation",
+                "Advanced VAT Adjudications, Large Taxpayer Unit (LTU) Compliance & Tax Planning Ethics"
+              ]
             },
             {
               "id": "cs154",
@@ -244,7 +404,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance.",
+              "topics": [
+                "Multi-Disciplinary Corporate Case Synthesis across Strategy, Costing, Finance & Tax",
+                "Strategic Cost & Profitability Diagnostics using ABC, Target Costing & Throughput Models",
+                "Financial Restructuring Evaluation, Valuation Modeling & Cash Flow Projections",
+                "Corporate Governance, Ethical Board Conduct & Statutory Cost Audit Integration",
+                "Formulating Board-Level Strategic Action Plans & Presentation-Grade Executive Briefs"
+              ]
             },
             {
               "id": "icmab-articleship",
@@ -252,7 +419,14 @@
               "code": "PER 100",
               "category": "Experience",
               "duration": "12 Months",
-              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA."
+              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA.",
+              "topics": [
+                "12 Months Practical Articleship under Active ACMA/FCMA Supervision",
+                "Practical Exposure to Enterprise Cost Accounting & BCAS Implementation",
+                "Participation in Statutory Cost Audit Engagements & Workpaper Preparation",
+                "Corporate Budgeting, Management Reporting & Variance Tracking in Industry",
+                "Verification of Mandatory Experience Logbook & Articleship Completion Certificate"
+              ]
             }
           ]
         }
@@ -290,7 +464,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing."
+              "description": "Cost concepts, material control, labor payroll schemes, overhead allocation under BCAS 4/5, job/contract/process costing.",
+              "topics": [
+                "Cost Concepts, Classifications, Cost Objects & Cost Sheet Architecture",
+                "Direct Material Costing, EOQ, Inventory Valuation & BCAS 24 Compliance",
+                "Direct Labor Costing, Payroll Systems, Incentive Schemes & BCAS 25",
+                "Overhead Allocation, Apportionment & Absorption Rates under BCAS 4 & 5",
+                "Job Order Costing, Batch Costing & Contract Costing (BCAS 7 & 31)",
+                "Process Costing, Equivalent Units of Production & Joint/By-Product Costing (BCAS 8 & 9)"
+              ]
             },
             {
               "id": "cm231",
@@ -299,7 +481,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis."
+              "description": "Marginal costing, CVP analysis, relevant cost decision-making, budgetary control, and standard costing variance analysis.",
+              "topics": [
+                "Marginal Costing vs. Absorption Costing & Reconciliation of Income",
+                "Cost-Volume-Profit (CVP) Analysis, Multi-Product Break-Even & Margin of Safety",
+                "Short-Term Commercial Decision Making: Relevant Costs, Make-or-Buy & Special Orders",
+                "Strategic Pricing Models, Target Costing (BCAS 10) & Product Mix Decisions (BCAS 15)",
+                "Master Budget Preparation, Flexible Budgeting & Zero-Based Budgeting (ZBB)",
+                "Standard Costing & Variance Analysis under BCAS 13 (Material, Labor, Overheads)"
+              ]
             },
             {
               "id": "cm341",
@@ -308,7 +498,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing.",
+              "topics": [
+                "Strategic Cost Management Frameworks, Value Chain Analysis & BCAS 23 Alignment",
+                "Activity-Based Costing (ABC) & Activity-Based Management (ABM) under BCAS 14 & 20",
+                "Target Costing, Life Cycle Costing (LCC) & Kaizen Costing (BCAS 10, 11, 12)",
+                "Theory of Constraints (TOC), Bottleneck Optimization & Throughput Accounting",
+                "Cost of Quality (COQ) Analysis (BCAS 29), TQM & Environmental Cost Accounting",
+                "Divisional Performance Evaluation, Balanced Scorecard, EVA® & Transfer Pricing (BCAS 16)"
+              ]
             },
             {
               "id": "aa252",
@@ -317,7 +515,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting.",
+              "topics": [
+                "Statutory Cost Audit Legal Framework: Companies Act 1994 Sec 220 & Cost Audit Rules 1997",
+                "Mandatory Cost Audit Gazette Directives: Pharmaceuticals, Fertilizers, Cement & Textiles",
+                "Application of Bangladesh Cost Accounting Standards (BCAS 1–31) in Audit Engagements",
+                "Cost Audit Planning, Manufacturing Overhead Verification & Capacity Audits (BCAS 28)",
+                "Drafting Statutory Cost Audit Reports, Annexures & Submissions to Ministry of Commerce",
+                "Management Audit, Operational Audit, Efficiency Evaluation & Energy/Environmental Audits"
+              ]
             },
             {
               "id": "cs154",
@@ -326,7 +532,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance.",
+              "topics": [
+                "Multi-Disciplinary Corporate Case Synthesis across Strategy, Costing, Finance & Tax",
+                "Strategic Cost & Profitability Diagnostics using ABC, Target Costing & Throughput Models",
+                "Financial Restructuring Evaluation, Valuation Modeling & Cash Flow Projections",
+                "Corporate Governance, Ethical Board Conduct & Statutory Cost Audit Integration",
+                "Formulating Board-Level Strategic Action Plans & Presentation-Grade Executive Briefs"
+              ]
             }
           ]
         },
@@ -386,7 +599,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006."
+              "description": "Companies Act 1994, Contract Act 1872, Negotiable Instruments 1881, and Bangladesh Labor Act 2006.",
+              "topics": [
+                "Companies Act 1994: Company Types, Incorporation & Memorandum/Articles Alteration",
+                "Corporate Capital: Prospectus, Share Allotment, Transfers & Mortgages/Charges",
+                "Management & Administration: Directors' Duties, Board Meetings & AGMs/EGMs",
+                "Contract Act 1872: Essential Contract Elements, Consideration, Breach & Remedies",
+                "Sale of Goods Act 1930 & Negotiable Instruments Act 1881 (Cheque Dishonor Sec 138)",
+                "Bangladesh Labor Act 2006: Employment Conditions, Workplace Safety & Dispute Redress"
+              ]
             },
             {
               "id": "lt234",
@@ -395,7 +616,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM."
+              "description": "Income Tax Act 2023 heads of income, VAT & Supplementary Duty Act 2012, withholding VAT, and national budget PFM.",
+              "topics": [
+                "Income Tax Act 2023: Residential Status, Total Income Scope & Assessee Rates",
+                "Heads of Income: Employment, Rent, Business Income, Capital Gains & Deductions",
+                "Corporate Tax Computation, Allowable Depreciation (3rd Schedule) & Minimum Tax",
+                "VAT & Supplementary Duty Act 2012: Registration, VAT Invoicing (Mushak 6.3) & Rates",
+                "Withholding Tax & VAT (VDS - Mushak 6.6) & Monthly VAT Return (Mushak 9.1)",
+                "Public Financial Management (PFM): National Budget Cycle & Public Procurement (PPA 2006)"
+              ]
             },
             {
               "id": "cm341",
@@ -404,7 +633,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing."
+              "description": "Activity-Based Management, target costing, life-cycle costing, Kaizen, TOC throughput accounting, quality costing (BCAS 29), transfer pricing.",
+              "topics": [
+                "Strategic Cost Management Frameworks, Value Chain Analysis & BCAS 23 Alignment",
+                "Activity-Based Costing (ABC) & Activity-Based Management (ABM) under BCAS 14 & 20",
+                "Target Costing, Life Cycle Costing (LCC) & Kaizen Costing (BCAS 10, 11, 12)",
+                "Theory of Constraints (TOC), Bottleneck Optimization & Throughput Accounting",
+                "Cost of Quality (COQ) Analysis (BCAS 29), TQM & Environmental Cost Accounting",
+                "Divisional Performance Evaluation, Balanced Scorecard, EVA® & Transfer Pricing (BCAS 16)"
+              ]
             },
             {
               "id": "aa252",
@@ -413,7 +650,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting."
+              "description": "Statutory cost audit execution under Companies Act 1994 Sec 220, Cost Audit Rules 1997, BCAS compliance, and statutory reporting.",
+              "topics": [
+                "Statutory Cost Audit Legal Framework: Companies Act 1994 Sec 220 & Cost Audit Rules 1997",
+                "Mandatory Cost Audit Gazette Directives: Pharmaceuticals, Fertilizers, Cement & Textiles",
+                "Application of Bangladesh Cost Accounting Standards (BCAS 1–31) in Audit Engagements",
+                "Cost Audit Planning, Manufacturing Overhead Verification & Capacity Audits (BCAS 28)",
+                "Drafting Statutory Cost Audit Reports, Annexures & Submissions to Ministry of Commerce",
+                "Management Audit, Operational Audit, Efficiency Evaluation & Energy/Environmental Audits"
+              ]
             },
             {
               "id": "lt453",
@@ -422,7 +667,15 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR."
+              "description": "Corporate tax planning, transfer pricing regulations, international tax treaties (DTAA), VAT tribunal disputes, and ADR.",
+              "topics": [
+                "Corporate Tax Computation for Public, Private, Banking & Export Entities under ITA 2023",
+                "International Tax Treaties (DTAA), Foreign Tax Credits & Permanent Establishment Rules",
+                "Transfer Pricing Regulations: Arm's Length Principle, Pricing Methods & CbC Reporting",
+                "Tax Assessments, Scrutiny, Appeals (Taxes Appellate Tribunal) & High Court References",
+                "Alternative Dispute Resolution (ADR) under Income Tax & VAT Legislation",
+                "Advanced VAT Adjudications, Large Taxpayer Unit (LTU) Compliance & Tax Planning Ethics"
+              ]
             },
             {
               "id": "cs154",
@@ -431,7 +684,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance."
+              "description": "Capstone integrative case evaluating strategic cost leadership, corporate finance, enterprise risk, ethics, and board governance.",
+              "topics": [
+                "Multi-Disciplinary Corporate Case Synthesis across Strategy, Costing, Finance & Tax",
+                "Strategic Cost & Profitability Diagnostics using ABC, Target Costing & Throughput Models",
+                "Financial Restructuring Evaluation, Valuation Modeling & Cash Flow Projections",
+                "Corporate Governance, Ethical Board Conduct & Statutory Cost Audit Integration",
+                "Formulating Board-Level Strategic Action Plans & Presentation-Grade Executive Briefs"
+              ]
             }
           ]
         },
@@ -446,7 +706,14 @@
               "code": "PER 100",
               "category": "Experience",
               "duration": "12 Months",
-              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA."
+              "description": "12 months mandatory supervised practical training in an approved CMA firm or recognized corporate organization under an ACMA/FCMA.",
+              "topics": [
+                "12 Months Practical Articleship under Active ACMA/FCMA Supervision",
+                "Practical Exposure to Enterprise Cost Accounting & BCAS Implementation",
+                "Participation in Statutory Cost Audit Engagements & Workpaper Preparation",
+                "Corporate Budgeting, Management Reporting & Variance Tracking in Industry",
+                "Verification of Mandatory Experience Logbook & Articleship Completion Certificate"
+              ]
             },
             {
               "id": "icmab-acca-acma",

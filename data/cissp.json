@@ -37,6 +37,16 @@
               "modernThemes": [
                 "Quantitative Risk (FAIR)",
                 "GDPR Cross-Border Transfers"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -51,6 +61,16 @@
                 "Data Ownership, Custodianship & Data Protection Officers (DPO)",
                 "Protecting Data States: At Rest (AES-256), In Transit (TLS 1.3), In Use (Enclaves)",
                 "Data Sanitization: Clearing, Purging, Degaussing, and Destruction"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -69,6 +89,16 @@
               "modernThemes": [
                 "Post-Quantum Cryptography",
                 "Hardware TPM Security Enclaves"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -88,6 +118,16 @@
                 "Software-Defined Networking (SDN)",
                 "WPA3 Enterprise",
                 "Zero Trust Networks"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             }
           ]
@@ -114,6 +154,16 @@
                 "FIDO2 / Passkeys",
                 "Zero Trust IAM",
                 "OAuth 2.0 & OIDC"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -128,6 +178,16 @@
                 "Security Testing Methodologies: SAST, DAST, IAST, and Fuzzing",
                 "Third-Party Vendor Assessments & SOC 2 Type II Evaluation",
                 "Disaster Recovery Testing (Walkthrough, Simulation, Parallel, Full Interruption)"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -147,6 +207,16 @@
                 "SOAR Automation",
                 "EDR/XDR Telemetry",
                 "Cloud Forensics"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -166,6 +236,16 @@
                 "Software Bill of Materials (SBOM)",
                 "DevSecOps",
                 "API Security"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             }
           ]
@@ -188,6 +268,16 @@
               "checklists": [
                 "Achieve scaled score of at least 700 out of 1000",
                 "Answer minimum 100 questions within the 3-hour limit"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -200,6 +290,16 @@
               "topics": [
                 "5-Year Work Verification in 2+ Domains",
                 "1-Year Academic/Credential Waiver"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             },
             {
@@ -212,6 +312,16 @@
                 "Active ISC2 Member Endorsement Sign-Off",
                 "ISC2 Code of Ethics Preamble & Canons Commitment",
                 "Annual 40 CPE Maintenance Requirement"
+              ],
+              "resources": [
+                "The Official (ISC)² CISSP CBK Reference (6th Edition), Arthur J. Deane & Aaron Kraus, Wiley / ISC2 Press",
+                "(ISC)² CISSP Official Study Guide (10th Edition), Mike Chapple, James Michael Stewart, Darril Gibson, Sybex / Wiley",
+                "(ISC)² CISSP Official Practice Tests (4th Edition), Mike Chapple & David Seidl, Sybex / Wiley"
+              ],
+              "learningOutcomes": [
+                "Architect, engineer, and lead enterprise information security programs across the 8 CBK domains",
+                "Implement identity and access management (IAM), public key cryptography, and zero-trust network architectures",
+                "Direct incident response, business continuity, disaster recovery, and software security verification"
               ]
             }
           ]

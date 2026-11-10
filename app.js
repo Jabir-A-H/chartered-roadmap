@@ -22,6 +22,7 @@
       code: 'ICAB',
       level: 'All Levels (1,600 Marks)',
       category: 'qual',
+      domain: 'accounting',
       categoryLabel: 'Full Qualification',
       summary: 'Complete qualification roadmap covering Certificate, Professional, and Advanced levels, 17 exam papers, 5 IT practical labs, articleship routes, and ethics modules under the 2025 Syllabus.',
       tags: ['ICAB', 'CA', 'Bangladesh', 'Chartered Accountant', 'Curriculum 2025']
@@ -32,6 +33,7 @@
       code: 'ACCA',
       level: 'Global Qualification',
       category: 'qual',
+      domain: 'accounting',
       categoryLabel: 'Full Qualification',
       summary: 'Comprehensive ACCA qualification pathway: Applied Knowledge, Applied Skills, Strategic Professional, Ethics and Professional Skills Module (EPSM), and Practical Experience Requirement (PER).',
       tags: ['ACCA', 'Global', 'Chartered Certified', 'IFRS']
@@ -42,6 +44,7 @@
       code: 'IT LABS',
       level: 'Certificate & Professional Skills',
       category: 'labs',
+      domain: 'labs',
       categoryLabel: 'Practical Skills',
       summary: '5 hands-on IT practical workshops: QuickBooks/Sage ERP, Applied Excel for Accountants, BI & Big Data Analytics with AI, IS Security & Forensics, and IS Audit Banking CAATs.',
       tags: ['IT Labs', 'QuickBooks', 'Excel', 'Data Analytics', 'IS Audit', 'AI', 'Cybersecurity']
@@ -52,6 +55,7 @@
       code: 'C1',
       level: 'Certificate Level · 100 Marks · 1.5 Hours',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Double-entry bookkeeping, adjusting entries, financial statement preparation for sole traders, partnerships, and limited companies under IFRS, and public financial management.',
       tags: ['C1', 'Accounting', 'Bookkeeping', 'IFRS', 'PFM', 'Trial Balance']
@@ -62,6 +66,7 @@
       code: 'C2',
       level: 'Certificate Level · 100 Marks · 1.5 Hours',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Assurance framework, five elements, internal control systems, obtaining audit evidence, and professional ethics under ISA.',
       tags: ['C2', 'Assurance', 'Audit', 'Internal Controls', 'Evidence', 'Ethics']
@@ -72,6 +77,7 @@
       code: 'C3',
       level: 'Certificate Level · 100 Marks · 1.5 Hours',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Business objectives, organizational structures, financial markets, PESTEL environment, corporate governance, CSR, and digital transformation.',
       tags: ['C3', 'BTF', 'Business Strategy', 'Finance', 'Governance', 'Digital']
@@ -82,6 +88,7 @@
       code: 'C4',
       level: 'Certificate Level · 100 Marks · 1.5 Hours',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Cost classification, absorption vs marginal costing, budgeting, variance analysis, CVP decision making, and data analytics in management accounting.',
       tags: ['C4', 'MI', 'Costing', 'Budgeting', 'Variance Analysis', 'CVP']
@@ -92,6 +99,7 @@
       code: 'C5',
       level: 'Certificate Level · 100 Marks · 1.5 Hours',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Bangladesh Income Tax Act 2023, individual and company tax computations, TDS, return filing, and VAT and SD Act 2012.',
       tags: ['C5', 'Taxation', 'Income Tax Act 2023', 'VAT', 'TDS', 'NBR']
@@ -102,6 +110,7 @@
       code: 'C6',
       level: 'Certificate Level · 50 Marks · 1.0 Hour',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'Companies Act 1994, Negotiable Instruments Act 1881, Partnership Act 1932, Contract Act 1872, Sale of Goods Act, and Labour Act 2006.',
       tags: ['C6', 'Business Laws', 'Companies Act', 'Contracts', 'Negotiable Instruments', 'Labour Act']
@@ -112,6 +121,7 @@
       code: 'C7',
       level: 'Certificate Level · 50 Marks · 1.0 Hour',
       category: 'cl',
+      domain: 'papers',
       categoryLabel: 'Certificate Level',
       summary: 'System development lifecycle (SDLC), agile methodologies, cloud computing, relational DBMS/SQL, business intelligence, and cybersecurity resilience.',
       tags: ['C7', 'IT', 'SDLC', 'Agile', 'Cloud', 'DBMS', 'Cybersecurity']
@@ -122,6 +132,7 @@
       code: 'P1',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'Single entity financial statements under BFRS/IFRS, consolidated group statements, financial ratio analysis, AAOIFI Islamic accounting, and IPSAS.',
       tags: ['P1', 'FAR', 'IFRS', 'Consolidation', 'Islamic Finance', 'Cash Flows']
@@ -132,6 +143,7 @@
       code: 'P2',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'Audit risk model (ISA 315), planning materiality, fraud responsibilities (ISA 240), substantive testing, Key Audit Matters (KAM), and auditor reporting.',
       tags: ['P2', 'Audit', 'ISA', 'Materiality', 'KAM', 'Audit Risk']
@@ -142,6 +154,7 @@
       code: 'P3',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'Tax litigation, appellate tribunal, Alternative Dispute Resolution (ADR), transfer pricing, corporate restructuring, tax holidays, and VAT investigations.',
       tags: ['P3', 'Tax Planning', 'Transfer Pricing', 'ADR', 'Tribunal', 'VAT Audit']
@@ -152,6 +165,7 @@
       code: 'P4',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'WACC, Modigliani-Miller capital structure, DCF appraisal under capital rationing, business valuation (FCFF/FCFE), FX/interest rate derivatives, and green finance.',
       tags: ['P4', 'Financial Management', 'WACC', 'Valuation', 'Derivatives', 'Hedging', 'ESG']
@@ -162,6 +176,7 @@
       code: 'P5',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'VRIO analysis, Porter generic strategies, Bowman Strategy Clock, Ansoff matrix, Balanced Scorecard, change management, and strategic ethics.',
       tags: ['P5', 'BST', 'Strategy', 'Porter', 'Balanced Scorecard', 'VRIO']
@@ -172,6 +187,7 @@
       code: 'P6',
       level: 'Professional Level · 100 Marks · 3.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'Advanced Companies Act practice, RJSC charges, winding up, BSEC Public Issue Rules (IPO book building), Rights Issue, Bank Companies Act, and FERA.',
       tags: ['P6', 'Corporate Law', 'BSEC', 'IPO', 'Banking Act', 'FERA', 'RJSC']
@@ -182,6 +198,7 @@
       code: 'P7',
       level: 'Professional Level · 100 Marks · 4.0 Hours',
       category: 'pl',
+      domain: 'papers',
       categoryLabel: 'Professional Level',
       summary: 'Aligned with ISACA CISA: National IT Policy, Cyber Security Act 2023, COBIT 2019, ITIL 4, risk-based IS auditing, CAATs, cybersecurity defense, and BCP/DRP.',
       tags: ['P7', 'IT Governance', 'CISA', 'COBIT', 'IS Audit', 'CAATs', 'BCP']
@@ -192,6 +209,7 @@
       code: 'V1',
       level: 'Advanced Level · 100 Marks · 3.5 Hours',
       category: 'al',
+      domain: 'papers',
       categoryLabel: 'Advanced Level',
       summary: 'Complex IFRS 9 (ECL, hedge accounting), IAS 19 pensions, step acquisitions, foreign subsidiaries (IAS 21), group cash flows, forensic auditing, and IFRS S1/S2 sustainability.',
       tags: ['V1', 'CR', 'Complex IFRS', 'Group Accounts', 'Forensic', 'ISSB', 'ESG']
@@ -202,6 +220,7 @@
       code: 'V2',
       level: 'Advanced Level · 100 Marks · 3.5 Hours',
       category: 'al',
+      domain: 'papers',
       categoryLabel: 'Advanced Level',
       summary: 'Executive leadership, digital disruption, COSO ERM, M&A deal structuring, management buyouts (MBO/LBO), international treasury pooling, and Integrated Reporting (<IR>).',
       tags: ['V2', 'SBM', 'Executive Strategy', 'M&A', 'LBO', 'Integrated Reporting', 'ERM']
@@ -212,6 +231,7 @@
       code: 'V3',
       level: 'Advanced Level · 100 Marks · 4.5 Hours',
       category: 'al',
+      domain: 'papers',
       categoryLabel: 'Advanced Level',
       summary: 'Capstone professional simulation: Advance business information analysis, unseen material synthesis, financial appraisal, risk management, ethical dilemma resolution, and executive board reporting.',
       tags: ['V3', 'Case Study', 'Capstone', 'Simulation', 'Board Report', 'Executive Advisory']
@@ -222,6 +242,7 @@
       code: 'CFA',
       level: 'Levels I, II & III · Charterholder',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'Gold standard in investment analysis, asset allocation, portfolio management, private wealth, and ethical market conduct.',
       tags: ['CFA', 'Finance', 'Investment', 'Portfolio Management', 'CFA Institute', 'Equity', 'Fixed Income', 'Ethics']
@@ -232,6 +253,7 @@
       code: 'CMA',
       level: 'Parts 1 & 2 · IMA US',
       category: 'qual',
+      domain: 'mgmt-accounting',
       categoryLabel: 'Full Qualification',
       summary: 'Premier global certification in management accounting, financial planning, performance, analytics, and strategic financial management.',
       tags: ['CMA', 'Management Accounting', 'IMA', 'Cost Accounting', 'Financial Planning', 'Analytics']
@@ -242,6 +264,7 @@
       code: 'CISA',
       level: '5 Job Practice Domains · ISACA',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'Globally recognized benchmark for IT auditing, governance, cyber risk assessment, systems acquisition, and asset protection.',
       tags: ['CISA', 'ISACA', 'IT Audit', 'Cybersecurity', 'Governance', 'Risk Assessment', 'COBIT']
@@ -252,6 +275,7 @@
       code: 'CSAA',
       level: 'Fellowship · AAOIFI',
       category: 'qual',
+      domain: 'islamic',
       categoryLabel: 'Full Qualification',
       summary: 'Global hallmark qualification for Shari\'ah advisory, compliance audits, and governance in Islamic financial institutions.',
       tags: ['CSAA', 'AAOIFI', 'Islamic Finance', 'Shari\'ah Audit', 'Sukuk', 'Takaful', 'Murabaha']
@@ -262,6 +286,7 @@
       code: 'CPA',
       level: '3 Core + 1 Discipline · AICPA/NASBA',
       category: 'qual',
+      domain: 'accounting',
       categoryLabel: 'Full Qualification',
       summary: 'The statutory CPA licensure roadmap under CPA Evolution: Core (AUD, FAR, REG) plus Discipline choice (BAR, ISC, TCP).',
       tags: ['CPA', 'AICPA', 'NASBA', 'US CPA', 'Public Accounting', 'Tax', 'Audit', 'BAR', 'ISC', 'TCP']
@@ -272,6 +297,7 @@
       code: 'CIA',
       level: 'Parts 1, 2 & 3 · The IIA',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'The only globally accepted internal audit certification, aligned with the 2025 Global Internal Audit Standards (GIAS).',
       tags: ['CIA', 'IIA', 'Internal Audit', 'GIAS', 'Risk Management', 'Governance', 'Assurance']
@@ -282,6 +308,7 @@
       code: 'FRM',
       level: 'Parts I & II · GARP',
       category: 'qual',
+      domain: 'risk-fraud',
       categoryLabel: 'Full Qualification',
       summary: 'The leading global qualification for risk professionals covering market, credit, operational, liquidity, and investment risk.',
       tags: ['FRM', 'GARP', 'Risk Management', 'Market Risk', 'Credit Risk', 'Operational Risk', 'Derivatives']
@@ -292,6 +319,7 @@
       code: 'CGMA',
       level: 'Certificate to Strategic Level · AICPA & CIMA',
       category: 'qual',
+      domain: 'mgmt-accounting',
       categoryLabel: 'Full Qualification',
       summary: 'Premier management accounting designation powered by CIMA & AICPA with dual routes: Traditional Exam Path and Finance Leadership Program (FLP).',
       tags: ['CGMA', 'CIMA', 'AICPA', 'Management Accounting', 'FLP', 'Strategic Case Study', 'CIMA UK']
@@ -302,6 +330,7 @@
       code: 'ICMAB',
       level: '5 Levels · 20 Papers · ICMAB Bangladesh',
       category: 'qual',
+      domain: 'statutory-bd',
       categoryLabel: 'Full Qualification',
       summary: 'Statutory premier Cost & Management Accountant qualification in Bangladesh under CMA Act 2018 with reciprocal exemptions for ICAB and ACCA.',
       tags: ['ICMAB', 'CMA', 'Bangladesh', 'Cost Accountant', 'Statutory Audit', 'Cost Audit', 'CMA Act 2018']
@@ -312,6 +341,7 @@
       code: 'ICSB',
       level: '5 Tiers · 19 Papers · ICSB Bangladesh',
       category: 'qual',
+      domain: 'statutory-bd',
       categoryLabel: 'Full Qualification',
       summary: 'The apex statutory chartered qualification for corporate governance, secretarial practice, board compliance, and capital markets advisory.',
       tags: ['ICSB', 'CS', 'Chartered Secretary', 'Bangladesh', 'Corporate Governance', 'Compliance', 'BSEC']
@@ -322,6 +352,7 @@
       code: 'CISSP',
       level: '8 CBK Domains · (ISC)²',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'The gold standard cybersecurity leadership certification covering security architecture, engineering, risk management, and software security.',
       tags: ['CISSP', 'ISC2', 'Cybersecurity', 'InfoSec', 'Security Architecture', 'Risk Management', 'Cryptography']
@@ -332,6 +363,7 @@
       code: 'CFE',
       level: '4 Sections · ACFE',
       category: 'qual',
+      domain: 'risk-fraud',
       categoryLabel: 'Full Qualification',
       summary: 'Globally recognized anti-fraud credential covering financial transactions & fraud schemes, law, investigation techniques, and fraud prevention.',
       tags: ['CFE', 'ACFE', 'Fraud Examination', 'Forensics', 'Investigation', 'Financial Crime', 'White Collar']
@@ -342,6 +374,7 @@
       code: 'CFP',
       level: '7 Domains · CFP Board',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'The standard of excellence for financial planners covering retirement planning, tax planning, estate planning, and fiduciary obligations.',
       tags: ['CFP', 'CFP Board', 'Financial Planning', 'Wealth Management', 'Retirement', 'Estate Planning', 'Fiduciary']
@@ -352,6 +385,7 @@
       code: 'CAIA',
       level: 'Levels I & II · CAIA Association',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'The global benchmark for alternative investment education: hedge funds, private equity, real assets, commodities, and structured products.',
       tags: ['CAIA', 'Alternative Investments', 'Private Equity', 'Hedge Funds', 'Real Estate', 'Commodities']
@@ -362,6 +396,7 @@
       code: 'CMT',
       level: 'Levels I, II & III · CMT Association',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'Preeminent technical analysis and quantitative market behavior credential recognized by FINRA and global trading desks.',
       tags: ['CMT', 'Technical Analysis', 'Trading', 'Market Behavior', 'Charting', 'Quantitative Finance']
@@ -372,6 +407,7 @@
       code: 'CIPA',
       level: '4 Core Papers · AAOIFI',
       category: 'qual',
+      domain: 'islamic',
       categoryLabel: 'Full Qualification',
       summary: 'Premier technical fellowship for financial reporting, auditing, and accounting under AAOIFI Islamic accounting standards.',
       tags: ['CIPA', 'AAOIFI', 'Islamic Accounting', 'Islamic Banking', 'Shari\'ah', 'Financial Reporting']
@@ -382,6 +418,7 @@
       code: 'CRMA',
       level: 'Risk Assurance · The IIA',
       category: 'qual',
+      domain: 'risk-fraud',
       categoryLabel: 'Full Qualification',
       summary: 'Demonstrates the ability to provide assurance on core business processes in risk management and corporate governance.',
       tags: ['CRMA', 'IIA', 'Risk Assurance', 'Internal Audit', 'Enterprise Risk', 'ERM']
@@ -392,6 +429,7 @@
       code: 'CRISC',
       level: '4 Domains · ISACA',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'Validates expertise in identifying and managing enterprise IT risk and implementing and maintaining information system controls.',
       tags: ['CRISC', 'ISACA', 'IT Risk', 'Information Systems', 'Risk Assessment', 'Control Monitoring']
@@ -402,6 +440,7 @@
       code: 'CGEIT',
       level: '4 Domains · ISACA',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'Apex executive certification for establishing, managing, and governing enterprise IT strategies aligned with corporate objectives.',
       tags: ['CGEIT', 'ISACA', 'IT Governance', 'COBIT', 'Enterprise Architecture', 'Strategic Alignment']
@@ -412,6 +451,7 @@
       code: 'CDPSE',
       level: '3 Domains · ISACA',
       category: 'qual',
+      domain: 'audit-is',
       categoryLabel: 'Full Qualification',
       summary: 'Technical credential validating privacy-by-design implementations, privacy architecture, and data lifecycle governance.',
       tags: ['CDPSE', 'ISACA', 'Data Privacy', 'Privacy by Design', 'GDPR', 'Data Protection', 'Security']
@@ -422,6 +462,7 @@
       code: 'PRM',
       level: 'Exams 1 & 2 · PRMIA',
       category: 'qual',
+      domain: 'risk-fraud',
       categoryLabel: 'Full Qualification',
       summary: 'Rigorous quantitative and qualitative financial risk management qualification adhering to global sound practice standards.',
       tags: ['PRM', 'PRMIA', 'Risk Management', 'Quantitative Finance', 'Market Risk', 'Credit Risk']
@@ -432,6 +473,7 @@
       code: 'ERP',
       level: 'Comprehensive · GARP',
       category: 'qual',
+      domain: 'risk-fraud',
       categoryLabel: 'Full Qualification',
       summary: 'Specialized risk credential covering physical and financial energy commodity trading, markets, and risk management systems.',
       tags: ['ERP', 'GARP', 'Energy Risk', 'Commodities', 'Oil and Gas', 'Power Markets', 'ETRM']
@@ -442,6 +484,7 @@
       code: 'FPAC',
       level: 'Parts I & II · AFP',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'Preeminent corporate financial planning & analysis credential focusing on predictive modeling, budgeting, and strategic foresight.',
       tags: ['FPAC', 'AFP', 'FP&A', 'Financial Modeling', 'Corporate Finance', 'Budgeting', 'Forecasting']
@@ -452,6 +495,7 @@
       code: 'CTP',
       level: '5 Domains · AFP',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'The benchmark qualification in corporate treasury management, liquidity optimization, working capital, and capital structure.',
       tags: ['CTP', 'AFP', 'Treasury', 'Cash Management', 'Liquidity', 'Working Capital', 'Payment Systems']
@@ -462,6 +506,7 @@
       code: 'CHFC',
       level: '9 Modular Courses · The American College',
       category: 'qual',
+      domain: 'finance',
       categoryLabel: 'Full Qualification',
       summary: 'Comprehensive wealth management and consulting credential covering comprehensive financial planning, taxation, and advisory.',
       tags: ['ChFC', 'American College', 'Financial Consulting', 'Wealth Advisory', 'Tax Planning', 'Retirement']
@@ -472,6 +517,7 @@
       code: 'ICMA',
       level: 'Graduate & Professional · ICMA Australia / UK',
       category: 'qual',
+      domain: 'accounting',
       categoryLabel: 'Full Qualification',
       summary: 'Global management accounting and accredited professional accountant (APA) pathway focusing on strategic cost and financial analysis.',
       tags: ['ICMA', 'CMA', 'APA', 'Management Accounting', 'Strategic Cost Management', 'Financial Analysis']
@@ -1432,8 +1478,12 @@
 
     // Search catalog roadmaps
     Object.values(ROADMAP_CATALOG).forEach((item) => {
-      // Category filter check
-      if (filter !== 'all' && item.category !== filter) return;
+      // Domain filter check (with fallback to category)
+      if (filter !== 'all') {
+        const matchesDomain = item.domain === filter;
+        const matchesCategory = item.category === filter;
+        if (!matchesDomain && !matchesCategory) return;
+      }
 
       let score = 0;
       let matchedIn = '';
@@ -1477,7 +1527,11 @@
     if (q.length >= 2 && window.ROADMAP_DATA) {
       Object.entries(window.ROADMAP_DATA).forEach(([rId, rData]) => {
         const catItem = ROADMAP_CATALOG[rId];
-        if (filter !== 'all' && catItem && catItem.category !== filter) return;
+        if (filter !== 'all' && catItem) {
+          const matchesDomain = catItem.domain === filter;
+          const matchesCategory = catItem.category === filter;
+          if (!matchesDomain && !matchesCategory) return;
+        }
 
         const defaultRoute = rData.routes ? (rData.routes[rData.defaultRoute || 'all'] || Object.values(rData.routes)[0]) : null;
         if (!defaultRoute) return;
@@ -1656,24 +1710,28 @@
     state.catalogQuery = q;
     const filter = state.catalogFilter || 'all';
 
-    const categories = [
-      { id: 'qual', title: '🎓 Full Professional Qualifications', items: [] },
-      { id: 'cl', title: '📘 Certificate Level Examination Papers (7)', items: [] },
-      { id: 'pl', title: '📙 Professional Level Examination Papers (7)', items: [] },
-      { id: 'al', title: '📕 Advanced Level Examination Papers (3)', items: [] },
+    const domainSections = [
+      { id: 'accounting', title: '🏛️ Chartered & Public Accountancy (CA & CPA)', items: [] },
+      { id: 'mgmt-accounting', title: '📊 Management Accounting & Corporate Strategy', items: [] },
+      { id: 'finance', title: '📈 Investment, Capital Markets & Wealth Management', items: [] },
+      { id: 'audit-is', title: '🛡️ IT Governance, Information Security & Privacy', items: [] },
+      { id: 'risk-fraud', title: '⚖️ Risk Management, Fraud & Forensics', items: [] },
+      { id: 'islamic', title: '🌙 Islamic Finance & Shari\'ah Governance', items: [] },
+      { id: 'statutory-bd', title: '🇧🇩 Bangladesh Statutory Chartered Bodies', items: [] },
+      { id: 'papers', title: '📚 ICAB Curriculum 2025 Granular Paper Trackers (17)', items: [] },
       { id: 'labs', title: '💻 Companion Practical IT Skills Workshops', items: [] }
     ];
 
     let totalMatched = 0;
 
     Object.values(ROADMAP_CATALOG).forEach((item) => {
-      // Category filter check
-      if (filter !== 'all' && item.category !== filter) return;
+      // Domain filter check: if 'all', matches all; if specific domain, matches only that domain
+      if (filter !== 'all' && item.domain !== filter) return;
 
       if (q) {
         const matchesTitle = item.title.toLowerCase().includes(q);
         const matchesCode = item.code && item.code.toLowerCase().includes(q);
-        const matchesSummary = item.summary.toLowerCase().includes(q);
+        const matchesSummary = item.summary && item.summary.toLowerCase().includes(q);
         const matchesTags = item.tags && item.tags.some(t => t.toLowerCase().includes(q));
         if (!matchesTitle && !matchesCode && !matchesSummary && !matchesTags) {
           return;
@@ -1681,8 +1739,8 @@
       }
 
       totalMatched++;
-      const cat = categories.find(c => c.id === item.category);
-      if (cat) cat.items.push(item);
+      const section = domainSections.find(s => s.id === item.domain);
+      if (section) section.items.push(item);
     });
 
     if (el.catalogStatSummary) {
@@ -1701,11 +1759,11 @@
 
     let gridHtml = '';
 
-    categories.forEach((cat) => {
-      if (cat.items.length === 0) return;
+    domainSections.forEach((section) => {
+      if (section.items.length === 0) return;
 
       let cardsHtml = '';
-      cat.items.forEach((item) => {
+      section.items.forEach((item) => {
         const stats = getRoadmapProgressStats(item.id);
         const hasStats = stats.total > 0;
         const targetHref = item.id === 'icab' ? '#icab-grad' : `#${item.id}`;
@@ -1735,8 +1793,8 @@
       });
 
       gridHtml += `
-        <div class="catalog-category-group">
-          <h2 class="catalog-category-title">${cat.title}</h2>
+        <div class="catalog-category-group" data-domain="${escapeHtml(section.id)}">
+          <h2 class="catalog-category-title">${section.title}</h2>
           <div class="catalog-cards-grid">${cardsHtml}</div>
         </div>
       `;
@@ -1799,8 +1857,12 @@
         const chip = e.target.closest('.filter-chip');
         if (!chip) return;
 
-        el.catalogChipsContainer.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        el.catalogChipsContainer.querySelectorAll('.filter-chip').forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-pressed', 'false');
+        });
         chip.classList.add('active');
+        chip.setAttribute('aria-pressed', 'true');
         state.catalogFilter = chip.dataset.catalogFilter || 'all';
         renderCatalog();
       });
@@ -1892,14 +1954,18 @@
       });
     }
 
-    // Search Category Filter Chips
+    // Search Category/Domain Filter Chips
     if (el.searchModal) {
       el.searchModal.addEventListener('click', (e) => {
         const chip = e.target.closest('.filter-chip');
         if (!chip) return;
 
-        el.searchModal.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        el.searchModal.querySelectorAll('.filter-chip').forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-pressed', 'false');
+        });
         chip.classList.add('active');
+        chip.setAttribute('aria-pressed', 'true');
         searchState.filter = chip.dataset.filter || 'all';
         searchState.selectedIndex = -1;
         renderSearchResults();

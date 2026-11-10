@@ -30,6 +30,16 @@
                 "GARP Enrollment",
                 "CBT Scheduling with Pearson VUE",
                 "Exam Policy Review"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -45,6 +55,16 @@
                 "Basel Regulatory Accord History: Basel I, II, 2.5, and III",
                 "Case Studies: Barings, LTCM, Enron, Lehman Brothers, Metallgesellschaft",
                 "The GARP Code of Conduct & Fiduciary Ethics"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -63,6 +83,16 @@
               "modernThemes": [
                 "GARCH Volatility Modeling",
                 "Copulas in Financial Modeling"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -78,6 +108,16 @@
                 "Options Strategies: Spreads, Straddles, Strangles & Payoffs",
                 "Interest Rate Swaps, FRAs & Overnight Index Swaps (OIS)",
                 "Fixed Income Securities, Corporate Bonds, MBS & CDOs"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -97,6 +137,16 @@
               "modernThemes": [
                 "Expected Shortfall",
                 "Dynamic Delta-Gamma Hedging"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -108,7 +158,17 @@
               "format": "100 Multiple-Choice Questions (4-choice)",
               "frequency": "3 Testing Windows: May, August, November",
               "marks": 100,
-              "description": "Computer-based examination testing quantitative risk tools, financial markets, and valuation models. Passing score set by GARP standard setting."
+              "description": "Computer-based examination testing quantitative risk tools, financial markets, and valuation models. Passing score set by GARP standard setting.",
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
+              ]
             }
           ]
         },
@@ -133,6 +193,16 @@
               "modernThemes": [
                 "Extreme Value Theory",
                 "Implied Volatility Dynamics"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -152,6 +222,16 @@
               "modernThemes": [
                 "CVA/DVA/FVA Modeling",
                 "Central Counterparty Resilience"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -172,6 +252,16 @@
                 "Basel SMA",
                 "Model Risk Governance",
                 "Cloud Cyber Risk"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -190,6 +280,16 @@
               "modernThemes": [
                 "Basel III LCR & NSFR",
                 "Funds Transfer Pricing (FTP)"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -204,6 +304,16 @@
                 "Portfolio VaR Budgeting & Marginal Contribution to Risk (MCR)",
                 "Performance Attribution & Appraisal Ratios (Information, Sortino, Treynor)",
                 "Hedge Fund Due Diligence & Pension Fund LDI Strategies"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -223,6 +333,16 @@
                 "AI in Risk Modeling",
                 "Climate Risk & NGFS Scenarios",
                 "CBDCs & Digital Assets"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -238,6 +358,16 @@
               "checklists": [
                 "Must be passed within 4 years of passing Part I",
                 "Demonstrate comprehensive scenario analysis across credit, market, and liquidity regimes"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             }
           ]
@@ -258,6 +388,16 @@
                 "24 Months Professional Risk Experience",
                 "Experience Submission Deadline: 5 Years Post-Part II",
                 "Qualifying Disciplines: Credit, Market, Operational, Treasury, Audit"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             },
             {
@@ -270,6 +410,16 @@
                 "Certified FRM Credential Award",
                 "GARP Code of Conduct Commitment",
                 "Annual CPD Recommended Standard"
+              ],
+              "resources": [
+                "GARP Official FRM Books Part I (Books 1–4: Foundations, Quant, Markets, Valuation), GARP",
+                "GARP Official FRM Books Part II (Books 1–6: Market, Credit, Operational, Liquidity, Investment, Current Issues), GARP",
+                "Wiley FRM Exam Review Study Guide & Question Bank, Wiley"
+              ],
+              "learningOutcomes": [
+                "Quantify and manage market risk using Value at Risk (VaR), Expected Shortfall, and extreme value theory",
+                "Measure credit risk exposures, probability of default, credit migration, and structured credit derivatives",
+                "Analyze operational resilience, cyber risk scenarios, Basel III/IV regulatory capital, and liquidity stress testing"
               ]
             }
           ]

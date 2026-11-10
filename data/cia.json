@@ -30,6 +30,17 @@
                 "IIA CCMS Portal Registration",
                 "Educational Transcript Verification",
                 "Candidate Eligibility Window"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -42,6 +53,17 @@
                 "Character Reference Form",
                 "Supervisory Verification",
                 "IIA Code of Ethics Commitment"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             }
           ]
@@ -62,6 +84,17 @@
                 "GIAS Domain I: Purpose of Internal Auditing",
                 "Internal Audit Charter & Board Mandate",
                 "Organizational Independence & Impairments"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -75,6 +108,17 @@
                 "GIAS Domain II: Ethics and Professionalism",
                 "Principles of Integrity, Objectivity & Confidentiality",
                 "Professional Skepticism & Due Care"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -88,6 +132,17 @@
                 "Corporate Governance Mechanisms & Board Relations",
                 "The IIA Three Lines Model",
                 "COSO Internal Control and ERM Frameworks"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -101,6 +156,17 @@
                 "Fraud Triangle & Behavioral Red Flags",
                 "Internal Audit Responsibilities in Fraud Prevention",
                 "Fraud Risk Assessment & Whistleblowing"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -112,7 +178,18 @@
               "format": "125 Multiple-Choice Questions",
               "frequency": "Continuous CBT testing year-round",
               "marks": 750,
-              "description": "Part 1 examination sitting testing GIAS fundamentals, ethics, governance, and fraud. Scaled passing score: 600 out of 750."
+              "description": "Part 1 examination sitting testing GIAS fundamentals, ethics, governance, and fraud. Scaled passing score: 600 out of 750.",
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
+              ]
             }
           ]
         },
@@ -132,6 +209,17 @@
                 "Engagement Scoping and Objectives",
                 "Risk Assessment at Engagement Level",
                 "Audit Work Programs & Staffing"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -145,6 +233,17 @@
                 "Audit Evidence Types & Sufficiency",
                 "Data Analytics & Statistical Sampling in Audits",
                 "Developing Audit Findings (Condition, Criteria, Cause, Effect, Recommendation)"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -157,6 +256,17 @@
               "topics": [
                 "Workpaper Review & Supervisory Sign-Off",
                 "Preliminary Communications & Exit Conferences"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -168,7 +278,18 @@
               "format": "100 Multiple-Choice Questions",
               "frequency": "Continuous CBT testing year-round",
               "marks": 750,
-              "description": "Part 2 examination sitting testing engagement planning, fieldwork execution, and preliminary communications. Scaled pass: 600/750."
+              "description": "Part 2 examination sitting testing engagement planning, fieldwork execution, and preliminary communications. Scaled pass: 600/750.",
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
+              ]
             }
           ]
         },
@@ -193,6 +314,17 @@
               "modernThemes": [
                 "Data-Driven Strategy",
                 "Supply Chain Resilience"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -212,6 +344,17 @@
                 "Cyber Resilience",
                 "Ransomware Response",
                 "GDPR/CCPA"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -231,6 +374,17 @@
                 "Cloud Infrastructure",
                 "Agile SDLC",
                 "Disaster Recovery"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -245,6 +399,17 @@
                 "Working Capital Management & Cash Flow Forecasting",
                 "Cost Classifications: Fixed, Variable, Direct, Indirect",
                 "Capital Budgeting Techniques: Net Present Value & Internal Rate of Return"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -256,7 +421,18 @@
               "format": "100 Multiple-Choice Questions",
               "frequency": "Continuous CBT testing year-round",
               "marks": 750,
-              "description": "Part 3 examination sitting testing business acumen, information security, IT, and financial management under the official 2025 GIAS framework. Scaled pass: 600/750."
+              "description": "Part 3 examination sitting testing business acumen, information security, IT, and financial management under the official 2025 GIAS framework. Scaled pass: 600/750.",
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
+              ]
             }
           ]
         },
@@ -275,6 +451,17 @@
               "topics": [
                 "Internal Audit Fieldwork Experience",
                 "Supervisory Verification in CCMS"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             },
             {
@@ -287,6 +474,17 @@
                 "Certified Internal Auditor Award",
                 "40 Hours Annual CPE",
                 "2 Hours Ethics CPE"
+              ],
+              "resources": [
+                "The IIA's CIA Learning System (Parts 1, 2, and 3), The Institute of Internal Auditors",
+                "Global Internal Audit Standards (GIAS 2025), IIA Standards Board",
+                "Gleim CIA Review System (Parts 1, 2, and 3), Dr. Irvin N. Gleim, Gleim Publications",
+                "Sawyer's Internal Auditing: Enhancing and Protecting Organizational Value (7th Ed.), IIA Foundation"
+              ],
+              "learningOutcomes": [
+                "Interpret and apply the 2025 Global Internal Audit Standards (GIAS) across internal audit engagements",
+                "Plan, execute, and communicate assurance and consulting engagement findings to executive leadership",
+                "Evaluate governance, business acumen, information security, and financial management controls"
               ]
             }
           ]

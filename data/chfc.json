@@ -28,7 +28,14 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Financial planning process, code of ethics, financial statements, time value of money, education funding, and consumer credit."
+              "description": "Financial planning process, code of ethics, financial statements, time value of money, education funding, and consumer credit.",
+              "topics": [
+                "Personal Financial Planning Process & Fiduciary Code of Ethics",
+                "Personal Financial Statements: Balance Sheet, Cash Flow & Budgeting",
+                "Time Value of Money (TVM) Calculations for Capital Accumulation",
+                "Consumer Debt Management, Credit Scoring & Housing Financing Options",
+                "Higher Education Funding Strategies: 529 Plans, Coverdell ESAs & Aid Formulas"
+              ]
             },
             {
               "id": "chfc-hs311",
@@ -38,7 +45,14 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Choosing business entities, buy-sell agreements, corporate tax planning, business valuation, and executive compensation plans."
+              "description": "Choosing business entities, buy-sell agreements, corporate tax planning, business valuation, and executive compensation plans.",
+              "topics": [
+                "Advising Business Entities: Sole Proprietorships, Partnerships, LLCs, S/C Corps",
+                "Business Valuation Methodologies: Capitalization of Earnings & DCF Models",
+                "Buy-Sell Agreement Design: Cross-Purchase, Entity Redemption & Wait-and-See",
+                "Executive Compensation: Stock Options (ISOs/NQSOs), RSUs & Section 409A NQDC",
+                "Succession Planning: Family Business Transfer, Key Employee Buyouts & ESOPs"
+              ]
             },
             {
               "id": "chfc-hs313",
@@ -48,7 +62,15 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Term, whole, universal, and variable life insurance policies; policy taxation, riders, surrender values, and insurance trust integration."
+              "description": "Term, whole, universal, and variable life insurance policies; policy taxation, riders, surrender values, and insurance trust integration.",
+              "topics": [
+                "Principles of Risk Analysis & Elements of Insurance Contracts",
+                "Term Life Insurance: Level, Renewable, Decreasing & Convertible Structures",
+                "Permanent Life Insurance Contracts: Whole Life Cash Values & Dividend Options",
+                "Universal Life, Variable Universal Life & Indexed Universal Life Policies",
+                "Taxation of Life Insurance: Premiums, Death Benefits & MEC 7-Pay Rules",
+                "Policy Riders, Ownership Design & Irrevocable Life Insurance Trusts (ILITs)"
+              ]
             }
           ]
         },
@@ -65,7 +87,15 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Equity and debt valuation, mutual funds, asset allocation, modern portfolio theory, performance measurement, and market efficiency."
+              "description": "Equity and debt valuation, mutual funds, asset allocation, modern portfolio theory, performance measurement, and market efficiency.",
+              "topics": [
+                "Financial Markets, Securities Exchanges, Mutual Funds & Exchange-Traded Funds (ETFs)",
+                "Modern Portfolio Theory (MPT), Efficient Frontier & Capital Asset Pricing Model (CAPM)",
+                "Fixed-Income Securities Analysis: Bond Pricing, Yield Curves, Duration & Convexity",
+                "Equity Valuation Models: Dividend Discount Models (DDM) & Free Cash Flow Models",
+                "Portfolio Performance Evaluation: Sharpe Ratio, Treynor Ratio & Jensen's Alpha",
+                "Federal Income Taxation of Investments: Capital Gains, Dividends & Tax-Loss Harvesting"
+              ]
             },
             {
               "id": "chfc-hs326",
@@ -75,7 +105,14 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Qualified retirement plans (401k, defined benefit), IRAs, Social Security optimization, distribution rules, and required minimum distributions."
+              "description": "Qualified retirement plans (401k, defined benefit), IRAs, Social Security optimization, distribution rules, and required minimum distributions.",
+              "topics": [
+                "Employer Qualified Retirement Plans: Defined Benefit vs. Defined Contribution (401k)",
+                "Small Business Retirement Options: SEP-IRAs, SIMPLE IRAs & Solo 401(k) Plans",
+                "Individual Retirement Accounts: Traditional Deductible IRAs vs. Roth IRAs",
+                "Social Security Optimization: Benefit Formulas, Full Retirement Age & Spousal Rules",
+                "Retirement Distribution Planning: RMD Rules (SECURE 2.0) & Sustainable Withdrawal Rates"
+              ]
             },
             {
               "id": "chfc-hs328",
@@ -85,7 +122,15 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Federal income taxation of individuals, property transactions, capital gains and losses, tax-advantaged investments, and AMT."
+              "description": "Federal income taxation of individuals, property transactions, capital gains and losses, tax-advantaged investments, and AMT.",
+              "topics": [
+                "Unified Federal Transfer Tax Architecture: Gift Tax, Estate Tax & Unified Credits",
+                "Estate Transfer Mechanisms: Wills, Probate Administration & Titling Modes",
+                "Trust Planning: Revocable Living Trusts, Irrevocable Trusts & Bypass Trusts",
+                "Irrevocable Life Insurance Trusts (ILITs) & Crummey Power Administration",
+                "Generation-Skipping Transfer Tax (GSTT) Planning & GSTT Exemption Allocations",
+                "Advanced Transfer Vehicles: GRATs, QPRTs, Family Limited Partnerships (FLPs) & CRTs"
+              ]
             }
           ]
         },
@@ -102,7 +147,14 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Wills, probate, revocable and irrevocable trusts, gift and estate taxes, generation-skipping transfer tax, and charitable giving vehicles."
+              "description": "Wills, probate, revocable and irrevocable trusts, gift and estate taxes, generation-skipping transfer tax, and charitable giving vehicles.",
+              "topics": [
+                "Legal Foundations of Estate Planning: Wills, Holographic Wills & Codicils",
+                "Incapacity Planning: Durable Powers of Attorney, Healthcare Directives & Living Wills",
+                "Fiduciary Roles: Selection, Duties & Liabilities of Executors, Trustees & Guardians",
+                "Property Titling Strategies: JTWROS, Tenancy in Common & Tenancy by Entirety",
+                "Post-Mortem Estate Planning: Disclaimers, Sec 303 Stock Redemptions & Sec 6166"
+              ]
             },
             {
               "id": "chfc-hs347",
@@ -112,7 +164,14 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Capstone case study course integrating all areas of personal financial planning into customized client solution blueprints."
+              "description": "Capstone case study course integrating all areas of personal financial planning into customized client solution blueprints.",
+              "topics": [
+                "Comprehensive Client Case Study Synthesis across All 7 Planning Disciplines",
+                "Integrated Plan Construction: Cash Flow Modeling, Tax Shelters & Net Worth Tracking",
+                "Behavioral Financial Counseling: Identifying Heuristics & Cognitive Biases",
+                "Specialized Client Advisory: Unmarried Couples, Second Marriages & Blended Families",
+                "Elder Financial Planning, Long-Term Care Logistics & Incapacity Asset Protection"
+              ]
             },
             {
               "id": "chfc-elect",
@@ -122,7 +181,13 @@
               "duration": "2 Hours",
               "format": "100 Multiple-Choice Questions (70% Pass)",
               "marks": 100,
-              "description": "Candidate selects one elective: HS 325 (Nonqualified Deferred Compensation and Executive Benefits) or HS 334 (Estate Planning Applications)."
+              "description": "Candidate selects one elective: HS 325 (Nonqualified Deferred Compensation and Executive Benefits) or HS 334 (Estate Planning Applications).",
+              "topics": [
+                "Executive Compensation Planning (HS 325): Rabbi Trusts, SERPs & Golden Parachutes",
+                "Estate Planning Applications (HS 334): Dynasty Trusts & Asset Protection Trusts",
+                "Special Needs Financial Planning: First/Third-Party SNTs, ABLE Accounts & SSI Rules",
+                "Financial Aspects of Aging: Gerontological Wealth Planning & Medicaid Spend-Down"
+              ]
             }
           ]
         },

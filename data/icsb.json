@@ -37,7 +37,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Corporate drafting, board meeting notices, executive correspondence, and professional communications."
+              "description": "Corporate drafting, board meeting notices, executive correspondence, and professional communications.",
+              "topics": [
+                "Principles of Written Business Communication & 7 Cs Framework",
+                "Corporate Drafting: Letters, Memoranda, Agendas & Executive Briefings",
+                "Report Writing: Committee Reports, Fact-Finding Reports & Chairman's Speeches",
+                "Verbal & Non-Verbal Business Kinesics, Boardroom Presentation Skills & Etiquette"
+              ]
             },
             {
               "id": "icsb-p2",
@@ -46,7 +52,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Micro/macroeconomics, market structures, central tendency, regression, and sampling statistics."
+              "description": "Micro/macroeconomics, market structures, central tendency, regression, and sampling statistics.",
+              "topics": [
+                "Microeconomics: Demand-Supply Laws, Elasticities & Market Structures",
+                "Macroeconomic Indicators: National Income, Inflation & Monetary Policy",
+                "Descriptive Statistics: Central Tendency, Dispersion & Index Numbers",
+                "Inferential Statistics: Correlation, Simple Regression & Sampling Methods"
+              ]
             },
             {
               "id": "icsb-p3",
@@ -55,7 +67,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Basic double-entry accounting, trial balance, financial statements, and auditing fundamentals."
+              "description": "Basic double-entry accounting, trial balance, financial statements, and auditing fundamentals.",
+              "topics": [
+                "Double-Entry Bookkeeping Principles, Journal, Ledger & Trial Balance",
+                "Preparation of Financial Statements for Sole Traders & Partnerships",
+                "Auditing Concepts: Objectives, Scope & Auditor Independence",
+                "Internal Control Systems, Internal Check & Audit Evidence Gathering"
+              ]
             },
             {
               "id": "icsb-p4",
@@ -64,7 +82,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Principles of management, corporate ethics, CSR governance, and entrepreneurial ventures."
+              "description": "Principles of management, corporate ethics, CSR governance, and entrepreneurial ventures.",
+              "topics": [
+                "Principles of Management, Planning & Organizational Hierarchy Design",
+                "Business Ethics: Corporate Moral Codes, Integrity & Resolving Dilemmas",
+                "Corporate Social Responsibility (CSR) & Stakeholder Engagement Policies",
+                "Entrepreneurship: Business Opportunity Evaluation, Funding & Business Plans"
+              ]
             }
           ]
         },
@@ -80,7 +104,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration."
+              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration.",
+              "topics": [
+                "Human Resource Planning, Recruitment, Talent Selection & Onboarding",
+                "Performance Appraisal Systems, Compensation & Employee Retention Strategies",
+                "Bangladesh Labor Act 2006: Employment Conditions, Working Hours & Leaves",
+                "Industrial Relations: Trade Unions, Collective Bargaining Agents & Labor Courts"
+              ]
             },
             {
               "id": "icsb-102",
@@ -89,7 +119,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882."
+              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882.",
+              "topics": [
+                "Contract Act 1872: Formation, Consideration, Free Consent & Breach Remedies",
+                "Sale of Goods Act 1930: Conditions, Warranties & Rights of Unpaid Sellers",
+                "Negotiable Instruments Act 1881: Cheques, Bills of Exchange & Sec 138 Dishonor",
+                "Commercial Laws: Transfer of Property, Specific Relief & Commercial Arbitration"
+              ]
             },
             {
               "id": "icsb-103",
@@ -98,7 +134,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Corporate share/debenture issuance, corporate financial statement drafting under IFRS, and business valuation models."
+              "description": "Corporate share/debenture issuance, corporate financial statement drafting under IFRS, and business valuation models.",
+              "topics": [
+                "Corporate Share Capital: Issuance, Forfeiture, Reissue & Debentures",
+                "Preparation of Corporate Financial Statements under IFRS/IAS",
+                "Equity & Business Valuation: NAV Method, Yield Capitalization & DCF Modeling",
+                "Accounting for Corporate Amalgamations, Mergers & Internal Capital Restructuring"
+              ]
             }
           ]
         },
@@ -114,7 +156,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures."
+              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures.",
+              "topics": [
+                "Drafting Minutes of Board of Directors & Specialized Committee Meetings",
+                "Drafting Annual Report Disclosures, Directors' Report & MD&A Narratives",
+                "Price Sensitive Information (PSI) Notices & Disclosures to DSE/CSE/BSEC",
+                "Secretarial Correspondence with Regulatory Agencies (RJSC, BSEC, NBR)"
+              ]
             },
             {
               "id": "icsb-202",
@@ -123,7 +171,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Income Tax Act 2023, corporate tax compliance, TDS obligations of the Company Secretary, and VAT Act 2012."
+              "description": "Income Tax Act 2023, corporate tax compliance, TDS obligations of the Company Secretary, and VAT Act 2012.",
+              "topics": [
+                "Income Tax Act 2023: Corporate Tax Principles & Allowable Deductions",
+                "Tax Deducted at Source (TDS): Company Secretary Withholding Responsibilities",
+                "VAT & Supplementary Duty Act 2012: Invoicing (Mushak 6.3) & Withholding (VDS)",
+                "Customs Law Fundamentals, Import Tariffs & Bonded Warehouse Regulations"
+              ]
             },
             {
               "id": "icsb-203",
@@ -132,7 +186,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Corporate database administration, ERP integration, e-governance filings, and cyber law security protocols."
+              "description": "Corporate database administration, ERP integration, e-governance filings, and cyber law security protocols.",
+              "topics": [
+                "Enterprise Systems in Governance: ERP Integration & Digital Archiving",
+                "E-Governance & Regulatory Portals: RJSC Online Filings & Digital Signatures",
+                "Information & Communication Technology (ICT) Act 2006 & Cyber Law Standards",
+                "IT Security Governance, Access Controls & Business Continuity Planning (BCP)"
+              ]
             }
           ]
         },
@@ -148,7 +208,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings."
+              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings.",
+              "topics": [
+                "Companies Act 1994: Company Types, Incorporation & Memorandum/Articles Alteration",
+                "Prospectus, Capital Raising, Share Transfers & Registration of Charges with RJSC",
+                "Directors' Appointments, Disqualifications, Board Quorum & Remuneration",
+                "Statutory Registers: Register of Members, Directors & Charges Maintenance",
+                "Mandatory Filings with RJSC: Form IX, Form XII, Form X, Schedule X & Form XVIII"
+              ]
             },
             {
               "id": "icsb-302",
@@ -157,7 +224,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6)."
+              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6).",
+              "topics": [
+                "Role, Statutory Duties & Legal Liabilities of the Practicing Company Secretary",
+                "BSS-1 (Meetings of the Board of Directors) & BSS-2 (General Meetings - AGM/EGM)",
+                "BSS-3 (Minutes Recording Protocols) & BSS-4 (Dividend Declaration & CMSF Rules)",
+                "BSS-5 (Electronic Virtual Meetings) & BSS-6 (Board Resolutions by Circulation)",
+                "Organizing Shareholder Meetings: Statutory 21-Day Notices, Proxies & E-Voting"
+              ]
             },
             {
               "id": "icsb-303",
@@ -166,7 +240,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Financial ratio analysis, cash flow evaluation, notes interpretation, and audit report governance oversight."
+              "description": "Financial ratio analysis, cash flow evaluation, notes interpretation, and audit report governance oversight.",
+              "topics": [
+                "Comprehensive Analysis of Published Corporate Annual Reports & Statements",
+                "Financial Ratio Diagnostics: Liquidity, Solvency, Debt Service & ROCE",
+                "Interpreting Independent Auditor's Reports: Unqualified Opinions, KAMs & Notes",
+                "Corporate Solvency Evaluation, Cash Flow Vitality (IAS 7) & Risk Oversight"
+              ]
             },
             {
               "id": "icsb-304",
@@ -175,7 +255,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements."
+              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements.",
+              "topics": [
+                "Bank Company Act 1991: Licensing, Capital Requirements & Governance Restrictions",
+                "Financial Institutions Act 1993: NBFI Licensing, Debt Recovery & Regulations",
+                "Money Loan Court Act 2003 (Artha Rin Adalat Ain): Suits, Decrees & Auctions",
+                "Insurance Act 2010: IDRA Guidelines, Solvency Margins & Policyholder Protection"
+              ]
             }
           ]
         },
@@ -191,7 +277,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up."
+              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up.",
+              "topics": [
+                "Corporate Restructuring Schemes under Companies Act 1994 Sections 228 & 229",
+                "High Court Sanction Process: Petitions, Creditor/Shareholder Meetings & Filings",
+                "Reduction of Share Capital under Sections 59–70 & Special Resolution Procedures",
+                "Prevention of Minority Oppression & Mismanagement under Section 233",
+                "Corporate Winding-Up Modes: Court Compulsory vs. Voluntary Winding-Up & Liquidators"
+              ]
             },
             {
               "id": "icsb-402",
@@ -200,7 +293,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Long-term corporate capital financing, capital budgeting under uncertainty, and corporate dividend strategy."
+              "description": "Long-term corporate capital financing, capital budgeting under uncertainty, and corporate dividend strategy.",
+              "topics": [
+                "Strategic Capital Budgeting: Discounted Cash Flow (NPV, IRR) & Risk Evaluation",
+                "Cost of Capital Estimation (WACC) & Optimal Corporate Capital Structure",
+                "Dividend Policy Models, Legal Distributable Profits & Share Buybacks",
+                "Long-Term Debt Financing: Syndicated Bank Loans, Corporate Bonds & Sukuk"
+              ]
             },
             {
               "id": "icsb-403",
@@ -209,7 +308,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks."
+              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks.",
+              "topics": [
+                "BSEC Corporate Governance Code (CGC 2018): Comprehensive Clause Analysis",
+                "Independent Directors: Eligibility, Fiduciary Duties & Board Diversity",
+                "Audit Committee & Nomination and Remuneration Committee (NRC) Mandates",
+                "Enterprise Risk Management (ERM): COSO Framework, Risk Appetite & Registers",
+                "Internal Controls Oversight, Whistleblower Systems & Corporate Ethics"
+              ]
             },
             {
               "id": "icsb-404",
@@ -218,7 +324,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Strategic corporate tax planning, transfer pricing documentation, DTAA, and Taxes Appellate Tribunal proceedings."
+              "description": "Strategic corporate tax planning, transfer pricing documentation, DTAA, and Taxes Appellate Tribunal proceedings.",
+              "topics": [
+                "Strategic Corporate Tax Planning & Tax-Free Reorganizations in Bangladesh",
+                "International Tax Treaties (DTAA) & Transfer Pricing Arm's Length Compliance",
+                "Tax Appellate Litigation: Appeals before Commissioner (Appeals) & Tribunal",
+                "Alternative Dispute Resolution (ADR) Procedures under Income Tax & VAT Acts"
+              ]
             }
           ]
         },
@@ -234,7 +346,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution."
+              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution.",
+              "topics": [
+                "High-Level Board Advisory: Board Politics, Conflicts of Interest & D&O Insurance",
+                "Drafting Joint Venture Agreements, Shareholder Pacts & Technology Transfers",
+                "Statutory Representation before RJSC, BSEC, DSE, CSE, Bangladesh Bank & FRC",
+                "ESG Governance Architecture, Sustainability Disclosures & Corporate Transparency"
+              ]
             },
             {
               "id": "icsb-502",
@@ -243,7 +361,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Strategic leadership, environmental scanning, TQM, ISO quality governance, and operational transformation."
+              "description": "Strategic leadership, environmental scanning, TQM, ISO quality governance, and operational transformation.",
+              "topics": [
+                "Enterprise Strategic Planning: PESTEL, Porter's Five Forces & Core Competencies",
+                "Strategy Execution Models, Balanced Scorecards & Structural Alignment",
+                "Operations Management: Total Quality Management (TQM) & ISO 9001/27001 Standards",
+                "Corporate Crisis Leadership: Emergency Communications, Hostile Defense & Media"
+              ]
             },
             {
               "id": "icsb-503",
@@ -252,7 +376,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations."
+              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations.",
+              "topics": [
+                "Securities and Exchange Ordinance 1969 & BSEC Act 1993: Prohibitions & Penalties",
+                "BSEC Public Issue Rules: IPO Process, Book Building, Underwriting & Prospectuses",
+                "DSE & CSE Listing Regulations: Continuous Disclosures & Material Events (PSI)",
+                "Central Depository Bangladesh Ltd (CDBL) Rules: Dematerialization & BO Accounts",
+                "Substantial Acquisition of Shares, Open Offer Thresholds & Takeover Code"
+              ]
             },
             {
               "id": "icsb-504",
@@ -261,7 +392,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A."
+              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A.",
+              "topics": [
+                "Statutory Secretarial Audit: Framework, Audit Scope & Working Paper Standards",
+                "BSEC Corporate Governance Compliance Certification under CGC 2018 Condition 1(5)",
+                "Comprehensive Annexure-C Compliance Checklist Verification Methodology",
+                "Legal Due Diligence: Verification of Corporate Title, Licenses, Contracts & Litigation",
+                "Drafting Secretarial Audit Reports, Adverse Findings & Management Representations"
+              ]
             },
             {
               "id": "icsb-per",
@@ -269,7 +407,14 @@
               "code": "CS-PER",
               "category": "Experience",
               "duration": "36 Months",
-              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership."
+              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership.",
+              "topics": [
+                "36 Months Practical Experience in Company Secretarial, Legal or Governance Roles",
+                "Drafting Corporate Board Documentation, Minutes & RJSC Statutory Returns",
+                "Advising on BSEC Corporate Governance Code Adherence & Compliance Checklists",
+                "Participation in Secretarial Audit Engagements & Due Diligence Reviews",
+                "Submission of Verified Experience Portfolio & Secretarial Internship Report"
+              ]
             }
           ]
         }
@@ -307,7 +452,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration."
+              "description": "HR planning, Bangladesh Labor Act 2006 compliance, trade unions, health and safety, and industrial dispute arbitration.",
+              "topics": [
+                "Human Resource Planning, Recruitment, Talent Selection & Onboarding",
+                "Performance Appraisal Systems, Compensation & Employee Retention Strategies",
+                "Bangladesh Labor Act 2006: Employment Conditions, Working Hours & Leaves",
+                "Industrial Relations: Trade Unions, Collective Bargaining Agents & Labor Courts"
+              ]
             },
             {
               "id": "icsb-102",
@@ -316,7 +467,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882."
+              "description": "Contract Act 1872, Sale of Goods 1930, Negotiable Instruments 1881, and Transfer of Property 1882.",
+              "topics": [
+                "Contract Act 1872: Formation, Consideration, Free Consent & Breach Remedies",
+                "Sale of Goods Act 1930: Conditions, Warranties & Rights of Unpaid Sellers",
+                "Negotiable Instruments Act 1881: Cheques, Bills of Exchange & Sec 138 Dishonor",
+                "Commercial Laws: Transfer of Property, Specific Relief & Commercial Arbitration"
+              ]
             },
             {
               "id": "icsb-201",
@@ -325,7 +482,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures."
+              "description": "Drafting board minutes, directors' report narratives, corporate circulars, and annual governance disclosures.",
+              "topics": [
+                "Drafting Minutes of Board of Directors & Specialized Committee Meetings",
+                "Drafting Annual Report Disclosures, Directors' Report & MD&A Narratives",
+                "Price Sensitive Information (PSI) Notices & Disclosures to DSE/CSE/BSEC",
+                "Secretarial Correspondence with Regulatory Agencies (RJSC, BSEC, NBR)"
+              ]
             },
             {
               "id": "icsb-301",
@@ -334,7 +497,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings."
+              "description": "Comprehensive Companies Act 1994, Memorandum & Articles, share transfer mechanics, and RJSC statutory filings.",
+              "topics": [
+                "Companies Act 1994: Company Types, Incorporation & Memorandum/Articles Alteration",
+                "Prospectus, Capital Raising, Share Transfers & Registration of Charges with RJSC",
+                "Directors' Appointments, Disqualifications, Board Quorum & Remuneration",
+                "Statutory Registers: Register of Members, Directors & Charges Maintenance",
+                "Mandatory Filings with RJSC: Form IX, Form XII, Form X, Schedule X & Form XVIII"
+              ]
             },
             {
               "id": "icsb-302",
@@ -343,7 +513,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6)."
+              "description": "Role of the Company Secretary, Board administration, AGM/EGM management, and Bangladesh Secretarial Standards (BSS 1-6).",
+              "topics": [
+                "Role, Statutory Duties & Legal Liabilities of the Practicing Company Secretary",
+                "BSS-1 (Meetings of the Board of Directors) & BSS-2 (General Meetings - AGM/EGM)",
+                "BSS-3 (Minutes Recording Protocols) & BSS-4 (Dividend Declaration & CMSF Rules)",
+                "BSS-5 (Electronic Virtual Meetings) & BSS-6 (Board Resolutions by Circulation)",
+                "Organizing Shareholder Meetings: Statutory 21-Day Notices, Proxies & E-Voting"
+              ]
             },
             {
               "id": "icsb-304",
@@ -352,7 +529,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements."
+              "description": "Bank Company Act 1991, NBFI regulations, and Insurance Act 2010 corporate governance requirements.",
+              "topics": [
+                "Bank Company Act 1991: Licensing, Capital Requirements & Governance Restrictions",
+                "Financial Institutions Act 1993: NBFI Licensing, Debt Recovery & Regulations",
+                "Money Loan Court Act 2003 (Artha Rin Adalat Ain): Suits, Decrees & Auctions",
+                "Insurance Act 2010: IDRA Guidelines, Solvency Margins & Policyholder Protection"
+              ]
             }
           ]
         },
@@ -368,7 +551,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up."
+              "description": "Mergers, acquisitions, demergers, High Court schemes of arrangement (Sec 228/229), and insolvency winding-up.",
+              "topics": [
+                "Corporate Restructuring Schemes under Companies Act 1994 Sections 228 & 229",
+                "High Court Sanction Process: Petitions, Creditor/Shareholder Meetings & Filings",
+                "Reduction of Share Capital under Sections 59–70 & Special Resolution Procedures",
+                "Prevention of Minority Oppression & Mismanagement under Section 233",
+                "Corporate Winding-Up Modes: Court Compulsory vs. Voluntary Winding-Up & Liquidators"
+              ]
             },
             {
               "id": "icsb-403",
@@ -377,7 +567,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks."
+              "description": "BSEC Corporate Governance Code (CGC 2018), Independent Directors, Board evaluation, and COSO ERM risk frameworks.",
+              "topics": [
+                "BSEC Corporate Governance Code (CGC 2018): Comprehensive Clause Analysis",
+                "Independent Directors: Eligibility, Fiduciary Duties & Board Diversity",
+                "Audit Committee & Nomination and Remuneration Committee (NRC) Mandates",
+                "Enterprise Risk Management (ERM): COSO Framework, Risk Appetite & Registers",
+                "Internal Controls Oversight, Whistleblower Systems & Corporate Ethics"
+              ]
             },
             {
               "id": "icsb-501",
@@ -386,7 +583,13 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution."
+              "description": "Senior board advisory, joint venture structuring, statutory representation before BSEC/RJSC/FRC, and corporate dispute resolution.",
+              "topics": [
+                "High-Level Board Advisory: Board Politics, Conflicts of Interest & D&O Insurance",
+                "Drafting Joint Venture Agreements, Shareholder Pacts & Technology Transfers",
+                "Statutory Representation before RJSC, BSEC, DSE, CSE, Bangladesh Bank & FRC",
+                "ESG Governance Architecture, Sustainability Disclosures & Corporate Transparency"
+              ]
             },
             {
               "id": "icsb-503",
@@ -395,7 +598,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations."
+              "description": "Securities & Exchange Ordinance 1969, BSEC regulations, DSE/CSE listing rules, CDBL depository by-laws, and IPO regulations.",
+              "topics": [
+                "Securities and Exchange Ordinance 1969 & BSEC Act 1993: Prohibitions & Penalties",
+                "BSEC Public Issue Rules: IPO Process, Book Building, Underwriting & Prospectuses",
+                "DSE & CSE Listing Regulations: Continuous Disclosures & Material Events (PSI)",
+                "Central Depository Bangladesh Ltd (CDBL) Rules: Dematerialization & BO Accounts",
+                "Substantial Acquisition of Shares, Open Offer Thresholds & Takeover Code"
+              ]
             },
             {
               "id": "icsb-504",
@@ -404,7 +614,14 @@
               "category": "Exam",
               "marks": 100,
               "duration": "3 Hours",
-              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A."
+              "description": "Statutory Secretarial Audit execution, BSEC CGC 2018 compliance certification, legal due diligence for IPOs and M&A.",
+              "topics": [
+                "Statutory Secretarial Audit: Framework, Audit Scope & Working Paper Standards",
+                "BSEC Corporate Governance Compliance Certification under CGC 2018 Condition 1(5)",
+                "Comprehensive Annexure-C Compliance Checklist Verification Methodology",
+                "Legal Due Diligence: Verification of Corporate Title, Licenses, Contracts & Litigation",
+                "Drafting Secretarial Audit Reports, Adverse Findings & Management Representations"
+              ]
             },
             {
               "id": "icsb-per",
@@ -412,7 +629,14 @@
               "code": "CS-PER",
               "category": "Experience",
               "duration": "36 Months",
-              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership."
+              "description": "3 years verified relevant corporate secretarial, legal, finance, or governance experience required for ACS membership.",
+              "topics": [
+                "36 Months Practical Experience in Company Secretarial, Legal or Governance Roles",
+                "Drafting Corporate Board Documentation, Minutes & RJSC Statutory Returns",
+                "Advising on BSEC Corporate Governance Code Adherence & Compliance Checklists",
+                "Participation in Secretarial Audit Engagements & Due Diligence Reviews",
+                "Submission of Verified Experience Portfolio & Secretarial Internship Report"
+              ]
             }
           ]
         }

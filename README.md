@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Deployment](https://img.shields.io/badge/Deploy-Cloudflare%20Pages%20%7C%20GitHub%20Pages-blue.svg)](#deployment)
-[![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](package.json)
+[![Version](https://img.shields.io/badge/Version-2.1.0-blue.svg)](package.json)
 
 ---
 
